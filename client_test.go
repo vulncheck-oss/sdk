@@ -9,7 +9,7 @@ import (
 
 func TestConnect(t *testing.T) {
 	t.Run("a new client is created", func(t *testing.T) {
-		client := Connect("vulncheck_token")
+		client := Connect("https://api.vulncheck.com", "vulncheck_token")
 		if client == nil {
 			t.Error("client is nil")
 		}
@@ -20,8 +20,8 @@ func TestConnect(t *testing.T) {
 
 func TestSetAuthHeader(t *testing.T) {
 	t.Run("auth header is set", func(t *testing.T) {
-		client := Connect("vulncheck_token")
-		req := httptest.NewRequest("GET", TestURL+"/index", nil)
+		client := Connect("https://api.vulncheck.com", "vulncheck_token")
+		req := httptest.NewRequest("GET", "/index", nil)
 		client.SetAuthHeader(req)
 
 		assert.Equal(t, "Bearer vulncheck_token", req.Header.Get("Authorization"))
@@ -30,7 +30,7 @@ func TestSetAuthHeader(t *testing.T) {
 
 func TestGetBaseURL(t *testing.T) {
 	t.Run("base url is set", func(t *testing.T) {
-		client := Connect("vulncheck_token")
-		assert.Equal(t, ProdURL, client.GetBaseURL())
+		client := Connect("https://api.vulncheck.com", "vulncheck_token")
+		assert.Equal(t, "https://api.vulncheck.com", client.GetUrl())
 	})
 }

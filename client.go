@@ -3,7 +3,7 @@ package sdk
 import "net/http"
 
 type Client struct {
-	Env   string
+	Url   string
 	Token string
 }
 
@@ -12,18 +12,9 @@ type MetaError struct {
 	Errors []string `json:"errors"`
 }
 
-var (
-	TestURL  = "https://api.vulncheck.ai/v3"
-	StageURL = "https://api.vulncheck.ai/v3"
-	ProdURL  = "https://api.vulncheck.com/v3"
-)
+func Connect(url string, token string) *Client {
 
-func Connect(token string, env ...string) *Client {
-	if len(env) == 0 {
-		return &Client{Token: token, Env: "prod"}
-	}
-
-	return &Client{Token: token, Env: env[0]}
+	return &Client{Url: url, Token: token}
 }
 
 func (c *Client) GetToken() string {
@@ -34,19 +25,12 @@ func (c *Client) SetToken(token string) {
 	c.Token = token
 }
 
-func (c *Client) SetEnv(env string) {
-	c.Env = env
+func (c *Client) SetUrl(env string) {
+	c.Url = env
 }
 
-func (c *Client) GetEnv() string {
-	return c.Env
-}
-
-func (c *Client) GetBaseURL() string {
-	if c.Env == "stage" {
-		return StageURL
-	}
-	return ProdURL
+func (c *Client) GetUrl() string {
+	return c.Url
 }
 
 // Sets the Authorization header for the request

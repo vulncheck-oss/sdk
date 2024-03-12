@@ -20,7 +20,7 @@ type IndexesResponse struct {
 // https://docs.vulncheck.com/api/indexes
 func (c *Client) GetIndexes() (responseJSON IndexesResponse, err error) {
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetBaseURL()+"/index", nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/index", nil)
 	if err != nil {
 		panic(err)
 	}

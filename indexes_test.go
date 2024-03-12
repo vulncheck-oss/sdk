@@ -12,7 +12,7 @@ import (
 )
 
 func TestGetIndexes(t *testing.T) {
-	req := httptest.NewRequest("GET", TestURL+"/index", nil)
+	req := httptest.NewRequest("GET", "/index", nil)
 	w := httptest.NewRecorder()
 
 	mockJson := `{"_benchmark":0.02508,"data":[{"name":"a10","description":"A10 Networks Security Advisories","href":"https://api.vulncheck.com/v3/index/a10"}]}`

@@ -94,7 +94,7 @@ func setIndexQueryParameters(query url.Values, queryParameters ...IndexQueryPara
 // https://docs.vulncheck.com/api/indice
 func (c *Client) GetIndex(index string, queryParameters ...IndexQueryParameters) (responseJSON IndexResponse, err error) {
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetBaseURL()+"/index/"+url.QueryEscape(index), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/index/"+url.QueryEscape(index), nil)
 	if err != nil {
 		panic(err)
 	}

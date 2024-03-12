@@ -12,7 +12,7 @@ import (
 )
 
 func TestGetPurl(t *testing.T) {
-	req := httptest.NewRequest("GET", TestURL+"/purl", nil)
+	req := httptest.NewRequest("GET", "/purl", nil)
 	w := httptest.NewRecorder()
 
 	mockJson := `{"_benchmark":0.046492,"_meta":{"purl_struct":{"type":"hex","namespace":"","name":"coherence","version":"0.1.2","qualifiers":null,"subpath":""},"timestamp":"2024-02-12T22:52:52.548053402Z","total_documents":1},"data":{"cves":["CVE-2018-20301"],"vulnerabilities":[{"detection":"CVE-2018-20301","fixed_version":"0.5.2"}]}}`

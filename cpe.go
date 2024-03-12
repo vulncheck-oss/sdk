@@ -33,7 +33,7 @@ type CpeResponse struct {
 // https://docs.vulncheck.com/api/cpe
 func (c *Client) GetCpe(cpe string) (responseJSON CpeResponse, err error) {
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetBaseURL()+"/cpe", nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/cpe", nil)
 	if err != nil {
 		panic(err)
 	}

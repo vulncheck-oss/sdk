@@ -39,7 +39,7 @@ type PurlResponse struct {
 // https://docs.vulncheck.com/api/purl
 func (c *Client) GetPurl(purl string) (responseJSON PurlResponse, err error) {
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetBaseURL()+"/purl", nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/purl", nil)
 	if err != nil {
 		panic(err)
 	}
