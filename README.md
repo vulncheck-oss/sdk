@@ -1,6 +1,10 @@
 # VulnCheck SDK
 
-## Init the VulnCheck SDK Client
+SDK to interact with VulnCheck API.
+
+## Usage
+
+### Init the VulnCheck SDK Client
 ```go
 package main
 
@@ -15,7 +19,7 @@ func main() {
 }
 ```
 
-## PURL
+### PURL
 ```go
 response, err := client.GetPurl("pkg:hex/coherence@0.1.2")
 
@@ -26,7 +30,7 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
-## CPE
+### CPE
 ```go
 response, err := client.GetCpe("cpe:/a:microsoft:internet_explorer:8.0.6001:beta")
 
@@ -37,7 +41,7 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
-## BACKUP
+### BACKUP
 ```go
 response, err := client.GetIndexBackup("initial-access")
 
@@ -48,7 +52,7 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
-## INDEXES
+### INDEXES
 ```go
 response, err := client.GetIndexes()
 
@@ -59,7 +63,7 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
-## INDEX
+### INDEX
 ```go
 queryParams := sdk.IndexQueryParameters{}
 
@@ -71,3 +75,23 @@ if err != nil {
 
 fmt.Println(response.GetData())
 ```
+
+## Changelog
+
+Please see CHANGELOG for more information on what has changed recently.
+
+## Contributing
+
+Please see CONTRIBUTING for details.
+
+## Security Vulnerabilities
+
+If you discover any security related issues, please use issue tracker.
+
+## Sponsorship
+
+Development of this package is sponsored by VulnCheck learn more about us!
+
+## License
+
+The MIT License (MIT). Please see License File for more information.
