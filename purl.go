@@ -37,7 +37,7 @@ type PurlResponse struct {
 }
 
 // https://docs.vulncheck.com/api/purl
-func (c *Client) GetPurl(purl string) (responseJSON PurlResponse, err error) {
+func (c *Client) GetPurl(purl string) (responseJSON *PurlResponse, err error) {
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/purl", nil)
 	if err != nil {
@@ -60,7 +60,7 @@ func (c *Client) GetPurl(purl string) (responseJSON PurlResponse, err error) {
 		var metaError MetaError
 		_ = json.NewDecoder(resp.Body).Decode(&metaError)
 
-		return responseJSON, fmt.Errorf("error: %v", metaError.Errors)
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
 	}
 
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)

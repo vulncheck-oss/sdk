@@ -31,7 +31,7 @@ type CpeResponse struct {
 }
 
 // https://docs.vulncheck.com/api/cpe
-func (c *Client) GetCpe(cpe string) (responseJSON CpeResponse, err error) {
+func (c *Client) GetCpe(cpe string) (responseJSON *CpeResponse, err error) {
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/cpe", nil)
 	if err != nil {
@@ -54,7 +54,7 @@ func (c *Client) GetCpe(cpe string) (responseJSON CpeResponse, err error) {
 		var metaError MetaError
 		_ = json.NewDecoder(resp.Body).Decode(&metaError)
 
-		return responseJSON, fmt.Errorf("error: %v", metaError.Errors)
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
 	}
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
 

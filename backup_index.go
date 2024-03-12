@@ -25,7 +25,7 @@ type BackupResponse struct {
 }
 
 // https://docs.vulncheck.com/api/backup
-func (c *Client) GetIndexBackup(index string) (responseJSON BackupResponse, err error) {
+func (c *Client) GetIndexBackup(index string) (responseJSON *BackupResponse, err error) {
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/backup/"+index, nil)
 	if err != nil {
@@ -45,7 +45,7 @@ func (c *Client) GetIndexBackup(index string) (responseJSON BackupResponse, err 
 		var metaError MetaError
 		_ = json.NewDecoder(resp.Body).Decode(&metaError)
 
-		return responseJSON, fmt.Errorf("error: %v", metaError.Errors)
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
 	}
 
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)

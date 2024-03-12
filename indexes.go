@@ -18,7 +18,7 @@ type IndexesResponse struct {
 }
 
 // https://docs.vulncheck.com/api/indexes
-func (c *Client) GetIndexes() (responseJSON IndexesResponse, err error) {
+func (c *Client) GetIndexes() (responseJSON *IndexesResponse, err error) {
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/index", nil)
 	if err != nil {
@@ -37,7 +37,7 @@ func (c *Client) GetIndexes() (responseJSON IndexesResponse, err error) {
 		var metaError MetaError
 		_ = json.NewDecoder(resp.Body).Decode(&metaError)
 
-		return responseJSON, fmt.Errorf("error: %v", metaError.Errors)
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
 	}
 
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)

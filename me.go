@@ -50,7 +50,7 @@ type UserResponse struct {
 }
 
 // https://docs.vulncheck.com/api/me
-func (c *Client) GetMe() (responseJSON UserResponse, err error) {
+func (c *Client) GetMe() (responseJSON *UserResponse, err error) {
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/me", nil)
 	if err != nil {
@@ -69,7 +69,7 @@ func (c *Client) GetMe() (responseJSON UserResponse, err error) {
 		var metaError MetaError
 		_ = json.NewDecoder(resp.Body).Decode(&metaError)
 
-		return responseJSON, fmt.Errorf("error: %v", metaError.Errors)
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
 	}
 
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
@@ -80,4 +80,9 @@ func (c *Client) GetMe() (responseJSON UserResponse, err error) {
 // Strings representation of the response
 func (r UserResponse) String() string {
 	return fmt.Sprintf("Benchmark: %v\nData: %v\n", r.Benchmark, r.Data)
+}
+
+// Returns the data from the response
+func (r UserResponse) GetData() UserData {
+	return r.Data
 }
