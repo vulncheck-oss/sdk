@@ -3,7 +3,6 @@ package sdk
 import (
 	"encoding/json"
 	"fmt"
-	"net/http"
 )
 
 type BackupFile struct {
@@ -26,30 +25,9 @@ type BackupResponse struct {
 
 // https://docs.vulncheck.com/api/backup
 func (c *Client) GetIndexBackup(index string) (responseJSON *BackupResponse, err error) {
-	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/backup/"+index, nil)
-	if err != nil {
-		panic(err)
-	}
-
-	c.SetAuthHeader(req)
-
-	resp, err := client.Do(req)
-	if err != nil {
-		panic(err)
-	}
-
+	resp, err := c.Request("GET", "/v3/backup/"+index)
 	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		var metaError MetaError
-		_ = json.NewDecoder(resp.Body).Decode(&metaError)
-
-		return nil, fmt.Errorf("error: %v", metaError.Errors)
-	}
-
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
-
 	return responseJSON, nil
 }
 

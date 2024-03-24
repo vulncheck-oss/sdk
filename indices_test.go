@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGetIndexes(t *testing.T) {
+func TestGetIndices(t *testing.T) {
 	req := httptest.NewRequest("GET", "/index", nil)
 	w := httptest.NewRecorder()
 
@@ -29,7 +29,7 @@ func TestGetIndexes(t *testing.T) {
 
 	body, _ := io.ReadAll(resp.Body)
 
-	var indexResp IndexesResponse
+	var indexResp IndicesResponse
 	err := json.Unmarshal(body, &indexResp)
 	if err != nil {
 		t.Error("error unmarshalling response")

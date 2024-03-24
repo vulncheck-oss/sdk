@@ -5,19 +5,19 @@ import (
 	"fmt"
 )
 
-type IndexesMeta struct {
+type IndicesMeta struct {
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	Href        string `json:"href"`
 }
 
-type IndexesResponse struct {
+type IndicesResponse struct {
 	Benchmark float64       `json:"_benchmark"`
-	Data      []IndexesMeta `json:"data"`
+	Data      []IndicesMeta `json:"data"`
 }
 
-// GetIndexes https://docs.vulncheck.com/api/indexes
-func (c *Client) GetIndexes() (responseJSON *IndexesResponse, err error) {
+// GetIndices https://docs.vulncheck.com/api/indexes
+func (c *Client) GetIndices() (responseJSON *IndicesResponse, err error) {
 
 	resp, err := c.Request("GET", "/v3/index")
 	defer resp.Body.Close()
@@ -29,11 +29,11 @@ func (c *Client) GetIndexes() (responseJSON *IndexesResponse, err error) {
 }
 
 // Strings representation of the response
-func (r IndexesResponse) String() string {
+func (r IndicesResponse) String() string {
 	return fmt.Sprintf("Benchmark: %v\nData: %v\n", r.Benchmark, r.Data)
 }
 
 // GetData - Returns the data from the response
-func (r IndexesResponse) GetData() []IndexesMeta {
+func (r IndicesResponse) GetData() []IndicesMeta {
 	return r.Data
 }
