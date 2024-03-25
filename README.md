@@ -94,4 +94,4 @@ Development of this package is sponsored by VulnCheck learn more about us!
 
 ## License
 
-The MIT License (MIT). Please see License File for more information.
+Apache License 2.0. Please see License File for more information.
