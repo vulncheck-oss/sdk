@@ -35,7 +35,7 @@ func (c *Client) Logout() (responseJSON *Response, err error) {
 		var metaError MetaError
 		_ = json.NewDecoder(resp.Body).Decode(&metaError)
 
-		return nil, fmt.Errorf("error: %v", metaError.Errors)
+		return nil, fmt.Errorf("errors: %v", metaError.Errors)
 	}
 
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
