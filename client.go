@@ -10,6 +10,7 @@ type Client struct {
 	Url        string
 	Token      string
 	HttpClient *http.Client
+	UserAgent  string
 }
 
 type MetaError struct {
@@ -20,7 +21,6 @@ type MetaError struct {
 var ErrorUnauthorized = fmt.Errorf("unauthorized")
 
 func Connect(url string, token string) *Client {
-
 	return &Client{Url: url, Token: token}
 }
 
@@ -28,22 +28,30 @@ func (c *Client) GetToken() string {
 	return c.Token
 }
 
-func (c *Client) SetToken(token string) {
+func (c *Client) SetToken(token string) *Client {
 	c.Token = token
+	return c
 }
 
-func (c *Client) SetUrl(env string) {
+func (c *Client) SetUrl(env string) *Client {
 	c.Url = env
+	return c
 }
 
 func (c *Client) GetUrl() string {
 	return c.Url
 }
 
+func (c *Client) SetUserAgent(userAgent string) *Client {
+	c.UserAgent = userAgent
+	return c
+}
+
 // SetAuthHeader Sets the Authorization header for the request
-func (c *Client) SetAuthHeader(req *http.Request) {
+func (c *Client) SetAuthHeader(req *http.Request) *Client {
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("Authorization", "Bearer "+c.Token)
+	return c
 }
 
 func (c *Client) Request(method string, url string) (*http.Response, error) {
@@ -58,6 +66,10 @@ func (c *Client) Request(method string, url string) (*http.Response, error) {
 	}
 
 	c.SetAuthHeader(req)
+
+	if c.UserAgent != "" {
+		req.Header.Set("User-Agent", c.UserAgent)
+	}
 
 	resp, err := c.HttpClient.Do(req)
 	if err != nil {
