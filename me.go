@@ -3,7 +3,6 @@ package sdk
 import (
 	"encoding/json"
 	"fmt"
-	"net/http"
 )
 
 type UserData struct {
@@ -51,29 +50,12 @@ type UserResponse struct {
 
 // https://docs.vulncheck.com/api/me
 func (c *Client) GetMe() (responseJSON *UserResponse, err error) {
-	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/me", nil)
-	if err != nil {
-		panic(err)
-	}
-
-	c.SetAuthHeader(req)
-
-	resp, err := client.Do(req)
-	if err != nil {
-		panic(err)
-	}
+	resp, err := c.Request("GET", "/me")
 	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		var metaError MetaError
-		_ = json.NewDecoder(resp.Body).Decode(&metaError)
-
-		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	if err != nil {
+		return nil, err
 	}
-
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
-
 	return responseJSON, nil
 }
 
