@@ -46,9 +46,10 @@ func (r CpeResponse) String() string {
 	return fmt.Sprintf("Benchmark: %f\nMeta: %v\nData: %v\n", r.Benchmark, r.Meta, r.Data)
 }
 
-// Returns the data from the response
+// GetData Returns the data from the response
 func (r CpeResponse) GetData() []string {
 	return r.Data
 }
 
+// GetCpeStruct Returns the CpeStruct from the Metadata
 func (r CpeResponse) GetCpeStruct() CpeStruct { return r.Meta.CpeStruct }
