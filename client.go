@@ -3,7 +3,6 @@ package sdk
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/octoper/go-ray"
 	"net/http"
 	"net/url"
 )
@@ -69,8 +68,6 @@ func (c *Client) Request(method string, url string) (*http.Response, error) {
 	}
 
 	c.SetAuthHeader(c.HttpRequest)
-
-	ray.Ray(c.HttpRequest.URL.String())
 
 	if c.UserAgent != "" {
 		c.HttpRequest.Header.Set("User-Agent", c.UserAgent)
