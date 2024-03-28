@@ -3,8 +3,7 @@ package sdk
 import (
 	"encoding/json"
 	"fmt"
-	"net/http"
-	"net/url"
+	"github.com/octoper/go-ray"
 )
 
 type CpeResponse struct {
@@ -32,32 +31,14 @@ type CpeResponse struct {
 
 // https://docs.vulncheck.com/api/cpe
 func (c *Client) GetCpe(cpe string) (responseJSON *CpeResponse, err error) {
-	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/cpe", nil)
-	if err != nil {
-		panic(err)
-	}
-
-	c.SetAuthHeader(req)
-
-	query := url.Values{}
-	query.Add("cpe", cpe)
-	req.URL.RawQuery = query.Encode()
-	resp, err := client.Do(req)
-	if err != nil {
-		panic(err)
-	}
-
+	resp, err := c.Request("GET", "/v3/cpe?cpe="+cpe)
 	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		var metaError MetaError
-		_ = json.NewDecoder(resp.Body).Decode(&metaError)
-
-		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	if err != nil {
+		panic(err)
 	}
-	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
 
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+	ray.Ray(responseJSON)
 	return responseJSON, nil
 }
 
