@@ -8,14 +8,14 @@ import (
 type CpeResponse struct {
 	Benchmark float64 `json:"_benchmark"`
 	Meta      struct {
-		Cpe            string    `json:"cpe"`
-		CpeStruct      CpeStruct `json:"cpe_struct"`
-		Timestamp      string    `json:"timestamp"`
-		TotalDocuments float64   `json:"total_documents"`
+		Cpe            string  `json:"cpe"`
+		CpeMeta        CpeMeta `json:"cpe_struct"`
+		Timestamp      string  `json:"timestamp"`
+		TotalDocuments float64 `json:"total_documents"`
 	} `json:"_meta"`
 	Data []string `json:"data"`
 }
-type CpeStruct struct {
+type CpeMeta struct {
 	Part      string `json:"part"`
 	Vendor    string `json:"vendor"`
 	Product   string `json:"product"`
@@ -51,5 +51,5 @@ func (r CpeResponse) GetData() []string {
 	return r.Data
 }
 
-// GetCpeStruct Returns the CpeStruct from the Metadata
-func (r CpeResponse) GetCpeStruct() CpeStruct { return r.Meta.CpeStruct }
+// GetCpeMeta Returns the CpeMeta from the Metadata
+func (r CpeResponse) GetCpeMeta() CpeMeta { return r.Meta.CpeMeta }
