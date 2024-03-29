@@ -20,10 +20,10 @@ type IndicesResponse struct {
 func (c *Client) GetIndices() (responseJSON *IndicesResponse, err error) {
 
 	resp, err := c.Request("GET", "/v3/index")
-	defer resp.Body.Close()
 	if err != nil {
 		return nil, err
 	}
+	defer resp.Body.Close()
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
 	return responseJSON, nil
 }

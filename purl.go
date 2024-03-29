@@ -37,11 +37,10 @@ type PurlResponse struct {
 // GetPurl https://docs.vulncheck.com/api/purl
 func (c *Client) GetPurl(purl string) (responseJSON *PurlResponse, err error) {
 	resp, err := c.Query("purl", purl).Request("GET", "/v3/purl")
-	defer resp.Body.Close()
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
-
+	defer resp.Body.Close()
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
 	return responseJSON, nil
 }
