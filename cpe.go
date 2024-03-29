@@ -32,11 +32,10 @@ type CpeMeta struct {
 // https://docs.vulncheck.com/api/cpe
 func (c *Client) GetCpe(cpe string) (responseJSON *CpeResponse, err error) {
 	resp, err := c.Query("cpe", cpe).Request("GET", "/v3/cpe")
-	defer resp.Body.Close()
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
-
+	defer resp.Body.Close()
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
 	return responseJSON, nil
 }

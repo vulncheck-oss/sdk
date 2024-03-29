@@ -26,6 +26,9 @@ type BackupResponse struct {
 // https://docs.vulncheck.com/api/backup
 func (c *Client) GetIndexBackup(index string) (responseJSON *BackupResponse, err error) {
 	resp, err := c.Request("GET", "/v3/backup/"+index)
+	if err != nil {
+		return nil, err
+	}
 	defer resp.Body.Close()
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
 	return responseJSON, nil
