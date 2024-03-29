@@ -36,6 +36,6 @@ func TestGetCpe(t *testing.T) {
 	}
 
 	t.Run("cpe response is parsed", func(t *testing.T) {
-		assert.Equal(t, "microsoft", cpeResp.Meta.CpeStruct.Vendor)
+		assert.Equal(t, "microsoft", cpeResp.Meta.CpeMeta.Vendor)
 	})
 }
