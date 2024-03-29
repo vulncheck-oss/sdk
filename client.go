@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
+	"strings"
 )
 
 type Client struct {
@@ -14,6 +15,7 @@ type Client struct {
 	HttpRequest *http.Request
 	UserAgent   string
 	Values      *url.Values
+	FormValues  *url.Values
 }
 
 type MetaError struct {
@@ -62,7 +64,11 @@ func (c *Client) Request(method string, url string) (*http.Response, error) {
 		c.HttpClient = &http.Client{}
 	}
 	var err error
-	c.HttpRequest, err = http.NewRequest(method, c.GetUrl()+url, nil)
+	if c.FormValues != nil {
+		c.HttpRequest, err = http.NewRequest(method, c.GetUrl()+url, strings.NewReader(c.FormValues.Encode()))
+	} else {
+		c.HttpRequest, err = http.NewRequest(method, c.GetUrl()+url, nil)
+	}
 	if err != nil {
 		return nil, err
 	}
@@ -75,6 +81,10 @@ func (c *Client) Request(method string, url string) (*http.Response, error) {
 
 	if c.Values != nil {
 		c.HttpRequest.URL.RawQuery = c.Values.Encode()
+	}
+
+	if c.FormValues != nil {
+		c.HttpRequest.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	}
 
 	resp, err := c.HttpClient.Do(c.HttpRequest)
@@ -99,5 +109,13 @@ func (c *Client) Query(key string, value string) *Client {
 		c.Values = &url.Values{}
 	}
 	c.Values.Add(key, value)
+	return c
+}
+
+func (c *Client) Form(key string, value string) *Client {
+	if c.FormValues == nil {
+		c.FormValues = &url.Values{}
+	}
+	c.FormValues.Add(key, value)
 	return c
 }
