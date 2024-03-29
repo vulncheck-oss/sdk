@@ -52,4 +52,4 @@ func (r CpeResponse) GetData() []string {
 }
 
 // GetCpeMeta Returns the CpeMeta from the Metadata
-func (r CpeResponse) GetCpeMeta() CpeMeta { return r.Meta.CpeMeta }
+func (r CpeResponse) CpeMeta() CpeMeta { return r.Meta.CpeMeta }

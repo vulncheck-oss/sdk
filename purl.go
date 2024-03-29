@@ -56,17 +56,17 @@ func (r PurlResponse) GetData() PurlData {
 	return r.Data
 }
 
-// GetPurlMeta Returns the PurlMeta from the Metadata
-func (r PurlResponse) GetPurlMeta() PurlMeta {
+// PurlMeta Returns the PurlMeta from the Metadata
+func (r PurlResponse) PurlMeta() PurlMeta {
 	return r.Meta.PurlMeta
 }
 
-// GetCves Cves Returns the list of CVEs associated with the purl
-func (r PurlResponse) GetCves() []string {
+// Cves Cves Returns the list of CVEs associated with the purl
+func (r PurlResponse) Cves() []string {
 	return r.Data.Cves
 }
 
-// GetVulnerabilities Vulnerabilities Returns the list of vulnerabilities associated with the purl
-func (r PurlResponse) GetVulnerabilities() []PurlVulnerability {
+// Vulnerabilities Returns the list of vulnerabilities associated with the purl
+func (r PurlResponse) Vulnerabilities() []PurlVulnerability {
 	return r.Data.Vulnerabilities
 }
