@@ -63,9 +63,9 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
-### INDEXES
+### INDICES
 ```go
-response, err := client.GetIndexes()
+response, err := client.GetIndices()
 
 if err != nil {
     panic(err)
