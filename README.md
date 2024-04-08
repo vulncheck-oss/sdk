@@ -2,6 +2,14 @@
 
 SDK to interact with VulnCheck API.
 
+
+Current repository health
+
+
+[![Lint](https://github.com/vulncheck-oss/sdk/actions/workflows/lint.yml/badge.svg)](https://github.com/vulncheck-oss/sdk/actions/workflows/lint.yml)
+[![Tests](https://github.com/vulncheck-oss/sdk/actions/workflows/test.yml/badge.svg)](https://github.com/vulncheck-oss/sdk/actions/workflows/test.yml)
+
+
 ## Usage
 
 ### Init the VulnCheck SDK Client
