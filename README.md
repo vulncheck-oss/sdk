@@ -5,6 +5,13 @@ SDK to interact with VulnCheck API.
 ## Usage
 
 ### Init the VulnCheck SDK Client
+
+```bash
+go get github.com/vulncheck-oss/sdk
+```
+
+### Connecting Client
+
 ```go
 package main
 
@@ -18,6 +25,10 @@ func main() {
     fmt.Println(client.GetBaseURL())
 }
 ```
+
+
+### Available Methods
+
 
 ### PURL
 ```go
