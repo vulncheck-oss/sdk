@@ -48,13 +48,13 @@ type UserResponse struct {
 	Data      UserData `json:"data"`
 }
 
-// https://docs.vulncheck.com/api/me
+// GetMe https://docs.vulncheck.com/api/me
 func (c *Client) GetMe() (responseJSON *UserResponse, err error) {
 	resp, err := c.Request("GET", "/me")
-	defer resp.Body.Close()
 	if err != nil {
 		return nil, err
 	}
+	defer resp.Body.Close()
 	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
 	return responseJSON, nil
 }
@@ -64,7 +64,7 @@ func (r UserResponse) String() string {
 	return fmt.Sprintf("Benchmark: %v\nData: %v\n", r.Benchmark, r.Data)
 }
 
-// Returns the data from the response
+// GetData Returns the data from the response
 func (r UserResponse) GetData() UserData {
 	return r.Data
 }

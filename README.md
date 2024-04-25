@@ -2,9 +2,25 @@
 
 SDK to interact with VulnCheck API.
 
+<img src="https://vulncheck.com/logo.png" align="right" alt="VulnCheck Logo" width="200" />
+
+
+Current repository health
+
+[![Lint](https://github.com/vulncheck-oss/sdk/actions/workflows/lint.yml/badge.svg)](https://github.com/vulncheck-oss/sdk/actions/workflows/lint.yml)
+[![Tests](https://github.com/vulncheck-oss/sdk/actions/workflows/test.yml/badge.svg)](https://github.com/vulncheck-oss/sdk/actions/workflows/test.yml)
+
+
 ## Usage
 
 ### Init the VulnCheck SDK Client
+
+```bash
+go get github.com/vulncheck-oss/sdk
+```
+
+### Connecting Client
+
 ```go
 package main
 
@@ -18,6 +34,10 @@ func main() {
     fmt.Println(client.GetBaseURL())
 }
 ```
+
+
+### Available Methods
+
 
 ### PURL
 ```go
@@ -52,9 +72,9 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
-### INDEXES
+### INDICES
 ```go
-response, err := client.GetIndexes()
+response, err := client.GetIndices()
 
 if err != nil {
     panic(err)

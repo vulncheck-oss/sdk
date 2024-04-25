@@ -4,13 +4,18 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"net/url"
+	"strings"
 )
 
 type Client struct {
-	Url        string
-	Token      string
-	HttpClient *http.Client
-	UserAgent  string
+	Url         string
+	Token       string
+	HttpClient  *http.Client
+	HttpRequest *http.Request
+	UserAgent   string
+	Values      *url.Values
+	FormValues  *url.Values
 }
 
 type MetaError struct {
@@ -55,27 +60,37 @@ func (c *Client) SetAuthHeader(req *http.Request) *Client {
 }
 
 func (c *Client) Request(method string, url string) (*http.Response, error) {
-
 	if c.HttpClient == nil {
 		c.HttpClient = &http.Client{}
-
 	}
-	req, err := http.NewRequest(method, c.GetUrl()+url, nil)
+	var err error
+	if c.FormValues != nil {
+		c.HttpRequest, err = http.NewRequest(method, c.GetUrl()+url, strings.NewReader(c.FormValues.Encode()))
+	} else {
+		c.HttpRequest, err = http.NewRequest(method, c.GetUrl()+url, nil)
+	}
 	if err != nil {
 		return nil, err
 	}
 
-	c.SetAuthHeader(req)
+	c.SetAuthHeader(c.HttpRequest)
 
 	if c.UserAgent != "" {
-		req.Header.Set("User-Agent", c.UserAgent)
+		c.HttpRequest.Header.Set("User-Agent", c.UserAgent)
 	}
 
-	resp, err := c.HttpClient.Do(req)
+	if c.Values != nil {
+		c.HttpRequest.URL.RawQuery = c.Values.Encode()
+	}
+
+	if c.FormValues != nil {
+		c.HttpRequest.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+	}
+
+	resp, err := c.HttpClient.Do(c.HttpRequest)
 	if err != nil {
 		return nil, err
 	}
-
 	if resp.StatusCode == 401 {
 		return nil, ErrorUnauthorized
 	}
@@ -87,5 +102,20 @@ func (c *Client) Request(method string, url string) (*http.Response, error) {
 	}
 
 	return resp, nil
+}
 
+func (c *Client) Query(key string, value string) *Client {
+	if c.Values == nil {
+		c.Values = &url.Values{}
+	}
+	c.Values.Add(key, value)
+	return c
+}
+
+func (c *Client) Form(key string, value string) *Client {
+	if c.FormValues == nil {
+		c.FormValues = &url.Values{}
+	}
+	c.FormValues.Add(key, value)
+	return c
 }
