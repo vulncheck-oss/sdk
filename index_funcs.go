@@ -2,16 +2,16 @@ package sdk
 
 import (
 	"encoding/json"
- 	"fmt"
+	"fmt"
 	"github.com/vulncheck-oss/sdk/pkg/client"
 	"net/http"
 	"net/url"
 )
 
 type GetIndexA10Response struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryA10 `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryA10 `json:"data"`
 }
 
 func (c *Client) GetIndexA10(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexA10Response, err error) {
@@ -47,9 +47,9 @@ func (c *Client) GetIndexA10(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexAbbResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryABBAdvisory `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryABBAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexAbb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbbResponse, err error) {
@@ -85,9 +85,9 @@ func (c *Client) GetIndexAbb(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexAbbottResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAbbott `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryAbbott `json:"data"`
 }
 
 func (c *Client) GetIndexAbbott(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbbottResponse, err error) {
@@ -123,9 +123,9 @@ func (c *Client) GetIndexAbbott(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexAbsoluteResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAbsolute `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryAbsolute `json:"data"`
 }
 
 func (c *Client) GetIndexAbsolute(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbsoluteResponse, err error) {
@@ -161,9 +161,9 @@ func (c *Client) GetIndexAbsolute(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexAcronisResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAcronis `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryAcronis `json:"data"`
 }
 
 func (c *Client) GetIndexAcronis(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAcronisResponse, err error) {
@@ -199,9 +199,9 @@ func (c *Client) GetIndexAcronis(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexAdobeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAdobeAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryAdobeAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexAdobe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAdobeResponse, err error) {
@@ -237,9 +237,9 @@ func (c *Client) GetIndexAdobe(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexAlephResearchResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAlephResearch `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryAlephResearch `json:"data"`
 }
 
 func (c *Client) GetIndexAlephResearch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlephResearchResponse, err error) {
@@ -275,9 +275,9 @@ func (c *Client) GetIndexAlephResearch(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexAlmaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAlmaLinuxUpdate `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryAlmaLinuxUpdate `json:"data"`
 }
 
 func (c *Client) GetIndexAlma(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlmaResponse, err error) {
@@ -313,9 +313,9 @@ func (c *Client) GetIndexAlma(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexAlpineResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAlpineLinuxSecDB `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisoryAlpineLinuxSecDB `json:"data"`
 }
 
 func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlpineResponse, err error) {
@@ -351,9 +351,9 @@ func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexAmazonResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUpdate `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryUpdate `json:"data"`
 }
 
 func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmazonResponse, err error) {
@@ -389,9 +389,9 @@ func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexAmdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAMD `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryAMD `json:"data"`
 }
 
 func (c *Client) GetIndexAmd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmdResponse, err error) {
@@ -427,9 +427,9 @@ func (c *Client) GetIndexAmd(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexAmiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAMI `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryAMI `json:"data"`
 }
 
 func (c *Client) GetIndexAmi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmiResponse, err error) {
@@ -465,9 +465,9 @@ func (c *Client) GetIndexAmi(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexAndroidResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAndroidAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryAndroidAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexAndroid(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAndroidResponse, err error) {
@@ -503,9 +503,9 @@ func (c *Client) GetIndexAndroid(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexApacheActivemqResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheActiveMQ `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryApacheActiveMQ `json:"data"`
 }
 
 func (c *Client) GetIndexApacheActivemq(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheActivemqResponse, err error) {
@@ -541,9 +541,9 @@ func (c *Client) GetIndexApacheActivemq(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexApacheArchivaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheArchiva `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryApacheArchiva `json:"data"`
 }
 
 func (c *Client) GetIndexApacheArchiva(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheArchivaResponse, err error) {
@@ -579,9 +579,9 @@ func (c *Client) GetIndexApacheArchiva(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexApacheArrowResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheArrow `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryApacheArrow `json:"data"`
 }
 
 func (c *Client) GetIndexApacheArrow(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheArrowResponse, err error) {
@@ -617,9 +617,9 @@ func (c *Client) GetIndexApacheArrow(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexApacheCamelResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheCamel `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryApacheCamel `json:"data"`
 }
 
 func (c *Client) GetIndexApacheCamel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCamelResponse, err error) {
@@ -655,9 +655,9 @@ func (c *Client) GetIndexApacheCamel(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexApacheCommonsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheCommons `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryApacheCommons `json:"data"`
 }
 
 func (c *Client) GetIndexApacheCommons(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCommonsResponse, err error) {
@@ -693,9 +693,9 @@ func (c *Client) GetIndexApacheCommons(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexApacheCouchdbResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheCouchDB `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryApacheCouchDB `json:"data"`
 }
 
 func (c *Client) GetIndexApacheCouchdb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCouchdbResponse, err error) {
@@ -731,9 +731,9 @@ func (c *Client) GetIndexApacheCouchdb(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexApacheFlinkResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheFlink `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryApacheFlink `json:"data"`
 }
 
 func (c *Client) GetIndexApacheFlink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheFlinkResponse, err error) {
@@ -769,9 +769,9 @@ func (c *Client) GetIndexApacheFlink(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexApacheGuacamoleResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheGuacamole `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryApacheGuacamole `json:"data"`
 }
 
 func (c *Client) GetIndexApacheGuacamole(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheGuacamoleResponse, err error) {
@@ -807,9 +807,9 @@ func (c *Client) GetIndexApacheGuacamole(queryParameters ...IndexQueryParameters
 }
 
 type GetIndexApacheHadoopResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheHadoop `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryApacheHadoop `json:"data"`
 }
 
 func (c *Client) GetIndexApacheHadoop(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheHadoopResponse, err error) {
@@ -845,9 +845,9 @@ func (c *Client) GetIndexApacheHadoop(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexApacheHttpResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheHTTP `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryApacheHTTP `json:"data"`
 }
 
 func (c *Client) GetIndexApacheHttp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheHttpResponse, err error) {
@@ -883,9 +883,9 @@ func (c *Client) GetIndexApacheHttp(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexApacheJspwikiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheJSPWiki `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryApacheJSPWiki `json:"data"`
 }
 
 func (c *Client) GetIndexApacheJspwiki(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheJspwikiResponse, err error) {
@@ -921,9 +921,9 @@ func (c *Client) GetIndexApacheJspwiki(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexApacheKafkaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheKafka `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryApacheKafka `json:"data"`
 }
 
 func (c *Client) GetIndexApacheKafka(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheKafkaResponse, err error) {
@@ -959,9 +959,9 @@ func (c *Client) GetIndexApacheKafka(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexApacheLoggingservicesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheLoggingServices `json:"data"`
+	Benchmark float64                                `json:"_benchmark"`
+	Meta      IndexMeta                              `json:"_meta"`
+	Data      []client.AdvisoryApacheLoggingServices `json:"data"`
 }
 
 func (c *Client) GetIndexApacheLoggingservices(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheLoggingservicesResponse, err error) {
@@ -997,9 +997,9 @@ func (c *Client) GetIndexApacheLoggingservices(queryParameters ...IndexQueryPara
 }
 
 type GetIndexApacheNifiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheNiFi `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryApacheNiFi `json:"data"`
 }
 
 func (c *Client) GetIndexApacheNifi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheNifiResponse, err error) {
@@ -1035,9 +1035,9 @@ func (c *Client) GetIndexApacheNifi(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexApacheOfbizResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheOFBiz `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryApacheOFBiz `json:"data"`
 }
 
 func (c *Client) GetIndexApacheOfbiz(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOfbizResponse, err error) {
@@ -1073,9 +1073,9 @@ func (c *Client) GetIndexApacheOfbiz(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexApacheOpenmeetingsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheOpenMeetings `json:"data"`
+	Benchmark float64                             `json:"_benchmark"`
+	Meta      IndexMeta                           `json:"_meta"`
+	Data      []client.AdvisoryApacheOpenMeetings `json:"data"`
 }
 
 func (c *Client) GetIndexApacheOpenmeetings(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOpenmeetingsResponse, err error) {
@@ -1111,9 +1111,9 @@ func (c *Client) GetIndexApacheOpenmeetings(queryParameters ...IndexQueryParamet
 }
 
 type GetIndexApacheOpenofficeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheOpenOffice `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisoryApacheOpenOffice `json:"data"`
 }
 
 func (c *Client) GetIndexApacheOpenoffice(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOpenofficeResponse, err error) {
@@ -1149,9 +1149,9 @@ func (c *Client) GetIndexApacheOpenoffice(queryParameters ...IndexQueryParameter
 }
 
 type GetIndexApachePulsarResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApachePulsar `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryApachePulsar `json:"data"`
 }
 
 func (c *Client) GetIndexApachePulsar(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApachePulsarResponse, err error) {
@@ -1187,9 +1187,9 @@ func (c *Client) GetIndexApachePulsar(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexApacheShiroResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheShiro `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryApacheShiro `json:"data"`
 }
 
 func (c *Client) GetIndexApacheShiro(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheShiroResponse, err error) {
@@ -1225,9 +1225,9 @@ func (c *Client) GetIndexApacheShiro(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexApacheSparkResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheSpark `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryApacheSpark `json:"data"`
 }
 
 func (c *Client) GetIndexApacheSpark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSparkResponse, err error) {
@@ -1263,9 +1263,9 @@ func (c *Client) GetIndexApacheSpark(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexApacheStrutsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheStruts `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryApacheStruts `json:"data"`
 }
 
 func (c *Client) GetIndexApacheStruts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheStrutsResponse, err error) {
@@ -1301,9 +1301,9 @@ func (c *Client) GetIndexApacheStruts(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexApacheSubversionResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheSubversion `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisoryApacheSubversion `json:"data"`
 }
 
 func (c *Client) GetIndexApacheSubversion(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSubversionResponse, err error) {
@@ -1339,9 +1339,9 @@ func (c *Client) GetIndexApacheSubversion(queryParameters ...IndexQueryParameter
 }
 
 type GetIndexApacheSupersetResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheSuperset `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryApacheSuperset `json:"data"`
 }
 
 func (c *Client) GetIndexApacheSuperset(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSupersetResponse, err error) {
@@ -1377,9 +1377,9 @@ func (c *Client) GetIndexApacheSuperset(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexApacheTomcatResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheTomcat `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryApacheTomcat `json:"data"`
 }
 
 func (c *Client) GetIndexApacheTomcat(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheTomcatResponse, err error) {
@@ -1415,9 +1415,9 @@ func (c *Client) GetIndexApacheTomcat(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexApacheZookeeperResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryApacheZooKeeper `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryApacheZooKeeper `json:"data"`
 }
 
 func (c *Client) GetIndexApacheZookeeper(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheZookeeperResponse, err error) {
@@ -1453,9 +1453,9 @@ func (c *Client) GetIndexApacheZookeeper(queryParameters ...IndexQueryParameters
 }
 
 type GetIndexAppcheckResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAppCheck `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryAppCheck `json:"data"`
 }
 
 func (c *Client) GetIndexAppcheck(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppcheckResponse, err error) {
@@ -1491,9 +1491,9 @@ func (c *Client) GetIndexAppcheck(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexAppgateResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAppgate `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryAppgate `json:"data"`
 }
 
 func (c *Client) GetIndexAppgate(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppgateResponse, err error) {
@@ -1529,9 +1529,9 @@ func (c *Client) GetIndexAppgate(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexAppleResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAppleAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryAppleAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexApple(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppleResponse, err error) {
@@ -1567,9 +1567,9 @@ func (c *Client) GetIndexApple(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexArchResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryArchIssue `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryArchIssue `json:"data"`
 }
 
 func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexArchResponse, err error) {
@@ -1605,9 +1605,9 @@ func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexAristaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryArista `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryArista `json:"data"`
 }
 
 func (c *Client) GetIndexArista(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAristaResponse, err error) {
@@ -1643,9 +1643,9 @@ func (c *Client) GetIndexArista(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexArubaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAruba `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryAruba `json:"data"`
 }
 
 func (c *Client) GetIndexAruba(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexArubaResponse, err error) {
@@ -1681,9 +1681,9 @@ func (c *Client) GetIndexAruba(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexAsrgResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryASRG `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryASRG `json:"data"`
 }
 
 func (c *Client) GetIndexAsrg(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsrgResponse, err error) {
@@ -1719,9 +1719,9 @@ func (c *Client) GetIndexAsrg(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexAssetnoteResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAssetNote `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryAssetNote `json:"data"`
 }
 
 func (c *Client) GetIndexAssetnote(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAssetnoteResponse, err error) {
@@ -1757,9 +1757,9 @@ func (c *Client) GetIndexAssetnote(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexAsteriskResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAsterisk `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryAsterisk `json:"data"`
 }
 
 func (c *Client) GetIndexAsterisk(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsteriskResponse, err error) {
@@ -1795,9 +1795,9 @@ func (c *Client) GetIndexAsterisk(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexAsusResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAsus `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryAsus `json:"data"`
 }
 
 func (c *Client) GetIndexAsus(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsusResponse, err error) {
@@ -1833,9 +1833,9 @@ func (c *Client) GetIndexAsus(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexAtlassianResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAtlassianAdvisory `json:"data"`
+	Benchmark float64                            `json:"_benchmark"`
+	Meta      IndexMeta                          `json:"_meta"`
+	Data      []client.AdvisoryAtlassianAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexAtlassian(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAtlassianResponse, err error) {
@@ -1871,9 +1871,9 @@ func (c *Client) GetIndexAtlassian(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexAuscertResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAusCert `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryAusCert `json:"data"`
 }
 
 func (c *Client) GetIndexAuscert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAuscertResponse, err error) {
@@ -1909,9 +1909,9 @@ func (c *Client) GetIndexAuscert(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexAutodeskResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAutodesk `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryAutodesk `json:"data"`
 }
 
 func (c *Client) GetIndexAutodesk(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAutodeskResponse, err error) {
@@ -1947,9 +1947,9 @@ func (c *Client) GetIndexAutodesk(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexAvayaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAvaya `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryAvaya `json:"data"`
 }
 
 func (c *Client) GetIndexAvaya(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvayaResponse, err error) {
@@ -1985,9 +1985,9 @@ func (c *Client) GetIndexAvaya(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexAvevaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAVEVAAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryAVEVAAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexAveva(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvevaResponse, err error) {
@@ -2023,9 +2023,9 @@ func (c *Client) GetIndexAveva(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexAvigilonResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAvigilon `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryAvigilon `json:"data"`
 }
 
 func (c *Client) GetIndexAvigilon(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvigilonResponse, err error) {
@@ -2061,9 +2061,9 @@ func (c *Client) GetIndexAvigilon(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexAwsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAWS `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryAWS `json:"data"`
 }
 
 func (c *Client) GetIndexAws(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAwsResponse, err error) {
@@ -2099,9 +2099,9 @@ func (c *Client) GetIndexAws(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexAxisResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAxis `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryAxis `json:"data"`
 }
 
 func (c *Client) GetIndexAxis(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAxisResponse, err error) {
@@ -2137,9 +2137,9 @@ func (c *Client) GetIndexAxis(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexBandrResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBandr `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryBandr `json:"data"`
 }
 
 func (c *Client) GetIndexBandr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBandrResponse, err error) {
@@ -2175,9 +2175,9 @@ func (c *Client) GetIndexBandr(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexBaxterResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBaxterAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryBaxterAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBaxter(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBaxterResponse, err error) {
@@ -2213,9 +2213,9 @@ func (c *Client) GetIndexBaxter(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexBbraunResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBBraunAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryBBraunAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBbraun(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBbraunResponse, err error) {
@@ -2251,9 +2251,9 @@ func (c *Client) GetIndexBbraun(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexBdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBectonDickinsonAdvisory `json:"data"`
+	Benchmark float64                                  `json:"_benchmark"`
+	Meta      IndexMeta                                `json:"_meta"`
+	Data      []client.AdvisoryBectonDickinsonAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBdResponse, err error) {
@@ -2289,9 +2289,9 @@ func (c *Client) GetIndexBd(queryParameters ...IndexQueryParameters) (responseJS
 }
 
 type GetIndexBduResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBDUAdvisory `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryBDUAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBdu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBduResponse, err error) {
@@ -2327,9 +2327,9 @@ func (c *Client) GetIndexBdu(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexBeckhoffResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBeckhoffAdvisory `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisoryBeckhoffAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBeckhoff(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeckhoffResponse, err error) {
@@ -2365,9 +2365,9 @@ func (c *Client) GetIndexBeckhoff(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexBeldenResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBeldenAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryBeldenAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBelden(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeldenResponse, err error) {
@@ -2403,9 +2403,9 @@ func (c *Client) GetIndexBelden(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexBeyondTrustResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBeyondTrust `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryBeyondTrust `json:"data"`
 }
 
 func (c *Client) GetIndexBeyondTrust(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeyondTrustResponse, err error) {
@@ -2441,9 +2441,9 @@ func (c *Client) GetIndexBeyondTrust(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexBinarlyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBinarly `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryBinarly `json:"data"`
 }
 
 func (c *Client) GetIndexBinarly(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBinarlyResponse, err error) {
@@ -2479,9 +2479,9 @@ func (c *Client) GetIndexBinarly(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexBitdefenderResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBitDefender `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryBitDefender `json:"data"`
 }
 
 func (c *Client) GetIndexBitdefender(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBitdefenderResponse, err error) {
@@ -2517,9 +2517,9 @@ func (c *Client) GetIndexBitdefender(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexBlackberryResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBlackBerry `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryBlackBerry `json:"data"`
 }
 
 func (c *Client) GetIndexBlackberry(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBlackberryResponse, err error) {
@@ -2555,9 +2555,9 @@ func (c *Client) GetIndexBlackberry(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexBlsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBLS `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryBLS `json:"data"`
 }
 
 func (c *Client) GetIndexBls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBlsResponse, err error) {
@@ -2593,9 +2593,9 @@ func (c *Client) GetIndexBls(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexBoschResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBoschAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryBoschAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBosch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBoschResponse, err error) {
@@ -2631,9 +2631,9 @@ func (c *Client) GetIndexBosch(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexBostonScientificResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBostonScientificAdvisory `json:"data"`
+	Benchmark float64                                   `json:"_benchmark"`
+	Meta      IndexMeta                                 `json:"_meta"`
+	Data      []client.AdvisoryBostonScientificAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexBostonScientific(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBostonScientificResponse, err error) {
@@ -2669,9 +2669,9 @@ func (c *Client) GetIndexBostonScientific(queryParameters ...IndexQueryParameter
 }
 
 type GetIndexBotnetsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryBotnet `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryBotnet `json:"data"`
 }
 
 func (c *Client) GetIndexBotnets(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBotnetsResponse, err error) {
@@ -2707,9 +2707,9 @@ func (c *Client) GetIndexBotnets(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexCaCyberCentreResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCACyberCentreAdvisory `json:"data"`
+	Benchmark float64                                `json:"_benchmark"`
+	Meta      IndexMeta                              `json:"_meta"`
+	Data      []client.AdvisoryCACyberCentreAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCaCyberCentre(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCaCyberCentreResponse, err error) {
@@ -2745,9 +2745,9 @@ func (c *Client) GetIndexCaCyberCentre(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexCanvasResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCanvasExploit `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryCanvasExploit `json:"data"`
 }
 
 func (c *Client) GetIndexCanvas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCanvasResponse, err error) {
@@ -2783,9 +2783,9 @@ func (c *Client) GetIndexCanvas(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexCarestreamResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCarestreamAdvisory `json:"data"`
+	Benchmark float64                             `json:"_benchmark"`
+	Meta      IndexMeta                           `json:"_meta"`
+	Data      []client.AdvisoryCarestreamAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCarestream(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCarestreamResponse, err error) {
@@ -2821,9 +2821,9 @@ func (c *Client) GetIndexCarestream(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexCargoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexCargo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCargoResponse, err error) {
@@ -2859,9 +2859,9 @@ func (c *Client) GetIndexCargo(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexCarrierResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCarrier `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryCarrier `json:"data"`
 }
 
 func (c *Client) GetIndexCarrier(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCarrierResponse, err error) {
@@ -2897,9 +2897,9 @@ func (c *Client) GetIndexCarrier(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexCblMarinerResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCBLMariner `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryCBLMariner `json:"data"`
 }
 
 func (c *Client) GetIndexCblMariner(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCblMarinerResponse, err error) {
@@ -2935,9 +2935,9 @@ func (c *Client) GetIndexCblMariner(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexCentosResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCESA `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryCESA `json:"data"`
 }
 
 func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCentosResponse, err error) {
@@ -2973,9 +2973,9 @@ func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexCertBeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCertBE `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryCertBE `json:"data"`
 }
 
 func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertBeResponse, err error) {
@@ -3011,9 +3011,9 @@ func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexCertUaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCertUA `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryCertUA `json:"data"`
 }
 
 func (c *Client) GetIndexCertUa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertUaResponse, err error) {
@@ -3049,9 +3049,9 @@ func (c *Client) GetIndexCertUa(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexCerteuResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCERTEUAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryCERTEUAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCerteu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCerteuResponse, err error) {
@@ -3087,9 +3087,9 @@ func (c *Client) GetIndexCerteu(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexCertfrResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCertFRAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryCertFRAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCertfr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertfrResponse, err error) {
@@ -3125,9 +3125,9 @@ func (c *Client) GetIndexCertfr(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexChainguardResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryChainGuard `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryChainGuard `json:"data"`
 }
 
 func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexChainguardResponse, err error) {
@@ -3163,9 +3163,9 @@ func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexCheckpointResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCheckPoint `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryCheckPoint `json:"data"`
 }
 
 func (c *Client) GetIndexCheckpoint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCheckpointResponse, err error) {
@@ -3201,9 +3201,9 @@ func (c *Client) GetIndexCheckpoint(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexChromeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryChrome `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryChrome `json:"data"`
 }
 
 func (c *Client) GetIndexChrome(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexChromeResponse, err error) {
@@ -3239,9 +3239,9 @@ func (c *Client) GetIndexChrome(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexCisaAlertsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCISAAlert `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryCISAAlert `json:"data"`
 }
 
 func (c *Client) GetIndexCisaAlerts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCisaAlertsResponse, err error) {
@@ -3277,9 +3277,9 @@ func (c *Client) GetIndexCisaAlerts(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexCisaKevResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryKEVCatalogVulnerability `json:"data"`
+	Benchmark float64                                  `json:"_benchmark"`
+	Meta      IndexMeta                                `json:"_meta"`
+	Data      []client.AdvisoryKEVCatalogVulnerability `json:"data"`
 }
 
 func (c *Client) GetIndexCisaKev(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCisaKevResponse, err error) {
@@ -3315,9 +3315,9 @@ func (c *Client) GetIndexCisaKev(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexCiscoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCiscoAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryCiscoAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCisco(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCiscoResponse, err error) {
@@ -3353,9 +3353,9 @@ func (c *Client) GetIndexCisco(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexCiscoTalosResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTalosAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryTalosAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCiscoTalos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCiscoTalosResponse, err error) {
@@ -3391,9 +3391,9 @@ func (c *Client) GetIndexCiscoTalos(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexCitrixResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCitrixAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryCitrixAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCitrix(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCitrixResponse, err error) {
@@ -3429,9 +3429,9 @@ func (c *Client) GetIndexCitrix(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexClarotyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryClarotyVulnerability `json:"data"`
+	Benchmark float64                               `json:"_benchmark"`
+	Meta      IndexMeta                             `json:"_meta"`
+	Data      []client.AdvisoryClarotyVulnerability `json:"data"`
 }
 
 func (c *Client) GetIndexClaroty(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexClarotyResponse, err error) {
@@ -3467,9 +3467,9 @@ func (c *Client) GetIndexClaroty(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexCloudbeesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCloudBees `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryCloudBees `json:"data"`
 }
 
 func (c *Client) GetIndexCloudbees(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCloudbeesResponse, err error) {
@@ -3505,9 +3505,9 @@ func (c *Client) GetIndexCloudbees(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexCloudvulndbResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCloudVulnDBAdvisory `json:"data"`
+	Benchmark float64                              `json:"_benchmark"`
+	Meta      IndexMeta                            `json:"_meta"`
+	Data      []client.AdvisoryCloudVulnDBAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCloudvulndb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCloudvulndbResponse, err error) {
@@ -3543,9 +3543,9 @@ func (c *Client) GetIndexCloudvulndb(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexCnnvdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCNNVDEntryJSON `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryCNNVDEntryJSON `json:"data"`
 }
 
 func (c *Client) GetIndexCnnvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnnvdResponse, err error) {
@@ -3581,9 +3581,9 @@ func (c *Client) GetIndexCnnvd(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexCnvdBulletinsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCNVDBulletin `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryCNVDBulletin `json:"data"`
 }
 
 func (c *Client) GetIndexCnvdBulletins(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnvdBulletinsResponse, err error) {
@@ -3619,9 +3619,9 @@ func (c *Client) GetIndexCnvdBulletins(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexCnvdFlawsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCNVDFlaw `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryCNVDFlaw `json:"data"`
 }
 
 func (c *Client) GetIndexCnvdFlaws(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnvdFlawsResponse, err error) {
@@ -3657,9 +3657,9 @@ func (c *Client) GetIndexCnvdFlaws(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexCocoapodsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexCocoapods(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCocoapodsResponse, err error) {
@@ -3695,9 +3695,9 @@ func (c *Client) GetIndexCocoapods(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexCodesysResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCodesysAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryCodesysAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexCodesys(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCodesysResponse, err error) {
@@ -3733,9 +3733,9 @@ func (c *Client) GetIndexCodesys(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexCompassSecurityResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCompassSecurity `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryCompassSecurity `json:"data"`
 }
 
 func (c *Client) GetIndexCompassSecurity(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCompassSecurityResponse, err error) {
@@ -3771,9 +3771,9 @@ func (c *Client) GetIndexCompassSecurity(queryParameters ...IndexQueryParameters
 }
 
 type GetIndexComposerResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexComposer(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexComposerResponse, err error) {
@@ -3809,9 +3809,9 @@ func (c *Client) GetIndexComposer(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexConanResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexConan(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexConanResponse, err error) {
@@ -3847,9 +3847,9 @@ func (c *Client) GetIndexConan(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexCrestronResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCrestron `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryCrestron `json:"data"`
 }
 
 func (c *Client) GetIndexCrestron(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCrestronResponse, err error) {
@@ -3885,9 +3885,9 @@ func (c *Client) GetIndexCrestron(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexCurlResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCurl `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryCurl `json:"data"`
 }
 
 func (c *Client) GetIndexCurl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCurlResponse, err error) {
@@ -3923,9 +3923,9 @@ func (c *Client) GetIndexCurl(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexCweResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiCWE `json:"data"`
+	Benchmark float64         `json:"_benchmark"`
+	Meta      IndexMeta       `json:"_meta"`
+	Data      []client.ApiCWE `json:"data"`
 }
 
 func (c *Client) GetIndexCwe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCweResponse, err error) {
@@ -3961,9 +3961,9 @@ func (c *Client) GetIndexCwe(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexDahuaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDahua `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryDahua `json:"data"`
 }
 
 func (c *Client) GetIndexDahua(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDahuaResponse, err error) {
@@ -3999,9 +3999,9 @@ func (c *Client) GetIndexDahua(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexDassaultResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDassault `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryDassault `json:"data"`
 }
 
 func (c *Client) GetIndexDassault(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDassaultResponse, err error) {
@@ -4037,9 +4037,9 @@ func (c *Client) GetIndexDassault(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexDebianResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVulnerableDebianPackage `json:"data"`
+	Benchmark float64                                  `json:"_benchmark"`
+	Meta      IndexMeta                                `json:"_meta"`
+	Data      []client.AdvisoryVulnerableDebianPackage `json:"data"`
 }
 
 func (c *Client) GetIndexDebian(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDebianResponse, err error) {
@@ -4075,9 +4075,9 @@ func (c *Client) GetIndexDebian(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexDebianDsaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDebianSecurityAdvisory `json:"data"`
+	Benchmark float64                                 `json:"_benchmark"`
+	Meta      IndexMeta                               `json:"_meta"`
+	Data      []client.AdvisoryDebianSecurityAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDebianDsaResponse, err error) {
@@ -4113,9 +4113,9 @@ func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexDellResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDell `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryDell `json:"data"`
 }
 
 func (c *Client) GetIndexDell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDellResponse, err error) {
@@ -4151,9 +4151,9 @@ func (c *Client) GetIndexDell(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexDeltaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDeltaAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryDeltaAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexDelta(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDeltaResponse, err error) {
@@ -4189,9 +4189,9 @@ func (c *Client) GetIndexDelta(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexDotcmsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDotCMS `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryDotCMS `json:"data"`
 }
 
 func (c *Client) GetIndexDotcms(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDotcmsResponse, err error) {
@@ -4227,9 +4227,9 @@ func (c *Client) GetIndexDotcms(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexDragosResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDragosAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryDragosAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexDragos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDragosResponse, err error) {
@@ -4265,9 +4265,9 @@ func (c *Client) GetIndexDragos(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexDraytekResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryDraytek `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryDraytek `json:"data"`
 }
 
 func (c *Client) GetIndexDraytek(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDraytekResponse, err error) {
@@ -4303,9 +4303,9 @@ func (c *Client) GetIndexDraytek(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexEatonResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryEatonAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryEatonAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexEaton(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEatonResponse, err error) {
@@ -4341,9 +4341,9 @@ func (c *Client) GetIndexEaton(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexElasticResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryElastic `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryElastic `json:"data"`
 }
 
 func (c *Client) GetIndexElastic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexElasticResponse, err error) {
@@ -4379,9 +4379,9 @@ func (c *Client) GetIndexElastic(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexEmersonResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryEmersonAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryEmersonAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexEmerson(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEmersonResponse, err error) {
@@ -4417,9 +4417,9 @@ func (c *Client) GetIndexEmerson(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexEolResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryEOLReleaseData `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryEOLReleaseData `json:"data"`
 }
 
 func (c *Client) GetIndexEol(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEolResponse, err error) {
@@ -4455,9 +4455,9 @@ func (c *Client) GetIndexEol(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexEpssResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiEPSSData `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.ApiEPSSData `json:"data"`
 }
 
 func (c *Client) GetIndexEpss(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEpssResponse, err error) {
@@ -4493,9 +4493,9 @@ func (c *Client) GetIndexEpss(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexExodusIntelResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryExodusIntel `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryExodusIntel `json:"data"`
 }
 
 func (c *Client) GetIndexExodusIntel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExodusIntelResponse, err error) {
@@ -4531,9 +4531,9 @@ func (c *Client) GetIndexExodusIntel(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexExploitChainsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiExploitChain `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.ApiExploitChain `json:"data"`
 }
 
 func (c *Client) GetIndexExploitChains(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExploitChainsResponse, err error) {
@@ -4569,9 +4569,9 @@ func (c *Client) GetIndexExploitChains(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexExploitsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiExploitV3Result `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.ApiExploitV3Result `json:"data"`
 }
 
 func (c *Client) GetIndexExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExploitsResponse, err error) {
@@ -4607,9 +4607,9 @@ func (c *Client) GetIndexExploits(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexFSecureResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryFSecure `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryFSecure `json:"data"`
 }
 
 func (c *Client) GetIndexFSecure(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFSecureResponse, err error) {
@@ -4645,9 +4645,9 @@ func (c *Client) GetIndexFSecure(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexFastlyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryFastly `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryFastly `json:"data"`
 }
 
 func (c *Client) GetIndexFastly(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFastlyResponse, err error) {
@@ -4683,9 +4683,9 @@ func (c *Client) GetIndexFastly(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexFedoraResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUpdate `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryUpdate `json:"data"`
 }
 
 func (c *Client) GetIndexFedora(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFedoraResponse, err error) {
@@ -4721,9 +4721,9 @@ func (c *Client) GetIndexFedora(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexFilecloudResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryFileCloud `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryFileCloud `json:"data"`
 }
 
 func (c *Client) GetIndexFilecloud(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFilecloudResponse, err error) {
@@ -4759,9 +4759,9 @@ func (c *Client) GetIndexFilecloud(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexForgerockResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryForgeRock `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryForgeRock `json:"data"`
 }
 
 func (c *Client) GetIndexForgerock(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexForgerockResponse, err error) {
@@ -4797,9 +4797,9 @@ func (c *Client) GetIndexForgerock(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexFortinetResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryFortinetAdvisory `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisoryFortinetAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexFortinet(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFortinetResponse, err error) {
@@ -4835,9 +4835,9 @@ func (c *Client) GetIndexFortinet(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexFreebsdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryAdvisory `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexFreebsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFreebsdResponse, err error) {
@@ -4873,9 +4873,9 @@ func (c *Client) GetIndexFreebsd(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexGallagherResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGallagher `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryGallagher `json:"data"`
 }
 
 func (c *Client) GetIndexGallagher(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGallagherResponse, err error) {
@@ -4911,9 +4911,9 @@ func (c *Client) GetIndexGallagher(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexGcpResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGCP `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryGCP `json:"data"`
 }
 
 func (c *Client) GetIndexGcp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGcpResponse, err error) {
@@ -4949,9 +4949,9 @@ func (c *Client) GetIndexGcp(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexGeGasResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGEGas `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryGEGas `json:"data"`
 }
 
 func (c *Client) GetIndexGeGas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGeGasResponse, err error) {
@@ -4987,9 +4987,9 @@ func (c *Client) GetIndexGeGas(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexGeHealthcareResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGEHealthcareAdvisory `json:"data"`
+	Benchmark float64                               `json:"_benchmark"`
+	Meta      IndexMeta                             `json:"_meta"`
+	Data      []client.AdvisoryGEHealthcareAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexGeHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGeHealthcareResponse, err error) {
@@ -5025,9 +5025,9 @@ func (c *Client) GetIndexGeHealthcare(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexGemResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexGem(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGemResponse, err error) {
@@ -5063,9 +5063,9 @@ func (c *Client) GetIndexGem(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexGenetecResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGenetec `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryGenetec `json:"data"`
 }
 
 func (c *Client) GetIndexGenetec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGenetecResponse, err error) {
@@ -5101,9 +5101,9 @@ func (c *Client) GetIndexGenetec(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexGigabyteResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGigabyte `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryGigabyte `json:"data"`
 }
 
 func (c *Client) GetIndexGigabyte(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGigabyteResponse, err error) {
@@ -5139,9 +5139,9 @@ func (c *Client) GetIndexGigabyte(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexGiteeExploitsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGiteeExploit `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryGiteeExploit `json:"data"`
 }
 
 func (c *Client) GetIndexGiteeExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGiteeExploitsResponse, err error) {
@@ -5177,9 +5177,9 @@ func (c *Client) GetIndexGiteeExploits(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexGithubExploitsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGitHubExploit `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryGitHubExploit `json:"data"`
 }
 
 func (c *Client) GetIndexGithubExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGithubExploitsResponse, err error) {
@@ -5215,9 +5215,9 @@ func (c *Client) GetIndexGithubExploits(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexGitlabAdvisoriesCommunityResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGitlabAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryGitlabAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexGitlabAdvisoriesCommunity(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGitlabAdvisoriesCommunityResponse, err error) {
@@ -5253,9 +5253,9 @@ func (c *Client) GetIndexGitlabAdvisoriesCommunity(queryParameters ...IndexQuery
 }
 
 type GetIndexGitlabExploitsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGitLabExploit `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryGitLabExploit `json:"data"`
 }
 
 func (c *Client) GetIndexGitlabExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGitlabExploitsResponse, err error) {
@@ -5291,9 +5291,9 @@ func (c *Client) GetIndexGitlabExploits(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexGnutlsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGnuTLS `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryGnuTLS `json:"data"`
 }
 
 func (c *Client) GetIndexGnutls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGnutlsResponse, err error) {
@@ -5329,9 +5329,9 @@ func (c *Client) GetIndexGnutls(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexGolangResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexGolang(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGolangResponse, err error) {
@@ -5367,9 +5367,9 @@ func (c *Client) GetIndexGolang(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexGoogle0dayItwResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryITWExploit `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryITWExploit `json:"data"`
 }
 
 func (c *Client) GetIndexGoogle0dayItw(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGoogle0dayItwResponse, err error) {
@@ -5405,9 +5405,9 @@ func (c *Client) GetIndexGoogle0dayItw(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexGrafanaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGrafana `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryGrafana `json:"data"`
 }
 
 func (c *Client) GetIndexGrafana(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGrafanaResponse, err error) {
@@ -5443,9 +5443,9 @@ func (c *Client) GetIndexGrafana(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexGreynoiseMetadataResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryGreyNoiseDetection `json:"data"`
+	Benchmark float64                             `json:"_benchmark"`
+	Meta      IndexMeta                           `json:"_meta"`
+	Data      []client.AdvisoryGreyNoiseDetection `json:"data"`
 }
 
 func (c *Client) GetIndexGreynoiseMetadata(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGreynoiseMetadataResponse, err error) {
@@ -5481,9 +5481,9 @@ func (c *Client) GetIndexGreynoiseMetadata(queryParameters ...IndexQueryParamete
 }
 
 type GetIndexHackageResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexHackage(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHackageResponse, err error) {
@@ -5519,9 +5519,9 @@ func (c *Client) GetIndexHackage(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexHarmonyosResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHarmonyOS `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryHarmonyOS `json:"data"`
 }
 
 func (c *Client) GetIndexHarmonyos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHarmonyosResponse, err error) {
@@ -5557,9 +5557,9 @@ func (c *Client) GetIndexHarmonyos(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexHashicorpResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHashiCorp `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryHashiCorp `json:"data"`
 }
 
 func (c *Client) GetIndexHashicorp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHashicorpResponse, err error) {
@@ -5595,9 +5595,9 @@ func (c *Client) GetIndexHashicorp(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexHaskellSadbResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHaskellSADBAdvisory `json:"data"`
+	Benchmark float64                              `json:"_benchmark"`
+	Meta      IndexMeta                            `json:"_meta"`
+	Data      []client.AdvisoryHaskellSADBAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexHaskellSadb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHaskellSadbResponse, err error) {
@@ -5633,9 +5633,9 @@ func (c *Client) GetIndexHaskellSadb(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexHclResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHCL `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryHCL `json:"data"`
 }
 
 func (c *Client) GetIndexHcl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHclResponse, err error) {
@@ -5671,9 +5671,9 @@ func (c *Client) GetIndexHcl(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexHexResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexHex(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHexResponse, err error) {
@@ -5709,9 +5709,9 @@ func (c *Client) GetIndexHex(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexHikvisionResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHIKVision `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryHIKVision `json:"data"`
 }
 
 func (c *Client) GetIndexHikvision(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHikvisionResponse, err error) {
@@ -5747,9 +5747,9 @@ func (c *Client) GetIndexHikvision(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexHillromResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHillromAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryHillromAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexHillrom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHillromResponse, err error) {
@@ -5785,9 +5785,9 @@ func (c *Client) GetIndexHillrom(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexHitachiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHitachi `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryHitachi `json:"data"`
 }
 
 func (c *Client) GetIndexHitachi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHitachiResponse, err error) {
@@ -5823,9 +5823,9 @@ func (c *Client) GetIndexHitachi(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexHitachiEnergyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHitachiEnergy `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryHitachiEnergy `json:"data"`
 }
 
 func (c *Client) GetIndexHitachiEnergy(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHitachiEnergyResponse, err error) {
@@ -5861,9 +5861,9 @@ func (c *Client) GetIndexHitachiEnergy(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexHkcertResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHKCert `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryHKCert `json:"data"`
 }
 
 func (c *Client) GetIndexHkcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHkcertResponse, err error) {
@@ -5899,9 +5899,9 @@ func (c *Client) GetIndexHkcert(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexHoneywellResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHoneywell `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryHoneywell `json:"data"`
 }
 
 func (c *Client) GetIndexHoneywell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHoneywellResponse, err error) {
@@ -5937,9 +5937,9 @@ func (c *Client) GetIndexHoneywell(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexHpResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHP `json:"data"`
+	Benchmark float64             `json:"_benchmark"`
+	Meta      IndexMeta           `json:"_meta"`
+	Data      []client.AdvisoryHP `json:"data"`
 }
 
 func (c *Client) GetIndexHp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHpResponse, err error) {
@@ -5975,9 +5975,9 @@ func (c *Client) GetIndexHp(queryParameters ...IndexQueryParameters) (responseJS
 }
 
 type GetIndexHuaweiEulerosResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHuaweiEulerOS `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryHuaweiEulerOS `json:"data"`
 }
 
 func (c *Client) GetIndexHuaweiEuleros(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiEulerosResponse, err error) {
@@ -6013,9 +6013,9 @@ func (c *Client) GetIndexHuaweiEuleros(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexHuaweiIpsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHuaweiIPS `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryHuaweiIPS `json:"data"`
 }
 
 func (c *Client) GetIndexHuaweiIps(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiIpsResponse, err error) {
@@ -6051,9 +6051,9 @@ func (c *Client) GetIndexHuaweiIps(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexHuaweiPsirtResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryHuawei `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryHuawei `json:"data"`
 }
 
 func (c *Client) GetIndexHuaweiPsirt(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiPsirtResponse, err error) {
@@ -6089,9 +6089,9 @@ func (c *Client) GetIndexHuaweiPsirt(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexIavaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIAVA `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryIAVA `json:"data"`
 }
 
 func (c *Client) GetIndexIava(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIavaResponse, err error) {
@@ -6127,9 +6127,9 @@ func (c *Client) GetIndexIava(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexIbmResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIBM `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryIBM `json:"data"`
 }
 
 func (c *Client) GetIndexIbm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIbmResponse, err error) {
@@ -6165,9 +6165,9 @@ func (c *Client) GetIndexIbm(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexIdemiaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIdemia `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryIdemia `json:"data"`
 }
 
 func (c *Client) GetIndexIdemia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIdemiaResponse, err error) {
@@ -6203,9 +6203,9 @@ func (c *Client) GetIndexIdemia(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexIlAlertsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIsraeliAlert `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryIsraeliAlert `json:"data"`
 }
 
 func (c *Client) GetIndexIlAlerts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIlAlertsResponse, err error) {
@@ -6241,9 +6241,9 @@ func (c *Client) GetIndexIlAlerts(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexIlVulnerabilitiesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIsraeliVulnerability `json:"data"`
+	Benchmark float64                               `json:"_benchmark"`
+	Meta      IndexMeta                             `json:"_meta"`
+	Data      []client.AdvisoryIsraeliVulnerability `json:"data"`
 }
 
 func (c *Client) GetIndexIlVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIlVulnerabilitiesResponse, err error) {
@@ -6279,9 +6279,9 @@ func (c *Client) GetIndexIlVulnerabilities(queryParameters ...IndexQueryParamete
 }
 
 type GetIndexIncibeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIncibeAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryIncibeAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexIncibe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIncibeResponse, err error) {
@@ -6317,9 +6317,9 @@ func (c *Client) GetIndexIncibe(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexInitialAccessResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiInitialAccess `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.ApiInitialAccess `json:"data"`
 }
 
 func (c *Client) GetIndexInitialAccess(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexInitialAccessResponse, err error) {
@@ -6355,9 +6355,9 @@ func (c *Client) GetIndexInitialAccess(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexInitialAccessGitResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiInitialAccess `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.ApiInitialAccess `json:"data"`
 }
 
 func (c *Client) GetIndexInitialAccessGit(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexInitialAccessGitResponse, err error) {
@@ -6393,9 +6393,9 @@ func (c *Client) GetIndexInitialAccessGit(queryParameters ...IndexQueryParameter
 }
 
 type GetIndexIntelResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIntel `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryIntel `json:"data"`
 }
 
 func (c *Client) GetIndexIntel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIntelResponse, err error) {
@@ -6431,9 +6431,9 @@ func (c *Client) GetIndexIntel(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexIpintel10dResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIpIntelRecord `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
 func (c *Client) GetIndexIpintel10d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel10dResponse, err error) {
@@ -6469,9 +6469,9 @@ func (c *Client) GetIndexIpintel10d(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexIpintel30dResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIpIntelRecord `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
 func (c *Client) GetIndexIpintel30d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel30dResponse, err error) {
@@ -6507,9 +6507,9 @@ func (c *Client) GetIndexIpintel30d(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexIpintel3dResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIpIntelRecord `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
 func (c *Client) GetIndexIpintel3d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel3dResponse, err error) {
@@ -6545,9 +6545,9 @@ func (c *Client) GetIndexIpintel3d(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexIpintel90dResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIpIntelRecord `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
 func (c *Client) GetIndexIpintel90d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel90dResponse, err error) {
@@ -6583,9 +6583,9 @@ func (c *Client) GetIndexIpintel90d(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexIstioResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIstio `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryIstio `json:"data"`
 }
 
 func (c *Client) GetIndexIstio(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIstioResponse, err error) {
@@ -6621,9 +6621,9 @@ func (c *Client) GetIndexIstio(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexIvantiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryIvanti `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryIvanti `json:"data"`
 }
 
 func (c *Client) GetIndexIvanti(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIvantiResponse, err error) {
@@ -6659,9 +6659,9 @@ func (c *Client) GetIndexIvanti(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexJenkinsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryJenkins `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryJenkins `json:"data"`
 }
 
 func (c *Client) GetIndexJenkins(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJenkinsResponse, err error) {
@@ -6697,9 +6697,9 @@ func (c *Client) GetIndexJenkins(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexJetbrainsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryJetBrains `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryJetBrains `json:"data"`
 }
 
 func (c *Client) GetIndexJetbrains(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJetbrainsResponse, err error) {
@@ -6735,9 +6735,9 @@ func (c *Client) GetIndexJetbrains(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexJfrogResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryJFrog `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryJFrog `json:"data"`
 }
 
 func (c *Client) GetIndexJfrog(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJfrogResponse, err error) {
@@ -6773,9 +6773,9 @@ func (c *Client) GetIndexJfrog(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexJnjResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryJNJAdvisory `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryJNJAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexJnj(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJnjResponse, err error) {
@@ -6811,9 +6811,9 @@ func (c *Client) GetIndexJnj(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexKasperskyIcsCertResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryKasperskyICSCERTAdvisory `json:"data"`
+	Benchmark float64                                   `json:"_benchmark"`
+	Meta      IndexMeta                                 `json:"_meta"`
+	Data      []client.AdvisoryKasperskyICSCERTAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexKasperskyIcsCert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKasperskyIcsCertResponse, err error) {
@@ -6849,9 +6849,9 @@ func (c *Client) GetIndexKasperskyIcsCert(queryParameters ...IndexQueryParameter
 }
 
 type GetIndexKrcertSecurityNoticesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryKRCertAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryKRCertAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexKrcertSecurityNotices(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKrcertSecurityNoticesResponse, err error) {
@@ -6887,9 +6887,9 @@ func (c *Client) GetIndexKrcertSecurityNotices(queryParameters ...IndexQueryPara
 }
 
 type GetIndexKrcertVulnerabilitiesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryKRCertAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryKRCertAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexKrcertVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKrcertVulnerabilitiesResponse, err error) {
@@ -6925,9 +6925,9 @@ func (c *Client) GetIndexKrcertVulnerabilities(queryParameters ...IndexQueryPara
 }
 
 type GetIndexKubernetesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryK8S `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryK8S `json:"data"`
 }
 
 func (c *Client) GetIndexKubernetes(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKubernetesResponse, err error) {
@@ -6963,9 +6963,9 @@ func (c *Client) GetIndexKubernetes(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexLenovoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryLenovo `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryLenovo `json:"data"`
 }
 
 func (c *Client) GetIndexLenovo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLenovoResponse, err error) {
@@ -7001,9 +7001,9 @@ func (c *Client) GetIndexLenovo(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexLexmarkResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryLexmarkAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryLexmarkAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexLexmark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLexmarkResponse, err error) {
@@ -7039,9 +7039,9 @@ func (c *Client) GetIndexLexmark(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexLgResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryLG `json:"data"`
+	Benchmark float64             `json:"_benchmark"`
+	Meta      IndexMeta           `json:"_meta"`
+	Data      []client.AdvisoryLG `json:"data"`
 }
 
 func (c *Client) GetIndexLg(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLgResponse, err error) {
@@ -7077,9 +7077,9 @@ func (c *Client) GetIndexLg(queryParameters ...IndexQueryParameters) (responseJS
 }
 
 type GetIndexLibreOfficeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryLibreOffice `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryLibreOffice `json:"data"`
 }
 
 func (c *Client) GetIndexLibreOffice(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLibreOfficeResponse, err error) {
@@ -7115,9 +7115,9 @@ func (c *Client) GetIndexLibreOffice(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexMFilesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMFiles `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryMFiles `json:"data"`
 }
 
 func (c *Client) GetIndexMFiles(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMFilesResponse, err error) {
@@ -7153,9 +7153,9 @@ func (c *Client) GetIndexMFiles(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexMacertResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMACert `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryMACert `json:"data"`
 }
 
 func (c *Client) GetIndexMacert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMacertResponse, err error) {
@@ -7191,9 +7191,9 @@ func (c *Client) GetIndexMacert(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexManageengineResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryManageEngineAdvisory `json:"data"`
+	Benchmark float64                               `json:"_benchmark"`
+	Meta      IndexMeta                             `json:"_meta"`
+	Data      []client.AdvisoryManageEngineAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexManageengine(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexManageengineResponse, err error) {
@@ -7229,9 +7229,9 @@ func (c *Client) GetIndexManageengine(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexMavenResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexMaven(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMavenResponse, err error) {
@@ -7267,9 +7267,9 @@ func (c *Client) GetIndexMaven(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexMbedTlsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMbedTLS `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryMbedTLS `json:"data"`
 }
 
 func (c *Client) GetIndexMbedTls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMbedTlsResponse, err error) {
@@ -7305,9 +7305,9 @@ func (c *Client) GetIndexMbedTls(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexMediatekResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMediatek `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryMediatek `json:"data"`
 }
 
 func (c *Client) GetIndexMediatek(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMediatekResponse, err error) {
@@ -7343,9 +7343,9 @@ func (c *Client) GetIndexMediatek(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexMedtronicResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMedtronicAdvisory `json:"data"`
+	Benchmark float64                            `json:"_benchmark"`
+	Meta      IndexMeta                          `json:"_meta"`
+	Data      []client.AdvisoryMedtronicAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexMedtronic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMedtronicResponse, err error) {
@@ -7381,9 +7381,9 @@ func (c *Client) GetIndexMedtronic(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexMendixResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMendix `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryMendix `json:"data"`
 }
 
 func (c *Client) GetIndexMendix(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMendixResponse, err error) {
@@ -7419,9 +7419,9 @@ func (c *Client) GetIndexMendix(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexMetasploitResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMetasploitExploit `json:"data"`
+	Benchmark float64                            `json:"_benchmark"`
+	Meta      IndexMeta                          `json:"_meta"`
+	Data      []client.AdvisoryMetasploitExploit `json:"data"`
 }
 
 func (c *Client) GetIndexMetasploit(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMetasploitResponse, err error) {
@@ -7457,9 +7457,9 @@ func (c *Client) GetIndexMetasploit(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexMicrosoftCvrfResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMicrosoftCVRF `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryMicrosoftCVRF `json:"data"`
 }
 
 func (c *Client) GetIndexMicrosoftCvrf(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMicrosoftCvrfResponse, err error) {
@@ -7495,9 +7495,9 @@ func (c *Client) GetIndexMicrosoftCvrf(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexMikrotikResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMikrotik `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryMikrotik `json:"data"`
 }
 
 func (c *Client) GetIndexMikrotik(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMikrotikResponse, err error) {
@@ -7533,9 +7533,9 @@ func (c *Client) GetIndexMikrotik(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexMindrayResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMindray `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryMindray `json:"data"`
 }
 
 func (c *Client) GetIndexMindray(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMindrayResponse, err error) {
@@ -7571,9 +7571,9 @@ func (c *Client) GetIndexMindray(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexMispThreatActorsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMispValue `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryMispValue `json:"data"`
 }
 
 func (c *Client) GetIndexMispThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMispThreatActorsResponse, err error) {
@@ -7609,9 +7609,9 @@ func (c *Client) GetIndexMispThreatActors(queryParameters ...IndexQueryParameter
 }
 
 type GetIndexMitelResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMitel `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryMitel `json:"data"`
 }
 
 func (c *Client) GetIndexMitel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitelResponse, err error) {
@@ -7647,9 +7647,9 @@ func (c *Client) GetIndexMitel(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexMitreAttackCveResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiMitreAttackToCVE `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.ApiMitreAttackToCVE `json:"data"`
 }
 
 func (c *Client) GetIndexMitreAttackCve(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitreAttackCveResponse, err error) {
@@ -7685,9 +7685,9 @@ func (c *Client) GetIndexMitreAttackCve(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexMitsubishiElectricResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMitsubishiElectricAdvisory `json:"data"`
+	Benchmark float64                                     `json:"_benchmark"`
+	Meta      IndexMeta                                   `json:"_meta"`
+	Data      []client.AdvisoryMitsubishiElectricAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexMitsubishiElectric(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitsubishiElectricResponse, err error) {
@@ -7723,9 +7723,9 @@ func (c *Client) GetIndexMitsubishiElectric(queryParameters ...IndexQueryParamet
 }
 
 type GetIndexMongodbResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMongoDB `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryMongoDB `json:"data"`
 }
 
 func (c *Client) GetIndexMongodb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMongodbResponse, err error) {
@@ -7761,9 +7761,9 @@ func (c *Client) GetIndexMongodb(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexMoxaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMoxaAdvisory `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryMoxaAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexMoxa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMoxaResponse, err error) {
@@ -7799,9 +7799,9 @@ func (c *Client) GetIndexMoxa(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexMozillaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMozillaAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryMozillaAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexMozilla(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMozillaResponse, err error) {
@@ -7837,9 +7837,9 @@ func (c *Client) GetIndexMozilla(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexNaverResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNaver `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryNaver `json:"data"`
 }
 
 func (c *Client) GetIndexNaver(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNaverResponse, err error) {
@@ -7875,9 +7875,9 @@ func (c *Client) GetIndexNaver(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexNecResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNEC `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryNEC `json:"data"`
 }
 
 func (c *Client) GetIndexNec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNecResponse, err error) {
@@ -7913,9 +7913,9 @@ func (c *Client) GetIndexNec(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexNetappResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNetApp `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryNetApp `json:"data"`
 }
 
 func (c *Client) GetIndexNetapp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetappResponse, err error) {
@@ -7951,9 +7951,9 @@ func (c *Client) GetIndexNetapp(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexNetgateResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNetgate `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryNetgate `json:"data"`
 }
 
 func (c *Client) GetIndexNetgate(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetgateResponse, err error) {
@@ -7989,9 +7989,9 @@ func (c *Client) GetIndexNetgate(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexNetgearResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNetgear `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryNetgear `json:"data"`
 }
 
 func (c *Client) GetIndexNetgear(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetgearResponse, err error) {
@@ -8027,9 +8027,9 @@ func (c *Client) GetIndexNetgear(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexNetskopeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNetskope `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryNetskope `json:"data"`
 }
 
 func (c *Client) GetIndexNetskope(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetskopeResponse, err error) {
@@ -8065,9 +8065,9 @@ func (c *Client) GetIndexNetskope(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexNginxResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNginxAdvisory `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryNginxAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexNginx(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNginxResponse, err error) {
@@ -8103,9 +8103,9 @@ func (c *Client) GetIndexNginx(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexNhsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNHS `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryNHS `json:"data"`
 }
 
 func (c *Client) GetIndexNhs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNhsResponse, err error) {
@@ -8141,9 +8141,9 @@ func (c *Client) GetIndexNhs(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexNiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNI `json:"data"`
+	Benchmark float64             `json:"_benchmark"`
+	Meta      IndexMeta           `json:"_meta"`
+	Data      []client.AdvisoryNI `json:"data"`
 }
 
 func (c *Client) GetIndexNi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNiResponse, err error) {
@@ -8179,9 +8179,9 @@ func (c *Client) GetIndexNi(queryParameters ...IndexQueryParameters) (responseJS
 }
 
 type GetIndexNistNvdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiCveItems `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.ApiCveItems `json:"data"`
 }
 
 func (c *Client) GetIndexNistNvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNistNvdResponse, err error) {
@@ -8217,9 +8217,9 @@ func (c *Client) GetIndexNistNvd(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexNistNvd2CpematchResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiNVD20CPEMatch `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.ApiNVD20CPEMatch `json:"data"`
 }
 
 func (c *Client) GetIndexNistNvd2Cpematch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNistNvd2CpematchResponse, err error) {
@@ -8255,9 +8255,9 @@ func (c *Client) GetIndexNistNvd2Cpematch(queryParameters ...IndexQueryParameter
 }
 
 type GetIndexNodejsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNodeJS `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryNodeJS `json:"data"`
 }
 
 func (c *Client) GetIndexNodejs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNodejsResponse, err error) {
@@ -8293,9 +8293,9 @@ func (c *Client) GetIndexNodejs(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexNokiaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNokia `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryNokia `json:"data"`
 }
 
 func (c *Client) GetIndexNokia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNokiaResponse, err error) {
@@ -8331,9 +8331,9 @@ func (c *Client) GetIndexNokia(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexNozomiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNozomi `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryNozomi `json:"data"`
 }
 
 func (c *Client) GetIndexNozomi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNozomiResponse, err error) {
@@ -8369,9 +8369,9 @@ func (c *Client) GetIndexNozomi(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexNpmResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexNpm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNpmResponse, err error) {
@@ -8407,9 +8407,9 @@ func (c *Client) GetIndexNpm(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexNugetResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexNuget(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNugetResponse, err error) {
@@ -8445,9 +8445,9 @@ func (c *Client) GetIndexNuget(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexNvidiaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySecurityBulletin `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisorySecurityBulletin `json:"data"`
 }
 
 func (c *Client) GetIndexNvidia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNvidiaResponse, err error) {
@@ -8483,9 +8483,9 @@ func (c *Client) GetIndexNvidia(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexNzAdvisoriesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryNZAdvisory `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryNZAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexNzAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNzAdvisoriesResponse, err error) {
@@ -8521,9 +8521,9 @@ func (c *Client) GetIndexNzAdvisories(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexOctopusDeployResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOctopusDeploy `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryOctopusDeploy `json:"data"`
 }
 
 func (c *Client) GetIndexOctopusDeploy(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOctopusDeployResponse, err error) {
@@ -8559,9 +8559,9 @@ func (c *Client) GetIndexOctopusDeploy(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexOktaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOkta `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryOkta `json:"data"`
 }
 
 func (c *Client) GetIndexOkta(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOktaResponse, err error) {
@@ -8597,9 +8597,9 @@ func (c *Client) GetIndexOkta(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexOmronResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOmron `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryOmron `json:"data"`
 }
 
 func (c *Client) GetIndexOmron(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOmronResponse, err error) {
@@ -8635,9 +8635,9 @@ func (c *Client) GetIndexOmron(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexOneEResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOneE `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryOneE `json:"data"`
 }
 
 func (c *Client) GetIndexOneE(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOneEResponse, err error) {
@@ -8673,9 +8673,9 @@ func (c *Client) GetIndexOneE(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexOpamResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexOpam(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpamResponse, err error) {
@@ -8711,9 +8711,9 @@ func (c *Client) GetIndexOpam(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexOpenCvdbResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOpenCVDB `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryOpenCVDB `json:"data"`
 }
 
 func (c *Client) GetIndexOpenCvdb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenCvdbResponse, err error) {
@@ -8749,9 +8749,9 @@ func (c *Client) GetIndexOpenCvdb(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexOpenbsdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOpenBSD `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryOpenBSD `json:"data"`
 }
 
 func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenbsdResponse, err error) {
@@ -8787,9 +8787,9 @@ func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexOpensshResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOpenSSH `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryOpenSSH `json:"data"`
 }
 
 func (c *Client) GetIndexOpenssh(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpensshResponse, err error) {
@@ -8825,9 +8825,9 @@ func (c *Client) GetIndexOpenssh(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexOpensslSecadvResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOpenSSLSecAdv `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryOpenSSLSecAdv `json:"data"`
 }
 
 func (c *Client) GetIndexOpensslSecadv(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpensslSecadvResponse, err error) {
@@ -8863,9 +8863,9 @@ func (c *Client) GetIndexOpensslSecadv(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexOpenstackResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOpenStack `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryOpenStack `json:"data"`
 }
 
 func (c *Client) GetIndexOpenstack(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenstackResponse, err error) {
@@ -8901,9 +8901,9 @@ func (c *Client) GetIndexOpenstack(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexOpenwrtResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWRT `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryWRT `json:"data"`
 }
 
 func (c *Client) GetIndexOpenwrt(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenwrtResponse, err error) {
@@ -8939,9 +8939,9 @@ func (c *Client) GetIndexOpenwrt(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexOracleResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryMetaData `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryMetaData `json:"data"`
 }
 
 func (c *Client) GetIndexOracle(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleResponse, err error) {
@@ -8977,9 +8977,9 @@ func (c *Client) GetIndexOracle(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexOracleCpuResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOracleCPU `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryOracleCPU `json:"data"`
 }
 
 func (c *Client) GetIndexOracleCpu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleCpuResponse, err error) {
@@ -9015,9 +9015,9 @@ func (c *Client) GetIndexOracleCpu(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexOracleCpuCsafResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOracleCPUCSAF `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryOracleCPUCSAF `json:"data"`
 }
 
 func (c *Client) GetIndexOracleCpuCsaf(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleCpuCsafResponse, err error) {
@@ -9053,9 +9053,9 @@ func (c *Client) GetIndexOracleCpuCsaf(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexOsvResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOSV `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryOSV `json:"data"`
 }
 
 func (c *Client) GetIndexOsv(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOsvResponse, err error) {
@@ -9091,9 +9091,9 @@ func (c *Client) GetIndexOsv(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexOtrsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOTRS `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryOTRS `json:"data"`
 }
 
 func (c *Client) GetIndexOtrs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOtrsResponse, err error) {
@@ -9129,9 +9129,9 @@ func (c *Client) GetIndexOtrs(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexOwncloudResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryOwnCloud `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryOwnCloud `json:"data"`
 }
 
 func (c *Client) GetIndexOwncloud(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOwncloudResponse, err error) {
@@ -9167,9 +9167,9 @@ func (c *Client) GetIndexOwncloud(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexPalantirResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPalantir `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryPalantir `json:"data"`
 }
 
 func (c *Client) GetIndexPalantir(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPalantirResponse, err error) {
@@ -9205,9 +9205,9 @@ func (c *Client) GetIndexPalantir(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexPaloAltoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPaloAltoAdvisory `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisoryPaloAltoAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexPaloAlto(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPaloAltoResponse, err error) {
@@ -9243,9 +9243,9 @@ func (c *Client) GetIndexPaloAlto(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexPanasonicResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPanasonic `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryPanasonic `json:"data"`
 }
 
 func (c *Client) GetIndexPanasonic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPanasonicResponse, err error) {
@@ -9281,9 +9281,9 @@ func (c *Client) GetIndexPanasonic(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexPapercutResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPaperCut `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryPaperCut `json:"data"`
 }
 
 func (c *Client) GetIndexPapercut(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPapercutResponse, err error) {
@@ -9319,9 +9319,9 @@ func (c *Client) GetIndexPapercut(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexPegaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPega `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryPega `json:"data"`
 }
 
 func (c *Client) GetIndexPega(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPegaResponse, err error) {
@@ -9357,9 +9357,9 @@ func (c *Client) GetIndexPega(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexPhilipsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPhilipsAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryPhilipsAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexPhilips(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPhilipsResponse, err error) {
@@ -9395,9 +9395,9 @@ func (c *Client) GetIndexPhilips(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexPhoenixContactResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPhoenixContactAdvisory `json:"data"`
+	Benchmark float64                                 `json:"_benchmark"`
+	Meta      IndexMeta                               `json:"_meta"`
+	Data      []client.AdvisoryPhoenixContactAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexPhoenixContact(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPhoenixContactResponse, err error) {
@@ -9433,9 +9433,9 @@ func (c *Client) GetIndexPhoenixContact(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexPostgressqlResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPostgresSQL `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryPostgresSQL `json:"data"`
 }
 
 func (c *Client) GetIndexPostgressql(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPostgressqlResponse, err error) {
@@ -9471,9 +9471,9 @@ func (c *Client) GetIndexPostgressql(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexProgressResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryProgress `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryProgress `json:"data"`
 }
 
 func (c *Client) GetIndexProgress(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexProgressResponse, err error) {
@@ -9509,9 +9509,9 @@ func (c *Client) GetIndexProgress(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexProofpointResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryProofpoint `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryProofpoint `json:"data"`
 }
 
 func (c *Client) GetIndexProofpoint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexProofpointResponse, err error) {
@@ -9547,9 +9547,9 @@ func (c *Client) GetIndexProofpoint(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexPubResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexPub(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPubResponse, err error) {
@@ -9585,9 +9585,9 @@ func (c *Client) GetIndexPub(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexPureStorageResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPureStorage `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryPureStorage `json:"data"`
 }
 
 func (c *Client) GetIndexPureStorage(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPureStorageResponse, err error) {
@@ -9623,9 +9623,9 @@ func (c *Client) GetIndexPureStorage(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexPypaAdvisoriesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryPyPAAdvisory `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryPyPAAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexPypaAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPypaAdvisoriesResponse, err error) {
@@ -9661,9 +9661,9 @@ func (c *Client) GetIndexPypaAdvisories(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexPypiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexPypi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPypiResponse, err error) {
@@ -9699,9 +9699,9 @@ func (c *Client) GetIndexPypi(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexQnapResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryQNAPAdvisory `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryQNAPAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexQnap(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQnapResponse, err error) {
@@ -9737,9 +9737,9 @@ func (c *Client) GetIndexQnap(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexQualcommResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryQualcomm `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryQualcomm `json:"data"`
 }
 
 func (c *Client) GetIndexQualcomm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQualcommResponse, err error) {
@@ -9775,9 +9775,9 @@ func (c *Client) GetIndexQualcomm(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexQualysResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryQualys `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryQualys `json:"data"`
 }
 
 func (c *Client) GetIndexQualys(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQualysResponse, err error) {
@@ -9813,9 +9813,9 @@ func (c *Client) GetIndexQualys(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexRansomwareResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryRansomwareExploit `json:"data"`
+	Benchmark float64                            `json:"_benchmark"`
+	Meta      IndexMeta                          `json:"_meta"`
+	Data      []client.AdvisoryRansomwareExploit `json:"data"`
 }
 
 func (c *Client) GetIndexRansomware(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRansomwareResponse, err error) {
@@ -9851,9 +9851,9 @@ func (c *Client) GetIndexRansomware(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexRedhatResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryRedhatCVE `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryRedhatCVE `json:"data"`
 }
 
 func (c *Client) GetIndexRedhat(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRedhatResponse, err error) {
@@ -9889,9 +9889,9 @@ func (c *Client) GetIndexRedhat(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexRenesasResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryRenesas `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryRenesas `json:"data"`
 }
 
 func (c *Client) GetIndexRenesas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRenesasResponse, err error) {
@@ -9927,9 +9927,9 @@ func (c *Client) GetIndexRenesas(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexReviveResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryRevive `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryRevive `json:"data"`
 }
 
 func (c *Client) GetIndexRevive(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexReviveResponse, err error) {
@@ -9965,9 +9965,9 @@ func (c *Client) GetIndexRevive(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexRockwellResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryRockwell `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryRockwell `json:"data"`
 }
 
 func (c *Client) GetIndexRockwell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRockwellResponse, err error) {
@@ -10003,9 +10003,9 @@ func (c *Client) GetIndexRockwell(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexRockyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiUpdate `json:"data"`
+	Benchmark float64            `json:"_benchmark"`
+	Meta      IndexMeta          `json:"_meta"`
+	Data      []client.ApiUpdate `json:"data"`
 }
 
 func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRockyResponse, err error) {
@@ -10041,9 +10041,9 @@ func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexRuckusResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryRuckus `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryRuckus `json:"data"`
 }
 
 func (c *Client) GetIndexRuckus(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRuckusResponse, err error) {
@@ -10079,9 +10079,9 @@ func (c *Client) GetIndexRuckus(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexRustsecAdvisoriesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryRustsecAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryRustsecAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexRustsecAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRustsecAdvisoriesResponse, err error) {
@@ -10117,9 +10117,9 @@ func (c *Client) GetIndexRustsecAdvisories(queryParameters ...IndexQueryParamete
 }
 
 type GetIndexSacertResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySAAdvisory `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisorySAAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSacert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSacertResponse, err error) {
@@ -10155,9 +10155,9 @@ func (c *Client) GetIndexSacert(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexSaintResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySaintExploit `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisorySaintExploit `json:"data"`
 }
 
 func (c *Client) GetIndexSaint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSaintResponse, err error) {
@@ -10193,9 +10193,9 @@ func (c *Client) GetIndexSaint(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexSalesforceResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySalesForce `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisorySalesForce `json:"data"`
 }
 
 func (c *Client) GetIndexSalesforce(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSalesforceResponse, err error) {
@@ -10231,9 +10231,9 @@ func (c *Client) GetIndexSalesforce(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexSambaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySamba `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisorySamba `json:"data"`
 }
 
 func (c *Client) GetIndexSamba(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSambaResponse, err error) {
@@ -10269,9 +10269,9 @@ func (c *Client) GetIndexSamba(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexSapResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySAP `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisorySAP `json:"data"`
 }
 
 func (c *Client) GetIndexSap(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSapResponse, err error) {
@@ -10307,9 +10307,9 @@ func (c *Client) GetIndexSap(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexSchneiderElectricResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySchneiderElectricAdvisory `json:"data"`
+	Benchmark float64                                    `json:"_benchmark"`
+	Meta      IndexMeta                                  `json:"_meta"`
+	Data      []client.AdvisorySchneiderElectricAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSchneiderElectric(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSchneiderElectricResponse, err error) {
@@ -10345,9 +10345,9 @@ func (c *Client) GetIndexSchneiderElectric(queryParameters ...IndexQueryParamete
 }
 
 type GetIndexSecConsultResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySECConsult `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisorySECConsult `json:"data"`
 }
 
 func (c *Client) GetIndexSecConsult(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSecConsultResponse, err error) {
@@ -10383,9 +10383,9 @@ func (c *Client) GetIndexSecConsult(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexSelResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySel `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisorySel `json:"data"`
 }
 
 func (c *Client) GetIndexSel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSelResponse, err error) {
@@ -10421,9 +10421,9 @@ func (c *Client) GetIndexSel(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexSentineloneResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySentinelOne `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisorySentinelOne `json:"data"`
 }
 
 func (c *Client) GetIndexSentinelone(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSentineloneResponse, err error) {
@@ -10459,9 +10459,9 @@ func (c *Client) GetIndexSentinelone(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexServicenowResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryServiceNow `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryServiceNow `json:"data"`
 }
 
 func (c *Client) GetIndexServicenow(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexServicenowResponse, err error) {
@@ -10497,9 +10497,9 @@ func (c *Client) GetIndexServicenow(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexShadowserverExploitedResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryShadowServerExploitedVulnerability `json:"data"`
+	Benchmark float64                                             `json:"_benchmark"`
+	Meta      IndexMeta                                           `json:"_meta"`
+	Data      []client.AdvisoryShadowServerExploitedVulnerability `json:"data"`
 }
 
 func (c *Client) GetIndexShadowserverExploited(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexShadowserverExploitedResponse, err error) {
@@ -10535,9 +10535,9 @@ func (c *Client) GetIndexShadowserverExploited(queryParameters ...IndexQueryPara
 }
 
 type GetIndexSickResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySick `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisorySick `json:"data"`
 }
 
 func (c *Client) GetIndexSick(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSickResponse, err error) {
@@ -10573,9 +10573,9 @@ func (c *Client) GetIndexSick(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexSiemensResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySiemensAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisorySiemensAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSiemens(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSiemensResponse, err error) {
@@ -10611,9 +10611,9 @@ func (c *Client) GetIndexSiemens(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexSierraWirelessResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySierraWireless `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisorySierraWireless `json:"data"`
 }
 
 func (c *Client) GetIndexSierraWireless(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSierraWirelessResponse, err error) {
@@ -10649,9 +10649,9 @@ func (c *Client) GetIndexSierraWireless(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexSingcertResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySingCert `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisorySingCert `json:"data"`
 }
 
 func (c *Client) GetIndexSingcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSingcertResponse, err error) {
@@ -10687,9 +10687,9 @@ func (c *Client) GetIndexSingcert(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexSlackwareResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySlackware `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisorySlackware `json:"data"`
 }
 
 func (c *Client) GetIndexSlackware(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSlackwareResponse, err error) {
@@ -10725,9 +10725,9 @@ func (c *Client) GetIndexSlackware(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexSolarwindsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySolarWindsAdvisory `json:"data"`
+	Benchmark float64                             `json:"_benchmark"`
+	Meta      IndexMeta                           `json:"_meta"`
+	Data      []client.AdvisorySolarWindsAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSolarwinds(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSolarwindsResponse, err error) {
@@ -10763,9 +10763,9 @@ func (c *Client) GetIndexSolarwinds(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexSolrResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySolr `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisorySolr `json:"data"`
 }
 
 func (c *Client) GetIndexSolr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSolrResponse, err error) {
@@ -10801,9 +10801,9 @@ func (c *Client) GetIndexSolr(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexSonicwallResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySonicWallAdvisory `json:"data"`
+	Benchmark float64                            `json:"_benchmark"`
+	Meta      IndexMeta                          `json:"_meta"`
+	Data      []client.AdvisorySonicWallAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSonicwall(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSonicwallResponse, err error) {
@@ -10839,9 +10839,9 @@ func (c *Client) GetIndexSonicwall(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexSpacelabsHealthcareResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySpacelabsHealthcareAdvisory `json:"data"`
+	Benchmark float64                                      `json:"_benchmark"`
+	Meta      IndexMeta                                    `json:"_meta"`
+	Data      []client.AdvisorySpacelabsHealthcareAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSpacelabsHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSpacelabsHealthcareResponse, err error) {
@@ -10877,9 +10877,9 @@ func (c *Client) GetIndexSpacelabsHealthcare(queryParameters ...IndexQueryParame
 }
 
 type GetIndexSpringResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySpring `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisorySpring `json:"data"`
 }
 
 func (c *Client) GetIndexSpring(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSpringResponse, err error) {
@@ -10915,9 +10915,9 @@ func (c *Client) GetIndexSpring(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexSsdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySSDAdvisory `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisorySSDAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSsdResponse, err error) {
@@ -10953,9 +10953,9 @@ func (c *Client) GetIndexSsd(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexStormshieldResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryStormshield `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryStormshield `json:"data"`
 }
 
 func (c *Client) GetIndexStormshield(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexStormshieldResponse, err error) {
@@ -10991,9 +10991,9 @@ func (c *Client) GetIndexStormshield(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexStrykerResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryStrykerAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryStrykerAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexStryker(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexStrykerResponse, err error) {
@@ -11029,9 +11029,9 @@ func (c *Client) GetIndexStryker(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexSudoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySudo `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisorySudo `json:"data"`
 }
 
 func (c *Client) GetIndexSudo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSudoResponse, err error) {
@@ -11067,9 +11067,9 @@ func (c *Client) GetIndexSudo(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexSuseResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryCvrf `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryCvrf `json:"data"`
 }
 
 func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSuseResponse, err error) {
@@ -11105,9 +11105,9 @@ func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexSwiftResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiOSSPackage `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.ApiOSSPackage `json:"data"`
 }
 
 func (c *Client) GetIndexSwift(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSwiftResponse, err error) {
@@ -11143,9 +11143,9 @@ func (c *Client) GetIndexSwift(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexSwisslogHealthcareResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySwisslogHealthcareAdvisory `json:"data"`
+	Benchmark float64                                     `json:"_benchmark"`
+	Meta      IndexMeta                                   `json:"_meta"`
+	Data      []client.AdvisorySwisslogHealthcareAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexSwisslogHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSwisslogHealthcareResponse, err error) {
@@ -11181,9 +11181,9 @@ func (c *Client) GetIndexSwisslogHealthcare(queryParameters ...IndexQueryParamet
 }
 
 type GetIndexSymfonyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySymfony `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisorySymfony `json:"data"`
 }
 
 func (c *Client) GetIndexSymfony(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSymfonyResponse, err error) {
@@ -11219,9 +11219,9 @@ func (c *Client) GetIndexSymfony(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexSyncrosoftResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySyncroSoft `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisorySyncroSoft `json:"data"`
 }
 
 func (c *Client) GetIndexSyncrosoft(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSyncrosoftResponse, err error) {
@@ -11257,9 +11257,9 @@ func (c *Client) GetIndexSyncrosoft(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexSynologyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisorySynology `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisorySynology `json:"data"`
 }
 
 func (c *Client) GetIndexSynology(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSynologyResponse, err error) {
@@ -11295,9 +11295,9 @@ func (c *Client) GetIndexSynology(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexTeamviewerResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTeamViewer `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryTeamViewer `json:"data"`
 }
 
 func (c *Client) GetIndexTeamviewer(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTeamviewerResponse, err error) {
@@ -11333,9 +11333,9 @@ func (c *Client) GetIndexTeamviewer(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexTencentResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTencent `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryTencent `json:"data"`
 }
 
 func (c *Client) GetIndexTencent(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTencentResponse, err error) {
@@ -11371,9 +11371,9 @@ func (c *Client) GetIndexTencent(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexThalesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryThales `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryThales `json:"data"`
 }
 
 func (c *Client) GetIndexThales(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThalesResponse, err error) {
@@ -11409,9 +11409,9 @@ func (c *Client) GetIndexThales(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexThemissinglinkResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTheMissingLink `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryTheMissingLink `json:"data"`
 }
 
 func (c *Client) GetIndexThemissinglink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThemissinglinkResponse, err error) {
@@ -11447,9 +11447,9 @@ func (c *Client) GetIndexThemissinglink(queryParameters ...IndexQueryParameters)
 }
 
 type GetIndexThreatActorsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryThreatActorWithExternalObjects `json:"data"`
+	Benchmark float64                                         `json:"_benchmark"`
+	Meta      IndexMeta                                       `json:"_meta"`
+	Data      []client.AdvisoryThreatActorWithExternalObjects `json:"data"`
 }
 
 func (c *Client) GetIndexThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThreatActorsResponse, err error) {
@@ -11485,9 +11485,9 @@ func (c *Client) GetIndexThreatActors(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexTiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTI `json:"data"`
+	Benchmark float64             `json:"_benchmark"`
+	Meta      IndexMeta           `json:"_meta"`
+	Data      []client.AdvisoryTI `json:"data"`
 }
 
 func (c *Client) GetIndexTi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTiResponse, err error) {
@@ -11523,9 +11523,9 @@ func (c *Client) GetIndexTi(queryParameters ...IndexQueryParameters) (responseJS
 }
 
 type GetIndexTibcoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTibco `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryTibco `json:"data"`
 }
 
 func (c *Client) GetIndexTibco(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTibcoResponse, err error) {
@@ -11561,9 +11561,9 @@ func (c *Client) GetIndexTibco(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexTpLinkResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTPLink `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryTPLink `json:"data"`
 }
 
 func (c *Client) GetIndexTpLink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTpLinkResponse, err error) {
@@ -11599,9 +11599,9 @@ func (c *Client) GetIndexTpLink(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexTrendmicroResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTrendMicro `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryTrendMicro `json:"data"`
 }
 
 func (c *Client) GetIndexTrendmicro(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTrendmicroResponse, err error) {
@@ -11637,9 +11637,9 @@ func (c *Client) GetIndexTrendmicro(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexTrustwaveResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTrustwave `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryTrustwave `json:"data"`
 }
 
 func (c *Client) GetIndexTrustwave(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTrustwaveResponse, err error) {
@@ -11675,9 +11675,9 @@ func (c *Client) GetIndexTrustwave(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexTwcertResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryTWCertAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryTWCertAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexTwcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTwcertResponse, err error) {
@@ -11713,9 +11713,9 @@ func (c *Client) GetIndexTwcert(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexUbiquitiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUbiquiti `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryUbiquiti `json:"data"`
 }
 
 func (c *Client) GetIndexUbiquiti(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUbiquitiResponse, err error) {
@@ -11751,9 +11751,9 @@ func (c *Client) GetIndexUbiquiti(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexUbuntuResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUbuntuCVE `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryUbuntuCVE `json:"data"`
 }
 
 func (c *Client) GetIndexUbuntu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUbuntuResponse, err error) {
@@ -11789,9 +11789,9 @@ func (c *Client) GetIndexUbuntu(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexUnifyResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUnify `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryUnify `json:"data"`
 }
 
 func (c *Client) GetIndexUnify(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUnifyResponse, err error) {
@@ -11827,9 +11827,9 @@ func (c *Client) GetIndexUnify(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexUnisocResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUnisoc `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryUnisoc `json:"data"`
 }
 
 func (c *Client) GetIndexUnisoc(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUnisocResponse, err error) {
@@ -11865,9 +11865,9 @@ func (c *Client) GetIndexUnisoc(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexUsdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUSD `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryUSD `json:"data"`
 }
 
 func (c *Client) GetIndexUsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUsdResponse, err error) {
@@ -11903,9 +11903,9 @@ func (c *Client) GetIndexUsd(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexUsomResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryUSOMAdvisory `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryUSOMAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexUsom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUsomResponse, err error) {
@@ -11941,9 +11941,9 @@ func (c *Client) GetIndexUsom(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexVandykeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVanDyke `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryVanDyke `json:"data"`
 }
 
 func (c *Client) GetIndexVandyke(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVandykeResponse, err error) {
@@ -11979,9 +11979,9 @@ func (c *Client) GetIndexVandyke(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexVapidlabsResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVapidLabsAdvisory `json:"data"`
+	Benchmark float64                            `json:"_benchmark"`
+	Meta      IndexMeta                          `json:"_meta"`
+	Data      []client.AdvisoryVapidLabsAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexVapidlabs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVapidlabsResponse, err error) {
@@ -12017,9 +12017,9 @@ func (c *Client) GetIndexVapidlabs(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexVdeResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVDEAdvisory `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryVDEAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexVde(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVdeResponse, err error) {
@@ -12055,9 +12055,9 @@ func (c *Client) GetIndexVde(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexVeeamResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVeeam `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryVeeam `json:"data"`
 }
 
 func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVeeamResponse, err error) {
@@ -12093,9 +12093,9 @@ func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexVoidsecResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVoidSec `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryVoidSec `json:"data"`
 }
 
 func (c *Client) GetIndexVoidsec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVoidsecResponse, err error) {
@@ -12131,9 +12131,9 @@ func (c *Client) GetIndexVoidsec(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexVulncheckKevResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVulnCheckKEV `json:"data"`
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryVulnCheckKEV `json:"data"`
 }
 
 func (c *Client) GetIndexVulncheckKev(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckKevResponse, err error) {
@@ -12169,9 +12169,9 @@ func (c *Client) GetIndexVulncheckKev(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexVulncheckNvdResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiCveItemsExtended `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.ApiCveItemsExtended `json:"data"`
 }
 
 func (c *Client) GetIndexVulncheckNvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckNvdResponse, err error) {
@@ -12207,9 +12207,9 @@ func (c *Client) GetIndexVulncheckNvd(queryParameters ...IndexQueryParameters) (
 }
 
 type GetIndexVulncheckNvd2Response struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiNVD20CVEExtended `json:"data"`
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.ApiNVD20CVEExtended `json:"data"`
 }
 
 func (c *Client) GetIndexVulncheckNvd2(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckNvd2Response, err error) {
@@ -12245,9 +12245,9 @@ func (c *Client) GetIndexVulncheckNvd2(queryParameters ...IndexQueryParameters) 
 }
 
 type GetIndexVulnerabilityAliasesResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.ApiVulnerabilityAlias `json:"data"`
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.ApiVulnerabilityAlias `json:"data"`
 }
 
 func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulnerabilityAliasesResponse, err error) {
@@ -12283,9 +12283,9 @@ func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParam
 }
 
 type GetIndexVyaireResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryVYAIREAdvisory `json:"data"`
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryVYAIREAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexVyaire(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVyaireResponse, err error) {
@@ -12321,9 +12321,9 @@ func (c *Client) GetIndexVyaire(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexWatchguardResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWatchGuard `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryWatchGuard `json:"data"`
 }
 
 func (c *Client) GetIndexWatchguard(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWatchguardResponse, err error) {
@@ -12359,9 +12359,9 @@ func (c *Client) GetIndexWatchguard(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexWhatsappResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWhatsApp `json:"data"`
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryWhatsApp `json:"data"`
 }
 
 func (c *Client) GetIndexWhatsapp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWhatsappResponse, err error) {
@@ -12397,9 +12397,9 @@ func (c *Client) GetIndexWhatsapp(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexWibuResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWibu `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryWibu `json:"data"`
 }
 
 func (c *Client) GetIndexWibu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWibuResponse, err error) {
@@ -12435,9 +12435,9 @@ func (c *Client) GetIndexWibu(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexWiresharkResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWireshark `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryWireshark `json:"data"`
 }
 
 func (c *Client) GetIndexWireshark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWiresharkResponse, err error) {
@@ -12473,9 +12473,9 @@ func (c *Client) GetIndexWireshark(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexWithSecureResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWithSecure `json:"data"`
+	Benchmark float64                     `json:"_benchmark"`
+	Meta      IndexMeta                   `json:"_meta"`
+	Data      []client.AdvisoryWithSecure `json:"data"`
 }
 
 func (c *Client) GetIndexWithSecure(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWithSecureResponse, err error) {
@@ -12511,9 +12511,9 @@ func (c *Client) GetIndexWithSecure(queryParameters ...IndexQueryParameters) (re
 }
 
 type GetIndexWolfiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWolfi `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryWolfi `json:"data"`
 }
 
 func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWolfiResponse, err error) {
@@ -12549,9 +12549,9 @@ func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexWolfsslResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWolfSSL `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryWolfSSL `json:"data"`
 }
 
 func (c *Client) GetIndexWolfssl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWolfsslResponse, err error) {
@@ -12587,9 +12587,9 @@ func (c *Client) GetIndexWolfssl(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexWordfenceResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryWordfence `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryWordfence `json:"data"`
 }
 
 func (c *Client) GetIndexWordfence(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWordfenceResponse, err error) {
@@ -12625,9 +12625,9 @@ func (c *Client) GetIndexWordfence(queryParameters ...IndexQueryParameters) (res
 }
 
 type GetIndexXenResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryXen `json:"data"`
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.AdvisoryXen `json:"data"`
 }
 
 func (c *Client) GetIndexXen(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXenResponse, err error) {
@@ -12663,9 +12663,9 @@ func (c *Client) GetIndexXen(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexXeroxResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryXerox `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryXerox `json:"data"`
 }
 
 func (c *Client) GetIndexXerox(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXeroxResponse, err error) {
@@ -12701,9 +12701,9 @@ func (c *Client) GetIndexXerox(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexXiaomiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryXiaomi `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryXiaomi `json:"data"`
 }
 
 func (c *Client) GetIndexXiaomi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXiaomiResponse, err error) {
@@ -12739,9 +12739,9 @@ func (c *Client) GetIndexXiaomi(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexXylemResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryXylem `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryXylem `json:"data"`
 }
 
 func (c *Client) GetIndexXylem(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXylemResponse, err error) {
@@ -12777,9 +12777,9 @@ func (c *Client) GetIndexXylem(queryParameters ...IndexQueryParameters) (respons
 }
 
 type GetIndexYokogawaResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryYokogawaAdvisory `json:"data"`
+	Benchmark float64                           `json:"_benchmark"`
+	Meta      IndexMeta                         `json:"_meta"`
+	Data      []client.AdvisoryYokogawaAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexYokogawa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexYokogawaResponse, err error) {
@@ -12815,9 +12815,9 @@ func (c *Client) GetIndexYokogawa(queryParameters ...IndexQueryParameters) (resp
 }
 
 type GetIndexYubicoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryYubico `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryYubico `json:"data"`
 }
 
 func (c *Client) GetIndexYubico(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexYubicoResponse, err error) {
@@ -12853,9 +12853,9 @@ func (c *Client) GetIndexYubico(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexZdiResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZeroDayAdvisory `json:"data"`
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryZeroDayAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexZdi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZdiResponse, err error) {
@@ -12891,9 +12891,9 @@ func (c *Client) GetIndexZdi(queryParameters ...IndexQueryParameters) (responseJ
 }
 
 type GetIndexZeroDayResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZeroDayCZ `json:"data"`
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryZeroDayCZ `json:"data"`
 }
 
 func (c *Client) GetIndexZeroDay(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZeroDayResponse, err error) {
@@ -12929,9 +12929,9 @@ func (c *Client) GetIndexZeroDay(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexZeroscienceResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZeroScienceAdvisory `json:"data"`
+	Benchmark float64                              `json:"_benchmark"`
+	Meta      IndexMeta                            `json:"_meta"`
+	Data      []client.AdvisoryZeroScienceAdvisory `json:"data"`
 }
 
 func (c *Client) GetIndexZeroscience(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZeroscienceResponse, err error) {
@@ -12967,9 +12967,9 @@ func (c *Client) GetIndexZeroscience(queryParameters ...IndexQueryParameters) (r
 }
 
 type GetIndexZimbraResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZimbra `json:"data"`
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryZimbra `json:"data"`
 }
 
 func (c *Client) GetIndexZimbra(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZimbraResponse, err error) {
@@ -13005,9 +13005,9 @@ func (c *Client) GetIndexZimbra(queryParameters ...IndexQueryParameters) (respon
 }
 
 type GetIndexZoomResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZoom `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryZoom `json:"data"`
 }
 
 func (c *Client) GetIndexZoom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZoomResponse, err error) {
@@ -13043,9 +13043,9 @@ func (c *Client) GetIndexZoom(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexZscalerResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZscaler `json:"data"`
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryZscaler `json:"data"`
 }
 
 func (c *Client) GetIndexZscaler(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZscalerResponse, err error) {
@@ -13081,9 +13081,9 @@ func (c *Client) GetIndexZscaler(queryParameters ...IndexQueryParameters) (respo
 }
 
 type GetIndexZusoResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZuso `json:"data"`
+	Benchmark float64               `json:"_benchmark"`
+	Meta      IndexMeta             `json:"_meta"`
+	Data      []client.AdvisoryZuso `json:"data"`
 }
 
 func (c *Client) GetIndexZuso(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZusoResponse, err error) {
@@ -13119,9 +13119,9 @@ func (c *Client) GetIndexZuso(queryParameters ...IndexQueryParameters) (response
 }
 
 type GetIndexZyxelResponse struct {
-	Benchmark float64 `json:"_benchmark"`
-	Meta IndexMeta `json:"_meta"`
-	Data []client.AdvisoryZyxel `json:"data"`
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryZyxel `json:"data"`
 }
 
 func (c *Client) GetIndexZyxel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZyxelResponse, err error) {
@@ -13155,4 +13155,3 @@ func (c *Client) GetIndexZyxel(queryParameters ...IndexQueryParameters) (respons
 
 	return responseJSON, nil
 }
-
