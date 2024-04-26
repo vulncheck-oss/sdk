@@ -118,7 +118,9 @@ func generateTypeAndFunction(file *os.File, name string, structType *ast.StructT
 		typeStr += "\tMeta IndexMeta `json:\"_meta\"`\n"
 		typeStr += fmt.Sprintf("\tData []client.%s `json:\"data\"`\n", json200Type)
 		typeStr += "}\n\n"
-		file.WriteString(typeStr)
+		if _, err := file.WriteString(typeStr); err != nil {
+			panic(err)
+		}
 
 		indexName := formatIndexName(name)
 
@@ -127,7 +129,9 @@ func generateTypeAndFunction(file *os.File, name string, structType *ast.StructT
 		funcStr := fmt.Sprintf("func (c *Client) %s(queryParameters ...IndexQueryParameters) (responseJSON *%s, err error) {\n", funcName, name)
 		funcStr += strings.Replace(insideFunction, "::INDEX::", indexName, -1)
 		funcStr += "}\n\n"
-		file.WriteString(funcStr)
+		if _, err := file.WriteString(funcStr); err != nil {
+			panic(err)
+		}
 	}
 }
 
