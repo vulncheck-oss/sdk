@@ -22,7 +22,7 @@ import (
 `
 var insideFunction = `
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("::INDEX::"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -120,11 +120,30 @@ func generateTypeAndFunction(file *os.File, name string, structType *ast.StructT
 		typeStr += "}\n\n"
 		file.WriteString(typeStr)
 
+		indexName := formatIndexName(name)
+
 		// Generate the function
 		funcName := strings.TrimSuffix(name, "Response")
 		funcStr := fmt.Sprintf("func (c *Client) %s(queryParameters ...IndexQueryParameters) (responseJSON *%s, err error) {\n", funcName, name)
-		funcStr += insideFunction
+		funcStr += strings.Replace(insideFunction, "::INDEX::", indexName, -1)
 		funcStr += "}\n\n"
 		file.WriteString(funcStr)
 	}
+}
+
+func formatIndexName(indexName string) string {
+	indexName = strings.TrimPrefix(indexName, "GetIndex")
+	indexName = strings.TrimSuffix(indexName, "Response")
+	var formattedName strings.Builder
+	for i, char := range indexName {
+		if char >= 'A' && char <= 'Z' {
+			if i != 0 {
+				formattedName.WriteRune('-')
+			}
+			formattedName.WriteRune(char + 'a' - 'A')
+		} else {
+			formattedName.WriteRune(char)
+		}
+	}
+	return formattedName.String()
 }

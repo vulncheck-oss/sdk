@@ -17,7 +17,7 @@ type GetIndexA10Response struct {
 func (c *Client) GetIndexA10(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexA10Response, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("a10"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -55,7 +55,7 @@ type GetIndexAbbResponse struct {
 func (c *Client) GetIndexAbb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbbResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("abb"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -93,7 +93,7 @@ type GetIndexAbbottResponse struct {
 func (c *Client) GetIndexAbbott(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbbottResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("abbott"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -131,7 +131,7 @@ type GetIndexAbsoluteResponse struct {
 func (c *Client) GetIndexAbsolute(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbsoluteResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("absolute"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -169,7 +169,7 @@ type GetIndexAcronisResponse struct {
 func (c *Client) GetIndexAcronis(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAcronisResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("acronis"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -207,7 +207,7 @@ type GetIndexAdobeResponse struct {
 func (c *Client) GetIndexAdobe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAdobeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("adobe"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -245,7 +245,7 @@ type GetIndexAlephResearchResponse struct {
 func (c *Client) GetIndexAlephResearch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlephResearchResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aleph-research"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -283,7 +283,7 @@ type GetIndexAlmaResponse struct {
 func (c *Client) GetIndexAlma(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlmaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("alma"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -321,7 +321,7 @@ type GetIndexAlpineResponse struct {
 func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlpineResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("alpine"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -359,7 +359,7 @@ type GetIndexAmazonResponse struct {
 func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmazonResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("amazon"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -397,7 +397,7 @@ type GetIndexAmdResponse struct {
 func (c *Client) GetIndexAmd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("amd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -435,7 +435,7 @@ type GetIndexAmiResponse struct {
 func (c *Client) GetIndexAmi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ami"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -473,7 +473,7 @@ type GetIndexAndroidResponse struct {
 func (c *Client) GetIndexAndroid(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAndroidResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("android"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -511,7 +511,7 @@ type GetIndexApacheActivemqResponse struct {
 func (c *Client) GetIndexApacheActivemq(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheActivemqResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-activemq"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -549,7 +549,7 @@ type GetIndexApacheArchivaResponse struct {
 func (c *Client) GetIndexApacheArchiva(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheArchivaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-archiva"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -587,7 +587,7 @@ type GetIndexApacheArrowResponse struct {
 func (c *Client) GetIndexApacheArrow(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheArrowResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-arrow"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -625,7 +625,7 @@ type GetIndexApacheCamelResponse struct {
 func (c *Client) GetIndexApacheCamel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCamelResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-camel"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -663,7 +663,7 @@ type GetIndexApacheCommonsResponse struct {
 func (c *Client) GetIndexApacheCommons(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCommonsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-commons"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -701,7 +701,7 @@ type GetIndexApacheCouchdbResponse struct {
 func (c *Client) GetIndexApacheCouchdb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCouchdbResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-couchdb"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -739,7 +739,7 @@ type GetIndexApacheFlinkResponse struct {
 func (c *Client) GetIndexApacheFlink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheFlinkResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-flink"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -777,7 +777,7 @@ type GetIndexApacheGuacamoleResponse struct {
 func (c *Client) GetIndexApacheGuacamole(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheGuacamoleResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-guacamole"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -815,7 +815,7 @@ type GetIndexApacheHadoopResponse struct {
 func (c *Client) GetIndexApacheHadoop(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheHadoopResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-hadoop"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -853,7 +853,7 @@ type GetIndexApacheHttpResponse struct {
 func (c *Client) GetIndexApacheHttp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheHttpResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-http"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -891,7 +891,7 @@ type GetIndexApacheJspwikiResponse struct {
 func (c *Client) GetIndexApacheJspwiki(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheJspwikiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-jspwiki"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -929,7 +929,7 @@ type GetIndexApacheKafkaResponse struct {
 func (c *Client) GetIndexApacheKafka(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheKafkaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-kafka"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -967,7 +967,7 @@ type GetIndexApacheLoggingservicesResponse struct {
 func (c *Client) GetIndexApacheLoggingservices(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheLoggingservicesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-loggingservices"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1005,7 +1005,7 @@ type GetIndexApacheNifiResponse struct {
 func (c *Client) GetIndexApacheNifi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheNifiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-nifi"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1043,7 +1043,7 @@ type GetIndexApacheOfbizResponse struct {
 func (c *Client) GetIndexApacheOfbiz(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOfbizResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-ofbiz"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1081,7 +1081,7 @@ type GetIndexApacheOpenmeetingsResponse struct {
 func (c *Client) GetIndexApacheOpenmeetings(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOpenmeetingsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-openmeetings"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1119,7 +1119,7 @@ type GetIndexApacheOpenofficeResponse struct {
 func (c *Client) GetIndexApacheOpenoffice(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOpenofficeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-openoffice"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1157,7 +1157,7 @@ type GetIndexApachePulsarResponse struct {
 func (c *Client) GetIndexApachePulsar(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApachePulsarResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-pulsar"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1195,7 +1195,7 @@ type GetIndexApacheShiroResponse struct {
 func (c *Client) GetIndexApacheShiro(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheShiroResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-shiro"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1233,7 +1233,7 @@ type GetIndexApacheSparkResponse struct {
 func (c *Client) GetIndexApacheSpark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSparkResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-spark"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1271,7 +1271,7 @@ type GetIndexApacheStrutsResponse struct {
 func (c *Client) GetIndexApacheStruts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheStrutsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-struts"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1309,7 +1309,7 @@ type GetIndexApacheSubversionResponse struct {
 func (c *Client) GetIndexApacheSubversion(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSubversionResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-subversion"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1347,7 +1347,7 @@ type GetIndexApacheSupersetResponse struct {
 func (c *Client) GetIndexApacheSuperset(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSupersetResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-superset"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1385,7 +1385,7 @@ type GetIndexApacheTomcatResponse struct {
 func (c *Client) GetIndexApacheTomcat(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheTomcatResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-tomcat"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1423,7 +1423,7 @@ type GetIndexApacheZookeeperResponse struct {
 func (c *Client) GetIndexApacheZookeeper(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheZookeeperResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-zookeeper"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1461,7 +1461,7 @@ type GetIndexAppcheckResponse struct {
 func (c *Client) GetIndexAppcheck(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppcheckResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("appcheck"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1499,7 +1499,7 @@ type GetIndexAppgateResponse struct {
 func (c *Client) GetIndexAppgate(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppgateResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("appgate"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1537,7 +1537,7 @@ type GetIndexAppleResponse struct {
 func (c *Client) GetIndexApple(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppleResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apple"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1575,7 +1575,7 @@ type GetIndexArchResponse struct {
 func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexArchResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("arch"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1613,7 +1613,7 @@ type GetIndexAristaResponse struct {
 func (c *Client) GetIndexArista(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAristaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("arista"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1651,7 +1651,7 @@ type GetIndexArubaResponse struct {
 func (c *Client) GetIndexAruba(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexArubaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aruba"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1689,7 +1689,7 @@ type GetIndexAsrgResponse struct {
 func (c *Client) GetIndexAsrg(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsrgResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("asrg"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1727,7 +1727,7 @@ type GetIndexAssetnoteResponse struct {
 func (c *Client) GetIndexAssetnote(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAssetnoteResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("assetnote"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1765,7 +1765,7 @@ type GetIndexAsteriskResponse struct {
 func (c *Client) GetIndexAsterisk(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsteriskResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("asterisk"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1803,7 +1803,7 @@ type GetIndexAsusResponse struct {
 func (c *Client) GetIndexAsus(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsusResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("asus"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1841,7 +1841,7 @@ type GetIndexAtlassianResponse struct {
 func (c *Client) GetIndexAtlassian(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAtlassianResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("atlassian"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1879,7 +1879,7 @@ type GetIndexAuscertResponse struct {
 func (c *Client) GetIndexAuscert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAuscertResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("auscert"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1917,7 +1917,7 @@ type GetIndexAutodeskResponse struct {
 func (c *Client) GetIndexAutodesk(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAutodeskResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("autodesk"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1955,7 +1955,7 @@ type GetIndexAvayaResponse struct {
 func (c *Client) GetIndexAvaya(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvayaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("avaya"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1993,7 +1993,7 @@ type GetIndexAvevaResponse struct {
 func (c *Client) GetIndexAveva(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvevaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aveva"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2031,7 +2031,7 @@ type GetIndexAvigilonResponse struct {
 func (c *Client) GetIndexAvigilon(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvigilonResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("avigilon"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2069,7 +2069,7 @@ type GetIndexAwsResponse struct {
 func (c *Client) GetIndexAws(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAwsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aws"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2107,7 +2107,7 @@ type GetIndexAxisResponse struct {
 func (c *Client) GetIndexAxis(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAxisResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("axis"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2145,7 +2145,7 @@ type GetIndexBandrResponse struct {
 func (c *Client) GetIndexBandr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBandrResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bandr"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2183,7 +2183,7 @@ type GetIndexBaxterResponse struct {
 func (c *Client) GetIndexBaxter(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBaxterResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("baxter"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2221,7 +2221,7 @@ type GetIndexBbraunResponse struct {
 func (c *Client) GetIndexBbraun(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBbraunResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bbraun"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2259,7 +2259,7 @@ type GetIndexBdResponse struct {
 func (c *Client) GetIndexBd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2297,7 +2297,7 @@ type GetIndexBduResponse struct {
 func (c *Client) GetIndexBdu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBduResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bdu"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2335,7 +2335,7 @@ type GetIndexBeckhoffResponse struct {
 func (c *Client) GetIndexBeckhoff(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeckhoffResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("beckhoff"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2373,7 +2373,7 @@ type GetIndexBeldenResponse struct {
 func (c *Client) GetIndexBelden(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeldenResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("belden"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2411,7 +2411,7 @@ type GetIndexBeyondTrustResponse struct {
 func (c *Client) GetIndexBeyondTrust(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeyondTrustResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("beyond-trust"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2449,7 +2449,7 @@ type GetIndexBinarlyResponse struct {
 func (c *Client) GetIndexBinarly(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBinarlyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("binarly"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2487,7 +2487,7 @@ type GetIndexBitdefenderResponse struct {
 func (c *Client) GetIndexBitdefender(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBitdefenderResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bitdefender"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2525,7 +2525,7 @@ type GetIndexBlackberryResponse struct {
 func (c *Client) GetIndexBlackberry(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBlackberryResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("blackberry"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2563,7 +2563,7 @@ type GetIndexBlsResponse struct {
 func (c *Client) GetIndexBls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBlsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bls"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2601,7 +2601,7 @@ type GetIndexBoschResponse struct {
 func (c *Client) GetIndexBosch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBoschResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bosch"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2639,7 +2639,7 @@ type GetIndexBostonScientificResponse struct {
 func (c *Client) GetIndexBostonScientific(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBostonScientificResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("boston-scientific"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2677,7 +2677,7 @@ type GetIndexBotnetsResponse struct {
 func (c *Client) GetIndexBotnets(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBotnetsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("botnets"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2715,7 +2715,7 @@ type GetIndexCaCyberCentreResponse struct {
 func (c *Client) GetIndexCaCyberCentre(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCaCyberCentreResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ca-cyber-centre"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2753,7 +2753,7 @@ type GetIndexCanvasResponse struct {
 func (c *Client) GetIndexCanvas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCanvasResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("canvas"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2791,7 +2791,7 @@ type GetIndexCarestreamResponse struct {
 func (c *Client) GetIndexCarestream(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCarestreamResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("carestream"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2829,7 +2829,7 @@ type GetIndexCargoResponse struct {
 func (c *Client) GetIndexCargo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCargoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cargo"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2867,7 +2867,7 @@ type GetIndexCarrierResponse struct {
 func (c *Client) GetIndexCarrier(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCarrierResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("carrier"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2905,7 +2905,7 @@ type GetIndexCblMarinerResponse struct {
 func (c *Client) GetIndexCblMariner(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCblMarinerResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cbl-mariner"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2943,7 +2943,7 @@ type GetIndexCentosResponse struct {
 func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCentosResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("centos"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -2981,7 +2981,7 @@ type GetIndexCertBeResponse struct {
 func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertBeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cert-be"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3019,7 +3019,7 @@ type GetIndexCertUaResponse struct {
 func (c *Client) GetIndexCertUa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertUaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cert-ua"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3057,7 +3057,7 @@ type GetIndexCerteuResponse struct {
 func (c *Client) GetIndexCerteu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCerteuResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("certeu"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3095,7 +3095,7 @@ type GetIndexCertfrResponse struct {
 func (c *Client) GetIndexCertfr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertfrResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("certfr"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3133,7 +3133,7 @@ type GetIndexChainguardResponse struct {
 func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexChainguardResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("chainguard"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3171,7 +3171,7 @@ type GetIndexCheckpointResponse struct {
 func (c *Client) GetIndexCheckpoint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCheckpointResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("checkpoint"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3209,7 +3209,7 @@ type GetIndexChromeResponse struct {
 func (c *Client) GetIndexChrome(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexChromeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("chrome"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3247,7 +3247,7 @@ type GetIndexCisaAlertsResponse struct {
 func (c *Client) GetIndexCisaAlerts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCisaAlertsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisa-alerts"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3285,7 +3285,7 @@ type GetIndexCisaKevResponse struct {
 func (c *Client) GetIndexCisaKev(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCisaKevResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisa-kev"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3323,7 +3323,7 @@ type GetIndexCiscoResponse struct {
 func (c *Client) GetIndexCisco(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCiscoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisco"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3361,7 +3361,7 @@ type GetIndexCiscoTalosResponse struct {
 func (c *Client) GetIndexCiscoTalos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCiscoTalosResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisco-talos"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3399,7 +3399,7 @@ type GetIndexCitrixResponse struct {
 func (c *Client) GetIndexCitrix(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCitrixResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("citrix"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3437,7 +3437,7 @@ type GetIndexClarotyResponse struct {
 func (c *Client) GetIndexClaroty(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexClarotyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("claroty"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3475,7 +3475,7 @@ type GetIndexCloudbeesResponse struct {
 func (c *Client) GetIndexCloudbees(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCloudbeesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cloudbees"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3513,7 +3513,7 @@ type GetIndexCloudvulndbResponse struct {
 func (c *Client) GetIndexCloudvulndb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCloudvulndbResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cloudvulndb"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3551,7 +3551,7 @@ type GetIndexCnnvdResponse struct {
 func (c *Client) GetIndexCnnvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnnvdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cnnvd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3589,7 +3589,7 @@ type GetIndexCnvdBulletinsResponse struct {
 func (c *Client) GetIndexCnvdBulletins(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnvdBulletinsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cnvd-bulletins"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3627,7 +3627,7 @@ type GetIndexCnvdFlawsResponse struct {
 func (c *Client) GetIndexCnvdFlaws(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnvdFlawsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cnvd-flaws"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3665,7 +3665,7 @@ type GetIndexCocoapodsResponse struct {
 func (c *Client) GetIndexCocoapods(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCocoapodsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cocoapods"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3703,7 +3703,7 @@ type GetIndexCodesysResponse struct {
 func (c *Client) GetIndexCodesys(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCodesysResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("codesys"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3741,7 +3741,7 @@ type GetIndexCompassSecurityResponse struct {
 func (c *Client) GetIndexCompassSecurity(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCompassSecurityResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("compass-security"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3779,7 +3779,7 @@ type GetIndexComposerResponse struct {
 func (c *Client) GetIndexComposer(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexComposerResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("composer"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3817,7 +3817,7 @@ type GetIndexConanResponse struct {
 func (c *Client) GetIndexConan(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexConanResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("conan"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3855,7 +3855,7 @@ type GetIndexCrestronResponse struct {
 func (c *Client) GetIndexCrestron(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCrestronResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("crestron"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3893,7 +3893,7 @@ type GetIndexCurlResponse struct {
 func (c *Client) GetIndexCurl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCurlResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("curl"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3931,7 +3931,7 @@ type GetIndexCweResponse struct {
 func (c *Client) GetIndexCwe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCweResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cwe"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3969,7 +3969,7 @@ type GetIndexDahuaResponse struct {
 func (c *Client) GetIndexDahua(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDahuaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dahua"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4007,7 +4007,7 @@ type GetIndexDassaultResponse struct {
 func (c *Client) GetIndexDassault(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDassaultResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dassault"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4045,7 +4045,7 @@ type GetIndexDebianResponse struct {
 func (c *Client) GetIndexDebian(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDebianResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("debian"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4083,7 +4083,7 @@ type GetIndexDebianDsaResponse struct {
 func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDebianDsaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("debian-dsa"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4121,7 +4121,7 @@ type GetIndexDellResponse struct {
 func (c *Client) GetIndexDell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDellResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dell"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4159,7 +4159,7 @@ type GetIndexDeltaResponse struct {
 func (c *Client) GetIndexDelta(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDeltaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("delta"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4197,7 +4197,7 @@ type GetIndexDotcmsResponse struct {
 func (c *Client) GetIndexDotcms(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDotcmsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dotcms"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4235,7 +4235,7 @@ type GetIndexDragosResponse struct {
 func (c *Client) GetIndexDragos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDragosResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dragos"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4273,7 +4273,7 @@ type GetIndexDraytekResponse struct {
 func (c *Client) GetIndexDraytek(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDraytekResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("draytek"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4311,7 +4311,7 @@ type GetIndexEatonResponse struct {
 func (c *Client) GetIndexEaton(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEatonResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("eaton"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4349,7 +4349,7 @@ type GetIndexElasticResponse struct {
 func (c *Client) GetIndexElastic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexElasticResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("elastic"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4387,7 +4387,7 @@ type GetIndexEmersonResponse struct {
 func (c *Client) GetIndexEmerson(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEmersonResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("emerson"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4425,7 +4425,7 @@ type GetIndexEolResponse struct {
 func (c *Client) GetIndexEol(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEolResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("eol"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4463,7 +4463,7 @@ type GetIndexEpssResponse struct {
 func (c *Client) GetIndexEpss(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEpssResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("epss"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4501,7 +4501,7 @@ type GetIndexExodusIntelResponse struct {
 func (c *Client) GetIndexExodusIntel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExodusIntelResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("exodus-intel"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4539,7 +4539,7 @@ type GetIndexExploitChainsResponse struct {
 func (c *Client) GetIndexExploitChains(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExploitChainsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("exploit-chains"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4577,7 +4577,7 @@ type GetIndexExploitsResponse struct {
 func (c *Client) GetIndexExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("exploits"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4615,7 +4615,7 @@ type GetIndexFSecureResponse struct {
 func (c *Client) GetIndexFSecure(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFSecureResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("f-secure"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4653,7 +4653,7 @@ type GetIndexFastlyResponse struct {
 func (c *Client) GetIndexFastly(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFastlyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("fastly"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4691,7 +4691,7 @@ type GetIndexFedoraResponse struct {
 func (c *Client) GetIndexFedora(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFedoraResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("fedora"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4729,7 +4729,7 @@ type GetIndexFilecloudResponse struct {
 func (c *Client) GetIndexFilecloud(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFilecloudResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("filecloud"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4767,7 +4767,7 @@ type GetIndexForgerockResponse struct {
 func (c *Client) GetIndexForgerock(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexForgerockResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("forgerock"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4805,7 +4805,7 @@ type GetIndexFortinetResponse struct {
 func (c *Client) GetIndexFortinet(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFortinetResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("fortinet"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4843,7 +4843,7 @@ type GetIndexFreebsdResponse struct {
 func (c *Client) GetIndexFreebsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFreebsdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("freebsd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4881,7 +4881,7 @@ type GetIndexGallagherResponse struct {
 func (c *Client) GetIndexGallagher(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGallagherResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gallagher"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4919,7 +4919,7 @@ type GetIndexGcpResponse struct {
 func (c *Client) GetIndexGcp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGcpResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gcp"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4957,7 +4957,7 @@ type GetIndexGeGasResponse struct {
 func (c *Client) GetIndexGeGas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGeGasResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ge-gas"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4995,7 +4995,7 @@ type GetIndexGeHealthcareResponse struct {
 func (c *Client) GetIndexGeHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGeHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ge-healthcare"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5033,7 +5033,7 @@ type GetIndexGemResponse struct {
 func (c *Client) GetIndexGem(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGemResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gem"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5071,7 +5071,7 @@ type GetIndexGenetecResponse struct {
 func (c *Client) GetIndexGenetec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGenetecResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("genetec"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5109,7 +5109,7 @@ type GetIndexGigabyteResponse struct {
 func (c *Client) GetIndexGigabyte(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGigabyteResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gigabyte"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5147,7 +5147,7 @@ type GetIndexGiteeExploitsResponse struct {
 func (c *Client) GetIndexGiteeExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGiteeExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gitee-exploits"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5185,7 +5185,7 @@ type GetIndexGithubExploitsResponse struct {
 func (c *Client) GetIndexGithubExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGithubExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("github-exploits"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5223,7 +5223,7 @@ type GetIndexGitlabAdvisoriesCommunityResponse struct {
 func (c *Client) GetIndexGitlabAdvisoriesCommunity(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGitlabAdvisoriesCommunityResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gitlab-advisories-community"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5261,7 +5261,7 @@ type GetIndexGitlabExploitsResponse struct {
 func (c *Client) GetIndexGitlabExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGitlabExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gitlab-exploits"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5299,7 +5299,7 @@ type GetIndexGnutlsResponse struct {
 func (c *Client) GetIndexGnutls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGnutlsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gnutls"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5337,7 +5337,7 @@ type GetIndexGolangResponse struct {
 func (c *Client) GetIndexGolang(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGolangResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("golang"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5375,7 +5375,7 @@ type GetIndexGoogle0dayItwResponse struct {
 func (c *Client) GetIndexGoogle0dayItw(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGoogle0dayItwResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("google0day-itw"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5413,7 +5413,7 @@ type GetIndexGrafanaResponse struct {
 func (c *Client) GetIndexGrafana(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGrafanaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("grafana"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5451,7 +5451,7 @@ type GetIndexGreynoiseMetadataResponse struct {
 func (c *Client) GetIndexGreynoiseMetadata(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGreynoiseMetadataResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("greynoise-metadata"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5489,7 +5489,7 @@ type GetIndexHackageResponse struct {
 func (c *Client) GetIndexHackage(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHackageResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hackage"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5527,7 +5527,7 @@ type GetIndexHarmonyosResponse struct {
 func (c *Client) GetIndexHarmonyos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHarmonyosResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("harmonyos"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5565,7 +5565,7 @@ type GetIndexHashicorpResponse struct {
 func (c *Client) GetIndexHashicorp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHashicorpResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hashicorp"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5603,7 +5603,7 @@ type GetIndexHaskellSadbResponse struct {
 func (c *Client) GetIndexHaskellSadb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHaskellSadbResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("haskell-sadb"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5641,7 +5641,7 @@ type GetIndexHclResponse struct {
 func (c *Client) GetIndexHcl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHclResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hcl"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5679,7 +5679,7 @@ type GetIndexHexResponse struct {
 func (c *Client) GetIndexHex(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHexResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hex"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5717,7 +5717,7 @@ type GetIndexHikvisionResponse struct {
 func (c *Client) GetIndexHikvision(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHikvisionResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hikvision"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5755,7 +5755,7 @@ type GetIndexHillromResponse struct {
 func (c *Client) GetIndexHillrom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHillromResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hillrom"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5793,7 +5793,7 @@ type GetIndexHitachiResponse struct {
 func (c *Client) GetIndexHitachi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHitachiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hitachi"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5831,7 +5831,7 @@ type GetIndexHitachiEnergyResponse struct {
 func (c *Client) GetIndexHitachiEnergy(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHitachiEnergyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hitachi-energy"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5869,7 +5869,7 @@ type GetIndexHkcertResponse struct {
 func (c *Client) GetIndexHkcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHkcertResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hkcert"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5907,7 +5907,7 @@ type GetIndexHoneywellResponse struct {
 func (c *Client) GetIndexHoneywell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHoneywellResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("honeywell"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5945,7 +5945,7 @@ type GetIndexHpResponse struct {
 func (c *Client) GetIndexHp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHpResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hp"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5983,7 +5983,7 @@ type GetIndexHuaweiEulerosResponse struct {
 func (c *Client) GetIndexHuaweiEuleros(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiEulerosResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("huawei-euleros"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6021,7 +6021,7 @@ type GetIndexHuaweiIpsResponse struct {
 func (c *Client) GetIndexHuaweiIps(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiIpsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("huawei-ips"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6059,7 +6059,7 @@ type GetIndexHuaweiPsirtResponse struct {
 func (c *Client) GetIndexHuaweiPsirt(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiPsirtResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("huawei-psirt"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6097,7 +6097,7 @@ type GetIndexIavaResponse struct {
 func (c *Client) GetIndexIava(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIavaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("iava"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6135,7 +6135,7 @@ type GetIndexIbmResponse struct {
 func (c *Client) GetIndexIbm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIbmResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ibm"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6173,7 +6173,7 @@ type GetIndexIdemiaResponse struct {
 func (c *Client) GetIndexIdemia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIdemiaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("idemia"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6211,7 +6211,7 @@ type GetIndexIlAlertsResponse struct {
 func (c *Client) GetIndexIlAlerts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIlAlertsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("il-alerts"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6249,7 +6249,7 @@ type GetIndexIlVulnerabilitiesResponse struct {
 func (c *Client) GetIndexIlVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIlVulnerabilitiesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("il-vulnerabilities"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6287,7 +6287,7 @@ type GetIndexIncibeResponse struct {
 func (c *Client) GetIndexIncibe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIncibeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("incibe"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6325,7 +6325,7 @@ type GetIndexInitialAccessResponse struct {
 func (c *Client) GetIndexInitialAccess(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexInitialAccessResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("initial-access"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6363,7 +6363,7 @@ type GetIndexInitialAccessGitResponse struct {
 func (c *Client) GetIndexInitialAccessGit(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexInitialAccessGitResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("initial-access-git"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6401,7 +6401,7 @@ type GetIndexIntelResponse struct {
 func (c *Client) GetIndexIntel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIntelResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("intel"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6439,7 +6439,7 @@ type GetIndexIpintel10dResponse struct {
 func (c *Client) GetIndexIpintel10d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel10dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel10d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6477,7 +6477,7 @@ type GetIndexIpintel30dResponse struct {
 func (c *Client) GetIndexIpintel30d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel30dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel30d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6515,7 +6515,7 @@ type GetIndexIpintel3dResponse struct {
 func (c *Client) GetIndexIpintel3d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel3dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel3d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6553,7 +6553,7 @@ type GetIndexIpintel90dResponse struct {
 func (c *Client) GetIndexIpintel90d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel90dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel90d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6591,7 +6591,7 @@ type GetIndexIstioResponse struct {
 func (c *Client) GetIndexIstio(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIstioResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("istio"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6629,7 +6629,7 @@ type GetIndexIvantiResponse struct {
 func (c *Client) GetIndexIvanti(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIvantiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ivanti"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6667,7 +6667,7 @@ type GetIndexJenkinsResponse struct {
 func (c *Client) GetIndexJenkins(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJenkinsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jenkins"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6705,7 +6705,7 @@ type GetIndexJetbrainsResponse struct {
 func (c *Client) GetIndexJetbrains(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJetbrainsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jetbrains"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6743,7 +6743,7 @@ type GetIndexJfrogResponse struct {
 func (c *Client) GetIndexJfrog(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJfrogResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jfrog"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6781,7 +6781,7 @@ type GetIndexJnjResponse struct {
 func (c *Client) GetIndexJnj(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJnjResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jnj"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6819,7 +6819,7 @@ type GetIndexKasperskyIcsCertResponse struct {
 func (c *Client) GetIndexKasperskyIcsCert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKasperskyIcsCertResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("kaspersky-ics-cert"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6857,7 +6857,7 @@ type GetIndexKrcertSecurityNoticesResponse struct {
 func (c *Client) GetIndexKrcertSecurityNotices(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKrcertSecurityNoticesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("krcert-security-notices"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6895,7 +6895,7 @@ type GetIndexKrcertVulnerabilitiesResponse struct {
 func (c *Client) GetIndexKrcertVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKrcertVulnerabilitiesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("krcert-vulnerabilities"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6933,7 +6933,7 @@ type GetIndexKubernetesResponse struct {
 func (c *Client) GetIndexKubernetes(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKubernetesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("kubernetes"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6971,7 +6971,7 @@ type GetIndexLenovoResponse struct {
 func (c *Client) GetIndexLenovo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLenovoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("lenovo"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7009,7 +7009,7 @@ type GetIndexLexmarkResponse struct {
 func (c *Client) GetIndexLexmark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLexmarkResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("lexmark"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7047,7 +7047,7 @@ type GetIndexLgResponse struct {
 func (c *Client) GetIndexLg(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLgResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("lg"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7085,7 +7085,7 @@ type GetIndexLibreOfficeResponse struct {
 func (c *Client) GetIndexLibreOffice(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLibreOfficeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("libre-office"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7123,7 +7123,7 @@ type GetIndexMFilesResponse struct {
 func (c *Client) GetIndexMFiles(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMFilesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("m-files"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7161,7 +7161,7 @@ type GetIndexMacertResponse struct {
 func (c *Client) GetIndexMacert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMacertResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("macert"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7199,7 +7199,7 @@ type GetIndexManageengineResponse struct {
 func (c *Client) GetIndexManageengine(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexManageengineResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("manageengine"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7237,7 +7237,7 @@ type GetIndexMavenResponse struct {
 func (c *Client) GetIndexMaven(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMavenResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("maven"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7275,7 +7275,7 @@ type GetIndexMbedTlsResponse struct {
 func (c *Client) GetIndexMbedTls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMbedTlsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mbed-tls"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7313,7 +7313,7 @@ type GetIndexMediatekResponse struct {
 func (c *Client) GetIndexMediatek(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMediatekResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mediatek"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7351,7 +7351,7 @@ type GetIndexMedtronicResponse struct {
 func (c *Client) GetIndexMedtronic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMedtronicResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("medtronic"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7389,7 +7389,7 @@ type GetIndexMendixResponse struct {
 func (c *Client) GetIndexMendix(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMendixResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mendix"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7427,7 +7427,7 @@ type GetIndexMetasploitResponse struct {
 func (c *Client) GetIndexMetasploit(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMetasploitResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("metasploit"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7465,7 +7465,7 @@ type GetIndexMicrosoftCvrfResponse struct {
 func (c *Client) GetIndexMicrosoftCvrf(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMicrosoftCvrfResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("microsoft-cvrf"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7503,7 +7503,7 @@ type GetIndexMikrotikResponse struct {
 func (c *Client) GetIndexMikrotik(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMikrotikResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mikrotik"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7541,7 +7541,7 @@ type GetIndexMindrayResponse struct {
 func (c *Client) GetIndexMindray(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMindrayResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mindray"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7579,7 +7579,7 @@ type GetIndexMispThreatActorsResponse struct {
 func (c *Client) GetIndexMispThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMispThreatActorsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("misp-threat-actors"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7617,7 +7617,7 @@ type GetIndexMitelResponse struct {
 func (c *Client) GetIndexMitel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitelResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mitel"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7655,7 +7655,7 @@ type GetIndexMitreAttackCveResponse struct {
 func (c *Client) GetIndexMitreAttackCve(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitreAttackCveResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mitre-attack-cve"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7693,7 +7693,7 @@ type GetIndexMitsubishiElectricResponse struct {
 func (c *Client) GetIndexMitsubishiElectric(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitsubishiElectricResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mitsubishi-electric"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7731,7 +7731,7 @@ type GetIndexMongodbResponse struct {
 func (c *Client) GetIndexMongodb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMongodbResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mongodb"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7769,7 +7769,7 @@ type GetIndexMoxaResponse struct {
 func (c *Client) GetIndexMoxa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMoxaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("moxa"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7807,7 +7807,7 @@ type GetIndexMozillaResponse struct {
 func (c *Client) GetIndexMozilla(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMozillaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mozilla"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7845,7 +7845,7 @@ type GetIndexNaverResponse struct {
 func (c *Client) GetIndexNaver(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNaverResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("naver"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7883,7 +7883,7 @@ type GetIndexNecResponse struct {
 func (c *Client) GetIndexNec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNecResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nec"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7921,7 +7921,7 @@ type GetIndexNetappResponse struct {
 func (c *Client) GetIndexNetapp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetappResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netapp"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7959,7 +7959,7 @@ type GetIndexNetgateResponse struct {
 func (c *Client) GetIndexNetgate(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetgateResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netgate"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -7997,7 +7997,7 @@ type GetIndexNetgearResponse struct {
 func (c *Client) GetIndexNetgear(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetgearResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netgear"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8035,7 +8035,7 @@ type GetIndexNetskopeResponse struct {
 func (c *Client) GetIndexNetskope(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetskopeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netskope"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8073,7 +8073,7 @@ type GetIndexNginxResponse struct {
 func (c *Client) GetIndexNginx(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNginxResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nginx"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8111,7 +8111,7 @@ type GetIndexNhsResponse struct {
 func (c *Client) GetIndexNhs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNhsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nhs"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8149,7 +8149,7 @@ type GetIndexNiResponse struct {
 func (c *Client) GetIndexNi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ni"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8187,7 +8187,7 @@ type GetIndexNistNvdResponse struct {
 func (c *Client) GetIndexNistNvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNistNvdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nist-nvd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8225,7 +8225,7 @@ type GetIndexNistNvd2CpematchResponse struct {
 func (c *Client) GetIndexNistNvd2Cpematch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNistNvd2CpematchResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nist-nvd2-cpematch"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8263,7 +8263,7 @@ type GetIndexNodejsResponse struct {
 func (c *Client) GetIndexNodejs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNodejsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nodejs"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8301,7 +8301,7 @@ type GetIndexNokiaResponse struct {
 func (c *Client) GetIndexNokia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNokiaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nokia"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8339,7 +8339,7 @@ type GetIndexNozomiResponse struct {
 func (c *Client) GetIndexNozomi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNozomiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nozomi"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8377,7 +8377,7 @@ type GetIndexNpmResponse struct {
 func (c *Client) GetIndexNpm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNpmResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("npm"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8415,7 +8415,7 @@ type GetIndexNugetResponse struct {
 func (c *Client) GetIndexNuget(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNugetResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nuget"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8453,7 +8453,7 @@ type GetIndexNvidiaResponse struct {
 func (c *Client) GetIndexNvidia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNvidiaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nvidia"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8491,7 +8491,7 @@ type GetIndexNzAdvisoriesResponse struct {
 func (c *Client) GetIndexNzAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNzAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nz-advisories"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8529,7 +8529,7 @@ type GetIndexOctopusDeployResponse struct {
 func (c *Client) GetIndexOctopusDeploy(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOctopusDeployResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("octopus-deploy"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8567,7 +8567,7 @@ type GetIndexOktaResponse struct {
 func (c *Client) GetIndexOkta(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOktaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("okta"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8605,7 +8605,7 @@ type GetIndexOmronResponse struct {
 func (c *Client) GetIndexOmron(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOmronResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("omron"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8643,7 +8643,7 @@ type GetIndexOneEResponse struct {
 func (c *Client) GetIndexOneE(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOneEResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("one-e"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8681,7 +8681,7 @@ type GetIndexOpamResponse struct {
 func (c *Client) GetIndexOpam(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpamResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("opam"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8719,7 +8719,7 @@ type GetIndexOpenCvdbResponse struct {
 func (c *Client) GetIndexOpenCvdb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenCvdbResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("open-cvdb"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8757,7 +8757,7 @@ type GetIndexOpenbsdResponse struct {
 func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenbsdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openbsd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8795,7 +8795,7 @@ type GetIndexOpensshResponse struct {
 func (c *Client) GetIndexOpenssh(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpensshResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openssh"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8833,7 +8833,7 @@ type GetIndexOpensslSecadvResponse struct {
 func (c *Client) GetIndexOpensslSecadv(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpensslSecadvResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openssl-secadv"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8871,7 +8871,7 @@ type GetIndexOpenstackResponse struct {
 func (c *Client) GetIndexOpenstack(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenstackResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openstack"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8909,7 +8909,7 @@ type GetIndexOpenwrtResponse struct {
 func (c *Client) GetIndexOpenwrt(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenwrtResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openwrt"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8947,7 +8947,7 @@ type GetIndexOracleResponse struct {
 func (c *Client) GetIndexOracle(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("oracle"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -8985,7 +8985,7 @@ type GetIndexOracleCpuResponse struct {
 func (c *Client) GetIndexOracleCpu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleCpuResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("oracle-cpu"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9023,7 +9023,7 @@ type GetIndexOracleCpuCsafResponse struct {
 func (c *Client) GetIndexOracleCpuCsaf(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleCpuCsafResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("oracle-cpu-csaf"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9061,7 +9061,7 @@ type GetIndexOsvResponse struct {
 func (c *Client) GetIndexOsv(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOsvResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("osv"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9099,7 +9099,7 @@ type GetIndexOtrsResponse struct {
 func (c *Client) GetIndexOtrs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOtrsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("otrs"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9137,7 +9137,7 @@ type GetIndexOwncloudResponse struct {
 func (c *Client) GetIndexOwncloud(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOwncloudResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("owncloud"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9175,7 +9175,7 @@ type GetIndexPalantirResponse struct {
 func (c *Client) GetIndexPalantir(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPalantirResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("palantir"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9213,7 +9213,7 @@ type GetIndexPaloAltoResponse struct {
 func (c *Client) GetIndexPaloAlto(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPaloAltoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("palo-alto"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9251,7 +9251,7 @@ type GetIndexPanasonicResponse struct {
 func (c *Client) GetIndexPanasonic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPanasonicResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("panasonic"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9289,7 +9289,7 @@ type GetIndexPapercutResponse struct {
 func (c *Client) GetIndexPapercut(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPapercutResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("papercut"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9327,7 +9327,7 @@ type GetIndexPegaResponse struct {
 func (c *Client) GetIndexPega(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPegaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pega"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9365,7 +9365,7 @@ type GetIndexPhilipsResponse struct {
 func (c *Client) GetIndexPhilips(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPhilipsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("philips"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9403,7 +9403,7 @@ type GetIndexPhoenixContactResponse struct {
 func (c *Client) GetIndexPhoenixContact(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPhoenixContactResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("phoenix-contact"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9441,7 +9441,7 @@ type GetIndexPostgressqlResponse struct {
 func (c *Client) GetIndexPostgressql(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPostgressqlResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("postgressql"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9479,7 +9479,7 @@ type GetIndexProgressResponse struct {
 func (c *Client) GetIndexProgress(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexProgressResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("progress"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9517,7 +9517,7 @@ type GetIndexProofpointResponse struct {
 func (c *Client) GetIndexProofpoint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexProofpointResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("proofpoint"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9555,7 +9555,7 @@ type GetIndexPubResponse struct {
 func (c *Client) GetIndexPub(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPubResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pub"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9593,7 +9593,7 @@ type GetIndexPureStorageResponse struct {
 func (c *Client) GetIndexPureStorage(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPureStorageResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pure-storage"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9631,7 +9631,7 @@ type GetIndexPypaAdvisoriesResponse struct {
 func (c *Client) GetIndexPypaAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPypaAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pypa-advisories"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9669,7 +9669,7 @@ type GetIndexPypiResponse struct {
 func (c *Client) GetIndexPypi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPypiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pypi"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9707,7 +9707,7 @@ type GetIndexQnapResponse struct {
 func (c *Client) GetIndexQnap(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQnapResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("qnap"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9745,7 +9745,7 @@ type GetIndexQualcommResponse struct {
 func (c *Client) GetIndexQualcomm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQualcommResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("qualcomm"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9783,7 +9783,7 @@ type GetIndexQualysResponse struct {
 func (c *Client) GetIndexQualys(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQualysResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("qualys"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9821,7 +9821,7 @@ type GetIndexRansomwareResponse struct {
 func (c *Client) GetIndexRansomware(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRansomwareResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ransomware"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9859,7 +9859,7 @@ type GetIndexRedhatResponse struct {
 func (c *Client) GetIndexRedhat(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRedhatResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("redhat"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9897,7 +9897,7 @@ type GetIndexRenesasResponse struct {
 func (c *Client) GetIndexRenesas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRenesasResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("renesas"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9935,7 +9935,7 @@ type GetIndexReviveResponse struct {
 func (c *Client) GetIndexRevive(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexReviveResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("revive"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9973,7 +9973,7 @@ type GetIndexRockwellResponse struct {
 func (c *Client) GetIndexRockwell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRockwellResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rockwell"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10011,7 +10011,7 @@ type GetIndexRockyResponse struct {
 func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRockyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rocky"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10049,7 +10049,7 @@ type GetIndexRuckusResponse struct {
 func (c *Client) GetIndexRuckus(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRuckusResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ruckus"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10087,7 +10087,7 @@ type GetIndexRustsecAdvisoriesResponse struct {
 func (c *Client) GetIndexRustsecAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRustsecAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rustsec-advisories"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10125,7 +10125,7 @@ type GetIndexSacertResponse struct {
 func (c *Client) GetIndexSacert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSacertResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sacert"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10163,7 +10163,7 @@ type GetIndexSaintResponse struct {
 func (c *Client) GetIndexSaint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSaintResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("saint"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10201,7 +10201,7 @@ type GetIndexSalesforceResponse struct {
 func (c *Client) GetIndexSalesforce(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSalesforceResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("salesforce"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10239,7 +10239,7 @@ type GetIndexSambaResponse struct {
 func (c *Client) GetIndexSamba(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSambaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("samba"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10277,7 +10277,7 @@ type GetIndexSapResponse struct {
 func (c *Client) GetIndexSap(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSapResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sap"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10315,7 +10315,7 @@ type GetIndexSchneiderElectricResponse struct {
 func (c *Client) GetIndexSchneiderElectric(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSchneiderElectricResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("schneider-electric"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10353,7 +10353,7 @@ type GetIndexSecConsultResponse struct {
 func (c *Client) GetIndexSecConsult(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSecConsultResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sec-consult"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10391,7 +10391,7 @@ type GetIndexSelResponse struct {
 func (c *Client) GetIndexSel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSelResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sel"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10429,7 +10429,7 @@ type GetIndexSentineloneResponse struct {
 func (c *Client) GetIndexSentinelone(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSentineloneResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sentinelone"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10467,7 +10467,7 @@ type GetIndexServicenowResponse struct {
 func (c *Client) GetIndexServicenow(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexServicenowResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("servicenow"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10505,7 +10505,7 @@ type GetIndexShadowserverExploitedResponse struct {
 func (c *Client) GetIndexShadowserverExploited(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexShadowserverExploitedResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("shadowserver-exploited"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10543,7 +10543,7 @@ type GetIndexSickResponse struct {
 func (c *Client) GetIndexSick(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSickResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sick"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10581,7 +10581,7 @@ type GetIndexSiemensResponse struct {
 func (c *Client) GetIndexSiemens(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSiemensResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("siemens"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10619,7 +10619,7 @@ type GetIndexSierraWirelessResponse struct {
 func (c *Client) GetIndexSierraWireless(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSierraWirelessResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sierra-wireless"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10657,7 +10657,7 @@ type GetIndexSingcertResponse struct {
 func (c *Client) GetIndexSingcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSingcertResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("singcert"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10695,7 +10695,7 @@ type GetIndexSlackwareResponse struct {
 func (c *Client) GetIndexSlackware(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSlackwareResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("slackware"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10733,7 +10733,7 @@ type GetIndexSolarwindsResponse struct {
 func (c *Client) GetIndexSolarwinds(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSolarwindsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("solarwinds"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10771,7 +10771,7 @@ type GetIndexSolrResponse struct {
 func (c *Client) GetIndexSolr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSolrResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("solr"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10809,7 +10809,7 @@ type GetIndexSonicwallResponse struct {
 func (c *Client) GetIndexSonicwall(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSonicwallResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sonicwall"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10847,7 +10847,7 @@ type GetIndexSpacelabsHealthcareResponse struct {
 func (c *Client) GetIndexSpacelabsHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSpacelabsHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("spacelabs-healthcare"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10885,7 +10885,7 @@ type GetIndexSpringResponse struct {
 func (c *Client) GetIndexSpring(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSpringResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("spring"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10923,7 +10923,7 @@ type GetIndexSsdResponse struct {
 func (c *Client) GetIndexSsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSsdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ssd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10961,7 +10961,7 @@ type GetIndexStormshieldResponse struct {
 func (c *Client) GetIndexStormshield(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexStormshieldResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("stormshield"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -10999,7 +10999,7 @@ type GetIndexStrykerResponse struct {
 func (c *Client) GetIndexStryker(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexStrykerResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("stryker"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11037,7 +11037,7 @@ type GetIndexSudoResponse struct {
 func (c *Client) GetIndexSudo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSudoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sudo"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11075,7 +11075,7 @@ type GetIndexSuseResponse struct {
 func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSuseResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("suse"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11113,7 +11113,7 @@ type GetIndexSwiftResponse struct {
 func (c *Client) GetIndexSwift(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSwiftResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("swift"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11151,7 +11151,7 @@ type GetIndexSwisslogHealthcareResponse struct {
 func (c *Client) GetIndexSwisslogHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSwisslogHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("swisslog-healthcare"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11189,7 +11189,7 @@ type GetIndexSymfonyResponse struct {
 func (c *Client) GetIndexSymfony(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSymfonyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("symfony"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11227,7 +11227,7 @@ type GetIndexSyncrosoftResponse struct {
 func (c *Client) GetIndexSyncrosoft(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSyncrosoftResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("syncrosoft"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11265,7 +11265,7 @@ type GetIndexSynologyResponse struct {
 func (c *Client) GetIndexSynology(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSynologyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("synology"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11303,7 +11303,7 @@ type GetIndexTeamviewerResponse struct {
 func (c *Client) GetIndexTeamviewer(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTeamviewerResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("teamviewer"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11341,7 +11341,7 @@ type GetIndexTencentResponse struct {
 func (c *Client) GetIndexTencent(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTencentResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("tencent"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11379,7 +11379,7 @@ type GetIndexThalesResponse struct {
 func (c *Client) GetIndexThales(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThalesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("thales"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11417,7 +11417,7 @@ type GetIndexThemissinglinkResponse struct {
 func (c *Client) GetIndexThemissinglink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThemissinglinkResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("themissinglink"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11455,7 +11455,7 @@ type GetIndexThreatActorsResponse struct {
 func (c *Client) GetIndexThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThreatActorsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("threat-actors"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11493,7 +11493,7 @@ type GetIndexTiResponse struct {
 func (c *Client) GetIndexTi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ti"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11531,7 +11531,7 @@ type GetIndexTibcoResponse struct {
 func (c *Client) GetIndexTibco(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTibcoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("tibco"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11569,7 +11569,7 @@ type GetIndexTpLinkResponse struct {
 func (c *Client) GetIndexTpLink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTpLinkResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("tp-link"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11607,7 +11607,7 @@ type GetIndexTrendmicroResponse struct {
 func (c *Client) GetIndexTrendmicro(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTrendmicroResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("trendmicro"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11645,7 +11645,7 @@ type GetIndexTrustwaveResponse struct {
 func (c *Client) GetIndexTrustwave(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTrustwaveResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("trustwave"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11683,7 +11683,7 @@ type GetIndexTwcertResponse struct {
 func (c *Client) GetIndexTwcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTwcertResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("twcert"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11721,7 +11721,7 @@ type GetIndexUbiquitiResponse struct {
 func (c *Client) GetIndexUbiquiti(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUbiquitiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ubiquiti"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11759,7 +11759,7 @@ type GetIndexUbuntuResponse struct {
 func (c *Client) GetIndexUbuntu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUbuntuResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ubuntu"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11797,7 +11797,7 @@ type GetIndexUnifyResponse struct {
 func (c *Client) GetIndexUnify(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUnifyResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("unify"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11835,7 +11835,7 @@ type GetIndexUnisocResponse struct {
 func (c *Client) GetIndexUnisoc(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUnisocResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("unisoc"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11873,7 +11873,7 @@ type GetIndexUsdResponse struct {
 func (c *Client) GetIndexUsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUsdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("usd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11911,7 +11911,7 @@ type GetIndexUsomResponse struct {
 func (c *Client) GetIndexUsom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUsomResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("usom"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11949,7 +11949,7 @@ type GetIndexVandykeResponse struct {
 func (c *Client) GetIndexVandyke(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVandykeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vandyke"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -11987,7 +11987,7 @@ type GetIndexVapidlabsResponse struct {
 func (c *Client) GetIndexVapidlabs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVapidlabsResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vapidlabs"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12025,7 +12025,7 @@ type GetIndexVdeResponse struct {
 func (c *Client) GetIndexVde(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVdeResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vde"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12063,7 +12063,7 @@ type GetIndexVeeamResponse struct {
 func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVeeamResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("veeam"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12101,7 +12101,7 @@ type GetIndexVoidsecResponse struct {
 func (c *Client) GetIndexVoidsec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVoidsecResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("voidsec"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12139,7 +12139,7 @@ type GetIndexVulncheckKevResponse struct {
 func (c *Client) GetIndexVulncheckKev(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckKevResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-kev"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12177,7 +12177,7 @@ type GetIndexVulncheckNvdResponse struct {
 func (c *Client) GetIndexVulncheckNvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckNvdResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12253,7 +12253,7 @@ type GetIndexVulnerabilityAliasesResponse struct {
 func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulnerabilityAliasesResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulnerability-aliases"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12291,7 +12291,7 @@ type GetIndexVyaireResponse struct {
 func (c *Client) GetIndexVyaire(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVyaireResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vyaire"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12329,7 +12329,7 @@ type GetIndexWatchguardResponse struct {
 func (c *Client) GetIndexWatchguard(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWatchguardResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("watchguard"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12367,7 +12367,7 @@ type GetIndexWhatsappResponse struct {
 func (c *Client) GetIndexWhatsapp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWhatsappResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("whatsapp"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12405,7 +12405,7 @@ type GetIndexWibuResponse struct {
 func (c *Client) GetIndexWibu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWibuResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wibu"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12443,7 +12443,7 @@ type GetIndexWiresharkResponse struct {
 func (c *Client) GetIndexWireshark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWiresharkResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wireshark"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12481,7 +12481,7 @@ type GetIndexWithSecureResponse struct {
 func (c *Client) GetIndexWithSecure(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWithSecureResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("with-secure"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12519,7 +12519,7 @@ type GetIndexWolfiResponse struct {
 func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWolfiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wolfi"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12557,7 +12557,7 @@ type GetIndexWolfsslResponse struct {
 func (c *Client) GetIndexWolfssl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWolfsslResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wolfssl"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12595,7 +12595,7 @@ type GetIndexWordfenceResponse struct {
 func (c *Client) GetIndexWordfence(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWordfenceResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wordfence"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12633,7 +12633,7 @@ type GetIndexXenResponse struct {
 func (c *Client) GetIndexXen(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXenResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xen"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12671,7 +12671,7 @@ type GetIndexXeroxResponse struct {
 func (c *Client) GetIndexXerox(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXeroxResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xerox"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12709,7 +12709,7 @@ type GetIndexXiaomiResponse struct {
 func (c *Client) GetIndexXiaomi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXiaomiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xiaomi"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12747,7 +12747,7 @@ type GetIndexXylemResponse struct {
 func (c *Client) GetIndexXylem(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXylemResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xylem"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12785,7 +12785,7 @@ type GetIndexYokogawaResponse struct {
 func (c *Client) GetIndexYokogawa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexYokogawaResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("yokogawa"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12823,7 +12823,7 @@ type GetIndexYubicoResponse struct {
 func (c *Client) GetIndexYubico(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexYubicoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("yubico"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12861,7 +12861,7 @@ type GetIndexZdiResponse struct {
 func (c *Client) GetIndexZdi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZdiResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zdi"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12899,7 +12899,7 @@ type GetIndexZeroDayResponse struct {
 func (c *Client) GetIndexZeroDay(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZeroDayResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zero-day"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12937,7 +12937,7 @@ type GetIndexZeroscienceResponse struct {
 func (c *Client) GetIndexZeroscience(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZeroscienceResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zeroscience"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -12975,7 +12975,7 @@ type GetIndexZimbraResponse struct {
 func (c *Client) GetIndexZimbra(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZimbraResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zimbra"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -13013,7 +13013,7 @@ type GetIndexZoomResponse struct {
 func (c *Client) GetIndexZoom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZoomResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zoom"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -13051,7 +13051,7 @@ type GetIndexZscalerResponse struct {
 func (c *Client) GetIndexZscaler(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZscalerResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zscaler"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -13089,7 +13089,7 @@ type GetIndexZusoResponse struct {
 func (c *Client) GetIndexZuso(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZusoResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zuso"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -13127,7 +13127,7 @@ type GetIndexZyxelResponse struct {
 func (c *Client) GetIndexZyxel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZyxelResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zyxel"), nil)
 	if err != nil {
 		panic(err)
 	}
