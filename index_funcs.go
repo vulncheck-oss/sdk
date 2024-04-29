@@ -8,13 +8,15 @@ import (
 	"net/url"
 )
 
-type GetIndexA10Response struct {
+// THIS FILE IS GENERATED. DO NOT EDIT
+
+type IndexA10Response struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryA10 `json:"data"`
 }
 
-func (c *Client) GetIndexA10(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexA10Response, err error) {
+func (c *Client) GetIndexA10(queryParameters ...IndexQueryParameters) (responseJSON *IndexA10Response, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("a10"), nil)
@@ -46,13 +48,13 @@ func (c *Client) GetIndexA10(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexAbbResponse struct {
+type IndexAbbResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryABBAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexAbb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbbResponse, err error) {
+func (c *Client) GetIndexAbb(queryParameters ...IndexQueryParameters) (responseJSON *IndexAbbResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("abb"), nil)
@@ -84,13 +86,13 @@ func (c *Client) GetIndexAbb(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexAbbottResponse struct {
+type IndexAbbottResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryAbbott `json:"data"`
 }
 
-func (c *Client) GetIndexAbbott(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbbottResponse, err error) {
+func (c *Client) GetIndexAbbott(queryParameters ...IndexQueryParameters) (responseJSON *IndexAbbottResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("abbott"), nil)
@@ -122,13 +124,13 @@ func (c *Client) GetIndexAbbott(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexAbsoluteResponse struct {
+type IndexAbsoluteResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryAbsolute `json:"data"`
 }
 
-func (c *Client) GetIndexAbsolute(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAbsoluteResponse, err error) {
+func (c *Client) GetIndexAbsolute(queryParameters ...IndexQueryParameters) (responseJSON *IndexAbsoluteResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("absolute"), nil)
@@ -160,13 +162,13 @@ func (c *Client) GetIndexAbsolute(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexAcronisResponse struct {
+type IndexAcronisResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryAcronis `json:"data"`
 }
 
-func (c *Client) GetIndexAcronis(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAcronisResponse, err error) {
+func (c *Client) GetIndexAcronis(queryParameters ...IndexQueryParameters) (responseJSON *IndexAcronisResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("acronis"), nil)
@@ -198,13 +200,13 @@ func (c *Client) GetIndexAcronis(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexAdobeResponse struct {
+type IndexAdobeResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryAdobeAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexAdobe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAdobeResponse, err error) {
+func (c *Client) GetIndexAdobe(queryParameters ...IndexQueryParameters) (responseJSON *IndexAdobeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("adobe"), nil)
@@ -236,13 +238,13 @@ func (c *Client) GetIndexAdobe(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexAlephResearchResponse struct {
+type IndexAlephResearchResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryAlephResearch `json:"data"`
 }
 
-func (c *Client) GetIndexAlephResearch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlephResearchResponse, err error) {
+func (c *Client) GetIndexAlephResearch(queryParameters ...IndexQueryParameters) (responseJSON *IndexAlephResearchResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aleph-research"), nil)
@@ -274,13 +276,13 @@ func (c *Client) GetIndexAlephResearch(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexAlmaResponse struct {
+type IndexAlmaResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryAlmaLinuxUpdate `json:"data"`
 }
 
-func (c *Client) GetIndexAlma(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlmaResponse, err error) {
+func (c *Client) GetIndexAlma(queryParameters ...IndexQueryParameters) (responseJSON *IndexAlmaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("alma"), nil)
@@ -312,13 +314,13 @@ func (c *Client) GetIndexAlma(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexAlpineResponse struct {
+type IndexAlpineResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryAlpineLinuxSecDB `json:"data"`
 }
 
-func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAlpineResponse, err error) {
+func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (responseJSON *IndexAlpineResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("alpine"), nil)
@@ -350,13 +352,13 @@ func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexAmazonResponse struct {
+type IndexAmazonResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryUpdate `json:"data"`
 }
 
-func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmazonResponse, err error) {
+func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (responseJSON *IndexAmazonResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("amazon"), nil)
@@ -388,13 +390,13 @@ func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexAmdResponse struct {
+type IndexAmdResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryAMD `json:"data"`
 }
 
-func (c *Client) GetIndexAmd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmdResponse, err error) {
+func (c *Client) GetIndexAmd(queryParameters ...IndexQueryParameters) (responseJSON *IndexAmdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("amd"), nil)
@@ -426,13 +428,13 @@ func (c *Client) GetIndexAmd(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexAmiResponse struct {
+type IndexAmiResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryAMI `json:"data"`
 }
 
-func (c *Client) GetIndexAmi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAmiResponse, err error) {
+func (c *Client) GetIndexAmi(queryParameters ...IndexQueryParameters) (responseJSON *IndexAmiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ami"), nil)
@@ -464,13 +466,51 @@ func (c *Client) GetIndexAmi(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexAndroidResponse struct {
+type IndexAnchoreNvdOverrideResponse struct {
+	Benchmark float64                             `json:"_benchmark"`
+	Meta      IndexMeta                           `json:"_meta"`
+	Data      []client.AdvisoryAnchoreNVDOverride `json:"data"`
+}
+
+func (c *Client) GetIndexAnchoreNvdOverride(queryParameters ...IndexQueryParameters) (responseJSON *IndexAnchoreNvdOverrideResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("anchore-nvd-override"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexAndroidResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryAndroidAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexAndroid(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAndroidResponse, err error) {
+func (c *Client) GetIndexAndroid(queryParameters ...IndexQueryParameters) (responseJSON *IndexAndroidResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("android"), nil)
@@ -502,13 +542,13 @@ func (c *Client) GetIndexAndroid(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexApacheActivemqResponse struct {
+type IndexApacheActivemqResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryApacheActiveMQ `json:"data"`
 }
 
-func (c *Client) GetIndexApacheActivemq(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheActivemqResponse, err error) {
+func (c *Client) GetIndexApacheActivemq(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheActivemqResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-activemq"), nil)
@@ -540,13 +580,13 @@ func (c *Client) GetIndexApacheActivemq(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexApacheArchivaResponse struct {
+type IndexApacheArchivaResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryApacheArchiva `json:"data"`
 }
 
-func (c *Client) GetIndexApacheArchiva(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheArchivaResponse, err error) {
+func (c *Client) GetIndexApacheArchiva(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheArchivaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-archiva"), nil)
@@ -578,13 +618,13 @@ func (c *Client) GetIndexApacheArchiva(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexApacheArrowResponse struct {
+type IndexApacheArrowResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryApacheArrow `json:"data"`
 }
 
-func (c *Client) GetIndexApacheArrow(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheArrowResponse, err error) {
+func (c *Client) GetIndexApacheArrow(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheArrowResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-arrow"), nil)
@@ -616,13 +656,13 @@ func (c *Client) GetIndexApacheArrow(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexApacheCamelResponse struct {
+type IndexApacheCamelResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryApacheCamel `json:"data"`
 }
 
-func (c *Client) GetIndexApacheCamel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCamelResponse, err error) {
+func (c *Client) GetIndexApacheCamel(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheCamelResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-camel"), nil)
@@ -654,13 +694,13 @@ func (c *Client) GetIndexApacheCamel(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexApacheCommonsResponse struct {
+type IndexApacheCommonsResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryApacheCommons `json:"data"`
 }
 
-func (c *Client) GetIndexApacheCommons(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCommonsResponse, err error) {
+func (c *Client) GetIndexApacheCommons(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheCommonsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-commons"), nil)
@@ -692,13 +732,13 @@ func (c *Client) GetIndexApacheCommons(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexApacheCouchdbResponse struct {
+type IndexApacheCouchdbResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryApacheCouchDB `json:"data"`
 }
 
-func (c *Client) GetIndexApacheCouchdb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheCouchdbResponse, err error) {
+func (c *Client) GetIndexApacheCouchdb(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheCouchdbResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-couchdb"), nil)
@@ -730,13 +770,13 @@ func (c *Client) GetIndexApacheCouchdb(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexApacheFlinkResponse struct {
+type IndexApacheFlinkResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryApacheFlink `json:"data"`
 }
 
-func (c *Client) GetIndexApacheFlink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheFlinkResponse, err error) {
+func (c *Client) GetIndexApacheFlink(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheFlinkResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-flink"), nil)
@@ -768,13 +808,13 @@ func (c *Client) GetIndexApacheFlink(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexApacheGuacamoleResponse struct {
+type IndexApacheGuacamoleResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryApacheGuacamole `json:"data"`
 }
 
-func (c *Client) GetIndexApacheGuacamole(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheGuacamoleResponse, err error) {
+func (c *Client) GetIndexApacheGuacamole(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheGuacamoleResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-guacamole"), nil)
@@ -806,13 +846,13 @@ func (c *Client) GetIndexApacheGuacamole(queryParameters ...IndexQueryParameters
 	return responseJSON, nil
 }
 
-type GetIndexApacheHadoopResponse struct {
+type IndexApacheHadoopResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryApacheHadoop `json:"data"`
 }
 
-func (c *Client) GetIndexApacheHadoop(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheHadoopResponse, err error) {
+func (c *Client) GetIndexApacheHadoop(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheHadoopResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-hadoop"), nil)
@@ -844,13 +884,13 @@ func (c *Client) GetIndexApacheHadoop(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexApacheHttpResponse struct {
+type IndexApacheHttpResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryApacheHTTP `json:"data"`
 }
 
-func (c *Client) GetIndexApacheHttp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheHttpResponse, err error) {
+func (c *Client) GetIndexApacheHttp(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheHttpResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-http"), nil)
@@ -882,13 +922,13 @@ func (c *Client) GetIndexApacheHttp(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexApacheJspwikiResponse struct {
+type IndexApacheJspwikiResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryApacheJSPWiki `json:"data"`
 }
 
-func (c *Client) GetIndexApacheJspwiki(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheJspwikiResponse, err error) {
+func (c *Client) GetIndexApacheJspwiki(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheJspwikiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-jspwiki"), nil)
@@ -920,13 +960,13 @@ func (c *Client) GetIndexApacheJspwiki(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexApacheKafkaResponse struct {
+type IndexApacheKafkaResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryApacheKafka `json:"data"`
 }
 
-func (c *Client) GetIndexApacheKafka(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheKafkaResponse, err error) {
+func (c *Client) GetIndexApacheKafka(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheKafkaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-kafka"), nil)
@@ -958,13 +998,13 @@ func (c *Client) GetIndexApacheKafka(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexApacheLoggingservicesResponse struct {
+type IndexApacheLoggingservicesResponse struct {
 	Benchmark float64                                `json:"_benchmark"`
 	Meta      IndexMeta                              `json:"_meta"`
 	Data      []client.AdvisoryApacheLoggingServices `json:"data"`
 }
 
-func (c *Client) GetIndexApacheLoggingservices(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheLoggingservicesResponse, err error) {
+func (c *Client) GetIndexApacheLoggingservices(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheLoggingservicesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-loggingservices"), nil)
@@ -996,13 +1036,13 @@ func (c *Client) GetIndexApacheLoggingservices(queryParameters ...IndexQueryPara
 	return responseJSON, nil
 }
 
-type GetIndexApacheNifiResponse struct {
+type IndexApacheNifiResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryApacheNiFi `json:"data"`
 }
 
-func (c *Client) GetIndexApacheNifi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheNifiResponse, err error) {
+func (c *Client) GetIndexApacheNifi(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheNifiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-nifi"), nil)
@@ -1034,13 +1074,13 @@ func (c *Client) GetIndexApacheNifi(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexApacheOfbizResponse struct {
+type IndexApacheOfbizResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryApacheOFBiz `json:"data"`
 }
 
-func (c *Client) GetIndexApacheOfbiz(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOfbizResponse, err error) {
+func (c *Client) GetIndexApacheOfbiz(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheOfbizResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-ofbiz"), nil)
@@ -1072,13 +1112,13 @@ func (c *Client) GetIndexApacheOfbiz(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexApacheOpenmeetingsResponse struct {
+type IndexApacheOpenmeetingsResponse struct {
 	Benchmark float64                             `json:"_benchmark"`
 	Meta      IndexMeta                           `json:"_meta"`
 	Data      []client.AdvisoryApacheOpenMeetings `json:"data"`
 }
 
-func (c *Client) GetIndexApacheOpenmeetings(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOpenmeetingsResponse, err error) {
+func (c *Client) GetIndexApacheOpenmeetings(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheOpenmeetingsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-openmeetings"), nil)
@@ -1110,13 +1150,13 @@ func (c *Client) GetIndexApacheOpenmeetings(queryParameters ...IndexQueryParamet
 	return responseJSON, nil
 }
 
-type GetIndexApacheOpenofficeResponse struct {
+type IndexApacheOpenofficeResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryApacheOpenOffice `json:"data"`
 }
 
-func (c *Client) GetIndexApacheOpenoffice(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheOpenofficeResponse, err error) {
+func (c *Client) GetIndexApacheOpenoffice(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheOpenofficeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-openoffice"), nil)
@@ -1148,13 +1188,13 @@ func (c *Client) GetIndexApacheOpenoffice(queryParameters ...IndexQueryParameter
 	return responseJSON, nil
 }
 
-type GetIndexApachePulsarResponse struct {
+type IndexApachePulsarResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryApachePulsar `json:"data"`
 }
 
-func (c *Client) GetIndexApachePulsar(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApachePulsarResponse, err error) {
+func (c *Client) GetIndexApachePulsar(queryParameters ...IndexQueryParameters) (responseJSON *IndexApachePulsarResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-pulsar"), nil)
@@ -1186,13 +1226,13 @@ func (c *Client) GetIndexApachePulsar(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexApacheShiroResponse struct {
+type IndexApacheShiroResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryApacheShiro `json:"data"`
 }
 
-func (c *Client) GetIndexApacheShiro(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheShiroResponse, err error) {
+func (c *Client) GetIndexApacheShiro(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheShiroResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-shiro"), nil)
@@ -1224,13 +1264,13 @@ func (c *Client) GetIndexApacheShiro(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexApacheSparkResponse struct {
+type IndexApacheSparkResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryApacheSpark `json:"data"`
 }
 
-func (c *Client) GetIndexApacheSpark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSparkResponse, err error) {
+func (c *Client) GetIndexApacheSpark(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheSparkResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-spark"), nil)
@@ -1262,13 +1302,13 @@ func (c *Client) GetIndexApacheSpark(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexApacheStrutsResponse struct {
+type IndexApacheStrutsResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryApacheStruts `json:"data"`
 }
 
-func (c *Client) GetIndexApacheStruts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheStrutsResponse, err error) {
+func (c *Client) GetIndexApacheStruts(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheStrutsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-struts"), nil)
@@ -1300,13 +1340,13 @@ func (c *Client) GetIndexApacheStruts(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexApacheSubversionResponse struct {
+type IndexApacheSubversionResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryApacheSubversion `json:"data"`
 }
 
-func (c *Client) GetIndexApacheSubversion(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSubversionResponse, err error) {
+func (c *Client) GetIndexApacheSubversion(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheSubversionResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-subversion"), nil)
@@ -1338,13 +1378,13 @@ func (c *Client) GetIndexApacheSubversion(queryParameters ...IndexQueryParameter
 	return responseJSON, nil
 }
 
-type GetIndexApacheSupersetResponse struct {
+type IndexApacheSupersetResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryApacheSuperset `json:"data"`
 }
 
-func (c *Client) GetIndexApacheSuperset(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheSupersetResponse, err error) {
+func (c *Client) GetIndexApacheSuperset(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheSupersetResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-superset"), nil)
@@ -1376,13 +1416,13 @@ func (c *Client) GetIndexApacheSuperset(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexApacheTomcatResponse struct {
+type IndexApacheTomcatResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryApacheTomcat `json:"data"`
 }
 
-func (c *Client) GetIndexApacheTomcat(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheTomcatResponse, err error) {
+func (c *Client) GetIndexApacheTomcat(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheTomcatResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-tomcat"), nil)
@@ -1414,13 +1454,13 @@ func (c *Client) GetIndexApacheTomcat(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexApacheZookeeperResponse struct {
+type IndexApacheZookeeperResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryApacheZooKeeper `json:"data"`
 }
 
-func (c *Client) GetIndexApacheZookeeper(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexApacheZookeeperResponse, err error) {
+func (c *Client) GetIndexApacheZookeeper(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheZookeeperResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apache-zookeeper"), nil)
@@ -1452,13 +1492,13 @@ func (c *Client) GetIndexApacheZookeeper(queryParameters ...IndexQueryParameters
 	return responseJSON, nil
 }
 
-type GetIndexAppcheckResponse struct {
+type IndexAppcheckResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryAppCheck `json:"data"`
 }
 
-func (c *Client) GetIndexAppcheck(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppcheckResponse, err error) {
+func (c *Client) GetIndexAppcheck(queryParameters ...IndexQueryParameters) (responseJSON *IndexAppcheckResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("appcheck"), nil)
@@ -1490,13 +1530,13 @@ func (c *Client) GetIndexAppcheck(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexAppgateResponse struct {
+type IndexAppgateResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryAppgate `json:"data"`
 }
 
-func (c *Client) GetIndexAppgate(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppgateResponse, err error) {
+func (c *Client) GetIndexAppgate(queryParameters ...IndexQueryParameters) (responseJSON *IndexAppgateResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("appgate"), nil)
@@ -1528,13 +1568,13 @@ func (c *Client) GetIndexAppgate(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexAppleResponse struct {
+type IndexAppleResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryAppleAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexApple(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAppleResponse, err error) {
+func (c *Client) GetIndexApple(queryParameters ...IndexQueryParameters) (responseJSON *IndexAppleResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("apple"), nil)
@@ -1566,13 +1606,13 @@ func (c *Client) GetIndexApple(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexArchResponse struct {
+type IndexArchResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryArchIssue `json:"data"`
 }
 
-func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexArchResponse, err error) {
+func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (responseJSON *IndexArchResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("arch"), nil)
@@ -1604,13 +1644,13 @@ func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexAristaResponse struct {
+type IndexAristaResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryArista `json:"data"`
 }
 
-func (c *Client) GetIndexArista(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAristaResponse, err error) {
+func (c *Client) GetIndexArista(queryParameters ...IndexQueryParameters) (responseJSON *IndexAristaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("arista"), nil)
@@ -1642,13 +1682,13 @@ func (c *Client) GetIndexArista(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexArubaResponse struct {
+type IndexArubaResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryAruba `json:"data"`
 }
 
-func (c *Client) GetIndexAruba(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexArubaResponse, err error) {
+func (c *Client) GetIndexAruba(queryParameters ...IndexQueryParameters) (responseJSON *IndexArubaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aruba"), nil)
@@ -1680,13 +1720,13 @@ func (c *Client) GetIndexAruba(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexAsrgResponse struct {
+type IndexAsrgResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryASRG `json:"data"`
 }
 
-func (c *Client) GetIndexAsrg(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsrgResponse, err error) {
+func (c *Client) GetIndexAsrg(queryParameters ...IndexQueryParameters) (responseJSON *IndexAsrgResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("asrg"), nil)
@@ -1718,13 +1758,13 @@ func (c *Client) GetIndexAsrg(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexAssetnoteResponse struct {
+type IndexAssetnoteResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryAssetNote `json:"data"`
 }
 
-func (c *Client) GetIndexAssetnote(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAssetnoteResponse, err error) {
+func (c *Client) GetIndexAssetnote(queryParameters ...IndexQueryParameters) (responseJSON *IndexAssetnoteResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("assetnote"), nil)
@@ -1756,13 +1796,13 @@ func (c *Client) GetIndexAssetnote(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexAsteriskResponse struct {
+type IndexAsteriskResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryAsterisk `json:"data"`
 }
 
-func (c *Client) GetIndexAsterisk(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsteriskResponse, err error) {
+func (c *Client) GetIndexAsterisk(queryParameters ...IndexQueryParameters) (responseJSON *IndexAsteriskResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("asterisk"), nil)
@@ -1794,13 +1834,13 @@ func (c *Client) GetIndexAsterisk(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexAsusResponse struct {
+type IndexAsusResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryAsus `json:"data"`
 }
 
-func (c *Client) GetIndexAsus(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAsusResponse, err error) {
+func (c *Client) GetIndexAsus(queryParameters ...IndexQueryParameters) (responseJSON *IndexAsusResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("asus"), nil)
@@ -1832,13 +1872,13 @@ func (c *Client) GetIndexAsus(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexAtlassianResponse struct {
+type IndexAtlassianResponse struct {
 	Benchmark float64                            `json:"_benchmark"`
 	Meta      IndexMeta                          `json:"_meta"`
 	Data      []client.AdvisoryAtlassianAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexAtlassian(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAtlassianResponse, err error) {
+func (c *Client) GetIndexAtlassian(queryParameters ...IndexQueryParameters) (responseJSON *IndexAtlassianResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("atlassian"), nil)
@@ -1870,13 +1910,89 @@ func (c *Client) GetIndexAtlassian(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexAuscertResponse struct {
+type IndexAtlassianVulnsResponse struct {
+	Benchmark float64                        `json:"_benchmark"`
+	Meta      IndexMeta                      `json:"_meta"`
+	Data      []client.AdvisoryAtlassianVuln `json:"data"`
+}
+
+func (c *Client) GetIndexAtlassianVulns(queryParameters ...IndexQueryParameters) (responseJSON *IndexAtlassianVulnsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("atlassian-vulns"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexAtredisResponse struct {
+	Benchmark float64                  `json:"_benchmark"`
+	Meta      IndexMeta                `json:"_meta"`
+	Data      []client.AdvisoryAtredis `json:"data"`
+}
+
+func (c *Client) GetIndexAtredis(queryParameters ...IndexQueryParameters) (responseJSON *IndexAtredisResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("atredis"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexAuscertResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryAusCert `json:"data"`
 }
 
-func (c *Client) GetIndexAuscert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAuscertResponse, err error) {
+func (c *Client) GetIndexAuscert(queryParameters ...IndexQueryParameters) (responseJSON *IndexAuscertResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("auscert"), nil)
@@ -1908,13 +2024,13 @@ func (c *Client) GetIndexAuscert(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexAutodeskResponse struct {
+type IndexAutodeskResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryAutodesk `json:"data"`
 }
 
-func (c *Client) GetIndexAutodesk(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAutodeskResponse, err error) {
+func (c *Client) GetIndexAutodesk(queryParameters ...IndexQueryParameters) (responseJSON *IndexAutodeskResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("autodesk"), nil)
@@ -1946,13 +2062,13 @@ func (c *Client) GetIndexAutodesk(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexAvayaResponse struct {
+type IndexAvayaResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryAvaya `json:"data"`
 }
 
-func (c *Client) GetIndexAvaya(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvayaResponse, err error) {
+func (c *Client) GetIndexAvaya(queryParameters ...IndexQueryParameters) (responseJSON *IndexAvayaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("avaya"), nil)
@@ -1984,13 +2100,13 @@ func (c *Client) GetIndexAvaya(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexAvevaResponse struct {
+type IndexAvevaResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryAVEVAAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexAveva(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvevaResponse, err error) {
+func (c *Client) GetIndexAveva(queryParameters ...IndexQueryParameters) (responseJSON *IndexAvevaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aveva"), nil)
@@ -2022,13 +2138,13 @@ func (c *Client) GetIndexAveva(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexAvigilonResponse struct {
+type IndexAvigilonResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryAvigilon `json:"data"`
 }
 
-func (c *Client) GetIndexAvigilon(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAvigilonResponse, err error) {
+func (c *Client) GetIndexAvigilon(queryParameters ...IndexQueryParameters) (responseJSON *IndexAvigilonResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("avigilon"), nil)
@@ -2060,13 +2176,13 @@ func (c *Client) GetIndexAvigilon(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexAwsResponse struct {
+type IndexAwsResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryAWS `json:"data"`
 }
 
-func (c *Client) GetIndexAws(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAwsResponse, err error) {
+func (c *Client) GetIndexAws(queryParameters ...IndexQueryParameters) (responseJSON *IndexAwsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("aws"), nil)
@@ -2098,13 +2214,13 @@ func (c *Client) GetIndexAws(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexAxisResponse struct {
+type IndexAxisResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryAxis `json:"data"`
 }
 
-func (c *Client) GetIndexAxis(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexAxisResponse, err error) {
+func (c *Client) GetIndexAxis(queryParameters ...IndexQueryParameters) (responseJSON *IndexAxisResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("axis"), nil)
@@ -2136,13 +2252,13 @@ func (c *Client) GetIndexAxis(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexBandrResponse struct {
+type IndexBandrResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryBandr `json:"data"`
 }
 
-func (c *Client) GetIndexBandr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBandrResponse, err error) {
+func (c *Client) GetIndexBandr(queryParameters ...IndexQueryParameters) (responseJSON *IndexBandrResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bandr"), nil)
@@ -2174,13 +2290,13 @@ func (c *Client) GetIndexBandr(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexBaxterResponse struct {
+type IndexBaxterResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryBaxterAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBaxter(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBaxterResponse, err error) {
+func (c *Client) GetIndexBaxter(queryParameters ...IndexQueryParameters) (responseJSON *IndexBaxterResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("baxter"), nil)
@@ -2212,13 +2328,13 @@ func (c *Client) GetIndexBaxter(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexBbraunResponse struct {
+type IndexBbraunResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryBBraunAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBbraun(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBbraunResponse, err error) {
+func (c *Client) GetIndexBbraun(queryParameters ...IndexQueryParameters) (responseJSON *IndexBbraunResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bbraun"), nil)
@@ -2250,13 +2366,13 @@ func (c *Client) GetIndexBbraun(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexBdResponse struct {
+type IndexBdResponse struct {
 	Benchmark float64                                  `json:"_benchmark"`
 	Meta      IndexMeta                                `json:"_meta"`
 	Data      []client.AdvisoryBectonDickinsonAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBdResponse, err error) {
+func (c *Client) GetIndexBd(queryParameters ...IndexQueryParameters) (responseJSON *IndexBdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bd"), nil)
@@ -2288,13 +2404,13 @@ func (c *Client) GetIndexBd(queryParameters ...IndexQueryParameters) (responseJS
 	return responseJSON, nil
 }
 
-type GetIndexBduResponse struct {
+type IndexBduResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryBDUAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBdu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBduResponse, err error) {
+func (c *Client) GetIndexBdu(queryParameters ...IndexQueryParameters) (responseJSON *IndexBduResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bdu"), nil)
@@ -2326,13 +2442,13 @@ func (c *Client) GetIndexBdu(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexBeckhoffResponse struct {
+type IndexBeckhoffResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryBeckhoffAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBeckhoff(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeckhoffResponse, err error) {
+func (c *Client) GetIndexBeckhoff(queryParameters ...IndexQueryParameters) (responseJSON *IndexBeckhoffResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("beckhoff"), nil)
@@ -2364,13 +2480,13 @@ func (c *Client) GetIndexBeckhoff(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexBeldenResponse struct {
+type IndexBeldenResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryBeldenAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBelden(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeldenResponse, err error) {
+func (c *Client) GetIndexBelden(queryParameters ...IndexQueryParameters) (responseJSON *IndexBeldenResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("belden"), nil)
@@ -2402,13 +2518,13 @@ func (c *Client) GetIndexBelden(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexBeyondTrustResponse struct {
+type IndexBeyondTrustResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryBeyondTrust `json:"data"`
 }
 
-func (c *Client) GetIndexBeyondTrust(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBeyondTrustResponse, err error) {
+func (c *Client) GetIndexBeyondTrust(queryParameters ...IndexQueryParameters) (responseJSON *IndexBeyondTrustResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("beyond-trust"), nil)
@@ -2440,13 +2556,13 @@ func (c *Client) GetIndexBeyondTrust(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexBinarlyResponse struct {
+type IndexBinarlyResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryBinarly `json:"data"`
 }
 
-func (c *Client) GetIndexBinarly(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBinarlyResponse, err error) {
+func (c *Client) GetIndexBinarly(queryParameters ...IndexQueryParameters) (responseJSON *IndexBinarlyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("binarly"), nil)
@@ -2478,13 +2594,13 @@ func (c *Client) GetIndexBinarly(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexBitdefenderResponse struct {
+type IndexBitdefenderResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryBitDefender `json:"data"`
 }
 
-func (c *Client) GetIndexBitdefender(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBitdefenderResponse, err error) {
+func (c *Client) GetIndexBitdefender(queryParameters ...IndexQueryParameters) (responseJSON *IndexBitdefenderResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bitdefender"), nil)
@@ -2516,13 +2632,13 @@ func (c *Client) GetIndexBitdefender(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexBlackberryResponse struct {
+type IndexBlackberryResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryBlackBerry `json:"data"`
 }
 
-func (c *Client) GetIndexBlackberry(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBlackberryResponse, err error) {
+func (c *Client) GetIndexBlackberry(queryParameters ...IndexQueryParameters) (responseJSON *IndexBlackberryResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("blackberry"), nil)
@@ -2554,13 +2670,13 @@ func (c *Client) GetIndexBlackberry(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexBlsResponse struct {
+type IndexBlsResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryBLS `json:"data"`
 }
 
-func (c *Client) GetIndexBls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBlsResponse, err error) {
+func (c *Client) GetIndexBls(queryParameters ...IndexQueryParameters) (responseJSON *IndexBlsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bls"), nil)
@@ -2592,13 +2708,13 @@ func (c *Client) GetIndexBls(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexBoschResponse struct {
+type IndexBoschResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryBoschAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBosch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBoschResponse, err error) {
+func (c *Client) GetIndexBosch(queryParameters ...IndexQueryParameters) (responseJSON *IndexBoschResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("bosch"), nil)
@@ -2630,13 +2746,13 @@ func (c *Client) GetIndexBosch(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexBostonScientificResponse struct {
+type IndexBostonScientificResponse struct {
 	Benchmark float64                                   `json:"_benchmark"`
 	Meta      IndexMeta                                 `json:"_meta"`
 	Data      []client.AdvisoryBostonScientificAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexBostonScientific(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBostonScientificResponse, err error) {
+func (c *Client) GetIndexBostonScientific(queryParameters ...IndexQueryParameters) (responseJSON *IndexBostonScientificResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("boston-scientific"), nil)
@@ -2668,13 +2784,13 @@ func (c *Client) GetIndexBostonScientific(queryParameters ...IndexQueryParameter
 	return responseJSON, nil
 }
 
-type GetIndexBotnetsResponse struct {
+type IndexBotnetsResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryBotnet `json:"data"`
 }
 
-func (c *Client) GetIndexBotnets(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexBotnetsResponse, err error) {
+func (c *Client) GetIndexBotnets(queryParameters ...IndexQueryParameters) (responseJSON *IndexBotnetsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("botnets"), nil)
@@ -2706,13 +2822,13 @@ func (c *Client) GetIndexBotnets(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexCaCyberCentreResponse struct {
+type IndexCaCyberCentreResponse struct {
 	Benchmark float64                                `json:"_benchmark"`
 	Meta      IndexMeta                              `json:"_meta"`
 	Data      []client.AdvisoryCACyberCentreAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCaCyberCentre(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCaCyberCentreResponse, err error) {
+func (c *Client) GetIndexCaCyberCentre(queryParameters ...IndexQueryParameters) (responseJSON *IndexCaCyberCentreResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ca-cyber-centre"), nil)
@@ -2744,13 +2860,13 @@ func (c *Client) GetIndexCaCyberCentre(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexCanvasResponse struct {
+type IndexCanvasResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryCanvasExploit `json:"data"`
 }
 
-func (c *Client) GetIndexCanvas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCanvasResponse, err error) {
+func (c *Client) GetIndexCanvas(queryParameters ...IndexQueryParameters) (responseJSON *IndexCanvasResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("canvas"), nil)
@@ -2782,13 +2898,13 @@ func (c *Client) GetIndexCanvas(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexCarestreamResponse struct {
+type IndexCarestreamResponse struct {
 	Benchmark float64                             `json:"_benchmark"`
 	Meta      IndexMeta                           `json:"_meta"`
 	Data      []client.AdvisoryCarestreamAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCarestream(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCarestreamResponse, err error) {
+func (c *Client) GetIndexCarestream(queryParameters ...IndexQueryParameters) (responseJSON *IndexCarestreamResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("carestream"), nil)
@@ -2820,13 +2936,13 @@ func (c *Client) GetIndexCarestream(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexCargoResponse struct {
+type IndexCargoResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexCargo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCargoResponse, err error) {
+func (c *Client) GetIndexCargo(queryParameters ...IndexQueryParameters) (responseJSON *IndexCargoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cargo"), nil)
@@ -2858,13 +2974,13 @@ func (c *Client) GetIndexCargo(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexCarrierResponse struct {
+type IndexCarrierResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryCarrier `json:"data"`
 }
 
-func (c *Client) GetIndexCarrier(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCarrierResponse, err error) {
+func (c *Client) GetIndexCarrier(queryParameters ...IndexQueryParameters) (responseJSON *IndexCarrierResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("carrier"), nil)
@@ -2896,13 +3012,13 @@ func (c *Client) GetIndexCarrier(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexCblMarinerResponse struct {
+type IndexCblMarinerResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryCBLMariner `json:"data"`
 }
 
-func (c *Client) GetIndexCblMariner(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCblMarinerResponse, err error) {
+func (c *Client) GetIndexCblMariner(queryParameters ...IndexQueryParameters) (responseJSON *IndexCblMarinerResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cbl-mariner"), nil)
@@ -2934,13 +3050,13 @@ func (c *Client) GetIndexCblMariner(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexCentosResponse struct {
+type IndexCentosResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryCESA `json:"data"`
 }
 
-func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCentosResponse, err error) {
+func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (responseJSON *IndexCentosResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("centos"), nil)
@@ -2972,13 +3088,13 @@ func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexCertBeResponse struct {
+type IndexCertBeResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryCertBE `json:"data"`
 }
 
-func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertBeResponse, err error) {
+func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertBeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cert-be"), nil)
@@ -3010,13 +3126,13 @@ func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexCertUaResponse struct {
+type IndexCertUaResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryCertUA `json:"data"`
 }
 
-func (c *Client) GetIndexCertUa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertUaResponse, err error) {
+func (c *Client) GetIndexCertUa(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertUaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cert-ua"), nil)
@@ -3048,13 +3164,13 @@ func (c *Client) GetIndexCertUa(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexCerteuResponse struct {
+type IndexCerteuResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryCERTEUAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCerteu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCerteuResponse, err error) {
+func (c *Client) GetIndexCerteu(queryParameters ...IndexQueryParameters) (responseJSON *IndexCerteuResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("certeu"), nil)
@@ -3086,13 +3202,13 @@ func (c *Client) GetIndexCerteu(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexCertfrResponse struct {
+type IndexCertfrResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryCertFRAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCertfr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCertfrResponse, err error) {
+func (c *Client) GetIndexCertfr(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertfrResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("certfr"), nil)
@@ -3124,13 +3240,13 @@ func (c *Client) GetIndexCertfr(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexChainguardResponse struct {
+type IndexChainguardResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryChainGuard `json:"data"`
 }
 
-func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexChainguardResponse, err error) {
+func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (responseJSON *IndexChainguardResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("chainguard"), nil)
@@ -3162,13 +3278,13 @@ func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexCheckpointResponse struct {
+type IndexCheckpointResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryCheckPoint `json:"data"`
 }
 
-func (c *Client) GetIndexCheckpoint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCheckpointResponse, err error) {
+func (c *Client) GetIndexCheckpoint(queryParameters ...IndexQueryParameters) (responseJSON *IndexCheckpointResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("checkpoint"), nil)
@@ -3200,13 +3316,13 @@ func (c *Client) GetIndexCheckpoint(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexChromeResponse struct {
+type IndexChromeResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryChrome `json:"data"`
 }
 
-func (c *Client) GetIndexChrome(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexChromeResponse, err error) {
+func (c *Client) GetIndexChrome(queryParameters ...IndexQueryParameters) (responseJSON *IndexChromeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("chrome"), nil)
@@ -3238,13 +3354,13 @@ func (c *Client) GetIndexChrome(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexCisaAlertsResponse struct {
+type IndexCisaAlertsResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryCISAAlert `json:"data"`
 }
 
-func (c *Client) GetIndexCisaAlerts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCisaAlertsResponse, err error) {
+func (c *Client) GetIndexCisaAlerts(queryParameters ...IndexQueryParameters) (responseJSON *IndexCisaAlertsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisa-alerts"), nil)
@@ -3276,13 +3392,13 @@ func (c *Client) GetIndexCisaAlerts(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexCisaKevResponse struct {
+type IndexCisaKevResponse struct {
 	Benchmark float64                                  `json:"_benchmark"`
 	Meta      IndexMeta                                `json:"_meta"`
 	Data      []client.AdvisoryKEVCatalogVulnerability `json:"data"`
 }
 
-func (c *Client) GetIndexCisaKev(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCisaKevResponse, err error) {
+func (c *Client) GetIndexCisaKev(queryParameters ...IndexQueryParameters) (responseJSON *IndexCisaKevResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisa-kev"), nil)
@@ -3314,13 +3430,13 @@ func (c *Client) GetIndexCisaKev(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexCiscoResponse struct {
+type IndexCiscoResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryCiscoAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCisco(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCiscoResponse, err error) {
+func (c *Client) GetIndexCisco(queryParameters ...IndexQueryParameters) (responseJSON *IndexCiscoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisco"), nil)
@@ -3352,13 +3468,13 @@ func (c *Client) GetIndexCisco(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexCiscoTalosResponse struct {
+type IndexCiscoTalosResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryTalosAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCiscoTalos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCiscoTalosResponse, err error) {
+func (c *Client) GetIndexCiscoTalos(queryParameters ...IndexQueryParameters) (responseJSON *IndexCiscoTalosResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cisco-talos"), nil)
@@ -3390,13 +3506,13 @@ func (c *Client) GetIndexCiscoTalos(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexCitrixResponse struct {
+type IndexCitrixResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryCitrixAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCitrix(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCitrixResponse, err error) {
+func (c *Client) GetIndexCitrix(queryParameters ...IndexQueryParameters) (responseJSON *IndexCitrixResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("citrix"), nil)
@@ -3428,13 +3544,13 @@ func (c *Client) GetIndexCitrix(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexClarotyResponse struct {
+type IndexClarotyResponse struct {
 	Benchmark float64                               `json:"_benchmark"`
 	Meta      IndexMeta                             `json:"_meta"`
 	Data      []client.AdvisoryClarotyVulnerability `json:"data"`
 }
 
-func (c *Client) GetIndexClaroty(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexClarotyResponse, err error) {
+func (c *Client) GetIndexClaroty(queryParameters ...IndexQueryParameters) (responseJSON *IndexClarotyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("claroty"), nil)
@@ -3466,13 +3582,13 @@ func (c *Client) GetIndexClaroty(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexCloudbeesResponse struct {
+type IndexCloudbeesResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryCloudBees `json:"data"`
 }
 
-func (c *Client) GetIndexCloudbees(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCloudbeesResponse, err error) {
+func (c *Client) GetIndexCloudbees(queryParameters ...IndexQueryParameters) (responseJSON *IndexCloudbeesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cloudbees"), nil)
@@ -3504,13 +3620,13 @@ func (c *Client) GetIndexCloudbees(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexCloudvulndbResponse struct {
+type IndexCloudvulndbResponse struct {
 	Benchmark float64                              `json:"_benchmark"`
 	Meta      IndexMeta                            `json:"_meta"`
 	Data      []client.AdvisoryCloudVulnDBAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCloudvulndb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCloudvulndbResponse, err error) {
+func (c *Client) GetIndexCloudvulndb(queryParameters ...IndexQueryParameters) (responseJSON *IndexCloudvulndbResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cloudvulndb"), nil)
@@ -3542,13 +3658,13 @@ func (c *Client) GetIndexCloudvulndb(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexCnnvdResponse struct {
+type IndexCnnvdResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryCNNVDEntryJSON `json:"data"`
 }
 
-func (c *Client) GetIndexCnnvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnnvdResponse, err error) {
+func (c *Client) GetIndexCnnvd(queryParameters ...IndexQueryParameters) (responseJSON *IndexCnnvdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cnnvd"), nil)
@@ -3580,13 +3696,13 @@ func (c *Client) GetIndexCnnvd(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexCnvdBulletinsResponse struct {
+type IndexCnvdBulletinsResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryCNVDBulletin `json:"data"`
 }
 
-func (c *Client) GetIndexCnvdBulletins(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnvdBulletinsResponse, err error) {
+func (c *Client) GetIndexCnvdBulletins(queryParameters ...IndexQueryParameters) (responseJSON *IndexCnvdBulletinsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cnvd-bulletins"), nil)
@@ -3618,13 +3734,13 @@ func (c *Client) GetIndexCnvdBulletins(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexCnvdFlawsResponse struct {
+type IndexCnvdFlawsResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryCNVDFlaw `json:"data"`
 }
 
-func (c *Client) GetIndexCnvdFlaws(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCnvdFlawsResponse, err error) {
+func (c *Client) GetIndexCnvdFlaws(queryParameters ...IndexQueryParameters) (responseJSON *IndexCnvdFlawsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cnvd-flaws"), nil)
@@ -3656,13 +3772,13 @@ func (c *Client) GetIndexCnvdFlaws(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexCocoapodsResponse struct {
+type IndexCocoapodsResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexCocoapods(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCocoapodsResponse, err error) {
+func (c *Client) GetIndexCocoapods(queryParameters ...IndexQueryParameters) (responseJSON *IndexCocoapodsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cocoapods"), nil)
@@ -3694,13 +3810,13 @@ func (c *Client) GetIndexCocoapods(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexCodesysResponse struct {
+type IndexCodesysResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryCodesysAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexCodesys(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCodesysResponse, err error) {
+func (c *Client) GetIndexCodesys(queryParameters ...IndexQueryParameters) (responseJSON *IndexCodesysResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("codesys"), nil)
@@ -3732,13 +3848,13 @@ func (c *Client) GetIndexCodesys(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexCompassSecurityResponse struct {
+type IndexCompassSecurityResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryCompassSecurity `json:"data"`
 }
 
-func (c *Client) GetIndexCompassSecurity(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCompassSecurityResponse, err error) {
+func (c *Client) GetIndexCompassSecurity(queryParameters ...IndexQueryParameters) (responseJSON *IndexCompassSecurityResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("compass-security"), nil)
@@ -3770,13 +3886,13 @@ func (c *Client) GetIndexCompassSecurity(queryParameters ...IndexQueryParameters
 	return responseJSON, nil
 }
 
-type GetIndexComposerResponse struct {
+type IndexComposerResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexComposer(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexComposerResponse, err error) {
+func (c *Client) GetIndexComposer(queryParameters ...IndexQueryParameters) (responseJSON *IndexComposerResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("composer"), nil)
@@ -3808,13 +3924,13 @@ func (c *Client) GetIndexComposer(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexConanResponse struct {
+type IndexConanResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexConan(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexConanResponse, err error) {
+func (c *Client) GetIndexConan(queryParameters ...IndexQueryParameters) (responseJSON *IndexConanResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("conan"), nil)
@@ -3846,13 +3962,13 @@ func (c *Client) GetIndexConan(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexCrestronResponse struct {
+type IndexCrestronResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryCrestron `json:"data"`
 }
 
-func (c *Client) GetIndexCrestron(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCrestronResponse, err error) {
+func (c *Client) GetIndexCrestron(queryParameters ...IndexQueryParameters) (responseJSON *IndexCrestronResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("crestron"), nil)
@@ -3884,13 +4000,13 @@ func (c *Client) GetIndexCrestron(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexCurlResponse struct {
+type IndexCurlResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryCurl `json:"data"`
 }
 
-func (c *Client) GetIndexCurl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCurlResponse, err error) {
+func (c *Client) GetIndexCurl(queryParameters ...IndexQueryParameters) (responseJSON *IndexCurlResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("curl"), nil)
@@ -3922,13 +4038,13 @@ func (c *Client) GetIndexCurl(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexCweResponse struct {
+type IndexCweResponse struct {
 	Benchmark float64         `json:"_benchmark"`
 	Meta      IndexMeta       `json:"_meta"`
 	Data      []client.ApiCWE `json:"data"`
 }
 
-func (c *Client) GetIndexCwe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexCweResponse, err error) {
+func (c *Client) GetIndexCwe(queryParameters ...IndexQueryParameters) (responseJSON *IndexCweResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cwe"), nil)
@@ -3960,13 +4076,13 @@ func (c *Client) GetIndexCwe(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexDahuaResponse struct {
+type IndexDahuaResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryDahua `json:"data"`
 }
 
-func (c *Client) GetIndexDahua(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDahuaResponse, err error) {
+func (c *Client) GetIndexDahua(queryParameters ...IndexQueryParameters) (responseJSON *IndexDahuaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dahua"), nil)
@@ -3998,13 +4114,13 @@ func (c *Client) GetIndexDahua(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexDassaultResponse struct {
+type IndexDassaultResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryDassault `json:"data"`
 }
 
-func (c *Client) GetIndexDassault(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDassaultResponse, err error) {
+func (c *Client) GetIndexDassault(queryParameters ...IndexQueryParameters) (responseJSON *IndexDassaultResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dassault"), nil)
@@ -4036,13 +4152,13 @@ func (c *Client) GetIndexDassault(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexDebianResponse struct {
+type IndexDebianResponse struct {
 	Benchmark float64                                  `json:"_benchmark"`
 	Meta      IndexMeta                                `json:"_meta"`
 	Data      []client.AdvisoryVulnerableDebianPackage `json:"data"`
 }
 
-func (c *Client) GetIndexDebian(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDebianResponse, err error) {
+func (c *Client) GetIndexDebian(queryParameters ...IndexQueryParameters) (responseJSON *IndexDebianResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("debian"), nil)
@@ -4074,13 +4190,13 @@ func (c *Client) GetIndexDebian(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexDebianDsaResponse struct {
+type IndexDebianDsaResponse struct {
 	Benchmark float64                                 `json:"_benchmark"`
 	Meta      IndexMeta                               `json:"_meta"`
 	Data      []client.AdvisoryDebianSecurityAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDebianDsaResponse, err error) {
+func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (responseJSON *IndexDebianDsaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("debian-dsa"), nil)
@@ -4112,13 +4228,13 @@ func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexDellResponse struct {
+type IndexDellResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryDell `json:"data"`
 }
 
-func (c *Client) GetIndexDell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDellResponse, err error) {
+func (c *Client) GetIndexDell(queryParameters ...IndexQueryParameters) (responseJSON *IndexDellResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dell"), nil)
@@ -4150,13 +4266,13 @@ func (c *Client) GetIndexDell(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexDeltaResponse struct {
+type IndexDeltaResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryDeltaAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexDelta(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDeltaResponse, err error) {
+func (c *Client) GetIndexDelta(queryParameters ...IndexQueryParameters) (responseJSON *IndexDeltaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("delta"), nil)
@@ -4188,13 +4304,13 @@ func (c *Client) GetIndexDelta(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexDotcmsResponse struct {
+type IndexDotcmsResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryDotCMS `json:"data"`
 }
 
-func (c *Client) GetIndexDotcms(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDotcmsResponse, err error) {
+func (c *Client) GetIndexDotcms(queryParameters ...IndexQueryParameters) (responseJSON *IndexDotcmsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dotcms"), nil)
@@ -4226,13 +4342,13 @@ func (c *Client) GetIndexDotcms(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexDragosResponse struct {
+type IndexDragosResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryDragosAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexDragos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDragosResponse, err error) {
+func (c *Client) GetIndexDragos(queryParameters ...IndexQueryParameters) (responseJSON *IndexDragosResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("dragos"), nil)
@@ -4264,13 +4380,13 @@ func (c *Client) GetIndexDragos(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexDraytekResponse struct {
+type IndexDraytekResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryDraytek `json:"data"`
 }
 
-func (c *Client) GetIndexDraytek(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexDraytekResponse, err error) {
+func (c *Client) GetIndexDraytek(queryParameters ...IndexQueryParameters) (responseJSON *IndexDraytekResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("draytek"), nil)
@@ -4302,13 +4418,13 @@ func (c *Client) GetIndexDraytek(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexEatonResponse struct {
+type IndexEatonResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryEatonAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexEaton(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEatonResponse, err error) {
+func (c *Client) GetIndexEaton(queryParameters ...IndexQueryParameters) (responseJSON *IndexEatonResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("eaton"), nil)
@@ -4340,13 +4456,13 @@ func (c *Client) GetIndexEaton(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexElasticResponse struct {
+type IndexElasticResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryElastic `json:"data"`
 }
 
-func (c *Client) GetIndexElastic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexElasticResponse, err error) {
+func (c *Client) GetIndexElastic(queryParameters ...IndexQueryParameters) (responseJSON *IndexElasticResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("elastic"), nil)
@@ -4378,13 +4494,51 @@ func (c *Client) GetIndexElastic(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexEmersonResponse struct {
+type IndexElspecResponse struct {
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryElspec `json:"data"`
+}
+
+func (c *Client) GetIndexElspec(queryParameters ...IndexQueryParameters) (responseJSON *IndexElspecResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("elspec"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexEmersonResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryEmersonAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexEmerson(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEmersonResponse, err error) {
+func (c *Client) GetIndexEmerson(queryParameters ...IndexQueryParameters) (responseJSON *IndexEmersonResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("emerson"), nil)
@@ -4416,13 +4570,13 @@ func (c *Client) GetIndexEmerson(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexEolResponse struct {
+type IndexEolResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryEOLReleaseData `json:"data"`
 }
 
-func (c *Client) GetIndexEol(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEolResponse, err error) {
+func (c *Client) GetIndexEol(queryParameters ...IndexQueryParameters) (responseJSON *IndexEolResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("eol"), nil)
@@ -4454,13 +4608,13 @@ func (c *Client) GetIndexEol(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexEpssResponse struct {
+type IndexEpssResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.ApiEPSSData `json:"data"`
 }
 
-func (c *Client) GetIndexEpss(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexEpssResponse, err error) {
+func (c *Client) GetIndexEpss(queryParameters ...IndexQueryParameters) (responseJSON *IndexEpssResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("epss"), nil)
@@ -4492,13 +4646,13 @@ func (c *Client) GetIndexEpss(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexExodusIntelResponse struct {
+type IndexExodusIntelResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryExodusIntel `json:"data"`
 }
 
-func (c *Client) GetIndexExodusIntel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExodusIntelResponse, err error) {
+func (c *Client) GetIndexExodusIntel(queryParameters ...IndexQueryParameters) (responseJSON *IndexExodusIntelResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("exodus-intel"), nil)
@@ -4530,13 +4684,13 @@ func (c *Client) GetIndexExodusIntel(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexExploitChainsResponse struct {
+type IndexExploitChainsResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.ApiExploitChain `json:"data"`
 }
 
-func (c *Client) GetIndexExploitChains(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExploitChainsResponse, err error) {
+func (c *Client) GetIndexExploitChains(queryParameters ...IndexQueryParameters) (responseJSON *IndexExploitChainsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("exploit-chains"), nil)
@@ -4568,13 +4722,51 @@ func (c *Client) GetIndexExploitChains(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexExploitsResponse struct {
+type IndexExploitdbResponse struct {
+	Benchmark float64                             `json:"_benchmark"`
+	Meta      IndexMeta                           `json:"_meta"`
+	Data      []client.AdvisoryExploitDBExploitv2 `json:"data"`
+}
+
+func (c *Client) GetIndexExploitdb(queryParameters ...IndexQueryParameters) (responseJSON *IndexExploitdbResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("exploitdb"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexExploitsResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.ApiExploitV3Result `json:"data"`
 }
 
-func (c *Client) GetIndexExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexExploitsResponse, err error) {
+func (c *Client) GetIndexExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("exploits"), nil)
@@ -4606,13 +4798,13 @@ func (c *Client) GetIndexExploits(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexFSecureResponse struct {
+type IndexFSecureResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryFSecure `json:"data"`
 }
 
-func (c *Client) GetIndexFSecure(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFSecureResponse, err error) {
+func (c *Client) GetIndexFSecure(queryParameters ...IndexQueryParameters) (responseJSON *IndexFSecureResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("f-secure"), nil)
@@ -4644,13 +4836,13 @@ func (c *Client) GetIndexFSecure(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexFastlyResponse struct {
+type IndexFastlyResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryFastly `json:"data"`
 }
 
-func (c *Client) GetIndexFastly(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFastlyResponse, err error) {
+func (c *Client) GetIndexFastly(queryParameters ...IndexQueryParameters) (responseJSON *IndexFastlyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("fastly"), nil)
@@ -4682,13 +4874,13 @@ func (c *Client) GetIndexFastly(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexFedoraResponse struct {
+type IndexFedoraResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryUpdate `json:"data"`
 }
 
-func (c *Client) GetIndexFedora(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFedoraResponse, err error) {
+func (c *Client) GetIndexFedora(queryParameters ...IndexQueryParameters) (responseJSON *IndexFedoraResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("fedora"), nil)
@@ -4720,13 +4912,13 @@ func (c *Client) GetIndexFedora(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexFilecloudResponse struct {
+type IndexFilecloudResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryFileCloud `json:"data"`
 }
 
-func (c *Client) GetIndexFilecloud(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFilecloudResponse, err error) {
+func (c *Client) GetIndexFilecloud(queryParameters ...IndexQueryParameters) (responseJSON *IndexFilecloudResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("filecloud"), nil)
@@ -4758,13 +4950,13 @@ func (c *Client) GetIndexFilecloud(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexForgerockResponse struct {
+type IndexForgerockResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryForgeRock `json:"data"`
 }
 
-func (c *Client) GetIndexForgerock(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexForgerockResponse, err error) {
+func (c *Client) GetIndexForgerock(queryParameters ...IndexQueryParameters) (responseJSON *IndexForgerockResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("forgerock"), nil)
@@ -4796,13 +4988,13 @@ func (c *Client) GetIndexForgerock(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexFortinetResponse struct {
+type IndexFortinetResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryFortinetAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexFortinet(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFortinetResponse, err error) {
+func (c *Client) GetIndexFortinet(queryParameters ...IndexQueryParameters) (responseJSON *IndexFortinetResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("fortinet"), nil)
@@ -4834,13 +5026,13 @@ func (c *Client) GetIndexFortinet(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexFreebsdResponse struct {
+type IndexFreebsdResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexFreebsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexFreebsdResponse, err error) {
+func (c *Client) GetIndexFreebsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexFreebsdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("freebsd"), nil)
@@ -4872,13 +5064,13 @@ func (c *Client) GetIndexFreebsd(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexGallagherResponse struct {
+type IndexGallagherResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryGallagher `json:"data"`
 }
 
-func (c *Client) GetIndexGallagher(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGallagherResponse, err error) {
+func (c *Client) GetIndexGallagher(queryParameters ...IndexQueryParameters) (responseJSON *IndexGallagherResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gallagher"), nil)
@@ -4910,13 +5102,13 @@ func (c *Client) GetIndexGallagher(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexGcpResponse struct {
+type IndexGcpResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryGCP `json:"data"`
 }
 
-func (c *Client) GetIndexGcp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGcpResponse, err error) {
+func (c *Client) GetIndexGcp(queryParameters ...IndexQueryParameters) (responseJSON *IndexGcpResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gcp"), nil)
@@ -4948,13 +5140,13 @@ func (c *Client) GetIndexGcp(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexGeGasResponse struct {
+type IndexGeGasResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryGEGas `json:"data"`
 }
 
-func (c *Client) GetIndexGeGas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGeGasResponse, err error) {
+func (c *Client) GetIndexGeGas(queryParameters ...IndexQueryParameters) (responseJSON *IndexGeGasResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ge-gas"), nil)
@@ -4986,13 +5178,13 @@ func (c *Client) GetIndexGeGas(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexGeHealthcareResponse struct {
+type IndexGeHealthcareResponse struct {
 	Benchmark float64                               `json:"_benchmark"`
 	Meta      IndexMeta                             `json:"_meta"`
 	Data      []client.AdvisoryGEHealthcareAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexGeHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGeHealthcareResponse, err error) {
+func (c *Client) GetIndexGeHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *IndexGeHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ge-healthcare"), nil)
@@ -5024,13 +5216,13 @@ func (c *Client) GetIndexGeHealthcare(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexGemResponse struct {
+type IndexGemResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexGem(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGemResponse, err error) {
+func (c *Client) GetIndexGem(queryParameters ...IndexQueryParameters) (responseJSON *IndexGemResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gem"), nil)
@@ -5062,13 +5254,13 @@ func (c *Client) GetIndexGem(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexGenetecResponse struct {
+type IndexGenetecResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryGenetec `json:"data"`
 }
 
-func (c *Client) GetIndexGenetec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGenetecResponse, err error) {
+func (c *Client) GetIndexGenetec(queryParameters ...IndexQueryParameters) (responseJSON *IndexGenetecResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("genetec"), nil)
@@ -5100,13 +5292,13 @@ func (c *Client) GetIndexGenetec(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexGigabyteResponse struct {
+type IndexGigabyteResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryGigabyte `json:"data"`
 }
 
-func (c *Client) GetIndexGigabyte(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGigabyteResponse, err error) {
+func (c *Client) GetIndexGigabyte(queryParameters ...IndexQueryParameters) (responseJSON *IndexGigabyteResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gigabyte"), nil)
@@ -5138,13 +5330,13 @@ func (c *Client) GetIndexGigabyte(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexGiteeExploitsResponse struct {
+type IndexGiteeExploitsResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryGiteeExploit `json:"data"`
 }
 
-func (c *Client) GetIndexGiteeExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGiteeExploitsResponse, err error) {
+func (c *Client) GetIndexGiteeExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexGiteeExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gitee-exploits"), nil)
@@ -5176,13 +5368,13 @@ func (c *Client) GetIndexGiteeExploits(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexGithubExploitsResponse struct {
+type IndexGithubExploitsResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryGitHubExploit `json:"data"`
 }
 
-func (c *Client) GetIndexGithubExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGithubExploitsResponse, err error) {
+func (c *Client) GetIndexGithubExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexGithubExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("github-exploits"), nil)
@@ -5214,13 +5406,51 @@ func (c *Client) GetIndexGithubExploits(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexGitlabAdvisoriesCommunityResponse struct {
+type IndexGithubSecurityAdvisoriesResponse struct {
+	Benchmark float64                             `json:"_benchmark"`
+	Meta      IndexMeta                           `json:"_meta"`
+	Data      []client.AdvisoryGHAdvisoryJSONLean `json:"data"`
+}
+
+func (c *Client) GetIndexGithubSecurityAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexGithubSecurityAdvisoriesResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("github-security-advisories"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexGitlabAdvisoriesCommunityResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryGitlabAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexGitlabAdvisoriesCommunity(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGitlabAdvisoriesCommunityResponse, err error) {
+func (c *Client) GetIndexGitlabAdvisoriesCommunity(queryParameters ...IndexQueryParameters) (responseJSON *IndexGitlabAdvisoriesCommunityResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gitlab-advisories-community"), nil)
@@ -5252,13 +5482,13 @@ func (c *Client) GetIndexGitlabAdvisoriesCommunity(queryParameters ...IndexQuery
 	return responseJSON, nil
 }
 
-type GetIndexGitlabExploitsResponse struct {
+type IndexGitlabExploitsResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryGitLabExploit `json:"data"`
 }
 
-func (c *Client) GetIndexGitlabExploits(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGitlabExploitsResponse, err error) {
+func (c *Client) GetIndexGitlabExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexGitlabExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gitlab-exploits"), nil)
@@ -5290,13 +5520,13 @@ func (c *Client) GetIndexGitlabExploits(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexGnutlsResponse struct {
+type IndexGnutlsResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryGnuTLS `json:"data"`
 }
 
-func (c *Client) GetIndexGnutls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGnutlsResponse, err error) {
+func (c *Client) GetIndexGnutls(queryParameters ...IndexQueryParameters) (responseJSON *IndexGnutlsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("gnutls"), nil)
@@ -5328,13 +5558,13 @@ func (c *Client) GetIndexGnutls(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexGolangResponse struct {
+type IndexGolangResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexGolang(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGolangResponse, err error) {
+func (c *Client) GetIndexGolang(queryParameters ...IndexQueryParameters) (responseJSON *IndexGolangResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("golang"), nil)
@@ -5366,16 +5596,16 @@ func (c *Client) GetIndexGolang(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexGoogle0dayItwResponse struct {
+type IndexGoogle0dayItwResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryITWExploit `json:"data"`
 }
 
-func (c *Client) GetIndexGoogle0dayItw(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGoogle0dayItwResponse, err error) {
+func (c *Client) GetIndexGoogle0dayItw(queryParameters ...IndexQueryParameters) (responseJSON *IndexGoogle0dayItwResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("google0day-itw"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("google-0day-itw"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -5404,13 +5634,51 @@ func (c *Client) GetIndexGoogle0dayItw(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexGrafanaResponse struct {
+type IndexGoogleContainerOptimizedOsResponse struct {
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryContainerOS `json:"data"`
+}
+
+func (c *Client) GetIndexGoogleContainerOptimizedOs(queryParameters ...IndexQueryParameters) (responseJSON *IndexGoogleContainerOptimizedOsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("google-container-optimized-os"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexGrafanaResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryGrafana `json:"data"`
 }
 
-func (c *Client) GetIndexGrafana(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGrafanaResponse, err error) {
+func (c *Client) GetIndexGrafana(queryParameters ...IndexQueryParameters) (responseJSON *IndexGrafanaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("grafana"), nil)
@@ -5442,13 +5710,13 @@ func (c *Client) GetIndexGrafana(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexGreynoiseMetadataResponse struct {
+type IndexGreynoiseMetadataResponse struct {
 	Benchmark float64                             `json:"_benchmark"`
 	Meta      IndexMeta                           `json:"_meta"`
 	Data      []client.AdvisoryGreyNoiseDetection `json:"data"`
 }
 
-func (c *Client) GetIndexGreynoiseMetadata(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexGreynoiseMetadataResponse, err error) {
+func (c *Client) GetIndexGreynoiseMetadata(queryParameters ...IndexQueryParameters) (responseJSON *IndexGreynoiseMetadataResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("greynoise-metadata"), nil)
@@ -5480,13 +5748,13 @@ func (c *Client) GetIndexGreynoiseMetadata(queryParameters ...IndexQueryParamete
 	return responseJSON, nil
 }
 
-type GetIndexHackageResponse struct {
+type IndexHackageResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexHackage(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHackageResponse, err error) {
+func (c *Client) GetIndexHackage(queryParameters ...IndexQueryParameters) (responseJSON *IndexHackageResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hackage"), nil)
@@ -5518,13 +5786,13 @@ func (c *Client) GetIndexHackage(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexHarmonyosResponse struct {
+type IndexHarmonyosResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryHarmonyOS `json:"data"`
 }
 
-func (c *Client) GetIndexHarmonyos(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHarmonyosResponse, err error) {
+func (c *Client) GetIndexHarmonyos(queryParameters ...IndexQueryParameters) (responseJSON *IndexHarmonyosResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("harmonyos"), nil)
@@ -5556,13 +5824,13 @@ func (c *Client) GetIndexHarmonyos(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexHashicorpResponse struct {
+type IndexHashicorpResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryHashiCorp `json:"data"`
 }
 
-func (c *Client) GetIndexHashicorp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHashicorpResponse, err error) {
+func (c *Client) GetIndexHashicorp(queryParameters ...IndexQueryParameters) (responseJSON *IndexHashicorpResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hashicorp"), nil)
@@ -5594,13 +5862,13 @@ func (c *Client) GetIndexHashicorp(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexHaskellSadbResponse struct {
+type IndexHaskellSadbResponse struct {
 	Benchmark float64                              `json:"_benchmark"`
 	Meta      IndexMeta                            `json:"_meta"`
 	Data      []client.AdvisoryHaskellSADBAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexHaskellSadb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHaskellSadbResponse, err error) {
+func (c *Client) GetIndexHaskellSadb(queryParameters ...IndexQueryParameters) (responseJSON *IndexHaskellSadbResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("haskell-sadb"), nil)
@@ -5632,13 +5900,13 @@ func (c *Client) GetIndexHaskellSadb(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexHclResponse struct {
+type IndexHclResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryHCL `json:"data"`
 }
 
-func (c *Client) GetIndexHcl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHclResponse, err error) {
+func (c *Client) GetIndexHcl(queryParameters ...IndexQueryParameters) (responseJSON *IndexHclResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hcl"), nil)
@@ -5670,13 +5938,13 @@ func (c *Client) GetIndexHcl(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexHexResponse struct {
+type IndexHexResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexHex(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHexResponse, err error) {
+func (c *Client) GetIndexHex(queryParameters ...IndexQueryParameters) (responseJSON *IndexHexResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hex"), nil)
@@ -5708,13 +5976,13 @@ func (c *Client) GetIndexHex(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexHikvisionResponse struct {
+type IndexHikvisionResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryHIKVision `json:"data"`
 }
 
-func (c *Client) GetIndexHikvision(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHikvisionResponse, err error) {
+func (c *Client) GetIndexHikvision(queryParameters ...IndexQueryParameters) (responseJSON *IndexHikvisionResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hikvision"), nil)
@@ -5746,13 +6014,13 @@ func (c *Client) GetIndexHikvision(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexHillromResponse struct {
+type IndexHillromResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryHillromAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexHillrom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHillromResponse, err error) {
+func (c *Client) GetIndexHillrom(queryParameters ...IndexQueryParameters) (responseJSON *IndexHillromResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hillrom"), nil)
@@ -5784,13 +6052,13 @@ func (c *Client) GetIndexHillrom(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexHitachiResponse struct {
+type IndexHitachiResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryHitachi `json:"data"`
 }
 
-func (c *Client) GetIndexHitachi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHitachiResponse, err error) {
+func (c *Client) GetIndexHitachi(queryParameters ...IndexQueryParameters) (responseJSON *IndexHitachiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hitachi"), nil)
@@ -5822,13 +6090,13 @@ func (c *Client) GetIndexHitachi(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexHitachiEnergyResponse struct {
+type IndexHitachiEnergyResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryHitachiEnergy `json:"data"`
 }
 
-func (c *Client) GetIndexHitachiEnergy(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHitachiEnergyResponse, err error) {
+func (c *Client) GetIndexHitachiEnergy(queryParameters ...IndexQueryParameters) (responseJSON *IndexHitachiEnergyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hitachi-energy"), nil)
@@ -5860,13 +6128,13 @@ func (c *Client) GetIndexHitachiEnergy(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexHkcertResponse struct {
+type IndexHkcertResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryHKCert `json:"data"`
 }
 
-func (c *Client) GetIndexHkcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHkcertResponse, err error) {
+func (c *Client) GetIndexHkcert(queryParameters ...IndexQueryParameters) (responseJSON *IndexHkcertResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hkcert"), nil)
@@ -5898,13 +6166,13 @@ func (c *Client) GetIndexHkcert(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexHoneywellResponse struct {
+type IndexHoneywellResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryHoneywell `json:"data"`
 }
 
-func (c *Client) GetIndexHoneywell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHoneywellResponse, err error) {
+func (c *Client) GetIndexHoneywell(queryParameters ...IndexQueryParameters) (responseJSON *IndexHoneywellResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("honeywell"), nil)
@@ -5936,13 +6204,13 @@ func (c *Client) GetIndexHoneywell(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexHpResponse struct {
+type IndexHpResponse struct {
 	Benchmark float64             `json:"_benchmark"`
 	Meta      IndexMeta           `json:"_meta"`
 	Data      []client.AdvisoryHP `json:"data"`
 }
 
-func (c *Client) GetIndexHp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHpResponse, err error) {
+func (c *Client) GetIndexHp(queryParameters ...IndexQueryParameters) (responseJSON *IndexHpResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("hp"), nil)
@@ -5974,13 +6242,13 @@ func (c *Client) GetIndexHp(queryParameters ...IndexQueryParameters) (responseJS
 	return responseJSON, nil
 }
 
-type GetIndexHuaweiEulerosResponse struct {
+type IndexHuaweiEulerosResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryHuaweiEulerOS `json:"data"`
 }
 
-func (c *Client) GetIndexHuaweiEuleros(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiEulerosResponse, err error) {
+func (c *Client) GetIndexHuaweiEuleros(queryParameters ...IndexQueryParameters) (responseJSON *IndexHuaweiEulerosResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("huawei-euleros"), nil)
@@ -6012,13 +6280,13 @@ func (c *Client) GetIndexHuaweiEuleros(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexHuaweiIpsResponse struct {
+type IndexHuaweiIpsResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryHuaweiIPS `json:"data"`
 }
 
-func (c *Client) GetIndexHuaweiIps(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiIpsResponse, err error) {
+func (c *Client) GetIndexHuaweiIps(queryParameters ...IndexQueryParameters) (responseJSON *IndexHuaweiIpsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("huawei-ips"), nil)
@@ -6050,13 +6318,13 @@ func (c *Client) GetIndexHuaweiIps(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexHuaweiPsirtResponse struct {
+type IndexHuaweiPsirtResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryHuawei `json:"data"`
 }
 
-func (c *Client) GetIndexHuaweiPsirt(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexHuaweiPsirtResponse, err error) {
+func (c *Client) GetIndexHuaweiPsirt(queryParameters ...IndexQueryParameters) (responseJSON *IndexHuaweiPsirtResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("huawei-psirt"), nil)
@@ -6088,13 +6356,13 @@ func (c *Client) GetIndexHuaweiPsirt(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexIavaResponse struct {
+type IndexIavaResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryIAVA `json:"data"`
 }
 
-func (c *Client) GetIndexIava(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIavaResponse, err error) {
+func (c *Client) GetIndexIava(queryParameters ...IndexQueryParameters) (responseJSON *IndexIavaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("iava"), nil)
@@ -6126,13 +6394,13 @@ func (c *Client) GetIndexIava(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexIbmResponse struct {
+type IndexIbmResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryIBM `json:"data"`
 }
 
-func (c *Client) GetIndexIbm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIbmResponse, err error) {
+func (c *Client) GetIndexIbm(queryParameters ...IndexQueryParameters) (responseJSON *IndexIbmResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ibm"), nil)
@@ -6164,13 +6432,13 @@ func (c *Client) GetIndexIbm(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexIdemiaResponse struct {
+type IndexIdemiaResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryIdemia `json:"data"`
 }
 
-func (c *Client) GetIndexIdemia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIdemiaResponse, err error) {
+func (c *Client) GetIndexIdemia(queryParameters ...IndexQueryParameters) (responseJSON *IndexIdemiaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("idemia"), nil)
@@ -6202,13 +6470,13 @@ func (c *Client) GetIndexIdemia(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexIlAlertsResponse struct {
+type IndexIlAlertsResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryIsraeliAlert `json:"data"`
 }
 
-func (c *Client) GetIndexIlAlerts(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIlAlertsResponse, err error) {
+func (c *Client) GetIndexIlAlerts(queryParameters ...IndexQueryParameters) (responseJSON *IndexIlAlertsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("il-alerts"), nil)
@@ -6240,13 +6508,13 @@ func (c *Client) GetIndexIlAlerts(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexIlVulnerabilitiesResponse struct {
+type IndexIlVulnerabilitiesResponse struct {
 	Benchmark float64                               `json:"_benchmark"`
 	Meta      IndexMeta                             `json:"_meta"`
 	Data      []client.AdvisoryIsraeliVulnerability `json:"data"`
 }
 
-func (c *Client) GetIndexIlVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIlVulnerabilitiesResponse, err error) {
+func (c *Client) GetIndexIlVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *IndexIlVulnerabilitiesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("il-vulnerabilities"), nil)
@@ -6278,13 +6546,13 @@ func (c *Client) GetIndexIlVulnerabilities(queryParameters ...IndexQueryParamete
 	return responseJSON, nil
 }
 
-type GetIndexIncibeResponse struct {
+type IndexIncibeResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryIncibeAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexIncibe(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIncibeResponse, err error) {
+func (c *Client) GetIndexIncibe(queryParameters ...IndexQueryParameters) (responseJSON *IndexIncibeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("incibe"), nil)
@@ -6316,13 +6584,13 @@ func (c *Client) GetIndexIncibe(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexInitialAccessResponse struct {
+type IndexInitialAccessResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.ApiInitialAccess `json:"data"`
 }
 
-func (c *Client) GetIndexInitialAccess(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexInitialAccessResponse, err error) {
+func (c *Client) GetIndexInitialAccess(queryParameters ...IndexQueryParameters) (responseJSON *IndexInitialAccessResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("initial-access"), nil)
@@ -6354,13 +6622,13 @@ func (c *Client) GetIndexInitialAccess(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexInitialAccessGitResponse struct {
+type IndexInitialAccessGitResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.ApiInitialAccess `json:"data"`
 }
 
-func (c *Client) GetIndexInitialAccessGit(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexInitialAccessGitResponse, err error) {
+func (c *Client) GetIndexInitialAccessGit(queryParameters ...IndexQueryParameters) (responseJSON *IndexInitialAccessGitResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("initial-access-git"), nil)
@@ -6392,13 +6660,13 @@ func (c *Client) GetIndexInitialAccessGit(queryParameters ...IndexQueryParameter
 	return responseJSON, nil
 }
 
-type GetIndexIntelResponse struct {
+type IndexIntelResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryIntel `json:"data"`
 }
 
-func (c *Client) GetIndexIntel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIntelResponse, err error) {
+func (c *Client) GetIndexIntel(queryParameters ...IndexQueryParameters) (responseJSON *IndexIntelResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("intel"), nil)
@@ -6430,16 +6698,16 @@ func (c *Client) GetIndexIntel(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexIpintel10dResponse struct {
+type IndexIpintel10dResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
-func (c *Client) GetIndexIpintel10d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel10dResponse, err error) {
+func (c *Client) GetIndexIpintel10d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel10dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel10d"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel-10d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6468,16 +6736,16 @@ func (c *Client) GetIndexIpintel10d(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexIpintel30dResponse struct {
+type IndexIpintel30dResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
-func (c *Client) GetIndexIpintel30d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel30dResponse, err error) {
+func (c *Client) GetIndexIpintel30d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel30dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel30d"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel-30d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6506,16 +6774,16 @@ func (c *Client) GetIndexIpintel30d(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexIpintel3dResponse struct {
+type IndexIpintel3dResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
-func (c *Client) GetIndexIpintel3d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel3dResponse, err error) {
+func (c *Client) GetIndexIpintel3d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel3dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel3d"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel-3d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6544,16 +6812,16 @@ func (c *Client) GetIndexIpintel3d(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexIpintel90dResponse struct {
+type IndexIpintel90dResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
-func (c *Client) GetIndexIpintel90d(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIpintel90dResponse, err error) {
+func (c *Client) GetIndexIpintel90d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel90dResponse, err error) {
 
 	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel90d"), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ipintel-90d"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -6582,13 +6850,13 @@ func (c *Client) GetIndexIpintel90d(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexIstioResponse struct {
+type IndexIstioResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryIstio `json:"data"`
 }
 
-func (c *Client) GetIndexIstio(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIstioResponse, err error) {
+func (c *Client) GetIndexIstio(queryParameters ...IndexQueryParameters) (responseJSON *IndexIstioResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("istio"), nil)
@@ -6620,13 +6888,13 @@ func (c *Client) GetIndexIstio(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexIvantiResponse struct {
+type IndexIvantiResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryIvanti `json:"data"`
 }
 
-func (c *Client) GetIndexIvanti(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexIvantiResponse, err error) {
+func (c *Client) GetIndexIvanti(queryParameters ...IndexQueryParameters) (responseJSON *IndexIvantiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ivanti"), nil)
@@ -6658,13 +6926,51 @@ func (c *Client) GetIndexIvanti(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexJenkinsResponse struct {
+type IndexIvantiRssResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.AdvisoryIvantiRSS `json:"data"`
+}
+
+func (c *Client) GetIndexIvantiRss(queryParameters ...IndexQueryParameters) (responseJSON *IndexIvantiRssResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ivanti-rss"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexJenkinsResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryJenkins `json:"data"`
 }
 
-func (c *Client) GetIndexJenkins(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJenkinsResponse, err error) {
+func (c *Client) GetIndexJenkins(queryParameters ...IndexQueryParameters) (responseJSON *IndexJenkinsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jenkins"), nil)
@@ -6696,13 +7002,13 @@ func (c *Client) GetIndexJenkins(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexJetbrainsResponse struct {
+type IndexJetbrainsResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryJetBrains `json:"data"`
 }
 
-func (c *Client) GetIndexJetbrains(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJetbrainsResponse, err error) {
+func (c *Client) GetIndexJetbrains(queryParameters ...IndexQueryParameters) (responseJSON *IndexJetbrainsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jetbrains"), nil)
@@ -6734,13 +7040,13 @@ func (c *Client) GetIndexJetbrains(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexJfrogResponse struct {
+type IndexJfrogResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryJFrog `json:"data"`
 }
 
-func (c *Client) GetIndexJfrog(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJfrogResponse, err error) {
+func (c *Client) GetIndexJfrog(queryParameters ...IndexQueryParameters) (responseJSON *IndexJfrogResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jfrog"), nil)
@@ -6772,13 +7078,13 @@ func (c *Client) GetIndexJfrog(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexJnjResponse struct {
+type IndexJnjResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryJNJAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexJnj(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexJnjResponse, err error) {
+func (c *Client) GetIndexJnj(queryParameters ...IndexQueryParameters) (responseJSON *IndexJnjResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jnj"), nil)
@@ -6810,13 +7116,51 @@ func (c *Client) GetIndexJnj(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexKasperskyIcsCertResponse struct {
+type IndexJvndbResponse struct {
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryJVNAdvisoryItem `json:"data"`
+}
+
+func (c *Client) GetIndexJvndb(queryParameters ...IndexQueryParameters) (responseJSON *IndexJvndbResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("jvndb"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexKasperskyIcsCertResponse struct {
 	Benchmark float64                                   `json:"_benchmark"`
 	Meta      IndexMeta                                 `json:"_meta"`
 	Data      []client.AdvisoryKasperskyICSCERTAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexKasperskyIcsCert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKasperskyIcsCertResponse, err error) {
+func (c *Client) GetIndexKasperskyIcsCert(queryParameters ...IndexQueryParameters) (responseJSON *IndexKasperskyIcsCertResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("kaspersky-ics-cert"), nil)
@@ -6848,13 +7192,13 @@ func (c *Client) GetIndexKasperskyIcsCert(queryParameters ...IndexQueryParameter
 	return responseJSON, nil
 }
 
-type GetIndexKrcertSecurityNoticesResponse struct {
+type IndexKrcertSecurityNoticesResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryKRCertAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexKrcertSecurityNotices(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKrcertSecurityNoticesResponse, err error) {
+func (c *Client) GetIndexKrcertSecurityNotices(queryParameters ...IndexQueryParameters) (responseJSON *IndexKrcertSecurityNoticesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("krcert-security-notices"), nil)
@@ -6886,13 +7230,13 @@ func (c *Client) GetIndexKrcertSecurityNotices(queryParameters ...IndexQueryPara
 	return responseJSON, nil
 }
 
-type GetIndexKrcertVulnerabilitiesResponse struct {
+type IndexKrcertVulnerabilitiesResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryKRCertAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexKrcertVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKrcertVulnerabilitiesResponse, err error) {
+func (c *Client) GetIndexKrcertVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *IndexKrcertVulnerabilitiesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("krcert-vulnerabilities"), nil)
@@ -6924,13 +7268,13 @@ func (c *Client) GetIndexKrcertVulnerabilities(queryParameters ...IndexQueryPara
 	return responseJSON, nil
 }
 
-type GetIndexKubernetesResponse struct {
+type IndexKubernetesResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryK8S `json:"data"`
 }
 
-func (c *Client) GetIndexKubernetes(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexKubernetesResponse, err error) {
+func (c *Client) GetIndexKubernetes(queryParameters ...IndexQueryParameters) (responseJSON *IndexKubernetesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("kubernetes"), nil)
@@ -6962,13 +7306,13 @@ func (c *Client) GetIndexKubernetes(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexLenovoResponse struct {
+type IndexLenovoResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryLenovo `json:"data"`
 }
 
-func (c *Client) GetIndexLenovo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLenovoResponse, err error) {
+func (c *Client) GetIndexLenovo(queryParameters ...IndexQueryParameters) (responseJSON *IndexLenovoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("lenovo"), nil)
@@ -7000,13 +7344,13 @@ func (c *Client) GetIndexLenovo(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexLexmarkResponse struct {
+type IndexLexmarkResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryLexmarkAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexLexmark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLexmarkResponse, err error) {
+func (c *Client) GetIndexLexmark(queryParameters ...IndexQueryParameters) (responseJSON *IndexLexmarkResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("lexmark"), nil)
@@ -7038,13 +7382,13 @@ func (c *Client) GetIndexLexmark(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexLgResponse struct {
+type IndexLgResponse struct {
 	Benchmark float64             `json:"_benchmark"`
 	Meta      IndexMeta           `json:"_meta"`
 	Data      []client.AdvisoryLG `json:"data"`
 }
 
-func (c *Client) GetIndexLg(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLgResponse, err error) {
+func (c *Client) GetIndexLg(queryParameters ...IndexQueryParameters) (responseJSON *IndexLgResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("lg"), nil)
@@ -7076,13 +7420,13 @@ func (c *Client) GetIndexLg(queryParameters ...IndexQueryParameters) (responseJS
 	return responseJSON, nil
 }
 
-type GetIndexLibreOfficeResponse struct {
+type IndexLibreOfficeResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryLibreOffice `json:"data"`
 }
 
-func (c *Client) GetIndexLibreOffice(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexLibreOfficeResponse, err error) {
+func (c *Client) GetIndexLibreOffice(queryParameters ...IndexQueryParameters) (responseJSON *IndexLibreOfficeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("libre-office"), nil)
@@ -7114,13 +7458,51 @@ func (c *Client) GetIndexLibreOffice(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexMFilesResponse struct {
+type IndexLinuxResponse struct {
+	Benchmark float64                `json:"_benchmark"`
+	Meta      IndexMeta              `json:"_meta"`
+	Data      []client.AdvisoryLinux `json:"data"`
+}
+
+func (c *Client) GetIndexLinux(queryParameters ...IndexQueryParameters) (responseJSON *IndexLinuxResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("linux"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexMFilesResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryMFiles `json:"data"`
 }
 
-func (c *Client) GetIndexMFiles(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMFilesResponse, err error) {
+func (c *Client) GetIndexMFiles(queryParameters ...IndexQueryParameters) (responseJSON *IndexMFilesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("m-files"), nil)
@@ -7152,13 +7534,13 @@ func (c *Client) GetIndexMFiles(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexMacertResponse struct {
+type IndexMacertResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryMACert `json:"data"`
 }
 
-func (c *Client) GetIndexMacert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMacertResponse, err error) {
+func (c *Client) GetIndexMacert(queryParameters ...IndexQueryParameters) (responseJSON *IndexMacertResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("macert"), nil)
@@ -7190,13 +7572,13 @@ func (c *Client) GetIndexMacert(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexManageengineResponse struct {
+type IndexManageengineResponse struct {
 	Benchmark float64                               `json:"_benchmark"`
 	Meta      IndexMeta                             `json:"_meta"`
 	Data      []client.AdvisoryManageEngineAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexManageengine(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexManageengineResponse, err error) {
+func (c *Client) GetIndexManageengine(queryParameters ...IndexQueryParameters) (responseJSON *IndexManageengineResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("manageengine"), nil)
@@ -7228,13 +7610,13 @@ func (c *Client) GetIndexManageengine(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexMavenResponse struct {
+type IndexMavenResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexMaven(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMavenResponse, err error) {
+func (c *Client) GetIndexMaven(queryParameters ...IndexQueryParameters) (responseJSON *IndexMavenResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("maven"), nil)
@@ -7266,13 +7648,13 @@ func (c *Client) GetIndexMaven(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexMbedTlsResponse struct {
+type IndexMbedTlsResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryMbedTLS `json:"data"`
 }
 
-func (c *Client) GetIndexMbedTls(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMbedTlsResponse, err error) {
+func (c *Client) GetIndexMbedTls(queryParameters ...IndexQueryParameters) (responseJSON *IndexMbedTlsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mbed-tls"), nil)
@@ -7304,13 +7686,13 @@ func (c *Client) GetIndexMbedTls(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexMediatekResponse struct {
+type IndexMediatekResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryMediatek `json:"data"`
 }
 
-func (c *Client) GetIndexMediatek(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMediatekResponse, err error) {
+func (c *Client) GetIndexMediatek(queryParameters ...IndexQueryParameters) (responseJSON *IndexMediatekResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mediatek"), nil)
@@ -7342,13 +7724,13 @@ func (c *Client) GetIndexMediatek(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexMedtronicResponse struct {
+type IndexMedtronicResponse struct {
 	Benchmark float64                            `json:"_benchmark"`
 	Meta      IndexMeta                          `json:"_meta"`
 	Data      []client.AdvisoryMedtronicAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexMedtronic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMedtronicResponse, err error) {
+func (c *Client) GetIndexMedtronic(queryParameters ...IndexQueryParameters) (responseJSON *IndexMedtronicResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("medtronic"), nil)
@@ -7380,13 +7762,13 @@ func (c *Client) GetIndexMedtronic(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexMendixResponse struct {
+type IndexMendixResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryMendix `json:"data"`
 }
 
-func (c *Client) GetIndexMendix(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMendixResponse, err error) {
+func (c *Client) GetIndexMendix(queryParameters ...IndexQueryParameters) (responseJSON *IndexMendixResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mendix"), nil)
@@ -7418,13 +7800,13 @@ func (c *Client) GetIndexMendix(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexMetasploitResponse struct {
+type IndexMetasploitResponse struct {
 	Benchmark float64                            `json:"_benchmark"`
 	Meta      IndexMeta                          `json:"_meta"`
 	Data      []client.AdvisoryMetasploitExploit `json:"data"`
 }
 
-func (c *Client) GetIndexMetasploit(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMetasploitResponse, err error) {
+func (c *Client) GetIndexMetasploit(queryParameters ...IndexQueryParameters) (responseJSON *IndexMetasploitResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("metasploit"), nil)
@@ -7456,13 +7838,13 @@ func (c *Client) GetIndexMetasploit(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexMicrosoftCvrfResponse struct {
+type IndexMicrosoftCvrfResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryMicrosoftCVRF `json:"data"`
 }
 
-func (c *Client) GetIndexMicrosoftCvrf(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMicrosoftCvrfResponse, err error) {
+func (c *Client) GetIndexMicrosoftCvrf(queryParameters ...IndexQueryParameters) (responseJSON *IndexMicrosoftCvrfResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("microsoft-cvrf"), nil)
@@ -7494,13 +7876,51 @@ func (c *Client) GetIndexMicrosoftCvrf(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexMikrotikResponse struct {
+type IndexMicrosoftKbResponse struct {
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryMicrosoftKb `json:"data"`
+}
+
+func (c *Client) GetIndexMicrosoftKb(queryParameters ...IndexQueryParameters) (responseJSON *IndexMicrosoftKbResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("microsoft-kb"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexMikrotikResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryMikrotik `json:"data"`
 }
 
-func (c *Client) GetIndexMikrotik(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMikrotikResponse, err error) {
+func (c *Client) GetIndexMikrotik(queryParameters ...IndexQueryParameters) (responseJSON *IndexMikrotikResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mikrotik"), nil)
@@ -7532,13 +7952,13 @@ func (c *Client) GetIndexMikrotik(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexMindrayResponse struct {
+type IndexMindrayResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryMindray `json:"data"`
 }
 
-func (c *Client) GetIndexMindray(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMindrayResponse, err error) {
+func (c *Client) GetIndexMindray(queryParameters ...IndexQueryParameters) (responseJSON *IndexMindrayResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mindray"), nil)
@@ -7570,13 +7990,13 @@ func (c *Client) GetIndexMindray(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexMispThreatActorsResponse struct {
+type IndexMispThreatActorsResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryMispValue `json:"data"`
 }
 
-func (c *Client) GetIndexMispThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMispThreatActorsResponse, err error) {
+func (c *Client) GetIndexMispThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *IndexMispThreatActorsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("misp-threat-actors"), nil)
@@ -7608,13 +8028,13 @@ func (c *Client) GetIndexMispThreatActors(queryParameters ...IndexQueryParameter
 	return responseJSON, nil
 }
 
-type GetIndexMitelResponse struct {
+type IndexMitelResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryMitel `json:"data"`
 }
 
-func (c *Client) GetIndexMitel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitelResponse, err error) {
+func (c *Client) GetIndexMitel(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitelResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mitel"), nil)
@@ -7646,13 +8066,13 @@ func (c *Client) GetIndexMitel(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexMitreAttackCveResponse struct {
+type IndexMitreAttackCveResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.ApiMitreAttackToCVE `json:"data"`
 }
 
-func (c *Client) GetIndexMitreAttackCve(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitreAttackCveResponse, err error) {
+func (c *Client) GetIndexMitreAttackCve(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitreAttackCveResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mitre-attack-cve"), nil)
@@ -7684,13 +8104,51 @@ func (c *Client) GetIndexMitreAttackCve(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexMitsubishiElectricResponse struct {
+type IndexMitreCveResponse struct {
+	Benchmark float64                   `json:"_benchmark"`
+	Meta      IndexMeta                 `json:"_meta"`
+	Data      []client.AdvisoryMitreCVE `json:"data"`
+}
+
+func (c *Client) GetIndexMitreCve(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitreCveResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mitre-cve"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexMitsubishiElectricResponse struct {
 	Benchmark float64                                     `json:"_benchmark"`
 	Meta      IndexMeta                                   `json:"_meta"`
 	Data      []client.AdvisoryMitsubishiElectricAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexMitsubishiElectric(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMitsubishiElectricResponse, err error) {
+func (c *Client) GetIndexMitsubishiElectric(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitsubishiElectricResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mitsubishi-electric"), nil)
@@ -7722,13 +8180,13 @@ func (c *Client) GetIndexMitsubishiElectric(queryParameters ...IndexQueryParamet
 	return responseJSON, nil
 }
 
-type GetIndexMongodbResponse struct {
+type IndexMongodbResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryMongoDB `json:"data"`
 }
 
-func (c *Client) GetIndexMongodb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMongodbResponse, err error) {
+func (c *Client) GetIndexMongodb(queryParameters ...IndexQueryParameters) (responseJSON *IndexMongodbResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mongodb"), nil)
@@ -7760,13 +8218,13 @@ func (c *Client) GetIndexMongodb(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexMoxaResponse struct {
+type IndexMoxaResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryMoxaAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexMoxa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMoxaResponse, err error) {
+func (c *Client) GetIndexMoxa(queryParameters ...IndexQueryParameters) (responseJSON *IndexMoxaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("moxa"), nil)
@@ -7798,13 +8256,13 @@ func (c *Client) GetIndexMoxa(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexMozillaResponse struct {
+type IndexMozillaResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryMozillaAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexMozilla(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexMozillaResponse, err error) {
+func (c *Client) GetIndexMozilla(queryParameters ...IndexQueryParameters) (responseJSON *IndexMozillaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("mozilla"), nil)
@@ -7836,13 +8294,13 @@ func (c *Client) GetIndexMozilla(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexNaverResponse struct {
+type IndexNaverResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryNaver `json:"data"`
 }
 
-func (c *Client) GetIndexNaver(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNaverResponse, err error) {
+func (c *Client) GetIndexNaver(queryParameters ...IndexQueryParameters) (responseJSON *IndexNaverResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("naver"), nil)
@@ -7874,13 +8332,13 @@ func (c *Client) GetIndexNaver(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexNecResponse struct {
+type IndexNecResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryNEC `json:"data"`
 }
 
-func (c *Client) GetIndexNec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNecResponse, err error) {
+func (c *Client) GetIndexNec(queryParameters ...IndexQueryParameters) (responseJSON *IndexNecResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nec"), nil)
@@ -7912,13 +8370,13 @@ func (c *Client) GetIndexNec(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexNetappResponse struct {
+type IndexNetappResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryNetApp `json:"data"`
 }
 
-func (c *Client) GetIndexNetapp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetappResponse, err error) {
+func (c *Client) GetIndexNetapp(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetappResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netapp"), nil)
@@ -7950,13 +8408,13 @@ func (c *Client) GetIndexNetapp(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexNetgateResponse struct {
+type IndexNetgateResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryNetgate `json:"data"`
 }
 
-func (c *Client) GetIndexNetgate(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetgateResponse, err error) {
+func (c *Client) GetIndexNetgate(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetgateResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netgate"), nil)
@@ -7988,13 +8446,13 @@ func (c *Client) GetIndexNetgate(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexNetgearResponse struct {
+type IndexNetgearResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryNetgear `json:"data"`
 }
 
-func (c *Client) GetIndexNetgear(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetgearResponse, err error) {
+func (c *Client) GetIndexNetgear(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetgearResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netgear"), nil)
@@ -8026,13 +8484,13 @@ func (c *Client) GetIndexNetgear(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexNetskopeResponse struct {
+type IndexNetskopeResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryNetskope `json:"data"`
 }
 
-func (c *Client) GetIndexNetskope(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNetskopeResponse, err error) {
+func (c *Client) GetIndexNetskope(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetskopeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("netskope"), nil)
@@ -8064,13 +8522,13 @@ func (c *Client) GetIndexNetskope(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexNginxResponse struct {
+type IndexNginxResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryNginxAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexNginx(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNginxResponse, err error) {
+func (c *Client) GetIndexNginx(queryParameters ...IndexQueryParameters) (responseJSON *IndexNginxResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nginx"), nil)
@@ -8102,13 +8560,13 @@ func (c *Client) GetIndexNginx(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexNhsResponse struct {
+type IndexNhsResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryNHS `json:"data"`
 }
 
-func (c *Client) GetIndexNhs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNhsResponse, err error) {
+func (c *Client) GetIndexNhs(queryParameters ...IndexQueryParameters) (responseJSON *IndexNhsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nhs"), nil)
@@ -8140,13 +8598,13 @@ func (c *Client) GetIndexNhs(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexNiResponse struct {
+type IndexNiResponse struct {
 	Benchmark float64             `json:"_benchmark"`
 	Meta      IndexMeta           `json:"_meta"`
 	Data      []client.AdvisoryNI `json:"data"`
 }
 
-func (c *Client) GetIndexNi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNiResponse, err error) {
+func (c *Client) GetIndexNi(queryParameters ...IndexQueryParameters) (responseJSON *IndexNiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ni"), nil)
@@ -8178,13 +8636,13 @@ func (c *Client) GetIndexNi(queryParameters ...IndexQueryParameters) (responseJS
 	return responseJSON, nil
 }
 
-type GetIndexNistNvdResponse struct {
+type IndexNistNvdResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.ApiCveItems `json:"data"`
 }
 
-func (c *Client) GetIndexNistNvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNistNvdResponse, err error) {
+func (c *Client) GetIndexNistNvd(queryParameters ...IndexQueryParameters) (responseJSON *IndexNistNvdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nist-nvd"), nil)
@@ -8216,13 +8674,51 @@ func (c *Client) GetIndexNistNvd(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexNistNvd2CpematchResponse struct {
+type IndexNistNvd2Response struct {
+	Benchmark float64              `json:"_benchmark"`
+	Meta      IndexMeta            `json:"_meta"`
+	Data      []client.ApiNVD20CVE `json:"data"`
+}
+
+func (c *Client) GetIndexNistNvd2(queryParameters ...IndexQueryParameters) (responseJSON *IndexNistNvd2Response, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nist-nvd2"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexNistNvd2CpematchResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.ApiNVD20CPEMatch `json:"data"`
 }
 
-func (c *Client) GetIndexNistNvd2Cpematch(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNistNvd2CpematchResponse, err error) {
+func (c *Client) GetIndexNistNvd2Cpematch(queryParameters ...IndexQueryParameters) (responseJSON *IndexNistNvd2CpematchResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nist-nvd2-cpematch"), nil)
@@ -8254,13 +8750,51 @@ func (c *Client) GetIndexNistNvd2Cpematch(queryParameters ...IndexQueryParameter
 	return responseJSON, nil
 }
 
-type GetIndexNodejsResponse struct {
+type IndexNodeSecurityResponse struct {
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryNodeSecurity `json:"data"`
+}
+
+func (c *Client) GetIndexNodeSecurity(queryParameters ...IndexQueryParameters) (responseJSON *IndexNodeSecurityResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("node-security"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexNodejsResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryNodeJS `json:"data"`
 }
 
-func (c *Client) GetIndexNodejs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNodejsResponse, err error) {
+func (c *Client) GetIndexNodejs(queryParameters ...IndexQueryParameters) (responseJSON *IndexNodejsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nodejs"), nil)
@@ -8292,13 +8826,13 @@ func (c *Client) GetIndexNodejs(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexNokiaResponse struct {
+type IndexNokiaResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryNokia `json:"data"`
 }
 
-func (c *Client) GetIndexNokia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNokiaResponse, err error) {
+func (c *Client) GetIndexNokia(queryParameters ...IndexQueryParameters) (responseJSON *IndexNokiaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nokia"), nil)
@@ -8330,13 +8864,13 @@ func (c *Client) GetIndexNokia(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexNozomiResponse struct {
+type IndexNozomiResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryNozomi `json:"data"`
 }
 
-func (c *Client) GetIndexNozomi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNozomiResponse, err error) {
+func (c *Client) GetIndexNozomi(queryParameters ...IndexQueryParameters) (responseJSON *IndexNozomiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nozomi"), nil)
@@ -8368,13 +8902,13 @@ func (c *Client) GetIndexNozomi(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexNpmResponse struct {
+type IndexNpmResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexNpm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNpmResponse, err error) {
+func (c *Client) GetIndexNpm(queryParameters ...IndexQueryParameters) (responseJSON *IndexNpmResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("npm"), nil)
@@ -8406,13 +8940,13 @@ func (c *Client) GetIndexNpm(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexNugetResponse struct {
+type IndexNugetResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexNuget(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNugetResponse, err error) {
+func (c *Client) GetIndexNuget(queryParameters ...IndexQueryParameters) (responseJSON *IndexNugetResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nuget"), nil)
@@ -8444,13 +8978,13 @@ func (c *Client) GetIndexNuget(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexNvidiaResponse struct {
+type IndexNvidiaResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisorySecurityBulletin `json:"data"`
 }
 
-func (c *Client) GetIndexNvidia(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNvidiaResponse, err error) {
+func (c *Client) GetIndexNvidia(queryParameters ...IndexQueryParameters) (responseJSON *IndexNvidiaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nvidia"), nil)
@@ -8482,13 +9016,13 @@ func (c *Client) GetIndexNvidia(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexNzAdvisoriesResponse struct {
+type IndexNzAdvisoriesResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryNZAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexNzAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexNzAdvisoriesResponse, err error) {
+func (c *Client) GetIndexNzAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexNzAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("nz-advisories"), nil)
@@ -8520,13 +9054,13 @@ func (c *Client) GetIndexNzAdvisories(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexOctopusDeployResponse struct {
+type IndexOctopusDeployResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryOctopusDeploy `json:"data"`
 }
 
-func (c *Client) GetIndexOctopusDeploy(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOctopusDeployResponse, err error) {
+func (c *Client) GetIndexOctopusDeploy(queryParameters ...IndexQueryParameters) (responseJSON *IndexOctopusDeployResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("octopus-deploy"), nil)
@@ -8558,13 +9092,13 @@ func (c *Client) GetIndexOctopusDeploy(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexOktaResponse struct {
+type IndexOktaResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryOkta `json:"data"`
 }
 
-func (c *Client) GetIndexOkta(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOktaResponse, err error) {
+func (c *Client) GetIndexOkta(queryParameters ...IndexQueryParameters) (responseJSON *IndexOktaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("okta"), nil)
@@ -8596,13 +9130,13 @@ func (c *Client) GetIndexOkta(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexOmronResponse struct {
+type IndexOmronResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryOmron `json:"data"`
 }
 
-func (c *Client) GetIndexOmron(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOmronResponse, err error) {
+func (c *Client) GetIndexOmron(queryParameters ...IndexQueryParameters) (responseJSON *IndexOmronResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("omron"), nil)
@@ -8634,13 +9168,13 @@ func (c *Client) GetIndexOmron(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexOneEResponse struct {
+type IndexOneEResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryOneE `json:"data"`
 }
 
-func (c *Client) GetIndexOneE(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOneEResponse, err error) {
+func (c *Client) GetIndexOneE(queryParameters ...IndexQueryParameters) (responseJSON *IndexOneEResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("one-e"), nil)
@@ -8672,13 +9206,13 @@ func (c *Client) GetIndexOneE(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexOpamResponse struct {
+type IndexOpamResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexOpam(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpamResponse, err error) {
+func (c *Client) GetIndexOpam(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpamResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("opam"), nil)
@@ -8710,13 +9244,13 @@ func (c *Client) GetIndexOpam(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexOpenCvdbResponse struct {
+type IndexOpenCvdbResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryOpenCVDB `json:"data"`
 }
 
-func (c *Client) GetIndexOpenCvdb(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenCvdbResponse, err error) {
+func (c *Client) GetIndexOpenCvdb(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenCvdbResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("open-cvdb"), nil)
@@ -8748,13 +9282,13 @@ func (c *Client) GetIndexOpenCvdb(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexOpenbsdResponse struct {
+type IndexOpenbsdResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryOpenBSD `json:"data"`
 }
 
-func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenbsdResponse, err error) {
+func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenbsdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openbsd"), nil)
@@ -8786,13 +9320,13 @@ func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexOpensshResponse struct {
+type IndexOpensshResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryOpenSSH `json:"data"`
 }
 
-func (c *Client) GetIndexOpenssh(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpensshResponse, err error) {
+func (c *Client) GetIndexOpenssh(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpensshResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openssh"), nil)
@@ -8824,13 +9358,13 @@ func (c *Client) GetIndexOpenssh(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexOpensslSecadvResponse struct {
+type IndexOpensslSecadvResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryOpenSSLSecAdv `json:"data"`
 }
 
-func (c *Client) GetIndexOpensslSecadv(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpensslSecadvResponse, err error) {
+func (c *Client) GetIndexOpensslSecadv(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpensslSecadvResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openssl-secadv"), nil)
@@ -8862,13 +9396,13 @@ func (c *Client) GetIndexOpensslSecadv(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexOpenstackResponse struct {
+type IndexOpenstackResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryOpenStack `json:"data"`
 }
 
-func (c *Client) GetIndexOpenstack(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenstackResponse, err error) {
+func (c *Client) GetIndexOpenstack(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenstackResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openstack"), nil)
@@ -8900,13 +9434,13 @@ func (c *Client) GetIndexOpenstack(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexOpenwrtResponse struct {
+type IndexOpenwrtResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryWRT `json:"data"`
 }
 
-func (c *Client) GetIndexOpenwrt(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOpenwrtResponse, err error) {
+func (c *Client) GetIndexOpenwrt(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenwrtResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openwrt"), nil)
@@ -8938,13 +9472,13 @@ func (c *Client) GetIndexOpenwrt(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexOracleResponse struct {
+type IndexOracleResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryMetaData `json:"data"`
 }
 
-func (c *Client) GetIndexOracle(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleResponse, err error) {
+func (c *Client) GetIndexOracle(queryParameters ...IndexQueryParameters) (responseJSON *IndexOracleResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("oracle"), nil)
@@ -8976,13 +9510,13 @@ func (c *Client) GetIndexOracle(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexOracleCpuResponse struct {
+type IndexOracleCpuResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryOracleCPU `json:"data"`
 }
 
-func (c *Client) GetIndexOracleCpu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleCpuResponse, err error) {
+func (c *Client) GetIndexOracleCpu(queryParameters ...IndexQueryParameters) (responseJSON *IndexOracleCpuResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("oracle-cpu"), nil)
@@ -9014,13 +9548,13 @@ func (c *Client) GetIndexOracleCpu(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexOracleCpuCsafResponse struct {
+type IndexOracleCpuCsafResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryOracleCPUCSAF `json:"data"`
 }
 
-func (c *Client) GetIndexOracleCpuCsaf(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOracleCpuCsafResponse, err error) {
+func (c *Client) GetIndexOracleCpuCsaf(queryParameters ...IndexQueryParameters) (responseJSON *IndexOracleCpuCsafResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("oracle-cpu-csaf"), nil)
@@ -9052,13 +9586,13 @@ func (c *Client) GetIndexOracleCpuCsaf(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexOsvResponse struct {
+type IndexOsvResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryOSV `json:"data"`
 }
 
-func (c *Client) GetIndexOsv(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOsvResponse, err error) {
+func (c *Client) GetIndexOsv(queryParameters ...IndexQueryParameters) (responseJSON *IndexOsvResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("osv"), nil)
@@ -9090,13 +9624,13 @@ func (c *Client) GetIndexOsv(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexOtrsResponse struct {
+type IndexOtrsResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryOTRS `json:"data"`
 }
 
-func (c *Client) GetIndexOtrs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOtrsResponse, err error) {
+func (c *Client) GetIndexOtrs(queryParameters ...IndexQueryParameters) (responseJSON *IndexOtrsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("otrs"), nil)
@@ -9128,13 +9662,13 @@ func (c *Client) GetIndexOtrs(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexOwncloudResponse struct {
+type IndexOwncloudResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryOwnCloud `json:"data"`
 }
 
-func (c *Client) GetIndexOwncloud(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexOwncloudResponse, err error) {
+func (c *Client) GetIndexOwncloud(queryParameters ...IndexQueryParameters) (responseJSON *IndexOwncloudResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("owncloud"), nil)
@@ -9166,13 +9700,13 @@ func (c *Client) GetIndexOwncloud(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexPalantirResponse struct {
+type IndexPalantirResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryPalantir `json:"data"`
 }
 
-func (c *Client) GetIndexPalantir(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPalantirResponse, err error) {
+func (c *Client) GetIndexPalantir(queryParameters ...IndexQueryParameters) (responseJSON *IndexPalantirResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("palantir"), nil)
@@ -9204,13 +9738,13 @@ func (c *Client) GetIndexPalantir(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexPaloAltoResponse struct {
+type IndexPaloAltoResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryPaloAltoAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexPaloAlto(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPaloAltoResponse, err error) {
+func (c *Client) GetIndexPaloAlto(queryParameters ...IndexQueryParameters) (responseJSON *IndexPaloAltoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("palo-alto"), nil)
@@ -9242,13 +9776,13 @@ func (c *Client) GetIndexPaloAlto(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexPanasonicResponse struct {
+type IndexPanasonicResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryPanasonic `json:"data"`
 }
 
-func (c *Client) GetIndexPanasonic(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPanasonicResponse, err error) {
+func (c *Client) GetIndexPanasonic(queryParameters ...IndexQueryParameters) (responseJSON *IndexPanasonicResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("panasonic"), nil)
@@ -9280,13 +9814,13 @@ func (c *Client) GetIndexPanasonic(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexPapercutResponse struct {
+type IndexPapercutResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryPaperCut `json:"data"`
 }
 
-func (c *Client) GetIndexPapercut(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPapercutResponse, err error) {
+func (c *Client) GetIndexPapercut(queryParameters ...IndexQueryParameters) (responseJSON *IndexPapercutResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("papercut"), nil)
@@ -9318,13 +9852,13 @@ func (c *Client) GetIndexPapercut(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexPegaResponse struct {
+type IndexPegaResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryPega `json:"data"`
 }
 
-func (c *Client) GetIndexPega(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPegaResponse, err error) {
+func (c *Client) GetIndexPega(queryParameters ...IndexQueryParameters) (responseJSON *IndexPegaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pega"), nil)
@@ -9356,13 +9890,13 @@ func (c *Client) GetIndexPega(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexPhilipsResponse struct {
+type IndexPhilipsResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryPhilipsAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexPhilips(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPhilipsResponse, err error) {
+func (c *Client) GetIndexPhilips(queryParameters ...IndexQueryParameters) (responseJSON *IndexPhilipsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("philips"), nil)
@@ -9394,13 +9928,13 @@ func (c *Client) GetIndexPhilips(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexPhoenixContactResponse struct {
+type IndexPhoenixContactResponse struct {
 	Benchmark float64                                 `json:"_benchmark"`
 	Meta      IndexMeta                               `json:"_meta"`
 	Data      []client.AdvisoryPhoenixContactAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexPhoenixContact(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPhoenixContactResponse, err error) {
+func (c *Client) GetIndexPhoenixContact(queryParameters ...IndexQueryParameters) (responseJSON *IndexPhoenixContactResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("phoenix-contact"), nil)
@@ -9432,13 +9966,13 @@ func (c *Client) GetIndexPhoenixContact(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexPostgressqlResponse struct {
+type IndexPostgressqlResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryPostgresSQL `json:"data"`
 }
 
-func (c *Client) GetIndexPostgressql(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPostgressqlResponse, err error) {
+func (c *Client) GetIndexPostgressql(queryParameters ...IndexQueryParameters) (responseJSON *IndexPostgressqlResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("postgressql"), nil)
@@ -9470,13 +10004,13 @@ func (c *Client) GetIndexPostgressql(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexProgressResponse struct {
+type IndexProgressResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryProgress `json:"data"`
 }
 
-func (c *Client) GetIndexProgress(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexProgressResponse, err error) {
+func (c *Client) GetIndexProgress(queryParameters ...IndexQueryParameters) (responseJSON *IndexProgressResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("progress"), nil)
@@ -9508,13 +10042,13 @@ func (c *Client) GetIndexProgress(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexProofpointResponse struct {
+type IndexProofpointResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryProofpoint `json:"data"`
 }
 
-func (c *Client) GetIndexProofpoint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexProofpointResponse, err error) {
+func (c *Client) GetIndexProofpoint(queryParameters ...IndexQueryParameters) (responseJSON *IndexProofpointResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("proofpoint"), nil)
@@ -9546,13 +10080,13 @@ func (c *Client) GetIndexProofpoint(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexPubResponse struct {
+type IndexPubResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexPub(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPubResponse, err error) {
+func (c *Client) GetIndexPub(queryParameters ...IndexQueryParameters) (responseJSON *IndexPubResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pub"), nil)
@@ -9584,13 +10118,13 @@ func (c *Client) GetIndexPub(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexPureStorageResponse struct {
+type IndexPureStorageResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryPureStorage `json:"data"`
 }
 
-func (c *Client) GetIndexPureStorage(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPureStorageResponse, err error) {
+func (c *Client) GetIndexPureStorage(queryParameters ...IndexQueryParameters) (responseJSON *IndexPureStorageResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pure-storage"), nil)
@@ -9622,13 +10156,13 @@ func (c *Client) GetIndexPureStorage(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexPypaAdvisoriesResponse struct {
+type IndexPypaAdvisoriesResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryPyPAAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexPypaAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPypaAdvisoriesResponse, err error) {
+func (c *Client) GetIndexPypaAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexPypaAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pypa-advisories"), nil)
@@ -9660,13 +10194,13 @@ func (c *Client) GetIndexPypaAdvisories(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexPypiResponse struct {
+type IndexPypiResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexPypi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexPypiResponse, err error) {
+func (c *Client) GetIndexPypi(queryParameters ...IndexQueryParameters) (responseJSON *IndexPypiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("pypi"), nil)
@@ -9698,13 +10232,13 @@ func (c *Client) GetIndexPypi(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexQnapResponse struct {
+type IndexQnapResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryQNAPAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexQnap(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQnapResponse, err error) {
+func (c *Client) GetIndexQnap(queryParameters ...IndexQueryParameters) (responseJSON *IndexQnapResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("qnap"), nil)
@@ -9736,13 +10270,13 @@ func (c *Client) GetIndexQnap(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexQualcommResponse struct {
+type IndexQualcommResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryQualcomm `json:"data"`
 }
 
-func (c *Client) GetIndexQualcomm(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQualcommResponse, err error) {
+func (c *Client) GetIndexQualcomm(queryParameters ...IndexQueryParameters) (responseJSON *IndexQualcommResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("qualcomm"), nil)
@@ -9774,13 +10308,13 @@ func (c *Client) GetIndexQualcomm(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexQualysResponse struct {
+type IndexQualysResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryQualys `json:"data"`
 }
 
-func (c *Client) GetIndexQualys(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexQualysResponse, err error) {
+func (c *Client) GetIndexQualys(queryParameters ...IndexQueryParameters) (responseJSON *IndexQualysResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("qualys"), nil)
@@ -9812,13 +10346,13 @@ func (c *Client) GetIndexQualys(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexRansomwareResponse struct {
+type IndexRansomwareResponse struct {
 	Benchmark float64                            `json:"_benchmark"`
 	Meta      IndexMeta                          `json:"_meta"`
 	Data      []client.AdvisoryRansomwareExploit `json:"data"`
 }
 
-func (c *Client) GetIndexRansomware(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRansomwareResponse, err error) {
+func (c *Client) GetIndexRansomware(queryParameters ...IndexQueryParameters) (responseJSON *IndexRansomwareResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ransomware"), nil)
@@ -9850,13 +10384,13 @@ func (c *Client) GetIndexRansomware(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexRedhatResponse struct {
+type IndexRedhatResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryRedhatCVE `json:"data"`
 }
 
-func (c *Client) GetIndexRedhat(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRedhatResponse, err error) {
+func (c *Client) GetIndexRedhat(queryParameters ...IndexQueryParameters) (responseJSON *IndexRedhatResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("redhat"), nil)
@@ -9888,13 +10422,13 @@ func (c *Client) GetIndexRedhat(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexRenesasResponse struct {
+type IndexRenesasResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryRenesas `json:"data"`
 }
 
-func (c *Client) GetIndexRenesas(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRenesasResponse, err error) {
+func (c *Client) GetIndexRenesas(queryParameters ...IndexQueryParameters) (responseJSON *IndexRenesasResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("renesas"), nil)
@@ -9926,13 +10460,13 @@ func (c *Client) GetIndexRenesas(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexReviveResponse struct {
+type IndexReviveResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryRevive `json:"data"`
 }
 
-func (c *Client) GetIndexRevive(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexReviveResponse, err error) {
+func (c *Client) GetIndexRevive(queryParameters ...IndexQueryParameters) (responseJSON *IndexReviveResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("revive"), nil)
@@ -9964,13 +10498,13 @@ func (c *Client) GetIndexRevive(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexRockwellResponse struct {
+type IndexRockwellResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryRockwell `json:"data"`
 }
 
-func (c *Client) GetIndexRockwell(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRockwellResponse, err error) {
+func (c *Client) GetIndexRockwell(queryParameters ...IndexQueryParameters) (responseJSON *IndexRockwellResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rockwell"), nil)
@@ -10002,13 +10536,13 @@ func (c *Client) GetIndexRockwell(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexRockyResponse struct {
+type IndexRockyResponse struct {
 	Benchmark float64            `json:"_benchmark"`
 	Meta      IndexMeta          `json:"_meta"`
 	Data      []client.ApiUpdate `json:"data"`
 }
 
-func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRockyResponse, err error) {
+func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (responseJSON *IndexRockyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rocky"), nil)
@@ -10040,13 +10574,13 @@ func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexRuckusResponse struct {
+type IndexRuckusResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryRuckus `json:"data"`
 }
 
-func (c *Client) GetIndexRuckus(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRuckusResponse, err error) {
+func (c *Client) GetIndexRuckus(queryParameters ...IndexQueryParameters) (responseJSON *IndexRuckusResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ruckus"), nil)
@@ -10078,13 +10612,13 @@ func (c *Client) GetIndexRuckus(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexRustsecAdvisoriesResponse struct {
+type IndexRustsecAdvisoriesResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryRustsecAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexRustsecAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexRustsecAdvisoriesResponse, err error) {
+func (c *Client) GetIndexRustsecAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexRustsecAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rustsec-advisories"), nil)
@@ -10116,13 +10650,13 @@ func (c *Client) GetIndexRustsecAdvisories(queryParameters ...IndexQueryParamete
 	return responseJSON, nil
 }
 
-type GetIndexSacertResponse struct {
+type IndexSacertResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisorySAAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSacert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSacertResponse, err error) {
+func (c *Client) GetIndexSacert(queryParameters ...IndexQueryParameters) (responseJSON *IndexSacertResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sacert"), nil)
@@ -10154,13 +10688,13 @@ func (c *Client) GetIndexSacert(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexSaintResponse struct {
+type IndexSaintResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisorySaintExploit `json:"data"`
 }
 
-func (c *Client) GetIndexSaint(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSaintResponse, err error) {
+func (c *Client) GetIndexSaint(queryParameters ...IndexQueryParameters) (responseJSON *IndexSaintResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("saint"), nil)
@@ -10192,13 +10726,13 @@ func (c *Client) GetIndexSaint(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexSalesforceResponse struct {
+type IndexSalesforceResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisorySalesForce `json:"data"`
 }
 
-func (c *Client) GetIndexSalesforce(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSalesforceResponse, err error) {
+func (c *Client) GetIndexSalesforce(queryParameters ...IndexQueryParameters) (responseJSON *IndexSalesforceResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("salesforce"), nil)
@@ -10230,13 +10764,13 @@ func (c *Client) GetIndexSalesforce(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexSambaResponse struct {
+type IndexSambaResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisorySamba `json:"data"`
 }
 
-func (c *Client) GetIndexSamba(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSambaResponse, err error) {
+func (c *Client) GetIndexSamba(queryParameters ...IndexQueryParameters) (responseJSON *IndexSambaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("samba"), nil)
@@ -10268,13 +10802,13 @@ func (c *Client) GetIndexSamba(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexSapResponse struct {
+type IndexSapResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisorySAP `json:"data"`
 }
 
-func (c *Client) GetIndexSap(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSapResponse, err error) {
+func (c *Client) GetIndexSap(queryParameters ...IndexQueryParameters) (responseJSON *IndexSapResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sap"), nil)
@@ -10306,13 +10840,13 @@ func (c *Client) GetIndexSap(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexSchneiderElectricResponse struct {
+type IndexSchneiderElectricResponse struct {
 	Benchmark float64                                    `json:"_benchmark"`
 	Meta      IndexMeta                                  `json:"_meta"`
 	Data      []client.AdvisorySchneiderElectricAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSchneiderElectric(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSchneiderElectricResponse, err error) {
+func (c *Client) GetIndexSchneiderElectric(queryParameters ...IndexQueryParameters) (responseJSON *IndexSchneiderElectricResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("schneider-electric"), nil)
@@ -10344,13 +10878,13 @@ func (c *Client) GetIndexSchneiderElectric(queryParameters ...IndexQueryParamete
 	return responseJSON, nil
 }
 
-type GetIndexSecConsultResponse struct {
+type IndexSecConsultResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisorySECConsult `json:"data"`
 }
 
-func (c *Client) GetIndexSecConsult(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSecConsultResponse, err error) {
+func (c *Client) GetIndexSecConsult(queryParameters ...IndexQueryParameters) (responseJSON *IndexSecConsultResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sec-consult"), nil)
@@ -10382,13 +10916,13 @@ func (c *Client) GetIndexSecConsult(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexSelResponse struct {
+type IndexSelResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisorySel `json:"data"`
 }
 
-func (c *Client) GetIndexSel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSelResponse, err error) {
+func (c *Client) GetIndexSel(queryParameters ...IndexQueryParameters) (responseJSON *IndexSelResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sel"), nil)
@@ -10420,13 +10954,13 @@ func (c *Client) GetIndexSel(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexSentineloneResponse struct {
+type IndexSentineloneResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisorySentinelOne `json:"data"`
 }
 
-func (c *Client) GetIndexSentinelone(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSentineloneResponse, err error) {
+func (c *Client) GetIndexSentinelone(queryParameters ...IndexQueryParameters) (responseJSON *IndexSentineloneResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sentinelone"), nil)
@@ -10458,13 +10992,13 @@ func (c *Client) GetIndexSentinelone(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexServicenowResponse struct {
+type IndexServicenowResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryServiceNow `json:"data"`
 }
 
-func (c *Client) GetIndexServicenow(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexServicenowResponse, err error) {
+func (c *Client) GetIndexServicenow(queryParameters ...IndexQueryParameters) (responseJSON *IndexServicenowResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("servicenow"), nil)
@@ -10496,13 +11030,13 @@ func (c *Client) GetIndexServicenow(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexShadowserverExploitedResponse struct {
+type IndexShadowserverExploitedResponse struct {
 	Benchmark float64                                             `json:"_benchmark"`
 	Meta      IndexMeta                                           `json:"_meta"`
 	Data      []client.AdvisoryShadowServerExploitedVulnerability `json:"data"`
 }
 
-func (c *Client) GetIndexShadowserverExploited(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexShadowserverExploitedResponse, err error) {
+func (c *Client) GetIndexShadowserverExploited(queryParameters ...IndexQueryParameters) (responseJSON *IndexShadowserverExploitedResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("shadowserver-exploited"), nil)
@@ -10534,13 +11068,13 @@ func (c *Client) GetIndexShadowserverExploited(queryParameters ...IndexQueryPara
 	return responseJSON, nil
 }
 
-type GetIndexSickResponse struct {
+type IndexSickResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisorySick `json:"data"`
 }
 
-func (c *Client) GetIndexSick(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSickResponse, err error) {
+func (c *Client) GetIndexSick(queryParameters ...IndexQueryParameters) (responseJSON *IndexSickResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sick"), nil)
@@ -10572,13 +11106,13 @@ func (c *Client) GetIndexSick(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexSiemensResponse struct {
+type IndexSiemensResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisorySiemensAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSiemens(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSiemensResponse, err error) {
+func (c *Client) GetIndexSiemens(queryParameters ...IndexQueryParameters) (responseJSON *IndexSiemensResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("siemens"), nil)
@@ -10610,13 +11144,13 @@ func (c *Client) GetIndexSiemens(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexSierraWirelessResponse struct {
+type IndexSierraWirelessResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisorySierraWireless `json:"data"`
 }
 
-func (c *Client) GetIndexSierraWireless(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSierraWirelessResponse, err error) {
+func (c *Client) GetIndexSierraWireless(queryParameters ...IndexQueryParameters) (responseJSON *IndexSierraWirelessResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sierra-wireless"), nil)
@@ -10648,13 +11182,13 @@ func (c *Client) GetIndexSierraWireless(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexSingcertResponse struct {
+type IndexSingcertResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisorySingCert `json:"data"`
 }
 
-func (c *Client) GetIndexSingcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSingcertResponse, err error) {
+func (c *Client) GetIndexSingcert(queryParameters ...IndexQueryParameters) (responseJSON *IndexSingcertResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("singcert"), nil)
@@ -10686,13 +11220,13 @@ func (c *Client) GetIndexSingcert(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexSlackwareResponse struct {
+type IndexSlackwareResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisorySlackware `json:"data"`
 }
 
-func (c *Client) GetIndexSlackware(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSlackwareResponse, err error) {
+func (c *Client) GetIndexSlackware(queryParameters ...IndexQueryParameters) (responseJSON *IndexSlackwareResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("slackware"), nil)
@@ -10724,13 +11258,13 @@ func (c *Client) GetIndexSlackware(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexSolarwindsResponse struct {
+type IndexSolarwindsResponse struct {
 	Benchmark float64                             `json:"_benchmark"`
 	Meta      IndexMeta                           `json:"_meta"`
 	Data      []client.AdvisorySolarWindsAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSolarwinds(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSolarwindsResponse, err error) {
+func (c *Client) GetIndexSolarwinds(queryParameters ...IndexQueryParameters) (responseJSON *IndexSolarwindsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("solarwinds"), nil)
@@ -10762,13 +11296,13 @@ func (c *Client) GetIndexSolarwinds(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexSolrResponse struct {
+type IndexSolrResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisorySolr `json:"data"`
 }
 
-func (c *Client) GetIndexSolr(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSolrResponse, err error) {
+func (c *Client) GetIndexSolr(queryParameters ...IndexQueryParameters) (responseJSON *IndexSolrResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("solr"), nil)
@@ -10800,13 +11334,13 @@ func (c *Client) GetIndexSolr(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexSonicwallResponse struct {
+type IndexSonicwallResponse struct {
 	Benchmark float64                            `json:"_benchmark"`
 	Meta      IndexMeta                          `json:"_meta"`
 	Data      []client.AdvisorySonicWallAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSonicwall(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSonicwallResponse, err error) {
+func (c *Client) GetIndexSonicwall(queryParameters ...IndexQueryParameters) (responseJSON *IndexSonicwallResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sonicwall"), nil)
@@ -10838,13 +11372,13 @@ func (c *Client) GetIndexSonicwall(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexSpacelabsHealthcareResponse struct {
+type IndexSpacelabsHealthcareResponse struct {
 	Benchmark float64                                      `json:"_benchmark"`
 	Meta      IndexMeta                                    `json:"_meta"`
 	Data      []client.AdvisorySpacelabsHealthcareAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSpacelabsHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSpacelabsHealthcareResponse, err error) {
+func (c *Client) GetIndexSpacelabsHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *IndexSpacelabsHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("spacelabs-healthcare"), nil)
@@ -10876,13 +11410,13 @@ func (c *Client) GetIndexSpacelabsHealthcare(queryParameters ...IndexQueryParame
 	return responseJSON, nil
 }
 
-type GetIndexSpringResponse struct {
+type IndexSpringResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisorySpring `json:"data"`
 }
 
-func (c *Client) GetIndexSpring(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSpringResponse, err error) {
+func (c *Client) GetIndexSpring(queryParameters ...IndexQueryParameters) (responseJSON *IndexSpringResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("spring"), nil)
@@ -10914,13 +11448,13 @@ func (c *Client) GetIndexSpring(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexSsdResponse struct {
+type IndexSsdResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisorySSDAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSsdResponse, err error) {
+func (c *Client) GetIndexSsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexSsdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ssd"), nil)
@@ -10952,13 +11486,13 @@ func (c *Client) GetIndexSsd(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexStormshieldResponse struct {
+type IndexStormshieldResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryStormshield `json:"data"`
 }
 
-func (c *Client) GetIndexStormshield(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexStormshieldResponse, err error) {
+func (c *Client) GetIndexStormshield(queryParameters ...IndexQueryParameters) (responseJSON *IndexStormshieldResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("stormshield"), nil)
@@ -10990,13 +11524,13 @@ func (c *Client) GetIndexStormshield(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexStrykerResponse struct {
+type IndexStrykerResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryStrykerAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexStryker(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexStrykerResponse, err error) {
+func (c *Client) GetIndexStryker(queryParameters ...IndexQueryParameters) (responseJSON *IndexStrykerResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("stryker"), nil)
@@ -11028,13 +11562,13 @@ func (c *Client) GetIndexStryker(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexSudoResponse struct {
+type IndexSudoResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisorySudo `json:"data"`
 }
 
-func (c *Client) GetIndexSudo(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSudoResponse, err error) {
+func (c *Client) GetIndexSudo(queryParameters ...IndexQueryParameters) (responseJSON *IndexSudoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("sudo"), nil)
@@ -11066,13 +11600,13 @@ func (c *Client) GetIndexSudo(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexSuseResponse struct {
+type IndexSuseResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryCvrf `json:"data"`
 }
 
-func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSuseResponse, err error) {
+func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (responseJSON *IndexSuseResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("suse"), nil)
@@ -11104,13 +11638,13 @@ func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexSwiftResponse struct {
+type IndexSwiftResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
-func (c *Client) GetIndexSwift(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSwiftResponse, err error) {
+func (c *Client) GetIndexSwift(queryParameters ...IndexQueryParameters) (responseJSON *IndexSwiftResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("swift"), nil)
@@ -11142,13 +11676,13 @@ func (c *Client) GetIndexSwift(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexSwisslogHealthcareResponse struct {
+type IndexSwisslogHealthcareResponse struct {
 	Benchmark float64                                     `json:"_benchmark"`
 	Meta      IndexMeta                                   `json:"_meta"`
 	Data      []client.AdvisorySwisslogHealthcareAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexSwisslogHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSwisslogHealthcareResponse, err error) {
+func (c *Client) GetIndexSwisslogHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *IndexSwisslogHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("swisslog-healthcare"), nil)
@@ -11180,13 +11714,13 @@ func (c *Client) GetIndexSwisslogHealthcare(queryParameters ...IndexQueryParamet
 	return responseJSON, nil
 }
 
-type GetIndexSymfonyResponse struct {
+type IndexSymfonyResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisorySymfony `json:"data"`
 }
 
-func (c *Client) GetIndexSymfony(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSymfonyResponse, err error) {
+func (c *Client) GetIndexSymfony(queryParameters ...IndexQueryParameters) (responseJSON *IndexSymfonyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("symfony"), nil)
@@ -11218,13 +11752,13 @@ func (c *Client) GetIndexSymfony(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexSyncrosoftResponse struct {
+type IndexSyncrosoftResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisorySyncroSoft `json:"data"`
 }
 
-func (c *Client) GetIndexSyncrosoft(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSyncrosoftResponse, err error) {
+func (c *Client) GetIndexSyncrosoft(queryParameters ...IndexQueryParameters) (responseJSON *IndexSyncrosoftResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("syncrosoft"), nil)
@@ -11256,13 +11790,13 @@ func (c *Client) GetIndexSyncrosoft(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexSynologyResponse struct {
+type IndexSynologyResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisorySynology `json:"data"`
 }
 
-func (c *Client) GetIndexSynology(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexSynologyResponse, err error) {
+func (c *Client) GetIndexSynology(queryParameters ...IndexQueryParameters) (responseJSON *IndexSynologyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("synology"), nil)
@@ -11294,13 +11828,13 @@ func (c *Client) GetIndexSynology(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexTeamviewerResponse struct {
+type IndexTeamviewerResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryTeamViewer `json:"data"`
 }
 
-func (c *Client) GetIndexTeamviewer(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTeamviewerResponse, err error) {
+func (c *Client) GetIndexTeamviewer(queryParameters ...IndexQueryParameters) (responseJSON *IndexTeamviewerResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("teamviewer"), nil)
@@ -11332,13 +11866,13 @@ func (c *Client) GetIndexTeamviewer(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexTencentResponse struct {
+type IndexTencentResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryTencent `json:"data"`
 }
 
-func (c *Client) GetIndexTencent(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTencentResponse, err error) {
+func (c *Client) GetIndexTencent(queryParameters ...IndexQueryParameters) (responseJSON *IndexTencentResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("tencent"), nil)
@@ -11370,13 +11904,13 @@ func (c *Client) GetIndexTencent(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexThalesResponse struct {
+type IndexThalesResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryThales `json:"data"`
 }
 
-func (c *Client) GetIndexThales(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThalesResponse, err error) {
+func (c *Client) GetIndexThales(queryParameters ...IndexQueryParameters) (responseJSON *IndexThalesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("thales"), nil)
@@ -11408,13 +11942,13 @@ func (c *Client) GetIndexThales(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexThemissinglinkResponse struct {
+type IndexThemissinglinkResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryTheMissingLink `json:"data"`
 }
 
-func (c *Client) GetIndexThemissinglink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThemissinglinkResponse, err error) {
+func (c *Client) GetIndexThemissinglink(queryParameters ...IndexQueryParameters) (responseJSON *IndexThemissinglinkResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("themissinglink"), nil)
@@ -11446,13 +11980,13 @@ func (c *Client) GetIndexThemissinglink(queryParameters ...IndexQueryParameters)
 	return responseJSON, nil
 }
 
-type GetIndexThreatActorsResponse struct {
+type IndexThreatActorsResponse struct {
 	Benchmark float64                                         `json:"_benchmark"`
 	Meta      IndexMeta                                       `json:"_meta"`
 	Data      []client.AdvisoryThreatActorWithExternalObjects `json:"data"`
 }
 
-func (c *Client) GetIndexThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexThreatActorsResponse, err error) {
+func (c *Client) GetIndexThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *IndexThreatActorsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("threat-actors"), nil)
@@ -11484,13 +12018,13 @@ func (c *Client) GetIndexThreatActors(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexTiResponse struct {
+type IndexTiResponse struct {
 	Benchmark float64             `json:"_benchmark"`
 	Meta      IndexMeta           `json:"_meta"`
 	Data      []client.AdvisoryTI `json:"data"`
 }
 
-func (c *Client) GetIndexTi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTiResponse, err error) {
+func (c *Client) GetIndexTi(queryParameters ...IndexQueryParameters) (responseJSON *IndexTiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ti"), nil)
@@ -11522,13 +12056,13 @@ func (c *Client) GetIndexTi(queryParameters ...IndexQueryParameters) (responseJS
 	return responseJSON, nil
 }
 
-type GetIndexTibcoResponse struct {
+type IndexTibcoResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryTibco `json:"data"`
 }
 
-func (c *Client) GetIndexTibco(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTibcoResponse, err error) {
+func (c *Client) GetIndexTibco(queryParameters ...IndexQueryParameters) (responseJSON *IndexTibcoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("tibco"), nil)
@@ -11560,13 +12094,13 @@ func (c *Client) GetIndexTibco(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexTpLinkResponse struct {
+type IndexTpLinkResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryTPLink `json:"data"`
 }
 
-func (c *Client) GetIndexTpLink(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTpLinkResponse, err error) {
+func (c *Client) GetIndexTpLink(queryParameters ...IndexQueryParameters) (responseJSON *IndexTpLinkResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("tp-link"), nil)
@@ -11598,13 +12132,51 @@ func (c *Client) GetIndexTpLink(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexTrendmicroResponse struct {
+type IndexTraneTechnologyResponse struct {
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryTraneTechnology `json:"data"`
+}
+
+func (c *Client) GetIndexTraneTechnology(queryParameters ...IndexQueryParameters) (responseJSON *IndexTraneTechnologyResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("trane-technology"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexTrendmicroResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryTrendMicro `json:"data"`
 }
 
-func (c *Client) GetIndexTrendmicro(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTrendmicroResponse, err error) {
+func (c *Client) GetIndexTrendmicro(queryParameters ...IndexQueryParameters) (responseJSON *IndexTrendmicroResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("trendmicro"), nil)
@@ -11636,13 +12208,13 @@ func (c *Client) GetIndexTrendmicro(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexTrustwaveResponse struct {
+type IndexTrustwaveResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryTrustwave `json:"data"`
 }
 
-func (c *Client) GetIndexTrustwave(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTrustwaveResponse, err error) {
+func (c *Client) GetIndexTrustwave(queryParameters ...IndexQueryParameters) (responseJSON *IndexTrustwaveResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("trustwave"), nil)
@@ -11674,13 +12246,13 @@ func (c *Client) GetIndexTrustwave(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexTwcertResponse struct {
+type IndexTwcertResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryTWCertAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexTwcert(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexTwcertResponse, err error) {
+func (c *Client) GetIndexTwcert(queryParameters ...IndexQueryParameters) (responseJSON *IndexTwcertResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("twcert"), nil)
@@ -11712,13 +12284,13 @@ func (c *Client) GetIndexTwcert(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexUbiquitiResponse struct {
+type IndexUbiquitiResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryUbiquiti `json:"data"`
 }
 
-func (c *Client) GetIndexUbiquiti(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUbiquitiResponse, err error) {
+func (c *Client) GetIndexUbiquiti(queryParameters ...IndexQueryParameters) (responseJSON *IndexUbiquitiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ubiquiti"), nil)
@@ -11750,13 +12322,13 @@ func (c *Client) GetIndexUbiquiti(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexUbuntuResponse struct {
+type IndexUbuntuResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryUbuntuCVE `json:"data"`
 }
 
-func (c *Client) GetIndexUbuntu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUbuntuResponse, err error) {
+func (c *Client) GetIndexUbuntu(queryParameters ...IndexQueryParameters) (responseJSON *IndexUbuntuResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("ubuntu"), nil)
@@ -11788,13 +12360,13 @@ func (c *Client) GetIndexUbuntu(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexUnifyResponse struct {
+type IndexUnifyResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryUnify `json:"data"`
 }
 
-func (c *Client) GetIndexUnify(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUnifyResponse, err error) {
+func (c *Client) GetIndexUnify(queryParameters ...IndexQueryParameters) (responseJSON *IndexUnifyResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("unify"), nil)
@@ -11826,13 +12398,13 @@ func (c *Client) GetIndexUnify(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexUnisocResponse struct {
+type IndexUnisocResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryUnisoc `json:"data"`
 }
 
-func (c *Client) GetIndexUnisoc(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUnisocResponse, err error) {
+func (c *Client) GetIndexUnisoc(queryParameters ...IndexQueryParameters) (responseJSON *IndexUnisocResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("unisoc"), nil)
@@ -11864,13 +12436,13 @@ func (c *Client) GetIndexUnisoc(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexUsdResponse struct {
+type IndexUsdResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryUSD `json:"data"`
 }
 
-func (c *Client) GetIndexUsd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUsdResponse, err error) {
+func (c *Client) GetIndexUsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexUsdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("usd"), nil)
@@ -11902,13 +12474,13 @@ func (c *Client) GetIndexUsd(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexUsomResponse struct {
+type IndexUsomResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryUSOMAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexUsom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexUsomResponse, err error) {
+func (c *Client) GetIndexUsom(queryParameters ...IndexQueryParameters) (responseJSON *IndexUsomResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("usom"), nil)
@@ -11940,13 +12512,13 @@ func (c *Client) GetIndexUsom(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexVandykeResponse struct {
+type IndexVandykeResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryVanDyke `json:"data"`
 }
 
-func (c *Client) GetIndexVandyke(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVandykeResponse, err error) {
+func (c *Client) GetIndexVandyke(queryParameters ...IndexQueryParameters) (responseJSON *IndexVandykeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vandyke"), nil)
@@ -11978,13 +12550,13 @@ func (c *Client) GetIndexVandyke(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexVapidlabsResponse struct {
+type IndexVapidlabsResponse struct {
 	Benchmark float64                            `json:"_benchmark"`
 	Meta      IndexMeta                          `json:"_meta"`
 	Data      []client.AdvisoryVapidLabsAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexVapidlabs(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVapidlabsResponse, err error) {
+func (c *Client) GetIndexVapidlabs(queryParameters ...IndexQueryParameters) (responseJSON *IndexVapidlabsResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vapidlabs"), nil)
@@ -12016,13 +12588,13 @@ func (c *Client) GetIndexVapidlabs(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexVdeResponse struct {
+type IndexVdeResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryVDEAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexVde(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVdeResponse, err error) {
+func (c *Client) GetIndexVde(queryParameters ...IndexQueryParameters) (responseJSON *IndexVdeResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vde"), nil)
@@ -12054,13 +12626,13 @@ func (c *Client) GetIndexVde(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexVeeamResponse struct {
+type IndexVeeamResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryVeeam `json:"data"`
 }
 
-func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVeeamResponse, err error) {
+func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (responseJSON *IndexVeeamResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("veeam"), nil)
@@ -12092,13 +12664,13 @@ func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexVoidsecResponse struct {
+type IndexVoidsecResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryVoidSec `json:"data"`
 }
 
-func (c *Client) GetIndexVoidsec(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVoidsecResponse, err error) {
+func (c *Client) GetIndexVoidsec(queryParameters ...IndexQueryParameters) (responseJSON *IndexVoidsecResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("voidsec"), nil)
@@ -12130,13 +12702,51 @@ func (c *Client) GetIndexVoidsec(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexVulncheckKevResponse struct {
+type IndexVulncheckConfigResponse struct {
+	Benchmark float64                          `json:"_benchmark"`
+	Meta      IndexMeta                        `json:"_meta"`
+	Data      []client.AdvisoryVulnCheckConfig `json:"data"`
+}
+
+func (c *Client) GetIndexVulncheckConfig(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckConfigResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-config"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexVulncheckKevResponse struct {
 	Benchmark float64                       `json:"_benchmark"`
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryVulnCheckKEV `json:"data"`
 }
 
-func (c *Client) GetIndexVulncheckKev(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckKevResponse, err error) {
+func (c *Client) GetIndexVulncheckKev(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckKevResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-kev"), nil)
@@ -12168,13 +12778,13 @@ func (c *Client) GetIndexVulncheckKev(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexVulncheckNvdResponse struct {
+type IndexVulncheckNvdResponse struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.ApiCveItemsExtended `json:"data"`
 }
 
-func (c *Client) GetIndexVulncheckNvd(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckNvdResponse, err error) {
+func (c *Client) GetIndexVulncheckNvd(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckNvdResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd"), nil)
@@ -12206,13 +12816,13 @@ func (c *Client) GetIndexVulncheckNvd(queryParameters ...IndexQueryParameters) (
 	return responseJSON, nil
 }
 
-type GetIndexVulncheckNvd2Response struct {
+type IndexVulncheckNvd2Response struct {
 	Benchmark float64                      `json:"_benchmark"`
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.ApiNVD20CVEExtended `json:"data"`
 }
 
-func (c *Client) GetIndexVulncheckNvd2(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulncheckNvd2Response, err error) {
+func (c *Client) GetIndexVulncheckNvd2(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckNvd2Response, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulncheck-nvd2"), nil)
@@ -12244,13 +12854,13 @@ func (c *Client) GetIndexVulncheckNvd2(queryParameters ...IndexQueryParameters) 
 	return responseJSON, nil
 }
 
-type GetIndexVulnerabilityAliasesResponse struct {
+type IndexVulnerabilityAliasesResponse struct {
 	Benchmark float64                        `json:"_benchmark"`
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.ApiVulnerabilityAlias `json:"data"`
 }
 
-func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVulnerabilityAliasesResponse, err error) {
+func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulnerabilityAliasesResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulnerability-aliases"), nil)
@@ -12282,13 +12892,13 @@ func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParam
 	return responseJSON, nil
 }
 
-type GetIndexVyaireResponse struct {
+type IndexVyaireResponse struct {
 	Benchmark float64                         `json:"_benchmark"`
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryVYAIREAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexVyaire(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexVyaireResponse, err error) {
+func (c *Client) GetIndexVyaire(queryParameters ...IndexQueryParameters) (responseJSON *IndexVyaireResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vyaire"), nil)
@@ -12320,13 +12930,13 @@ func (c *Client) GetIndexVyaire(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexWatchguardResponse struct {
+type IndexWatchguardResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryWatchGuard `json:"data"`
 }
 
-func (c *Client) GetIndexWatchguard(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWatchguardResponse, err error) {
+func (c *Client) GetIndexWatchguard(queryParameters ...IndexQueryParameters) (responseJSON *IndexWatchguardResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("watchguard"), nil)
@@ -12358,13 +12968,13 @@ func (c *Client) GetIndexWatchguard(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexWhatsappResponse struct {
+type IndexWhatsappResponse struct {
 	Benchmark float64                   `json:"_benchmark"`
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryWhatsApp `json:"data"`
 }
 
-func (c *Client) GetIndexWhatsapp(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWhatsappResponse, err error) {
+func (c *Client) GetIndexWhatsapp(queryParameters ...IndexQueryParameters) (responseJSON *IndexWhatsappResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("whatsapp"), nil)
@@ -12396,13 +13006,13 @@ func (c *Client) GetIndexWhatsapp(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexWibuResponse struct {
+type IndexWibuResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryWibu `json:"data"`
 }
 
-func (c *Client) GetIndexWibu(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWibuResponse, err error) {
+func (c *Client) GetIndexWibu(queryParameters ...IndexQueryParameters) (responseJSON *IndexWibuResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wibu"), nil)
@@ -12434,13 +13044,13 @@ func (c *Client) GetIndexWibu(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexWiresharkResponse struct {
+type IndexWiresharkResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryWireshark `json:"data"`
 }
 
-func (c *Client) GetIndexWireshark(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWiresharkResponse, err error) {
+func (c *Client) GetIndexWireshark(queryParameters ...IndexQueryParameters) (responseJSON *IndexWiresharkResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wireshark"), nil)
@@ -12472,13 +13082,13 @@ func (c *Client) GetIndexWireshark(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexWithSecureResponse struct {
+type IndexWithSecureResponse struct {
 	Benchmark float64                     `json:"_benchmark"`
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.AdvisoryWithSecure `json:"data"`
 }
 
-func (c *Client) GetIndexWithSecure(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWithSecureResponse, err error) {
+func (c *Client) GetIndexWithSecure(queryParameters ...IndexQueryParameters) (responseJSON *IndexWithSecureResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("with-secure"), nil)
@@ -12510,13 +13120,13 @@ func (c *Client) GetIndexWithSecure(queryParameters ...IndexQueryParameters) (re
 	return responseJSON, nil
 }
 
-type GetIndexWolfiResponse struct {
+type IndexWolfiResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryWolfi `json:"data"`
 }
 
-func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWolfiResponse, err error) {
+func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (responseJSON *IndexWolfiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wolfi"), nil)
@@ -12548,13 +13158,13 @@ func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexWolfsslResponse struct {
+type IndexWolfsslResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryWolfSSL `json:"data"`
 }
 
-func (c *Client) GetIndexWolfssl(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWolfsslResponse, err error) {
+func (c *Client) GetIndexWolfssl(queryParameters ...IndexQueryParameters) (responseJSON *IndexWolfsslResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wolfssl"), nil)
@@ -12586,13 +13196,13 @@ func (c *Client) GetIndexWolfssl(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexWordfenceResponse struct {
+type IndexWordfenceResponse struct {
 	Benchmark float64                    `json:"_benchmark"`
 	Meta      IndexMeta                  `json:"_meta"`
 	Data      []client.AdvisoryWordfence `json:"data"`
 }
 
-func (c *Client) GetIndexWordfence(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexWordfenceResponse, err error) {
+func (c *Client) GetIndexWordfence(queryParameters ...IndexQueryParameters) (responseJSON *IndexWordfenceResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wordfence"), nil)
@@ -12624,13 +13234,13 @@ func (c *Client) GetIndexWordfence(queryParameters ...IndexQueryParameters) (res
 	return responseJSON, nil
 }
 
-type GetIndexXenResponse struct {
+type IndexXenResponse struct {
 	Benchmark float64              `json:"_benchmark"`
 	Meta      IndexMeta            `json:"_meta"`
 	Data      []client.AdvisoryXen `json:"data"`
 }
 
-func (c *Client) GetIndexXen(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXenResponse, err error) {
+func (c *Client) GetIndexXen(queryParameters ...IndexQueryParameters) (responseJSON *IndexXenResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xen"), nil)
@@ -12662,13 +13272,13 @@ func (c *Client) GetIndexXen(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexXeroxResponse struct {
+type IndexXeroxResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryXerox `json:"data"`
 }
 
-func (c *Client) GetIndexXerox(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXeroxResponse, err error) {
+func (c *Client) GetIndexXerox(queryParameters ...IndexQueryParameters) (responseJSON *IndexXeroxResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xerox"), nil)
@@ -12700,13 +13310,13 @@ func (c *Client) GetIndexXerox(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexXiaomiResponse struct {
+type IndexXiaomiResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryXiaomi `json:"data"`
 }
 
-func (c *Client) GetIndexXiaomi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXiaomiResponse, err error) {
+func (c *Client) GetIndexXiaomi(queryParameters ...IndexQueryParameters) (responseJSON *IndexXiaomiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xiaomi"), nil)
@@ -12738,13 +13348,13 @@ func (c *Client) GetIndexXiaomi(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexXylemResponse struct {
+type IndexXylemResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryXylem `json:"data"`
 }
 
-func (c *Client) GetIndexXylem(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexXylemResponse, err error) {
+func (c *Client) GetIndexXylem(queryParameters ...IndexQueryParameters) (responseJSON *IndexXylemResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("xylem"), nil)
@@ -12776,13 +13386,13 @@ func (c *Client) GetIndexXylem(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
-type GetIndexYokogawaResponse struct {
+type IndexYokogawaResponse struct {
 	Benchmark float64                           `json:"_benchmark"`
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryYokogawaAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexYokogawa(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexYokogawaResponse, err error) {
+func (c *Client) GetIndexYokogawa(queryParameters ...IndexQueryParameters) (responseJSON *IndexYokogawaResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("yokogawa"), nil)
@@ -12814,13 +13424,13 @@ func (c *Client) GetIndexYokogawa(queryParameters ...IndexQueryParameters) (resp
 	return responseJSON, nil
 }
 
-type GetIndexYubicoResponse struct {
+type IndexYubicoResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryYubico `json:"data"`
 }
 
-func (c *Client) GetIndexYubico(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexYubicoResponse, err error) {
+func (c *Client) GetIndexYubico(queryParameters ...IndexQueryParameters) (responseJSON *IndexYubicoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("yubico"), nil)
@@ -12852,13 +13462,13 @@ func (c *Client) GetIndexYubico(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexZdiResponse struct {
+type IndexZdiResponse struct {
 	Benchmark float64                          `json:"_benchmark"`
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryZeroDayAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexZdi(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZdiResponse, err error) {
+func (c *Client) GetIndexZdi(queryParameters ...IndexQueryParameters) (responseJSON *IndexZdiResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zdi"), nil)
@@ -12890,51 +13500,13 @@ func (c *Client) GetIndexZdi(queryParameters ...IndexQueryParameters) (responseJ
 	return responseJSON, nil
 }
 
-type GetIndexZeroDayResponse struct {
-	Benchmark float64                    `json:"_benchmark"`
-	Meta      IndexMeta                  `json:"_meta"`
-	Data      []client.AdvisoryZeroDayCZ `json:"data"`
-}
-
-func (c *Client) GetIndexZeroDay(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZeroDayResponse, err error) {
-
-	httpClient := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zero-day"), nil)
-	if err != nil {
-		panic(err)
-	}
-
-	c.SetAuthHeader(req)
-
-	query := req.URL.Query()
-	setIndexQueryParameters(query, queryParameters...)
-	req.URL.RawQuery = query.Encode()
-
-	resp, err := httpClient.Do(req)
-	if err != nil {
-		panic(err)
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		var metaError MetaError
-		_ = json.NewDecoder(resp.Body).Decode(&metaError)
-
-		return nil, fmt.Errorf("error: %v", metaError.Errors)
-	}
-
-	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
-
-	return responseJSON, nil
-}
-
-type GetIndexZeroscienceResponse struct {
+type IndexZeroscienceResponse struct {
 	Benchmark float64                              `json:"_benchmark"`
 	Meta      IndexMeta                            `json:"_meta"`
 	Data      []client.AdvisoryZeroScienceAdvisory `json:"data"`
 }
 
-func (c *Client) GetIndexZeroscience(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZeroscienceResponse, err error) {
+func (c *Client) GetIndexZeroscience(queryParameters ...IndexQueryParameters) (responseJSON *IndexZeroscienceResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zeroscience"), nil)
@@ -12966,13 +13538,13 @@ func (c *Client) GetIndexZeroscience(queryParameters ...IndexQueryParameters) (r
 	return responseJSON, nil
 }
 
-type GetIndexZimbraResponse struct {
+type IndexZimbraResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryZimbra `json:"data"`
 }
 
-func (c *Client) GetIndexZimbra(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZimbraResponse, err error) {
+func (c *Client) GetIndexZimbra(queryParameters ...IndexQueryParameters) (responseJSON *IndexZimbraResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zimbra"), nil)
@@ -13004,13 +13576,13 @@ func (c *Client) GetIndexZimbra(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
-type GetIndexZoomResponse struct {
+type IndexZoomResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryZoom `json:"data"`
 }
 
-func (c *Client) GetIndexZoom(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZoomResponse, err error) {
+func (c *Client) GetIndexZoom(queryParameters ...IndexQueryParameters) (responseJSON *IndexZoomResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zoom"), nil)
@@ -13042,13 +13614,13 @@ func (c *Client) GetIndexZoom(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexZscalerResponse struct {
+type IndexZscalerResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryZscaler `json:"data"`
 }
 
-func (c *Client) GetIndexZscaler(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZscalerResponse, err error) {
+func (c *Client) GetIndexZscaler(queryParameters ...IndexQueryParameters) (responseJSON *IndexZscalerResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zscaler"), nil)
@@ -13080,13 +13652,13 @@ func (c *Client) GetIndexZscaler(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
-type GetIndexZusoResponse struct {
+type IndexZusoResponse struct {
 	Benchmark float64               `json:"_benchmark"`
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryZuso `json:"data"`
 }
 
-func (c *Client) GetIndexZuso(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZusoResponse, err error) {
+func (c *Client) GetIndexZuso(queryParameters ...IndexQueryParameters) (responseJSON *IndexZusoResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zuso"), nil)
@@ -13118,13 +13690,13 @@ func (c *Client) GetIndexZuso(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
-type GetIndexZyxelResponse struct {
+type IndexZyxelResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.AdvisoryZyxel `json:"data"`
 }
 
-func (c *Client) GetIndexZyxel(queryParameters ...IndexQueryParameters) (responseJSON *GetIndexZyxelResponse, err error) {
+func (c *Client) GetIndexZyxel(queryParameters ...IndexQueryParameters) (responseJSON *IndexZyxelResponse, err error) {
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("zyxel"), nil)

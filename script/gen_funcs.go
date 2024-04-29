@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go/ast"
-	"go/parser"
-	"go/token"
+	"gopkg.in/yaml.v3"
 	"os"
 	"strings"
+	"unicode"
 )
 
 var topOfFile = `package sdk
@@ -18,6 +17,8 @@ import (
 	"net/http"
 	"net/url"
 )
+
+// THIS FILE IS GENERATED. DO NOT EDIT
 
 `
 var insideFunction = `
@@ -51,103 +52,96 @@ var insideFunction = `
 	return responseJSON, nil
 `
 
-func main() {
-	fset := token.NewFileSet()
-	node, err := parser.ParseFile(fset, "pkg/client/client.go", nil, parser.ParseComments)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	// Open the index_funcs.go file in write mode
-	file, err := os.OpenFile("index_funcs.go", os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	defer file.Close()
-
-	// Write the top of the file
-	file.WriteString(topOfFile)
-
-	ast.Inspect(node, func(n ast.Node) bool {
-		typeSpec, ok := n.(*ast.TypeSpec)
-		if !ok {
-			return true
-		}
-
-		structType, ok := typeSpec.Type.(*ast.StructType)
-		if !ok {
-			return true
-		}
-
-		if strings.HasPrefix(typeSpec.Name.Name, "GetIndex") && strings.HasSuffix(typeSpec.Name.Name, "Response") {
-			generateTypeAndFunction(file, typeSpec.Name.Name, structType)
-		}
-
-		return true
-	})
+type docsIndex struct {
+	Name   string `yaml:"name"`
+	Title  string `yaml:"title"`
+	Desc   string `yaml:"desc"`
+	Struct string `yaml:"struct"`
+	Large  bool   `yaml:"large"`
+	Silent bool   `yaml:"silent"`
 }
 
-func generateTypeAndFunction(file *os.File, name string, structType *ast.StructType) {
-	fmt.Println("Generating type and function for:", name)
+type docsIndices struct {
+	Indices []docsIndex `yaml:"indices"`
+}
 
-	// Find the JSON200 field in the struct
-	var json200Type string
-	for _, field := range structType.Fields.List {
-		if field.Names[0].Name == "JSON200" {
-			json200Type = fmt.Sprintf("%s", field.Type)
-			break
-		}
+// This points to the indices file in th docs repo
+var indicesFilename = "../../docs/packages/indices/indices.yaml"
+
+var funcsFilename = "index_funcs.go"
+
+func main() {
+
+	indicesFile, err := os.Open(indicesFilename)
+
+	if err != nil {
+		panic(err)
+		return
 	}
 
-	// Check if JSON200 type starts with FumeResponse and ends with PaginatePagination
-	if strings.Contains(json200Type, "FumeResponse") && strings.HasSuffix(json200Type, "PaginatePagination}") {
+	var indices docsIndices
+	err = yaml.NewDecoder(indicesFile).Decode(&indices)
+	if err != nil {
+		panic(err)
+		return
+	}
 
-		startPos := strings.Index(json200Type, "FumeResponse") + len("FumeResponse")
-		endPos := strings.Index(json200Type, "PaginatePagination")
-		json200Type = json200Type[startPos:endPos]
+	funcsFile, err := os.OpenFile(funcsFilename, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
+	if err != nil {
+		panic(err)
+		return
+	}
+	defer funcsFile.Close()
 
-		if !strings.HasPrefix(json200Type, "Advisory") && !strings.HasPrefix(json200Type, "Api") {
-			return
+	// Write the top of the file
+	funcsFile.WriteString(topOfFile)
+
+	for _, index := range indices.Indices {
+
+		if index.Silent || index.Name == "advisories" {
+			continue
 		}
 
 		// Generate the type
-		typeStr := fmt.Sprintf("type %s struct {\n", name)
+		typeStr := fmt.Sprintf("type Index%sResponse struct {\n", toCamelCase(index.Name))
 		typeStr += "\tBenchmark float64 `json:\"_benchmark\"`\n"
 		typeStr += "\tMeta IndexMeta `json:\"_meta\"`\n"
-		typeStr += fmt.Sprintf("\tData []client.%s `json:\"data\"`\n", json200Type)
+		typeStr += fmt.Sprintf("\tData []client.%s `json:\"data\"`\n", strings.TrimSuffix(toCamelCase(index.Struct), "{}"))
 		typeStr += "}\n\n"
-		if _, err := file.WriteString(typeStr); err != nil {
+
+		if _, err := funcsFile.WriteString(typeStr); err != nil {
 			panic(err)
 		}
-
-		indexName := formatIndexName(name)
 
 		// Generate the function
-		funcName := strings.TrimSuffix(name, "Response")
-		funcStr := fmt.Sprintf("func (c *Client) %s(queryParameters ...IndexQueryParameters) (responseJSON *%s, err error) {\n", funcName, name)
-		funcStr += strings.Replace(insideFunction, "::INDEX::", indexName, -1)
+		funcName := fmt.Sprintf("GetIndex%s", toCamelCase(index.Name))
+		funcStr := fmt.Sprintf("func (c *Client) %s(queryParameters ...IndexQueryParameters) (responseJSON *Index%sResponse, err error) {\n", funcName, toCamelCase(index.Name))
+		funcStr += strings.Replace(insideFunction, "::INDEX::", index.Name, -1)
 		funcStr += "}\n\n"
-		if _, err := file.WriteString(funcStr); err != nil {
+		if _, err := funcsFile.WriteString(funcStr); err != nil {
 			panic(err)
 		}
 	}
+
 }
 
-func formatIndexName(indexName string) string {
-	indexName = strings.TrimPrefix(indexName, "GetIndex")
-	indexName = strings.TrimSuffix(indexName, "Response")
-	var formattedName strings.Builder
-	for i, char := range indexName {
-		if char >= 'A' && char <= 'Z' {
-			if i != 0 {
-				formattedName.WriteRune('-')
-			}
-			formattedName.WriteRune(char + 'a' - 'A')
+func toCamelCase(s string) string {
+	// Split the string by dash
+	words := strings.FieldsFunc(s, func(r rune) bool {
+		return r == '-' || r == '.'
+	})
+
+	// Convert each word to title case (first letter uppercase)
+	for i, word := range words {
+		if unicode.IsLower(rune(word[0])) {
+			words[i] = strings.ToTitle(word[:1]) + word[1:]
 		} else {
-			formattedName.WriteRune(char)
+			words[i] = word
 		}
 	}
-	return formattedName.String()
+
+	// Join the words together
+	result := strings.Join(words, "")
+
+	return result
 }
