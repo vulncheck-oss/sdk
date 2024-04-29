@@ -115,7 +115,8 @@ func main() {
 
 		// Generate the function
 		funcName := fmt.Sprintf("GetIndex%s", toCamelCase(index.Name))
-		funcStr := fmt.Sprintf("func (c *Client) %s(queryParameters ...IndexQueryParameters) (responseJSON *Index%sResponse, err error) {\n", funcName, toCamelCase(index.Name))
+		funcStr := fmt.Sprintf("// GetIndex%s -  %s\n", toCamelCase(index.Name), index.Desc)
+		funcStr += fmt.Sprintf("func (c *Client) %s(queryParameters ...IndexQueryParameters) (responseJSON *Index%sResponse, err error) {\n", funcName, toCamelCase(index.Name))
 		funcStr += strings.Replace(insideFunction, "::INDEX::", index.Name, -1)
 		funcStr += "}\n\n"
 		if _, err := funcsFile.WriteString(funcStr); err != nil {

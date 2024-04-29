@@ -16,6 +16,7 @@ type IndexA10Response struct {
 	Data      []client.AdvisoryA10 `json:"data"`
 }
 
+// GetIndexA10 -  A10 Networks security advisories are official notifications released by A10 Networks to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexA10(queryParameters ...IndexQueryParameters) (responseJSON *IndexA10Response, err error) {
 
 	httpClient := &http.Client{}
@@ -54,6 +55,7 @@ type IndexAbbResponse struct {
 	Data      []client.AdvisoryABBAdvisory `json:"data"`
 }
 
+// GetIndexAbb -  ABB vulnerabilities refer to security flaws that can be exploited in products and systems developed by ABB, a multinational technology company. These vulnerabilities can potentially lead to unauthorized access, manipulation of data, and disruption of critical infrastructure.
 func (c *Client) GetIndexAbb(queryParameters ...IndexQueryParameters) (responseJSON *IndexAbbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -92,6 +94,7 @@ type IndexAbbottResponse struct {
 	Data      []client.AdvisoryAbbott `json:"data"`
 }
 
+// GetIndexAbbott -  Abbott product advisories are official notifications released by Abbott to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAbbott(queryParameters ...IndexQueryParameters) (responseJSON *IndexAbbottResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -130,6 +133,7 @@ type IndexAbsoluteResponse struct {
 	Data      []client.AdvisoryAbsolute `json:"data"`
 }
 
+// GetIndexAbsolute -  Absolute security advisories are official notifications released by Absolute to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAbsolute(queryParameters ...IndexQueryParameters) (responseJSON *IndexAbsoluteResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -168,6 +172,7 @@ type IndexAcronisResponse struct {
 	Data      []client.AdvisoryAcronis `json:"data"`
 }
 
+// GetIndexAcronis -  Acronis security advisories are official notifications released by Acronis to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAcronis(queryParameters ...IndexQueryParameters) (responseJSON *IndexAcronisResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -206,6 +211,7 @@ type IndexAdobeResponse struct {
 	Data      []client.AdvisoryAdobeAdvisory `json:"data"`
 }
 
+// GetIndexAdobe -  Adobe Security Bulletins are official notifications released by Adobe Systems to address security vulnerabilities and updates in their software products. These bulletins provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAdobe(queryParameters ...IndexQueryParameters) (responseJSON *IndexAdobeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -244,6 +250,7 @@ type IndexAlephResearchResponse struct {
 	Data      []client.AdvisoryAlephResearch `json:"data"`
 }
 
+// GetIndexAlephResearch -  Aleph Research Vulnerability Reports are official notifications released by Aleph Research, a part of HCL Technologies, to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAlephResearch(queryParameters ...IndexQueryParameters) (responseJSON *IndexAlephResearchResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -282,6 +289,7 @@ type IndexAlmaResponse struct {
 	Data      []client.AdvisoryAlmaLinuxUpdate `json:"data"`
 }
 
+// GetIndexAlma -  AlmaLinux is a popular community-driven Linux distribution that is built as a replacement for CentOS, which was recently discontinued by Red Hat. Like any other operating system, AlmaLinux is not immune to vulnerabilities and security flaws. Errata vulnerabilities refer to security issues that have been identified in a software system and require a patch or update to fix them. AlmaLinux has a dedicated team that constantly monitors for errata vulnerabilities and releases patches and updates to ensure that the system remains secure.
 func (c *Client) GetIndexAlma(queryParameters ...IndexQueryParameters) (responseJSON *IndexAlmaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -320,6 +328,7 @@ type IndexAlpineResponse struct {
 	Data      []client.AdvisoryAlpineLinuxSecDB `json:"data"`
 }
 
+// GetIndexAlpine -  The Alpine Linux Security Database is a public repository that maintains a comprehensive list of security vulnerabilities that have been identified in the Alpine Linux distribution. This database is an essential resource for Alpine Linux users who want to stay informed about potential security threats and vulnerabilities. The database provides detailed information about each security issue, including its severity level, affected components, and recommended fixes. Additionally, the Alpine Linux Security Team regularly updates the database with new vulnerabilities and patches, ensuring that users have access to the latest information and recommendations for securing their systems. The Alpine Linux Security Database is a critical component of the distribution's security infrastructure, and its transparency and accessibility reflect the project's commitment to ensuring the safety and reliability of its users' systems.
 func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (responseJSON *IndexAlpineResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -358,6 +367,7 @@ type IndexAmazonResponse struct {
 	Data      []client.AdvisoryUpdate `json:"data"`
 }
 
+// GetIndexAmazon -  The Amazon Linux Security Center is a dedicated portal that provides users of Amazon Linux with a central location for information related to security on the platform. The security center includes access to documentation, guidance, and best practices to help users configure and secure their Amazon Linux environments. The center also provides access to the Amazon Linux AMI vulnerability database, which lists all known security vulnerabilities affecting the operating system, as well as information on how to mitigate each vulnerability.
 func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (responseJSON *IndexAmazonResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -396,6 +406,7 @@ type IndexAmdResponse struct {
 	Data      []client.AdvisoryAMD `json:"data"`
 }
 
+// GetIndexAmd -  AMD security bulletins are official notifications released by AMD to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAmd(queryParameters ...IndexQueryParameters) (responseJSON *IndexAmdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -434,6 +445,7 @@ type IndexAmiResponse struct {
 	Data      []client.AdvisoryAMI `json:"data"`
 }
 
+// GetIndexAmi -  AMI security advisories are official notifications released by the AMI Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAmi(queryParameters ...IndexQueryParameters) (responseJSON *IndexAmiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -472,6 +484,7 @@ type IndexAnchoreNvdOverrideResponse struct {
 	Data      []client.AdvisoryAnchoreNVDOverride `json:"data"`
 }
 
+// GetIndexAnchoreNvdOverride -  Anchore NVD Data Overrides is an index of data overrides for the NVD dataset curated by Anchore that provides additional data that might be missing from NVD.
 func (c *Client) GetIndexAnchoreNvdOverride(queryParameters ...IndexQueryParameters) (responseJSON *IndexAnchoreNvdOverrideResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -510,6 +523,7 @@ type IndexAndroidResponse struct {
 	Data      []client.AdvisoryAndroidAdvisory `json:"data"`
 }
 
+// GetIndexAndroid -  Android security bulletins are official notifications released by Google to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAndroid(queryParameters ...IndexQueryParameters) (responseJSON *IndexAndroidResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -548,6 +562,7 @@ type IndexApacheActivemqResponse struct {
 	Data      []client.AdvisoryApacheActiveMQ `json:"data"`
 }
 
+// GetIndexApacheActivemq -  Apache ActiveMQ security advisories are official notifications released by the open source Apache ActiveMQ project to address security vulnerabilities and updates in the open source Apache ActiveMQ project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheActivemq(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheActivemqResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -586,6 +601,7 @@ type IndexApacheArchivaResponse struct {
 	Data      []client.AdvisoryApacheArchiva `json:"data"`
 }
 
+// GetIndexApacheArchiva -  Apache Archiva security vulnerabilities are official notifications released by the open source Apache Archiva project to address security vulnerabilities and updates in the open source Apache Archiva project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheArchiva(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheArchivaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -624,6 +640,7 @@ type IndexApacheArrowResponse struct {
 	Data      []client.AdvisoryApacheArrow `json:"data"`
 }
 
+// GetIndexApacheArrow -  Apache Arrow security issues are official notifications released by the open source Apache Arrow project to address security vulnerabilities and updates in the open source Apache Arrow project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheArrow(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheArrowResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -662,6 +679,7 @@ type IndexApacheCamelResponse struct {
 	Data      []client.AdvisoryApacheCamel `json:"data"`
 }
 
+// GetIndexApacheCamel -  Apache Camel security advisories are official notifications released by the open source Apache Camel project to address security vulnerabilities and updates in the open source Apache Camel project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheCamel(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheCamelResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -700,6 +718,7 @@ type IndexApacheCommonsResponse struct {
 	Data      []client.AdvisoryApacheCommons `json:"data"`
 }
 
+// GetIndexApacheCommons -  Apache Commons security vulnerabilities are official notifications released by the open source Apache Commons project to address security vulnerabilities and updates in the open source Apache Commons project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheCommons(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheCommonsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -738,6 +757,7 @@ type IndexApacheCouchdbResponse struct {
 	Data      []client.AdvisoryApacheCouchDB `json:"data"`
 }
 
+// GetIndexApacheCouchdb -  Apache CouchDB security issues are official notifications released by the open source Apache CouchDB project to address security vulnerabilities and updates in the open source Apache CouchDB project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheCouchdb(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheCouchdbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -776,6 +796,7 @@ type IndexApacheFlinkResponse struct {
 	Data      []client.AdvisoryApacheFlink `json:"data"`
 }
 
+// GetIndexApacheFlink -  Apache Flink security updates are official notifications released by the open source Apache Flink project to address security vulnerabilities and updates in the open source Apache Flink project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheFlink(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheFlinkResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -814,6 +835,7 @@ type IndexApacheGuacamoleResponse struct {
 	Data      []client.AdvisoryApacheGuacamole `json:"data"`
 }
 
+// GetIndexApacheGuacamole -  Apache Guacamole security reports are official notifications released by the open source Apache Guacamole project to address security vulnerabilities and updates in the open source Apache Guacamole project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheGuacamole(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheGuacamoleResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -852,6 +874,7 @@ type IndexApacheHadoopResponse struct {
 	Data      []client.AdvisoryApacheHadoop `json:"data"`
 }
 
+// GetIndexApacheHadoop -  Apache Hadoop CVEs are official notifications released by the open source Apache Hadoop project to address security vulnerabilities and updates in the open source Apache Hadoop project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheHadoop(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheHadoopResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -890,6 +913,7 @@ type IndexApacheHttpResponse struct {
 	Data      []client.AdvisoryApacheHTTP `json:"data"`
 }
 
+// GetIndexApacheHttp -  Apache HTTP security vulnerabilities are official notifications released by the open source Apache project to address security vulnerabilities and updates in the open source Apache HTTP project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheHttp(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheHttpResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -928,6 +952,7 @@ type IndexApacheJspwikiResponse struct {
 	Data      []client.AdvisoryApacheJSPWiki `json:"data"`
 }
 
+// GetIndexApacheJspwiki -  Apache JSPWiki CVEs are official notifications released by the open source Apache JSPWiki project to address security vulnerabilities and updates in the open source Apache OpenMeetings project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheJspwiki(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheJspwikiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -966,6 +991,7 @@ type IndexApacheKafkaResponse struct {
 	Data      []client.AdvisoryApacheKafka `json:"data"`
 }
 
+// GetIndexApacheKafka -  Apache Kafka security vulnerabilities are official notifications released by the open source Apache Kafka project to address security vulnerabilities and updates in the open source Apache Kafka project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheKafka(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheKafkaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1004,6 +1030,7 @@ type IndexApacheLoggingservicesResponse struct {
 	Data      []client.AdvisoryApacheLoggingServices `json:"data"`
 }
 
+// GetIndexApacheLoggingservices -  Apache Logging Services known vulnerabilities are official notifications released by the open source Apache Logging Services project to address security vulnerabilities and updates in the open source Apache Logging Services project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheLoggingservices(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheLoggingservicesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1042,6 +1069,7 @@ type IndexApacheNifiResponse struct {
 	Data      []client.AdvisoryApacheNiFi `json:"data"`
 }
 
+// GetIndexApacheNifi -  Apache NiFi security vulnerabilities are official notifications released by the open source Apache NiFi project to address security vulnerabilities and updates in the open source Apache NiFi project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheNifi(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheNifiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1080,6 +1108,7 @@ type IndexApacheOfbizResponse struct {
 	Data      []client.AdvisoryApacheOFBiz `json:"data"`
 }
 
+// GetIndexApacheOfbiz -  Apache OFBiz security vulnerabilities are official notifications released by the open source Apache OFBiz project to address security vulnerabilities and updates in the open source Apache OFBiz project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheOfbiz(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheOfbizResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1118,6 +1147,7 @@ type IndexApacheOpenmeetingsResponse struct {
 	Data      []client.AdvisoryApacheOpenMeetings `json:"data"`
 }
 
+// GetIndexApacheOpenmeetings -  Apache OpenMeetings security vulnerabilities are official notifications released by the open source Apache OpenMeetings project to address security vulnerabilities and updates in the open source Apache OpenMeetings project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheOpenmeetings(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheOpenmeetingsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1156,6 +1186,7 @@ type IndexApacheOpenofficeResponse struct {
 	Data      []client.AdvisoryApacheOpenOffice `json:"data"`
 }
 
+// GetIndexApacheOpenoffice -  Apache OpenOffice security bulletins are official notifications released by the open source Apache OpenOffice project to address security vulnerabilities and updates in the open source Apache OpenOffice project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheOpenoffice(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheOpenofficeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1194,6 +1225,7 @@ type IndexApachePulsarResponse struct {
 	Data      []client.AdvisoryApachePulsar `json:"data"`
 }
 
+// GetIndexApachePulsar -  Apache Pulsar security advisories are official notifications released by the open source Apache Pulsar project to address security vulnerabilities and updates in the open source Apache Pulsar project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApachePulsar(queryParameters ...IndexQueryParameters) (responseJSON *IndexApachePulsarResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1232,6 +1264,7 @@ type IndexApacheShiroResponse struct {
 	Data      []client.AdvisoryApacheShiro `json:"data"`
 }
 
+// GetIndexApacheShiro -  Apache Shiro vulnerability reports are official notifications released by the open source Apache Shiro project to address security vulnerabilities and updates in the open source Apache Shiro project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheShiro(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheShiroResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1270,6 +1303,7 @@ type IndexApacheSparkResponse struct {
 	Data      []client.AdvisoryApacheSpark `json:"data"`
 }
 
+// GetIndexApacheSpark -  Apache Spark cves are official notifications released by the open source Apache Spark project to address security vulnerabilities and updates in the open source Apache Spark project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheSpark(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheSparkResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1308,6 +1342,7 @@ type IndexApacheStrutsResponse struct {
 	Data      []client.AdvisoryApacheStruts `json:"data"`
 }
 
+// GetIndexApacheStruts -  Apache Struts security bulletins are official notifications released by the open source Apache Struts project to address security vulnerabilities and updates in the open source Apache Struts project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheStruts(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheStrutsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1346,6 +1381,7 @@ type IndexApacheSubversionResponse struct {
 	Data      []client.AdvisoryApacheSubversion `json:"data"`
 }
 
+// GetIndexApacheSubversion -  Apache Subversion security advisories are official notifications released by the open source Apache Subversion project to address security vulnerabilities and updates in the open source Apache Subversion project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheSubversion(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheSubversionResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1384,6 +1420,7 @@ type IndexApacheSupersetResponse struct {
 	Data      []client.AdvisoryApacheSuperset `json:"data"`
 }
 
+// GetIndexApacheSuperset -  Apache Superset cves are official notifications released by the open source Apache Superset project to address security vulnerabilities and updates in the open source Apache Superset project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheSuperset(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheSupersetResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1422,6 +1459,7 @@ type IndexApacheTomcatResponse struct {
 	Data      []client.AdvisoryApacheTomcat `json:"data"`
 }
 
+// GetIndexApacheTomcat -  Apache Tomcat security vunlnerabilities are official notifications released by the open source Apache Struts project to address security vulnerabilities and updates in the open source Apache Strus project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheTomcat(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheTomcatResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1460,6 +1498,7 @@ type IndexApacheZookeeperResponse struct {
 	Data      []client.AdvisoryApacheZooKeeper `json:"data"`
 }
 
+// GetIndexApacheZookeeper -  Apache ZooKeeper vulnerability reports are official notifications released by the open source Apache ZooKeeper project to address vulnerabilities and updates in the open source Apache ZooKeeper project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexApacheZookeeper(queryParameters ...IndexQueryParameters) (responseJSON *IndexApacheZookeeperResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1498,6 +1537,7 @@ type IndexAppcheckResponse struct {
 	Data      []client.AdvisoryAppCheck `json:"data"`
 }
 
+// GetIndexAppcheck -  AppCheck security alerts are official notifications released by AppCheck to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAppcheck(queryParameters ...IndexQueryParameters) (responseJSON *IndexAppcheckResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1536,6 +1576,7 @@ type IndexAppgateResponse struct {
 	Data      []client.AdvisoryAppgate `json:"data"`
 }
 
+// GetIndexAppgate -  Appgate SDP security advisories sare official notifications released by Appgate to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAppgate(queryParameters ...IndexQueryParameters) (responseJSON *IndexAppgateResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1574,6 +1615,7 @@ type IndexAppleResponse struct {
 	Data      []client.AdvisoryAppleAdvisory `json:"data"`
 }
 
+// GetIndexApple -  Apple regularly releases security updates to address vulnerabilities in its operating systems, software applications, and devices. These updates are critical for maintaining the security of Apple products and protecting users from potential cyber threats. Apple encourages users to promptly install security updates to ensure that their devices are protected against known vulnerabilities and to stay vigilant against potential new threats.
 func (c *Client) GetIndexApple(queryParameters ...IndexQueryParameters) (responseJSON *IndexAppleResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1612,6 +1654,7 @@ type IndexArchResponse struct {
 	Data      []client.AdvisoryArchIssue `json:"data"`
 }
 
+// GetIndexArch -  Arch Linux's rolling-release model ensures that security patches are promptly released and distributed to users, minimizing the exposure to known vulnerabilities and providing a relatively secure system when kept up to date.
 func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (responseJSON *IndexArchResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1650,6 +1693,7 @@ type IndexAristaResponse struct {
 	Data      []client.AdvisoryArista `json:"data"`
 }
 
+// GetIndexArista -  Arista Networks security advisories are official notifications released by the Arista Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexArista(queryParameters ...IndexQueryParameters) (responseJSON *IndexAristaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1688,6 +1732,7 @@ type IndexArubaResponse struct {
 	Data      []client.AdvisoryAruba `json:"data"`
 }
 
+// GetIndexAruba -  Aruba security advisories are official notifications released by Aruba’s Security Incident Response Team (SIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAruba(queryParameters ...IndexQueryParameters) (responseJSON *IndexArubaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1726,6 +1771,7 @@ type IndexAsrgResponse struct {
 	Data      []client.AdvisoryASRG `json:"data"`
 }
 
+// GetIndexAsrg -  Automotive Security Research Group (ASRG) security advisories are official notifications released by ASRG to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAsrg(queryParameters ...IndexQueryParameters) (responseJSON *IndexAsrgResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1764,6 +1810,7 @@ type IndexAssetnoteResponse struct {
 	Data      []client.AdvisoryAssetNote `json:"data"`
 }
 
+// GetIndexAssetnote -  AssetNote security advisories are official notifications released by AssetNote to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAssetnote(queryParameters ...IndexQueryParameters) (responseJSON *IndexAssetnoteResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1802,6 +1849,7 @@ type IndexAsteriskResponse struct {
 	Data      []client.AdvisoryAsterisk `json:"data"`
 }
 
+// GetIndexAsterisk -  Asterisk security advisories are official notifications released by the open source Asterisk project to address security vulnerabilities and updates in the open source Asterisk project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAsterisk(queryParameters ...IndexQueryParameters) (responseJSON *IndexAsteriskResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1840,6 +1888,7 @@ type IndexAsusResponse struct {
 	Data      []client.AdvisoryAsus `json:"data"`
 }
 
+// GetIndexAsus -  Asus security advisories are official notifications released by Asus to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAsus(queryParameters ...IndexQueryParameters) (responseJSON *IndexAsusResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1878,6 +1927,7 @@ type IndexAtlassianResponse struct {
 	Data      []client.AdvisoryAtlassianAdvisory `json:"data"`
 }
 
+// GetIndexAtlassian -  Atlassian security advisories are official notifications released by Atlassian to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems. Security advisories for Atlassian server products are released every Wednesday.
 func (c *Client) GetIndexAtlassian(queryParameters ...IndexQueryParameters) (responseJSON *IndexAtlassianResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1916,6 +1966,7 @@ type IndexAtlassianVulnsResponse struct {
 	Data      []client.AdvisoryAtlassianVuln `json:"data"`
 }
 
+// GetIndexAtlassianVulns -  Atlassian vulnerabilities are official notifications released by Atlassian to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems. Security advisories for Atlassian server products are released every Wednesday.
 func (c *Client) GetIndexAtlassianVulns(queryParameters ...IndexQueryParameters) (responseJSON *IndexAtlassianVulnsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1954,6 +2005,7 @@ type IndexAtredisResponse struct {
 	Data      []client.AdvisoryAtredis `json:"data"`
 }
 
+// GetIndexAtredis -  Atredis Partners security advisories are official notifications released by Atredis Partners to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAtredis(queryParameters ...IndexQueryParameters) (responseJSON *IndexAtredisResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -1992,6 +2044,7 @@ type IndexAuscertResponse struct {
 	Data      []client.AdvisoryAusCert `json:"data"`
 }
 
+// GetIndexAuscert -  AusCERT Bulletins are periodic publications issued by AusCERT to inform their members about the latest cybersecurity threats, vulnerabilities, and incidents. These bulletins provide concise summaries, technical details, and recommended actions to mitigate risks and protect systems and networks. They serve as valuable resources for organizations seeking up-to-date information and guidance to enhance their security defenses.
 func (c *Client) GetIndexAuscert(queryParameters ...IndexQueryParameters) (responseJSON *IndexAuscertResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2030,6 +2083,7 @@ type IndexAutodeskResponse struct {
 	Data      []client.AdvisoryAutodesk `json:"data"`
 }
 
+// GetIndexAutodesk -  Autodesk security advisories are official notifications released by Autodesk to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAutodesk(queryParameters ...IndexQueryParameters) (responseJSON *IndexAutodeskResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2068,6 +2122,7 @@ type IndexAvayaResponse struct {
 	Data      []client.AdvisoryAvaya `json:"data"`
 }
 
+// GetIndexAvaya -  Avaya security advisories are official notifications released by Avaya to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAvaya(queryParameters ...IndexQueryParameters) (responseJSON *IndexAvayaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2106,6 +2161,7 @@ type IndexAvevaResponse struct {
 	Data      []client.AdvisoryAVEVAAdvisory `json:"data"`
 }
 
+// GetIndexAveva -  Aveva security advisories are official notifications released by Aveva to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAveva(queryParameters ...IndexQueryParameters) (responseJSON *IndexAvevaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2144,6 +2200,7 @@ type IndexAvigilonResponse struct {
 	Data      []client.AdvisoryAvigilon `json:"data"`
 }
 
+// GetIndexAvigilon -  Avigilon security advisories are official notifications released by Avigilon to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAvigilon(queryParameters ...IndexQueryParameters) (responseJSON *IndexAvigilonResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2182,6 +2239,7 @@ type IndexAwsResponse struct {
 	Data      []client.AdvisoryAWS `json:"data"`
 }
 
+// GetIndexAws -  AWS security bulletins are official notifications released by Amazon Web Services to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAws(queryParameters ...IndexQueryParameters) (responseJSON *IndexAwsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2220,6 +2278,7 @@ type IndexAxisResponse struct {
 	Data      []client.AdvisoryAxis `json:"data"`
 }
 
+// GetIndexAxis -  Axis OS security advisories are official notifications released by Axis to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexAxis(queryParameters ...IndexQueryParameters) (responseJSON *IndexAxisResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2258,6 +2317,7 @@ type IndexBandrResponse struct {
 	Data      []client.AdvisoryBandr `json:"data"`
 }
 
+// GetIndexBandr -  B&R Security Bulletins are regular notifications released by B&R Industrial Automation, a leading provider of automation solutions. These bulletins aim to address security vulnerabilities and provide updates related to B&R's products and software. They offer important information on potential risks, recommended patches or updates, and best practices to enhance the security of B&R automation systems deployed in various industries.
 func (c *Client) GetIndexBandr(queryParameters ...IndexQueryParameters) (responseJSON *IndexBandrResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2296,6 +2356,7 @@ type IndexBaxterResponse struct {
 	Data      []client.AdvisoryBaxterAdvisory `json:"data"`
 }
 
+// GetIndexBaxter -  Baxter Security Advisories are official notifications issued by Baxter International, a global healthcare company, to address security vulnerabilities and updates in their medical devices and software. These advisories inform healthcare professionals and users about potential risks, recommended actions, and available patches or updates to ensure the security and integrity of Baxter's products. They play a crucial role in promoting patient safety and guiding healthcare organizations in implementing necessary security measures.
 func (c *Client) GetIndexBaxter(queryParameters ...IndexQueryParameters) (responseJSON *IndexBaxterResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2334,6 +2395,7 @@ type IndexBbraunResponse struct {
 	Data      []client.AdvisoryBBraunAdvisory `json:"data"`
 }
 
+// GetIndexBbraun -  BBraun security advisories are official notifications released by BBraun to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexBbraun(queryParameters ...IndexQueryParameters) (responseJSON *IndexBbraunResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2372,6 +2434,7 @@ type IndexBdResponse struct {
 	Data      []client.AdvisoryBectonDickinsonAdvisory `json:"data"`
 }
 
+// GetIndexBd -  The `bd` index contains data on advisories published by Becton Dickinson. Becton Dickinson is a medical technology company that develops, manufactures, and sells medical devices, instrument systems, and reagents. The company is headquartered in Franklin Lakes, New Jersey, United States.
 func (c *Client) GetIndexBd(queryParameters ...IndexQueryParameters) (responseJSON *IndexBdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2410,6 +2473,7 @@ type IndexBduResponse struct {
 	Data      []client.AdvisoryBDUAdvisory `json:"data"`
 }
 
+// GetIndexBdu -  The `bdu` index contains security advisories that are official communications issued by military or government agencies to provide information, guidance, and updates related to security risks and threats. These advisories are designed to provide personnel with essential information and recommendations to minimize the risk of security incidents and protect critical assets.
 func (c *Client) GetIndexBdu(queryParameters ...IndexQueryParameters) (responseJSON *IndexBduResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2448,6 +2512,7 @@ type IndexBeckhoffResponse struct {
 	Data      []client.AdvisoryBeckhoffAdvisory `json:"data"`
 }
 
+// GetIndexBeckhoff -  Beckhoff Advisories are security notifications issued by Beckhoff Automation, a prominent provider of automation technology. These advisories inform customers and users about potential vulnerabilities, patches, and mitigations related to Beckhoff's hardware, software, and industrial control systems. They provide essential information and guidance to help organizations protect their automation infrastructure and ensure the secure operation of their Beckhoff-based systems.
 func (c *Client) GetIndexBeckhoff(queryParameters ...IndexQueryParameters) (responseJSON *IndexBeckhoffResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2486,6 +2551,7 @@ type IndexBeldenResponse struct {
 	Data      []client.AdvisoryBeldenAdvisory `json:"data"`
 }
 
+// GetIndexBelden -  Belden Security Bulletins are regular notifications issued by Belden Inc., a global leader in signal transmission solutions. These bulletins provide updates, advisories, and recommendations related to the security of Belden's products and systems, including network infrastructure, industrial control systems, and data centers. They serve as a valuable resource for Belden customers and users to stay informed about potential vulnerabilities, best practices, and available patches or updates to ensure the security and reliability of their communication networks.
 func (c *Client) GetIndexBelden(queryParameters ...IndexQueryParameters) (responseJSON *IndexBeldenResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2524,6 +2590,7 @@ type IndexBeyondTrustResponse struct {
 	Data      []client.AdvisoryBeyondTrust `json:"data"`
 }
 
+// GetIndexBeyondTrust -  Beyond Trust security advisories are official notifications released by Beyond Trust to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexBeyondTrust(queryParameters ...IndexQueryParameters) (responseJSON *IndexBeyondTrustResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2562,6 +2629,7 @@ type IndexBinarlyResponse struct {
 	Data      []client.AdvisoryBinarly `json:"data"`
 }
 
+// GetIndexBinarly -  Binarly advisories are official notifications released by Binarly to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexBinarly(queryParameters ...IndexQueryParameters) (responseJSON *IndexBinarlyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2600,6 +2668,7 @@ type IndexBitdefenderResponse struct {
 	Data      []client.AdvisoryBitDefender `json:"data"`
 }
 
+// GetIndexBitdefender -  Bitdefender security advisories are official notifications released by Bitdefender to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexBitdefender(queryParameters ...IndexQueryParameters) (responseJSON *IndexBitdefenderResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2638,6 +2707,7 @@ type IndexBlackberryResponse struct {
 	Data      []client.AdvisoryBlackBerry `json:"data"`
 }
 
+// GetIndexBlackberry -  BlackBerry security advisories are official notifications released by the BlackBerry Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexBlackberry(queryParameters ...IndexQueryParameters) (responseJSON *IndexBlackberryResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2676,6 +2746,7 @@ type IndexBlsResponse struct {
 	Data      []client.AdvisoryBLS `json:"data"`
 }
 
+// GetIndexBls -  Black Lantern security advisories are official notifications released by Black Lantern to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexBls(queryParameters ...IndexQueryParameters) (responseJSON *IndexBlsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2714,6 +2785,7 @@ type IndexBoschResponse struct {
 	Data      []client.AdvisoryBoschAdvisory `json:"data"`
 }
 
+// GetIndexBosch -  Bosch Security Advisories are official notifications released by Bosch, a renowned technology company, to address security vulnerabilities and updates in their security products and solutions. These advisories provide detailed information on identified vulnerabilities, potential risks, and recommended actions to mitigate security threats. By promptly informing customers and users about vulnerabilities and offering guidance, Bosch Security Advisories help maintain the integrity and resilience of their security systems and protect against potential cyberattacks.
 func (c *Client) GetIndexBosch(queryParameters ...IndexQueryParameters) (responseJSON *IndexBoschResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2752,6 +2824,7 @@ type IndexBostonScientificResponse struct {
 	Data      []client.AdvisoryBostonScientificAdvisory `json:"data"`
 }
 
+// GetIndexBostonScientific -  Boston Scientific Advisories are official notifications released by Boston Scientific Corporation, a global medical technology company. These advisories inform healthcare professionals and users about important updates, safety concerns, and recommended actions related to Boston Scientific medical devices and therapies. They play a critical role in ensuring patient safety and guiding healthcare providers in implementing necessary measures to address potential risks and maintain the proper functioning of Boston Scientific products.
 func (c *Client) GetIndexBostonScientific(queryParameters ...IndexQueryParameters) (responseJSON *IndexBostonScientificResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2790,6 +2863,7 @@ type IndexBotnetsResponse struct {
 	Data      []client.AdvisoryBotnet `json:"data"`
 }
 
+// GetIndexBotnets -  The VulnCheck Botnets index contains data related to various botnets. The index contains listings of botnets and citations for the CVE they have been known to use.
 func (c *Client) GetIndexBotnets(queryParameters ...IndexQueryParameters) (responseJSON *IndexBotnetsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2828,6 +2902,7 @@ type IndexCaCyberCentreResponse struct {
 	Data      []client.AdvisoryCACyberCentreAdvisory `json:"data"`
 }
 
+// GetIndexCaCyberCentre -  The Cyber Centre issues alerts and advisories on potential, imminent or actual cyber threats, vulnerabilities or incidents affecting Canada's critical infrastructure.
 func (c *Client) GetIndexCaCyberCentre(queryParameters ...IndexQueryParameters) (responseJSON *IndexCaCyberCentreResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2866,6 +2941,7 @@ type IndexCanvasResponse struct {
 	Data      []client.AdvisoryCanvasExploit `json:"data"`
 }
 
+// GetIndexCanvas -  CANVAS Exploit Packs developed by Gleg are powerful tools used in penetration testing and vulnerability assessment. These exploit packs provide a comprehensive range of exploits and attack vectors to assess the security of computer systems and applications.
 func (c *Client) GetIndexCanvas(queryParameters ...IndexQueryParameters) (responseJSON *IndexCanvasResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2904,6 +2980,7 @@ type IndexCarestreamResponse struct {
 	Data      []client.AdvisoryCarestreamAdvisory `json:"data"`
 }
 
+// GetIndexCarestream -  Carestream Product Security Advisories are official notifications released by Carestream Health, a leading provider of medical imaging and healthcare IT solutions. These advisories address security vulnerabilities and updates related to Carestream's products and software in the healthcare industry. They provide essential information, including the nature of the vulnerability, potential risks, recommended actions, and available patches or updates to mitigate security risks and ensure the confidentiality, integrity, and availability of patient data and healthcare systems. Carestream Product Security Advisories are crucial in helping healthcare organizations maintain a secure and protected environment for patient care.
 func (c *Client) GetIndexCarestream(queryParameters ...IndexQueryParameters) (responseJSON *IndexCarestreamResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2942,6 +3019,7 @@ type IndexCargoResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexCargo -  Cargo (Rust) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexCargo(queryParameters ...IndexQueryParameters) (responseJSON *IndexCargoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -2980,6 +3058,7 @@ type IndexCarrierResponse struct {
 	Data      []client.AdvisoryCarrier `json:"data"`
 }
 
+// GetIndexCarrier -  Carrier product security advisories are official notifications released by the Carrier Product Security Incident Response Team (Carrier PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexCarrier(queryParameters ...IndexQueryParameters) (responseJSON *IndexCarrierResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3018,6 +3097,7 @@ type IndexCblMarinerResponse struct {
 	Data      []client.AdvisoryCBLMariner `json:"data"`
 }
 
+// GetIndexCblMariner -  CBL-Mariner contains vulnerabilities detected in the Microsoft CBL Mariner linux distribution.
 func (c *Client) GetIndexCblMariner(queryParameters ...IndexQueryParameters) (responseJSON *IndexCblMarinerResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3056,6 +3136,7 @@ type IndexCentosResponse struct {
 	Data      []client.AdvisoryCESA `json:"data"`
 }
 
+// GetIndexCentos -  CentOS Security Advisories are official notifications issued by the CentOS project, a popular open-source Linux distribution. These advisories provide information on security vulnerabilities, patches, and updates relevant to CentOS operating systems. They help CentOS users stay informed about potential risks, recommended actions, and available fixes to maintain the security and stability of their CentOS-based systems. CentOS Security Advisories play a vital role in assisting system administrators and users in effectively managing and securing their CentOS deployments.
 func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (responseJSON *IndexCentosResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3094,6 +3175,7 @@ type IndexCertBeResponse struct {
 	Data      []client.AdvisoryCertBE `json:"data"`
 }
 
+// GetIndexCertBe -  CERT BE security advisories are official notifications released by the Centre for CyberSecurity Belgium to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertBeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3132,6 +3214,7 @@ type IndexCertUaResponse struct {
 	Data      []client.AdvisoryCertUA `json:"data"`
 }
 
+// GetIndexCertUa -  CERT UA security advisories are official notifications released by the Ukraine CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexCertUa(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertUaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3170,6 +3253,7 @@ type IndexCerteuResponse struct {
 	Data      []client.AdvisoryCERTEUAdvisory `json:"data"`
 }
 
+// GetIndexCerteu -  Cert-EU Bulletins are periodic publications issued by Cert-EU to inform their members about the latest cybersecurity threats, vulnerabilities, and incidents. These bulletins provide concise summaries, technical details, and recommended actions to mitigate risks and protect systems and networks.
 func (c *Client) GetIndexCerteu(queryParameters ...IndexQueryParameters) (responseJSON *IndexCerteuResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3208,6 +3292,7 @@ type IndexCertfrResponse struct {
 	Data      []client.AdvisoryCertFRAdvisory `json:"data"`
 }
 
+// GetIndexCertfr -  CERT-FR security alerts are official notifications released by the French national and governmental CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexCertfr(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertfrResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3246,6 +3331,7 @@ type IndexChainguardResponse struct {
 	Data      []client.AdvisoryChainGuard `json:"data"`
 }
 
+// GetIndexChainguard -  ChainGuard is an enterprise Linux undistribution based on Wolfi that combines the best aspects of existing container base images with default security measures that will include software signatures powered by Sigstore, provenance, and software bills of material (SBOM).
 func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (responseJSON *IndexChainguardResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3284,6 +3370,7 @@ type IndexCheckpointResponse struct {
 	Data      []client.AdvisoryCheckPoint `json:"data"`
 }
 
+// GetIndexCheckpoint -  CheckPoint security advisories are official notifications released by CheckPoint to address security vulnerabilities and updates in the third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexCheckpoint(queryParameters ...IndexQueryParameters) (responseJSON *IndexCheckpointResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3322,6 +3409,7 @@ type IndexChromeResponse struct {
 	Data      []client.AdvisoryChrome `json:"data"`
 }
 
+// GetIndexChrome -  Chrome release updates are periodic publications issued by the Google Chrome team to inform their members about the latest cybersecurity threats, vulnerabilities, and incidents. These bulletins provide concise summaries, technical details, and recommended actions to mitigate risks and protect systems and networks.
 func (c *Client) GetIndexChrome(queryParameters ...IndexQueryParameters) (responseJSON *IndexChromeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3360,6 +3448,7 @@ type IndexCisaAlertsResponse struct {
 	Data      []client.AdvisoryCISAAlert `json:"data"`
 }
 
+// GetIndexCisaAlerts -  CISA (Cybersecurity and Infrastructure Security Agency) Alerts are official notifications issued by the United States' primary federal agency responsible for cybersecurity. These alerts provide timely and actionable information on emerging cyber threats, vulnerabilities, and incidents affecting critical infrastructure sectors. CISA Alerts offer guidance, recommended mitigation measures, and best practices to enhance the security and resilience of organizations, promoting a proactive approach to protecting critical systems and networks from cyber threats.
 func (c *Client) GetIndexCisaAlerts(queryParameters ...IndexQueryParameters) (responseJSON *IndexCisaAlertsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3398,6 +3487,7 @@ type IndexCisaKevResponse struct {
 	Data      []client.AdvisoryKEVCatalogVulnerability `json:"data"`
 }
 
+// GetIndexCisaKev -  The CISA Known Exploit Vulnerabilities catalog contains a list of exploited vulnerabilities known to CISA.
 func (c *Client) GetIndexCisaKev(queryParameters ...IndexQueryParameters) (responseJSON *IndexCisaKevResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3436,6 +3526,7 @@ type IndexCiscoResponse struct {
 	Data      []client.AdvisoryCiscoAdvisory `json:"data"`
 }
 
+// GetIndexCisco -  Cisco security advisories are official notifications released by Cisco to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexCisco(queryParameters ...IndexQueryParameters) (responseJSON *IndexCiscoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3474,6 +3565,7 @@ type IndexCiscoTalosResponse struct {
 	Data      []client.AdvisoryTalosAdvisory `json:"data"`
 }
 
+// GetIndexCiscoTalos -  The `cisco-talos` Security Advisories are official notifications released by the Talos research group within Cisco that provide information and updates on potential security vulnerabilities and threats affecting Cisco products and services.
 func (c *Client) GetIndexCiscoTalos(queryParameters ...IndexQueryParameters) (responseJSON *IndexCiscoTalosResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3512,6 +3604,7 @@ type IndexCitrixResponse struct {
 	Data      []client.AdvisoryCitrixAdvisory `json:"data"`
 }
 
+// GetIndexCitrix -  Citrix Security Advisories are official notifications released by Citrix Systems, a leading provider of digital workspace and networking solutions. These advisories address security vulnerabilities and updates in Citrix products, such as Citrix ADC, Citrix Gateway, and Citrix Virtual Apps and Desktops. They provide detailed information about the vulnerabilities, potential impact, and recommended actions, including patches or workarounds, to mitigate the risks. Citrix Security Advisories play a crucial role in helping organizations maintain the security and integrity of their Citrix deployments and protect against potential cyber threats.
 func (c *Client) GetIndexCitrix(queryParameters ...IndexQueryParameters) (responseJSON *IndexCitrixResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3550,6 +3643,7 @@ type IndexClarotyResponse struct {
 	Data      []client.AdvisoryClarotyVulnerability `json:"data"`
 }
 
+// GetIndexClaroty -  Team82 aligns with defenders of industrial, healthcare, and commercial networks, and provides indispensable threat and vulnerability research in order to ensure the safety, reliability, and integrity of systems within critical industries.
 func (c *Client) GetIndexClaroty(queryParameters ...IndexQueryParameters) (responseJSON *IndexClarotyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3588,6 +3682,7 @@ type IndexCloudbeesResponse struct {
 	Data      []client.AdvisoryCloudBees `json:"data"`
 }
 
+// GetIndexCloudbees -  CloudBees security advisories are official notifications released by CloudBees to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexCloudbees(queryParameters ...IndexQueryParameters) (responseJSON *IndexCloudbeesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3626,6 +3721,7 @@ type IndexCloudvulndbResponse struct {
 	Data      []client.AdvisoryCloudVulnDBAdvisory `json:"data"`
 }
 
+// GetIndexCloudvulndb -  CloudVulnDB is a comprehensive and continuously updated database that focuses on cataloging security vulnerabilities specific to cloud services and environments. It provides detailed information about vulnerabilities, including their impact, severity, affected platforms, and recommended mitigation strategies. CloudVulnDB serves as a valuable resource for security professionals and organizations seeking to proactively identify and address vulnerabilities in their cloud infrastructure, enabling them to enhance their overall security posture.
 func (c *Client) GetIndexCloudvulndb(queryParameters ...IndexQueryParameters) (responseJSON *IndexCloudvulndbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3664,6 +3760,7 @@ type IndexCnnvdResponse struct {
 	Data      []client.AdvisoryCNNVDEntryJSON `json:"data"`
 }
 
+// GetIndexCnnvd -  The Chinese National Vulnerability Database is one of two national vulnerability databases of the People’s Republic of China. It is operated by the China Information Technology Security Evaluation Center, the 13th Bureau of China’s foreign intelligence service, the Ministry of State Security.
 func (c *Client) GetIndexCnnvd(queryParameters ...IndexQueryParameters) (responseJSON *IndexCnnvdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3702,6 +3799,7 @@ type IndexCnvdBulletinsResponse struct {
 	Data      []client.AdvisoryCNVDBulletin `json:"data"`
 }
 
+// GetIndexCnvdBulletins -  The Chinese National Vulnerability Database (CNVD) is a service responsible for collecting and sharing information about software vulnerabilities that affect Chinese information systems. The CNVD publishes advisories about security flaws and vulnerabilities that have been identified in software products and systems.
 func (c *Client) GetIndexCnvdBulletins(queryParameters ...IndexQueryParameters) (responseJSON *IndexCnvdBulletinsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3740,6 +3838,7 @@ type IndexCnvdFlawsResponse struct {
 	Data      []client.AdvisoryCNVDFlaw `json:"data"`
 }
 
+// GetIndexCnvdFlaws -  The Chinese National Vulnerability Database (CNVD) is a service responsible for collecting and sharing information about software vulnerabilities that affect Chinese information systems. The CNVD publishes advisories about security flaws and vulnerabilities that have been identified in software products and systems.
 func (c *Client) GetIndexCnvdFlaws(queryParameters ...IndexQueryParameters) (responseJSON *IndexCnvdFlawsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3778,6 +3877,7 @@ type IndexCocoapodsResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexCocoapods -  CocoaPods (Swift, Objective-C) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexCocoapods(queryParameters ...IndexQueryParameters) (responseJSON *IndexCocoapodsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3816,6 +3916,7 @@ type IndexCodesysResponse struct {
 	Data      []client.AdvisoryCodesysAdvisory `json:"data"`
 }
 
+// GetIndexCodesys -  CODESYS Advisories are official notifications issued by CODESYS, a widely used development environment for programming industrial control systems. These advisories highlight security vulnerabilities, patches, and updates related to the CODESYS software. They provide important information on potential risks, recommended actions, and available fixes to address vulnerabilities and protect industrial automation systems from potential cyber threats. CODESYS Advisories help ensure the secure operation of control systems and assist system integrators and operators in maintaining the integrity and reliability of their industrial processes.
 func (c *Client) GetIndexCodesys(queryParameters ...IndexQueryParameters) (responseJSON *IndexCodesysResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3854,6 +3955,7 @@ type IndexCompassSecurityResponse struct {
 	Data      []client.AdvisoryCompassSecurity `json:"data"`
 }
 
+// GetIndexCompassSecurity -  Compass Security advisories are official notifications released by Compass Security to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexCompassSecurity(queryParameters ...IndexQueryParameters) (responseJSON *IndexCompassSecurityResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3892,6 +3994,7 @@ type IndexComposerResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexComposer -  Composer (PHP) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexComposer(queryParameters ...IndexQueryParameters) (responseJSON *IndexComposerResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3930,6 +4033,7 @@ type IndexConanResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexConan -  Conan (C/C++) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexConan(queryParameters ...IndexQueryParameters) (responseJSON *IndexConanResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -3968,6 +4072,7 @@ type IndexCrestronResponse struct {
 	Data      []client.AdvisoryCrestron `json:"data"`
 }
 
+// GetIndexCrestron -  Crestron security advisories are official notifications released by Crestron to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexCrestron(queryParameters ...IndexQueryParameters) (responseJSON *IndexCrestronResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4006,6 +4111,7 @@ type IndexCurlResponse struct {
 	Data      []client.AdvisoryCurl `json:"data"`
 }
 
+// GetIndexCurl -  Curl CVEs are official notifications released by the Curl open source project to address security vulnerabilities and updates in curl. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexCurl(queryParameters ...IndexQueryParameters) (responseJSON *IndexCurlResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4044,6 +4150,7 @@ type IndexCweResponse struct {
 	Data      []client.ApiCWE `json:"data"`
 }
 
+// GetIndexCwe -  The MITRE Common Weakness Enumeration (CWE) is a community-developed list of common software security weaknesses. The CWE is maintained by the MITRE Corporation, a not-for-profit organization that operates federally funded research and development centers (FFRDCs) sponsored by the U.S. government. The CWE is a valuable resource for software developers, security professionals, and other stakeholders in the software industry. It provides a standardized way to identify and describe common software security weaknesses, which helps to improve the security of software systems and applications.
 func (c *Client) GetIndexCwe(queryParameters ...IndexQueryParameters) (responseJSON *IndexCweResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4082,6 +4189,7 @@ type IndexDahuaResponse struct {
 	Data      []client.AdvisoryDahua `json:"data"`
 }
 
+// GetIndexDahua -  Dahua security advisories are official notifications released by the Dahua Product Security Incident Response Team (Dahua PSIRT)  to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexDahua(queryParameters ...IndexQueryParameters) (responseJSON *IndexDahuaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4120,6 +4228,7 @@ type IndexDassaultResponse struct {
 	Data      []client.AdvisoryDassault `json:"data"`
 }
 
+// GetIndexDassault -  Dassault Systèmes security advisories are official notifications released by Dassault to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexDassault(queryParameters ...IndexQueryParameters) (responseJSON *IndexDassaultResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4158,6 +4267,7 @@ type IndexDebianResponse struct {
 	Data      []client.AdvisoryVulnerableDebianPackage `json:"data"`
 }
 
+// GetIndexDebian -  Debian Security Tracker - `debian-security-tracker` index is a service that provides information and updates on security vulnerabilities and issues affecting Debian packages and software. The Debian Security Tracker is a centralized repository for security-related information about Debian packages, including vulnerability reports, security advisories, and security updates. The tracker is designed to help users and administrators maintain the security of their Debian-based systems.
 func (c *Client) GetIndexDebian(queryParameters ...IndexQueryParameters) (responseJSON *IndexDebianResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4196,6 +4306,7 @@ type IndexDebianDsaResponse struct {
 	Data      []client.AdvisoryDebianSecurityAdvisory `json:"data"`
 }
 
+// GetIndexDebianDsa -  Debian DSA (Debian Security Advisory) - `debian-dsa` index is a series of security advisories published by the Debian Project, a non-profit organization that develops and distributes the Debian operating system. These advisories provide information and guidance on security vulnerabilities and issues affecting Debian packages and software.
 func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (responseJSON *IndexDebianDsaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4233,6 +4344,8 @@ type IndexDellResponse struct {
 	Meta      IndexMeta             `json:"_meta"`
 	Data      []client.AdvisoryDell `json:"data"`
 }
+
+// GetIndexDell -  Dell security advisories are official notifications released by Dell to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 
 func (c *Client) GetIndexDell(queryParameters ...IndexQueryParameters) (responseJSON *IndexDellResponse, err error) {
 
@@ -4272,6 +4385,7 @@ type IndexDeltaResponse struct {
 	Data      []client.AdvisoryDeltaAdvisory `json:"data"`
 }
 
+// GetIndexDelta -  Delta Controls security bulletins are official notifications released by Delta Controls to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexDelta(queryParameters ...IndexQueryParameters) (responseJSON *IndexDeltaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4309,6 +4423,8 @@ type IndexDotcmsResponse struct {
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryDotCMS `json:"data"`
 }
+
+// GetIndexDotcms -  dotCMS security advisories are official notifications released by dotCMS to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 
 func (c *Client) GetIndexDotcms(queryParameters ...IndexQueryParameters) (responseJSON *IndexDotcmsResponse, err error) {
 
@@ -4348,6 +4464,8 @@ type IndexDragosResponse struct {
 	Data      []client.AdvisoryDragosAdvisory `json:"data"`
 }
 
+// GetIndexDragos -  Dragos security advisories are official notifications released by Dragos to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
+
 func (c *Client) GetIndexDragos(queryParameters ...IndexQueryParameters) (responseJSON *IndexDragosResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4385,6 +4503,8 @@ type IndexDraytekResponse struct {
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryDraytek `json:"data"`
 }
+
+// GetIndexDraytek -  DrayTek security advisories are official notifications released by DrayTek to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 
 func (c *Client) GetIndexDraytek(queryParameters ...IndexQueryParameters) (responseJSON *IndexDraytekResponse, err error) {
 
@@ -4424,6 +4544,8 @@ type IndexEatonResponse struct {
 	Data      []client.AdvisoryEatonAdvisory `json:"data"`
 }
 
+// GetIndexEaton -  Eaton Security Advisories typically include detailed technical information about the vulnerability or issue, as well as recommendations for remediation and risk mitigation. They may also include severity ratings and CVSS scores to help organizations prioritize their response to potential security incidents. Eaton's security team works closely with customers and partners to identify and address security concerns, and is committed to providing timely and effective security advisories to help protect critical assets and data.
+
 func (c *Client) GetIndexEaton(queryParameters ...IndexQueryParameters) (responseJSON *IndexEatonResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4461,6 +4583,8 @@ type IndexElasticResponse struct {
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.AdvisoryElastic `json:"data"`
 }
+
+// GetIndexElastic -  Elasticsearch security advisories are official notifications released by Elasticsearch to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 
 func (c *Client) GetIndexElastic(queryParameters ...IndexQueryParameters) (responseJSON *IndexElasticResponse, err error) {
 
@@ -4500,6 +4624,7 @@ type IndexElspecResponse struct {
 	Data      []client.AdvisoryElspec `json:"data"`
 }
 
+// GetIndexElspec -  Elspec security advisories are official notifications released by Elspec to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexElspec(queryParameters ...IndexQueryParameters) (responseJSON *IndexElspecResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4537,6 +4662,8 @@ type IndexEmersonResponse struct {
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryEmersonAdvisory `json:"data"`
 }
+
+// GetIndexEmerson -  Emerson Cyber Security Notifications are official alerts and notifications provided by Emerson, a global technology and engineering company. These notifications highlight emerging cyber threats, vulnerabilities, and security updates related to Emerson's automation and control systems. They provide critical information, recommendations, and patches to enhance the cybersecurity posture of industrial environments and protect critical infrastructure from potential cyberattacks.
 
 func (c *Client) GetIndexEmerson(queryParameters ...IndexQueryParameters) (responseJSON *IndexEmersonResponse, err error) {
 
@@ -4576,6 +4703,8 @@ type IndexEolResponse struct {
 	Data      []client.AdvisoryEOLReleaseData `json:"data"`
 }
 
+// GetIndexEol -  The VulnCheck EOL index contains a set of operating systems with associated end-of-life and long term support information.
+
 func (c *Client) GetIndexEol(queryParameters ...IndexQueryParameters) (responseJSON *IndexEolResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4614,6 +4743,7 @@ type IndexEpssResponse struct {
 	Data      []client.ApiEPSSData `json:"data"`
 }
 
+// GetIndexEpss -  The Exploit Prediction Scoring System (EPSS) is a data-driven effort for estimating the probability that a software vulnerability will be exploited in the wild.
 func (c *Client) GetIndexEpss(queryParameters ...IndexQueryParameters) (responseJSON *IndexEpssResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4652,6 +4782,7 @@ type IndexExodusIntelResponse struct {
 	Data      []client.AdvisoryExodusIntel `json:"data"`
 }
 
+// GetIndexExodusIntel -  Exodus Intelligence advisories are official notifications released by Exodus Intelligence to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexExodusIntel(queryParameters ...IndexQueryParameters) (responseJSON *IndexExodusIntelResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4689,6 +4820,8 @@ type IndexExploitChainsResponse struct {
 	Meta      IndexMeta                `json:"_meta"`
 	Data      []client.ApiExploitChain `json:"data"`
 }
+
+// GetIndexExploitChains -  Exploit chains advisories are a type of security advisory that focus on the combination of multiple exploits or vulnerabilities that together create a more significant security risk. These advisories typically describe how an attacker could use multiple vulnerabilities in sequence to achieve a desired outcome, such as gaining unauthorized access to a system or stealing sensitive information.
 
 func (c *Client) GetIndexExploitChains(queryParameters ...IndexQueryParameters) (responseJSON *IndexExploitChainsResponse, err error) {
 
@@ -4728,6 +4861,7 @@ type IndexExploitdbResponse struct {
 	Data      []client.AdvisoryExploitDBExploitv2 `json:"data"`
 }
 
+// GetIndexExploitdb -  The Exploit Database (ExploitDB) is an archive of public exploits curated by OffSec.
 func (c *Client) GetIndexExploitdb(queryParameters ...IndexQueryParameters) (responseJSON *IndexExploitdbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4765,6 +4899,8 @@ type IndexExploitsResponse struct {
 	Meta      IndexMeta                   `json:"_meta"`
 	Data      []client.ApiExploitV3Result `json:"data"`
 }
+
+// GetIndexExploits -  VulnCheck Exploit Intelligence helps organizations track all of the world’s exploit proof-of-concept code, exploited in-the-wild information, and exploit metadata including timelines, to focus remediation resources on the right vulnerabilities.
 
 func (c *Client) GetIndexExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexExploitsResponse, err error) {
 
@@ -4804,6 +4940,7 @@ type IndexFSecureResponse struct {
 	Data      []client.AdvisoryFSecure `json:"data"`
 }
 
+// GetIndexFSecure -  F-Secure security advisories are official notifications released by F-Secure to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexFSecure(queryParameters ...IndexQueryParameters) (responseJSON *IndexFSecureResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4842,6 +4979,7 @@ type IndexFastlyResponse struct {
 	Data      []client.AdvisoryFastly `json:"data"`
 }
 
+// GetIndexFastly -  Fastly security advisories are official notifications released by Fastly to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexFastly(queryParameters ...IndexQueryParameters) (responseJSON *IndexFastlyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4879,6 +5017,8 @@ type IndexFedoraResponse struct {
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryUpdate `json:"data"`
 }
+
+// GetIndexFedora -  Fedora security advisories are official notifications released by Fedora to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 
 func (c *Client) GetIndexFedora(queryParameters ...IndexQueryParameters) (responseJSON *IndexFedoraResponse, err error) {
 
@@ -4918,6 +5058,7 @@ type IndexFilecloudResponse struct {
 	Data      []client.AdvisoryFileCloud `json:"data"`
 }
 
+// GetIndexFilecloud -  FileCloud security advisories are official notifications released by FileCloud to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexFilecloud(queryParameters ...IndexQueryParameters) (responseJSON *IndexFilecloudResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4956,6 +5097,7 @@ type IndexForgerockResponse struct {
 	Data      []client.AdvisoryForgeRock `json:"data"`
 }
 
+// GetIndexForgerock -  ForgeRock security advisories are official notifications released by ForgeRock to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexForgerock(queryParameters ...IndexQueryParameters) (responseJSON *IndexForgerockResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -4993,6 +5135,8 @@ type IndexFortinetResponse struct {
 	Meta      IndexMeta                         `json:"_meta"`
 	Data      []client.AdvisoryFortinetAdvisory `json:"data"`
 }
+
+// GetIndexFortinet -  FortiGuard, by Fortinet, is a comprehensive and integrated security platform that offers threat intelligence, research, and protection against a wide range of cyber threats. It provides real-time updates on the latest threats and vulnerabilities, including malware, exploits, and botnets, enabling organizations to proactively defend their networks and systems. FortiGuard's threat intelligence and security services are a key component of Fortinet's security solutions, delivering advanced protection and continuous monitoring to safeguard against evolving cyber threats.
 
 func (c *Client) GetIndexFortinet(queryParameters ...IndexQueryParameters) (responseJSON *IndexFortinetResponse, err error) {
 
@@ -5032,6 +5176,7 @@ type IndexFreebsdResponse struct {
 	Data      []client.AdvisoryAdvisory `json:"data"`
 }
 
+// GetIndexFreebsd -  FreeBSD security advisories are official notifications released by the FreeBSD security team to address security vulnerabilities and updates in the open source FreeBSD operating system. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexFreebsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexFreebsdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5070,6 +5215,7 @@ type IndexGallagherResponse struct {
 	Data      []client.AdvisoryGallagher `json:"data"`
 }
 
+// GetIndexGallagher -  Gallagher security advisories are official notifications released by Gallagher to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexGallagher(queryParameters ...IndexQueryParameters) (responseJSON *IndexGallagherResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5108,6 +5254,7 @@ type IndexGcpResponse struct {
 	Data      []client.AdvisoryGCP `json:"data"`
 }
 
+// GetIndexGcp -  GCP security bulletins are official notifications released by Google Cloud to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexGcp(queryParameters ...IndexQueryParameters) (responseJSON *IndexGcpResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5146,6 +5293,7 @@ type IndexGeGasResponse struct {
 	Data      []client.AdvisoryGEGas `json:"data"`
 }
 
+// GetIndexGeGas -  GE Gas product security advisories are official notifications released by the GE Gas Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexGeGas(queryParameters ...IndexQueryParameters) (responseJSON *IndexGeGasResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5183,6 +5331,8 @@ type IndexGeHealthcareResponse struct {
 	Meta      IndexMeta                             `json:"_meta"`
 	Data      []client.AdvisoryGEHealthcareAdvisory `json:"data"`
 }
+
+// GetIndexGeHealthcare -  GE Healthcare Advisories are official communications issued by GE Healthcare, a global medical technology company, to provide information and guidance on potential security vulnerabilities and threats affecting GE Healthcare products and services.
 
 func (c *Client) GetIndexGeHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *IndexGeHealthcareResponse, err error) {
 
@@ -5222,6 +5372,8 @@ type IndexGemResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexGem -  Gem (Ruby) packages with package versions, associated licenses, and relevant CVEs
+
 func (c *Client) GetIndexGem(queryParameters ...IndexQueryParameters) (responseJSON *IndexGemResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5260,6 +5412,7 @@ type IndexGenetecResponse struct {
 	Data      []client.AdvisoryGenetec `json:"data"`
 }
 
+// GetIndexGenetec -  Genetec security advisories are official notifications released by Genetec to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexGenetec(queryParameters ...IndexQueryParameters) (responseJSON *IndexGenetecResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5297,6 +5450,8 @@ type IndexGigabyteResponse struct {
 	Meta      IndexMeta                 `json:"_meta"`
 	Data      []client.AdvisoryGigabyte `json:"data"`
 }
+
+// GetIndexGigabyte -  Gigabyte security advisories are official notifications released by Gigabyte to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 
 func (c *Client) GetIndexGigabyte(queryParameters ...IndexQueryParameters) (responseJSON *IndexGigabyteResponse, err error) {
 
@@ -5336,6 +5491,8 @@ type IndexGiteeExploitsResponse struct {
 	Data      []client.AdvisoryGiteeExploit `json:"data"`
 }
 
+// GetIndexGiteeExploits -  Exploits hosted on Gitee
+
 func (c *Client) GetIndexGiteeExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexGiteeExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5373,6 +5530,8 @@ type IndexGithubExploitsResponse struct {
 	Meta      IndexMeta                      `json:"_meta"`
 	Data      []client.AdvisoryGitHubExploit `json:"data"`
 }
+
+// GetIndexGithubExploits -  Exploits hosted on GitHub
 
 func (c *Client) GetIndexGithubExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexGithubExploitsResponse, err error) {
 
@@ -5412,6 +5571,7 @@ type IndexGithubSecurityAdvisoriesResponse struct {
 	Data      []client.AdvisoryGHAdvisoryJSONLean `json:"data"`
 }
 
+// GetIndexGithubSecurityAdvisories -  Github Security Advisories are official notifications released by Github to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexGithubSecurityAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexGithubSecurityAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5449,6 +5609,8 @@ type IndexGitlabAdvisoriesCommunityResponse struct {
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryGitlabAdvisory `json:"data"`
 }
+
+// GetIndexGitlabAdvisoriesCommunity -  GitLab Advisories Community is a group of security researchers and professionals who collaborate to identify and report security vulnerabilities and issues affecting the GitLab software development platform.
 
 func (c *Client) GetIndexGitlabAdvisoriesCommunity(queryParameters ...IndexQueryParameters) (responseJSON *IndexGitlabAdvisoriesCommunityResponse, err error) {
 
@@ -5488,6 +5650,8 @@ type IndexGitlabExploitsResponse struct {
 	Data      []client.AdvisoryGitLabExploit `json:"data"`
 }
 
+// GetIndexGitlabExploits -  Exploits hosted on GitLab
+
 func (c *Client) GetIndexGitlabExploits(queryParameters ...IndexQueryParameters) (responseJSON *IndexGitlabExploitsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5526,6 +5690,7 @@ type IndexGnutlsResponse struct {
 	Data      []client.AdvisoryGnuTLS `json:"data"`
 }
 
+// GetIndexGnutls -  GnuTLS security advisories are official notifications released by the GnuTLS open source project to address security vulnerabilities and updates in curl. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexGnutls(queryParameters ...IndexQueryParameters) (responseJSON *IndexGnutlsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5563,6 +5728,8 @@ type IndexGolangResponse struct {
 	Meta      IndexMeta              `json:"_meta"`
 	Data      []client.ApiOSSPackage `json:"data"`
 }
+
+// GetIndexGolang -  Golang packages with package versions, associated licenses, and relevant CVEs
 
 func (c *Client) GetIndexGolang(queryParameters ...IndexQueryParameters) (responseJSON *IndexGolangResponse, err error) {
 
@@ -5602,6 +5769,7 @@ type IndexGoogle0dayItwResponse struct {
 	Data      []client.AdvisoryITWExploit `json:"data"`
 }
 
+// GetIndexGoogle0dayItw -  Project Zero's In the Wild Exploits exploits list are curated by Google's Project Zero team and tracks zero day exploits found in the wild.
 func (c *Client) GetIndexGoogle0dayItw(queryParameters ...IndexQueryParameters) (responseJSON *IndexGoogle0dayItwResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5640,6 +5808,7 @@ type IndexGoogleContainerOptimizedOsResponse struct {
 	Data      []client.AdvisoryContainerOS `json:"data"`
 }
 
+// GetIndexGoogleContainerOptimizedOs -  Container OS security advisories are official notifications released by Google to address security vulnerabilities and updates in the container optimized operating system. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexGoogleContainerOptimizedOs(queryParameters ...IndexQueryParameters) (responseJSON *IndexGoogleContainerOptimizedOsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5678,6 +5847,7 @@ type IndexGrafanaResponse struct {
 	Data      []client.AdvisoryGrafana `json:"data"`
 }
 
+// GetIndexGrafana -  Grafana Labs security fixes are official notifications released by Grafana Labs to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexGrafana(queryParameters ...IndexQueryParameters) (responseJSON *IndexGrafanaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5715,6 +5885,8 @@ type IndexGreynoiseMetadataResponse struct {
 	Meta      IndexMeta                           `json:"_meta"`
 	Data      []client.AdvisoryGreyNoiseDetection `json:"data"`
 }
+
+// GetIndexGreynoiseMetadata -  GreyNoise Metadata Advisories are a type of security advisory that provides information about metadata associated with various IP addresses, domains, and other internet-connected devices.
 
 func (c *Client) GetIndexGreynoiseMetadata(queryParameters ...IndexQueryParameters) (responseJSON *IndexGreynoiseMetadataResponse, err error) {
 
@@ -5754,6 +5926,7 @@ type IndexHackageResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexHackage -  Hackage (Haskell) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexHackage(queryParameters ...IndexQueryParameters) (responseJSON *IndexHackageResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5792,6 +5965,7 @@ type IndexHarmonyosResponse struct {
 	Data      []client.AdvisoryHarmonyOS `json:"data"`
 }
 
+// GetIndexHarmonyos -  HarmonyOS security updates are official notifications released by the HarmonyOS security team to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHarmonyos(queryParameters ...IndexQueryParameters) (responseJSON *IndexHarmonyosResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5830,6 +6004,7 @@ type IndexHashicorpResponse struct {
 	Data      []client.AdvisoryHashiCorp `json:"data"`
 }
 
+// GetIndexHashicorp -  HashiCorp security updates are official notifications released by HashiCorp to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHashicorp(queryParameters ...IndexQueryParameters) (responseJSON *IndexHashicorpResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5868,6 +6043,7 @@ type IndexHaskellSadbResponse struct {
 	Data      []client.AdvisoryHaskellSADBAdvisory `json:"data"`
 }
 
+// GetIndexHaskellSadb -  The Haskell Security Advisory Database is a repository of security advisories filed against packages published via Hackage.
 func (c *Client) GetIndexHaskellSadb(queryParameters ...IndexQueryParameters) (responseJSON *IndexHaskellSadbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5906,6 +6082,7 @@ type IndexHclResponse struct {
 	Data      []client.AdvisoryHCL `json:"data"`
 }
 
+// GetIndexHcl -  HCLSoftware security bulletins are official notifications released by the HCLSoftware Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHcl(queryParameters ...IndexQueryParameters) (responseJSON *IndexHclResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5944,6 +6121,7 @@ type IndexHexResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexHex -  Hex (Erlang, Elixir) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexHex(queryParameters ...IndexQueryParameters) (responseJSON *IndexHexResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -5982,6 +6160,7 @@ type IndexHikvisionResponse struct {
 	Data      []client.AdvisoryHIKVision `json:"data"`
 }
 
+// GetIndexHikvision -  Hikvision security advisories are official notifications released by Hikvision to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHikvision(queryParameters ...IndexQueryParameters) (responseJSON *IndexHikvisionResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6019,6 +6198,8 @@ type IndexHillromResponse struct {
 	Meta      IndexMeta                        `json:"_meta"`
 	Data      []client.AdvisoryHillromAdvisory `json:"data"`
 }
+
+// GetIndexHillrom -  Hillrom Advisories are official notifications released by Hillrom, a leading global medical technology company. These advisories address security vulnerabilities and updates in Hillrom's medical devices and healthcare IT solutions. They provide critical information about potential risks, recommended actions, and available patches or updates to ensure the security and privacy of patient data and the proper functioning of Hillrom products.
 
 func (c *Client) GetIndexHillrom(queryParameters ...IndexQueryParameters) (responseJSON *IndexHillromResponse, err error) {
 
@@ -6058,6 +6239,8 @@ type IndexHitachiResponse struct {
 	Data      []client.AdvisoryHitachi `json:"data"`
 }
 
+// GetIndexHitachi -  Hitachi Software Vulnerability Information provides updates and notifications about security vulnerabilities and related software updates in Hitachi's software products. These notifications highlight potential risks, impacts, and recommended actions to mitigate vulnerabilities and protect systems from cyber threats.
+
 func (c *Client) GetIndexHitachi(queryParameters ...IndexQueryParameters) (responseJSON *IndexHitachiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6096,6 +6279,7 @@ type IndexHitachiEnergyResponse struct {
 	Data      []client.AdvisoryHitachiEnergy `json:"data"`
 }
 
+// GetIndexHitachiEnergy -  Hitachi Energy cybersecurity advisories and notifications are official notifications released by Hitachi Energy to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHitachiEnergy(queryParameters ...IndexQueryParameters) (responseJSON *IndexHitachiEnergyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6133,6 +6317,8 @@ type IndexHkcertResponse struct {
 	Meta      IndexMeta               `json:"_meta"`
 	Data      []client.AdvisoryHKCert `json:"data"`
 }
+
+// GetIndexHkcert -  Hong Kong CERT security bulletins are official notifications released by the Hong Kong CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 
 func (c *Client) GetIndexHkcert(queryParameters ...IndexQueryParameters) (responseJSON *IndexHkcertResponse, err error) {
 
@@ -6172,6 +6358,7 @@ type IndexHoneywellResponse struct {
 	Data      []client.AdvisoryHoneywell `json:"data"`
 }
 
+// GetIndexHoneywell -  Honeywell cyber security notifications are official notifications released by Honeywell to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHoneywell(queryParameters ...IndexQueryParameters) (responseJSON *IndexHoneywellResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6210,6 +6397,7 @@ type IndexHpResponse struct {
 	Data      []client.AdvisoryHP `json:"data"`
 }
 
+// GetIndexHp -  HP security bulletins are official notifications released by HP to address security vulnerabilities and updates in their software and hardware products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHp(queryParameters ...IndexQueryParameters) (responseJSON *IndexHpResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6248,6 +6436,7 @@ type IndexHuaweiEulerosResponse struct {
 	Data      []client.AdvisoryHuaweiEulerOS `json:"data"`
 }
 
+// GetIndexHuaweiEuleros -  OpenEuler Open Enterprise Operating System Security Advisories are official notifications released by the EulerOS security team to address security vulnerabilities and updates in the open enterprise EulerOS operating system. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHuaweiEuleros(queryParameters ...IndexQueryParameters) (responseJSON *IndexHuaweiEulerosResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6286,6 +6475,7 @@ type IndexHuaweiIpsResponse struct {
 	Data      []client.AdvisoryHuaweiIPS `json:"data"`
 }
 
+// GetIndexHuaweiIps -  Huawei IPS Vulnerabilities are official notifications released by Huawei to address security vulnerabilities caught by Huawei's Intrusion Prevention System. These vulnerability notifications provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexHuaweiIps(queryParameters ...IndexQueryParameters) (responseJSON *IndexHuaweiIpsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6324,6 +6514,7 @@ type IndexHuaweiPsirtResponse struct {
 	Data      []client.AdvisoryHuawei `json:"data"`
 }
 
+// GetIndexHuaweiPsirt -  Huawei PSIRT seucrity bulletins are official notifications released by the Huawei Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexHuaweiPsirt(queryParameters ...IndexQueryParameters) (responseJSON *IndexHuaweiPsirtResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6362,6 +6553,7 @@ type IndexIavaResponse struct {
 	Data      []client.AdvisoryIAVA `json:"data"`
 }
 
+// GetIndexIava -  Notifications that are generated when an Information Assurance vulnerability may result in an immediate and potentially severe threat to DoD systems and information; this alert requires corrective action because of the severity of the vulnerability risk.
 func (c *Client) GetIndexIava(queryParameters ...IndexQueryParameters) (responseJSON *IndexIavaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6400,6 +6592,7 @@ type IndexIbmResponse struct {
 	Data      []client.AdvisoryIBM `json:"data"`
 }
 
+// GetIndexIbm -  IBM security bulletins are official notifications released by IBM to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexIbm(queryParameters ...IndexQueryParameters) (responseJSON *IndexIbmResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6438,6 +6631,7 @@ type IndexIdemiaResponse struct {
 	Data      []client.AdvisoryIdemia `json:"data"`
 }
 
+// GetIndexIdemia -  Idemia product security vulnerabilities are official notifications released by the Idemia Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexIdemia(queryParameters ...IndexQueryParameters) (responseJSON *IndexIdemiaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6475,6 +6669,8 @@ type IndexIlAlertsResponse struct {
 	Meta      IndexMeta                     `json:"_meta"`
 	Data      []client.AdvisoryIsraeliAlert `json:"data"`
 }
+
+// GetIndexIlAlerts -  Gov.il Security Alerts are official notifications issued by the Israeli government to provide timely information and updates on cybersecurity threats, vulnerabilities, and incidents. These alerts aim to raise awareness among government entities, critical infrastructure sectors, and the public about emerging cyber threats and provide recommended actions to mitigate risks.
 
 func (c *Client) GetIndexIlAlerts(queryParameters ...IndexQueryParameters) (responseJSON *IndexIlAlertsResponse, err error) {
 
@@ -6514,6 +6710,8 @@ type IndexIlVulnerabilitiesResponse struct {
 	Data      []client.AdvisoryIsraeliVulnerability `json:"data"`
 }
 
+// GetIndexIlVulnerabilities -  Gov.il CVE Security Advisories are official notifications released by the Israeli government to address security vulnerabilities identified through the Common Vulnerabilities and Exposures (CVE) system. These advisories provide detailed information about specific vulnerabilities, their potential impact, and recommended actions to mitigate the risks.
+
 func (c *Client) GetIndexIlVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *IndexIlVulnerabilitiesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6552,6 +6750,7 @@ type IndexIncibeResponse struct {
 	Data      []client.AdvisoryIncibeAdvisory `json:"data"`
 }
 
+// GetIndexIncibe -  Incibe CERT early warnings are official notifications released by the  National Cybersecurity Institute of Spain (Incibe) to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexIncibe(queryParameters ...IndexQueryParameters) (responseJSON *IndexIncibeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6590,6 +6789,7 @@ type IndexInitialAccessResponse struct {
 	Data      []client.ApiInitialAccess `json:"data"`
 }
 
+// GetIndexInitialAccess -  The initial-access index contains data on Initial Access exploits. These exploits are typically the most high impact exploit published. These vulnerabilities, also sometimes referred to as Remote Code Execution (RCE) vulnerabilities, are remote in nature, and typically do not require credentials to exploit.
 func (c *Client) GetIndexInitialAccess(queryParameters ...IndexQueryParameters) (responseJSON *IndexInitialAccessResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6628,6 +6828,7 @@ type IndexInitialAccessGitResponse struct {
 	Data      []client.ApiInitialAccess `json:"data"`
 }
 
+// GetIndexInitialAccessGit -  This is a backup-only index for Initial Access detection artifacts hosted on git.vulncheck.com. This backup is only available to licensed subscribers of Initial Access Intelligence.
 func (c *Client) GetIndexInitialAccessGit(queryParameters ...IndexQueryParameters) (responseJSON *IndexInitialAccessGitResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6666,6 +6867,7 @@ type IndexIntelResponse struct {
 	Data      []client.AdvisoryIntel `json:"data"`
 }
 
+// GetIndexIntel -  Intel Product Security Center advisories are official notifications released by Intel to address security vulnerabilities and updates in their software and hardware products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexIntel(queryParameters ...IndexQueryParameters) (responseJSON *IndexIntelResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6704,6 +6906,7 @@ type IndexIpintel10dResponse struct {
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
+// GetIndexIpintel10d -  The 10-Day IP Intelligence index contains the IP address and geolocation of potentially vulnerable systems that may be targeted by initial access exploits as well as command and control (C2) attacker infrastructure.
 func (c *Client) GetIndexIpintel10d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel10dResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6742,6 +6945,7 @@ type IndexIpintel30dResponse struct {
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
+// GetIndexIpintel30d -  The 30-Day IP Intelligence index contains the IP address and geolocation of potentially vulnerable systems that may be targeted by initial access exploits as well as command and control (C2) attacker infrastructure.
 func (c *Client) GetIndexIpintel30d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel30dResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6780,6 +6984,7 @@ type IndexIpintel3dResponse struct {
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
+// GetIndexIpintel3d -  The 3-Day IP Intelligence index contains the IP address and geolocation of potentially vulnerable systems that may be targeted by initial access exploits as well as command and control (C2) attacker infrastructure.
 func (c *Client) GetIndexIpintel3d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel3dResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6818,6 +7023,7 @@ type IndexIpintel90dResponse struct {
 	Data      []client.AdvisoryIpIntelRecord `json:"data"`
 }
 
+// GetIndexIpintel90d -  The 90-Day IP Intelligence index contains the IP address and geolocation of potentially vulnerable systems that may be targeted by initial access exploits as well as command and control (C2) attacker infrastructure.
 func (c *Client) GetIndexIpintel90d(queryParameters ...IndexQueryParameters) (responseJSON *IndexIpintel90dResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6856,6 +7062,7 @@ type IndexIstioResponse struct {
 	Data      []client.AdvisoryIstio `json:"data"`
 }
 
+// GetIndexIstio -  Istio security bulletins are official notifications released by the open source Istio project to address security vulnerabilities and updates in the open source Istio project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexIstio(queryParameters ...IndexQueryParameters) (responseJSON *IndexIstioResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6894,6 +7101,7 @@ type IndexIvantiResponse struct {
 	Data      []client.AdvisoryIvanti `json:"data"`
 }
 
+// GetIndexIvanti -  Ivanti security updates are official notifications released by Ivanti to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexIvanti(queryParameters ...IndexQueryParameters) (responseJSON *IndexIvantiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6932,6 +7140,7 @@ type IndexIvantiRssResponse struct {
 	Data      []client.AdvisoryIvantiRSS `json:"data"`
 }
 
+// GetIndexIvantiRss -  Ivanti security advisories are official notifications released by Ivanti to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexIvantiRss(queryParameters ...IndexQueryParameters) (responseJSON *IndexIvantiRssResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -6970,6 +7179,7 @@ type IndexJenkinsResponse struct {
 	Data      []client.AdvisoryJenkins `json:"data"`
 }
 
+// GetIndexJenkins -  Jenkins security advisories are official notifications released by Jenkins to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexJenkins(queryParameters ...IndexQueryParameters) (responseJSON *IndexJenkinsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7008,6 +7218,7 @@ type IndexJetbrainsResponse struct {
 	Data      []client.AdvisoryJetBrains `json:"data"`
 }
 
+// GetIndexJetbrains -  JetBrains security issues are official notifications released by JetBrains to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexJetbrains(queryParameters ...IndexQueryParameters) (responseJSON *IndexJetbrainsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7046,6 +7257,7 @@ type IndexJfrogResponse struct {
 	Data      []client.AdvisoryJFrog `json:"data"`
 }
 
+// GetIndexJfrog -  JFrog security advisories are official notifications released by JFrog to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexJfrog(queryParameters ...IndexQueryParameters) (responseJSON *IndexJfrogResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7083,6 +7295,8 @@ type IndexJnjResponse struct {
 	Meta      IndexMeta                    `json:"_meta"`
 	Data      []client.AdvisoryJNJAdvisory `json:"data"`
 }
+
+// GetIndexJnj -  Johnson & Johnson's Vulnerability Disclosure Reporting is a process through which individuals or security researchers can responsibly report potential vulnerabilities in Johnson & Johnson's products, services, or systems.
 
 func (c *Client) GetIndexJnj(queryParameters ...IndexQueryParameters) (responseJSON *IndexJnjResponse, err error) {
 
@@ -7122,6 +7336,7 @@ type IndexJvndbResponse struct {
 	Data      []client.AdvisoryJVNAdvisoryItem `json:"data"`
 }
 
+// GetIndexJvndb -  Japan vulnerability notes are official notifications released by the Japan CERT (JPCERT) to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexJvndb(queryParameters ...IndexQueryParameters) (responseJSON *IndexJvndbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7159,6 +7374,8 @@ type IndexKasperskyIcsCertResponse struct {
 	Meta      IndexMeta                                 `json:"_meta"`
 	Data      []client.AdvisoryKasperskyICSCERTAdvisory `json:"data"`
 }
+
+// GetIndexKasperskyIcsCert -  Kaspersky ICS CERT (Industrial Control Systems Computer Emergency Response Team) is a specialized unit within Kaspersky that focuses on cybersecurity for industrial control systems.
 
 func (c *Client) GetIndexKasperskyIcsCert(queryParameters ...IndexQueryParameters) (responseJSON *IndexKasperskyIcsCertResponse, err error) {
 
@@ -7198,6 +7415,8 @@ type IndexKrcertSecurityNoticesResponse struct {
 	Data      []client.AdvisoryKRCertAdvisory `json:"data"`
 }
 
+// GetIndexKrcertSecurityNotices -  KR-CERT (Korea Internet & Security Agency Computer Emergency Response Team) Security Notices are official notifications issued by KR-CERT, the national computer emergency response team of South Korea.
+
 func (c *Client) GetIndexKrcertSecurityNotices(queryParameters ...IndexQueryParameters) (responseJSON *IndexKrcertSecurityNoticesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7235,6 +7454,8 @@ type IndexKrcertVulnerabilitiesResponse struct {
 	Meta      IndexMeta                       `json:"_meta"`
 	Data      []client.AdvisoryKRCertAdvisory `json:"data"`
 }
+
+// GetIndexKrcertVulnerabilities -  KR-CERT (Korea Internet & Security Agency Computer Emergency Response Team) provides valuable information on vulnerabilities that affect the South Korean cyberspace.
 
 func (c *Client) GetIndexKrcertVulnerabilities(queryParameters ...IndexQueryParameters) (responseJSON *IndexKrcertVulnerabilitiesResponse, err error) {
 
@@ -7274,6 +7495,7 @@ type IndexKubernetesResponse struct {
 	Data      []client.AdvisoryK8S `json:"data"`
 }
 
+// GetIndexKubernetes -  Kubernetes security issues are official notifications released by the Kubernetes Security Response Committee to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexKubernetes(queryParameters ...IndexQueryParameters) (responseJSON *IndexKubernetesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7312,6 +7534,7 @@ type IndexLenovoResponse struct {
 	Data      []client.AdvisoryLenovo `json:"data"`
 }
 
+// GetIndexLenovo -  Lenovo product security advisories are official notifications released by the Lenovo Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexLenovo(queryParameters ...IndexQueryParameters) (responseJSON *IndexLenovoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7350,6 +7573,7 @@ type IndexLexmarkResponse struct {
 	Data      []client.AdvisoryLexmarkAdvisory `json:"data"`
 }
 
+// GetIndexLexmark -  Lexmark security advisories are official notifications released by Lexmark to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexLexmark(queryParameters ...IndexQueryParameters) (responseJSON *IndexLexmarkResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7388,6 +7612,7 @@ type IndexLgResponse struct {
 	Data      []client.AdvisoryLG `json:"data"`
 }
 
+// GetIndexLg -  LG security bulletins are official notifications released by LG to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexLg(queryParameters ...IndexQueryParameters) (responseJSON *IndexLgResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7426,6 +7651,7 @@ type IndexLibreOfficeResponse struct {
 	Data      []client.AdvisoryLibreOffice `json:"data"`
 }
 
+// GetIndexLibreOffice -  Libre Office security advisories are official notifications released by the open source Libre Office project to address security vulnerabilities and updates in the open source Libre Office project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexLibreOffice(queryParameters ...IndexQueryParameters) (responseJSON *IndexLibreOfficeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7464,6 +7690,7 @@ type IndexLinuxResponse struct {
 	Data      []client.AdvisoryLinux `json:"data"`
 }
 
+// GetIndexLinux -  Linux kernel security advisories are official notifications released by the Linux security team to address security vulnerabilities and updates in the open source Linux operating system. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexLinux(queryParameters ...IndexQueryParameters) (responseJSON *IndexLinuxResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7502,6 +7729,7 @@ type IndexMFilesResponse struct {
 	Data      []client.AdvisoryMFiles `json:"data"`
 }
 
+// GetIndexMFiles -  M-Files security advisories are official notifications released by M-Files to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMFiles(queryParameters ...IndexQueryParameters) (responseJSON *IndexMFilesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7540,6 +7768,7 @@ type IndexMacertResponse struct {
 	Data      []client.AdvisoryMACert `json:"data"`
 }
 
+// GetIndexMacert -  Moroccan CERT security bulletins are official notifications released by the Moroccan CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexMacert(queryParameters ...IndexQueryParameters) (responseJSON *IndexMacertResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7578,6 +7807,7 @@ type IndexManageengineResponse struct {
 	Data      []client.AdvisoryManageEngineAdvisory `json:"data"`
 }
 
+// GetIndexManageengine -  ManageEngine security updates are official notifications released by the ManageEngine Security Response Center to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexManageengine(queryParameters ...IndexQueryParameters) (responseJSON *IndexManageengineResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7616,6 +7846,7 @@ type IndexMavenResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexMaven -  Maven (Java) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexMaven(queryParameters ...IndexQueryParameters) (responseJSON *IndexMavenResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7654,6 +7885,7 @@ type IndexMbedTlsResponse struct {
 	Data      []client.AdvisoryMbedTLS `json:"data"`
 }
 
+// GetIndexMbedTls -  Mbed TLS security advisories are official notifications released by the open source Mbed TLS project to address security vulnerabilities and updates in the open source Mbed TLS project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMbedTls(queryParameters ...IndexQueryParameters) (responseJSON *IndexMbedTlsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7692,6 +7924,7 @@ type IndexMediatekResponse struct {
 	Data      []client.AdvisoryMediatek `json:"data"`
 }
 
+// GetIndexMediatek -  MediaTek security advisories are official notifications released by MediaTek to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMediatek(queryParameters ...IndexQueryParameters) (responseJSON *IndexMediatekResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7730,6 +7963,7 @@ type IndexMedtronicResponse struct {
 	Data      []client.AdvisoryMedtronicAdvisory `json:"data"`
 }
 
+// GetIndexMedtronic -  Medtronic security bulletins are official notifications released by Medtronic to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMedtronic(queryParameters ...IndexQueryParameters) (responseJSON *IndexMedtronicResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7768,6 +8002,7 @@ type IndexMendixResponse struct {
 	Data      []client.AdvisoryMendix `json:"data"`
 }
 
+// GetIndexMendix -  Mendix security advisories are official notifications released by the Siemens ProductCERT Team to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMendix(queryParameters ...IndexQueryParameters) (responseJSON *IndexMendixResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7806,6 +8041,7 @@ type IndexMetasploitResponse struct {
 	Data      []client.AdvisoryMetasploitExploit `json:"data"`
 }
 
+// GetIndexMetasploit -  Metasploit Modules is a list of modules that can be utilized via the metasploit framework for pentesting.
 func (c *Client) GetIndexMetasploit(queryParameters ...IndexQueryParameters) (responseJSON *IndexMetasploitResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7844,6 +8080,7 @@ type IndexMicrosoftCvrfResponse struct {
 	Data      []client.AdvisoryMicrosoftCVRF `json:"data"`
 }
 
+// GetIndexMicrosoftCvrf -  Microsoft Security Updates are official notifications released by the Microsoft Security Response Center (MSRC) to address security vulnerabilities and updates for Microsoft. These security updates provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMicrosoftCvrf(queryParameters ...IndexQueryParameters) (responseJSON *IndexMicrosoftCvrfResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7882,6 +8119,7 @@ type IndexMicrosoftKbResponse struct {
 	Data      []client.AdvisoryMicrosoftKb `json:"data"`
 }
 
+// GetIndexMicrosoftKb -  This data is a reformatted view of microsoft-cvrf showing each CVE and its list of KBs.
 func (c *Client) GetIndexMicrosoftKb(queryParameters ...IndexQueryParameters) (responseJSON *IndexMicrosoftKbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7920,6 +8158,7 @@ type IndexMikrotikResponse struct {
 	Data      []client.AdvisoryMikrotik `json:"data"`
 }
 
+// GetIndexMikrotik -  MikroTik security bulletins are official notifications released by MikroTik to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMikrotik(queryParameters ...IndexQueryParameters) (responseJSON *IndexMikrotikResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7958,6 +8197,7 @@ type IndexMindrayResponse struct {
 	Data      []client.AdvisoryMindray `json:"data"`
 }
 
+// GetIndexMindray -  Mindray cybersecurity advisories are official notifications released by Mindray to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMindray(queryParameters ...IndexQueryParameters) (responseJSON *IndexMindrayResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -7996,6 +8236,7 @@ type IndexMispThreatActorsResponse struct {
 	Data      []client.AdvisoryMispValue `json:"data"`
 }
 
+// GetIndexMispThreatActors -  MISP Threat Actors is an open source list of known threat actors for the MISP (Malware Information Sharing Program) Open Source Threat Intelligence Sharing Platform.
 func (c *Client) GetIndexMispThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *IndexMispThreatActorsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8034,6 +8275,7 @@ type IndexMitelResponse struct {
 	Data      []client.AdvisoryMitel `json:"data"`
 }
 
+// GetIndexMitel -  Mitel security advisories are official notifications released by Mitel to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMitel(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitelResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8072,6 +8314,7 @@ type IndexMitreAttackCveResponse struct {
 	Data      []client.ApiMitreAttackToCVE `json:"data"`
 }
 
+// GetIndexMitreAttackCve -  Provides a map between certain MITRE ATT&CK technique IDs and applicable CVEs.
 func (c *Client) GetIndexMitreAttackCve(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitreAttackCveResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8110,6 +8353,7 @@ type IndexMitreCveResponse struct {
 	Data      []client.AdvisoryMitreCVE `json:"data"`
 }
 
+// GetIndexMitreCve -  MITRE CVE is a collection of publicly disclosed cybersecurity vulnerabilities by NIST that aims to identify, define and catalog publicly disclosed cybersecurity vulnerabilities.
 func (c *Client) GetIndexMitreCve(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitreCveResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8148,6 +8392,7 @@ type IndexMitsubishiElectricResponse struct {
 	Data      []client.AdvisoryMitsubishiElectricAdvisory `json:"data"`
 }
 
+// GetIndexMitsubishiElectric -  Mitsubishi Electric Vulnerabilities are official notifications released by the Mitsubishi Electric PSIRT (Product Security Incident Response Team) to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMitsubishiElectric(queryParameters ...IndexQueryParameters) (responseJSON *IndexMitsubishiElectricResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8186,6 +8431,7 @@ type IndexMongodbResponse struct {
 	Data      []client.AdvisoryMongoDB `json:"data"`
 }
 
+// GetIndexMongodb -  MongoDB security alerts are official notifications released by MongoDB to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMongodb(queryParameters ...IndexQueryParameters) (responseJSON *IndexMongodbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8224,6 +8470,7 @@ type IndexMoxaResponse struct {
 	Data      []client.AdvisoryMoxaAdvisory `json:"data"`
 }
 
+// GetIndexMoxa -  Moxa security advisories are official notifications released by the Moxa Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMoxa(queryParameters ...IndexQueryParameters) (responseJSON *IndexMoxaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8262,6 +8509,7 @@ type IndexMozillaResponse struct {
 	Data      []client.AdvisoryMozillaAdvisory `json:"data"`
 }
 
+// GetIndexMozilla -  Mozilla security advisories are official notifications released by the Mozilla Foundation to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexMozilla(queryParameters ...IndexQueryParameters) (responseJSON *IndexMozillaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8300,6 +8548,7 @@ type IndexNaverResponse struct {
 	Data      []client.AdvisoryNaver `json:"data"`
 }
 
+// GetIndexNaver -  Naver security advisories are official notifications released by the Naver Security Team to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNaver(queryParameters ...IndexQueryParameters) (responseJSON *IndexNaverResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8338,6 +8587,7 @@ type IndexNecResponse struct {
 	Data      []client.AdvisoryNEC `json:"data"`
 }
 
+// GetIndexNec -  NEC security information notices are official notifications released by NEC to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNec(queryParameters ...IndexQueryParameters) (responseJSON *IndexNecResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8376,6 +8626,7 @@ type IndexNetappResponse struct {
 	Data      []client.AdvisoryNetApp `json:"data"`
 }
 
+// GetIndexNetapp -  NetApp Security Advisories are official notifications released by the NetApp PSIRT (Product Security Incident Response Team) to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNetapp(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetappResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8414,6 +8665,7 @@ type IndexNetgateResponse struct {
 	Data      []client.AdvisoryNetgate `json:"data"`
 }
 
+// GetIndexNetgate -  Netgate security advisories are official notifications released by Netgate to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNetgate(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetgateResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8452,6 +8704,7 @@ type IndexNetgearResponse struct {
 	Data      []client.AdvisoryNetgear `json:"data"`
 }
 
+// GetIndexNetgear -  NETGEAR Security Advisories are official notifications released by NETGEAR to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNetgear(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetgearResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8490,6 +8743,7 @@ type IndexNetskopeResponse struct {
 	Data      []client.AdvisoryNetskope `json:"data"`
 }
 
+// GetIndexNetskope -  Netskope security advisories are official notifications released by Netskope to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNetskope(queryParameters ...IndexQueryParameters) (responseJSON *IndexNetskopeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8528,6 +8782,7 @@ type IndexNginxResponse struct {
 	Data      []client.AdvisoryNginxAdvisory `json:"data"`
 }
 
+// GetIndexNginx -  Nginx security advisories are official notifications released by F5 to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNginx(queryParameters ...IndexQueryParameters) (responseJSON *IndexNginxResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8566,6 +8821,7 @@ type IndexNhsResponse struct {
 	Data      []client.AdvisoryNHS `json:"data"`
 }
 
+// GetIndexNhs -  NHS cyber alerts are official notifications released by NHS Digital to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNhs(queryParameters ...IndexQueryParameters) (responseJSON *IndexNhsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8604,6 +8860,7 @@ type IndexNiResponse struct {
 	Data      []client.AdvisoryNI `json:"data"`
 }
 
+// GetIndexNi -  National Instruments (NI) security updates are official notifications released by NI to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNi(queryParameters ...IndexQueryParameters) (responseJSON *IndexNiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8642,6 +8899,7 @@ type IndexNistNvdResponse struct {
 	Data      []client.ApiCveItems `json:"data"`
 }
 
+// GetIndexNistNvd -  NIST NVD (National Institute of Standards and Technology National Vulnerability Database) version 1.0 is an early release of a comprehensive repository of vulnerability information and security-related data. It serves as a valuable resource for cybersecurity professionals, researchers, and organizations by providing detailed information on known software vulnerabilities, including their severity, impact, and associated references. NVD version 1.0 offers a structured format for accessing and analyzing vulnerability data, aiding in the identification and mitigation of security risks across various software and hardware products.
 func (c *Client) GetIndexNistNvd(queryParameters ...IndexQueryParameters) (responseJSON *IndexNistNvdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8680,6 +8938,7 @@ type IndexNistNvd2Response struct {
 	Data      []client.ApiNVD20CVE `json:"data"`
 }
 
+// GetIndexNistNvd2 -  The National Institute of Standards and Technology (NIST) National Vulnerability Database (NVD) v2.0 is a comprehensive repository of security vulnerability data, including Common Vulnerabilities and Exposures (CVEs). It provides a variety of information on CVEs, such as their severity, impact, and remediation strategies. NVD v2.0 also provides a Common Vulnerability Scoring System (CVSS) v2.0 calculator, which allows users to calculate the severity of a CVE based on its specific characteristics.
 func (c *Client) GetIndexNistNvd2(queryParameters ...IndexQueryParameters) (responseJSON *IndexNistNvd2Response, err error) {
 
 	httpClient := &http.Client{}
@@ -8718,6 +8977,7 @@ type IndexNistNvd2CpematchResponse struct {
 	Data      []client.ApiNVD20CPEMatch `json:"data"`
 }
 
+// GetIndexNistNvd2Cpematch -  NIST NVD 2.0 CPE Match Advisories are a type of security advisory that provides information about Common Platform Enumeration (CPE) matches associated with vulnerabilities in the National Vulnerability Database (NVD) 2.0. CPEs are standardized identifiers for software applications, operating systems, and other IT systems, and are used to help organizations identify and track vulnerabilities and other security issues. NIST NVD 2.0 CPE Match Advisories provide information about the CPEs associated with specific vulnerabilities listed in the NVD 2.0. This information can help organizations better understand the scope and potential impact of a given vulnerability, and to take appropriate action to mitigate the associated risks. NIST NVD 2.0 CPE Match Advisories may also include information about known exploits or other factors that may increase the severity of a given vulnerability. By leveraging the information provided by NIST NVD 2.0 CPE Match Advisories, organizations can gain a deeper understanding of potential security risks and vulnerabilities, and develop more effective strategies for mitigating those risks. The advisories can also help organizations to prioritize their response to potential security incidents, and to ensure that critical systems and applications are appropriately secured and protected against advanced and persistent threats. Overall, NIST NVD 2.0 CPE Match Advisories are an important tool for organizations looking to maintain the security and integrity of their networks and systems.
 func (c *Client) GetIndexNistNvd2Cpematch(queryParameters ...IndexQueryParameters) (responseJSON *IndexNistNvd2CpematchResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8756,6 +9016,7 @@ type IndexNodeSecurityResponse struct {
 	Data      []client.AdvisoryNodeSecurity `json:"data"`
 }
 
+// GetIndexNodeSecurity -  Node.js security working group advisories are official notifications released by the Node.js Security Working Group to address security vulnerabilities and updates in the node and npm software ecosystems. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNodeSecurity(queryParameters ...IndexQueryParameters) (responseJSON *IndexNodeSecurityResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8794,6 +9055,7 @@ type IndexNodejsResponse struct {
 	Data      []client.AdvisoryNodeJS `json:"data"`
 }
 
+// GetIndexNodejs -  NodeJS security release notices are official notifications released by NodeJS to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexNodejs(queryParameters ...IndexQueryParameters) (responseJSON *IndexNodejsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8832,6 +9094,7 @@ type IndexNokiaResponse struct {
 	Data      []client.AdvisoryNokia `json:"data"`
 }
 
+// GetIndexNokia -  Nokia product security advisories are official notifications released by the Nokia Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNokia(queryParameters ...IndexQueryParameters) (responseJSON *IndexNokiaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8870,6 +9133,7 @@ type IndexNozomiResponse struct {
 	Data      []client.AdvisoryNozomi `json:"data"`
 }
 
+// GetIndexNozomi -  Nozomi Networks security advisories are official notifications released by the Nozomi Networks Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNozomi(queryParameters ...IndexQueryParameters) (responseJSON *IndexNozomiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8908,6 +9172,7 @@ type IndexNpmResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexNpm -  NPM (Javascript, Typescript) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexNpm(queryParameters ...IndexQueryParameters) (responseJSON *IndexNpmResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8946,6 +9211,7 @@ type IndexNugetResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexNuget -  NuGet (.NET) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexNuget(queryParameters ...IndexQueryParameters) (responseJSON *IndexNugetResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -8984,6 +9250,7 @@ type IndexNvidiaResponse struct {
 	Data      []client.AdvisorySecurityBulletin `json:"data"`
 }
 
+// GetIndexNvidia -  NVIDIA security bulletins are official notifications released by NVIDIA to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexNvidia(queryParameters ...IndexQueryParameters) (responseJSON *IndexNvidiaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9022,6 +9289,7 @@ type IndexNzAdvisoriesResponse struct {
 	Data      []client.AdvisoryNZAdvisory `json:"data"`
 }
 
+// GetIndexNzAdvisories -  CERT NZ security advisories are official notifications released by the New Zealand CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexNzAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexNzAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9060,6 +9328,7 @@ type IndexOctopusDeployResponse struct {
 	Data      []client.AdvisoryOctopusDeploy `json:"data"`
 }
 
+// GetIndexOctopusDeploy -  Octopus Deploy security advisories are official notifications released by Octopus Deploy to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOctopusDeploy(queryParameters ...IndexQueryParameters) (responseJSON *IndexOctopusDeployResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9098,6 +9367,7 @@ type IndexOktaResponse struct {
 	Data      []client.AdvisoryOkta `json:"data"`
 }
 
+// GetIndexOkta -  Okta security advisories are official notifications released by Okta to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOkta(queryParameters ...IndexQueryParameters) (responseJSON *IndexOktaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9136,6 +9406,7 @@ type IndexOmronResponse struct {
 	Data      []client.AdvisoryOmron `json:"data"`
 }
 
+// GetIndexOmron -  Omron vulnerability advisories are official notifications released by Omron to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOmron(queryParameters ...IndexQueryParameters) (responseJSON *IndexOmronResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9174,6 +9445,7 @@ type IndexOneEResponse struct {
 	Data      []client.AdvisoryOneE `json:"data"`
 }
 
+// GetIndexOneE -  1E published product vulnerabilities are official notifications released by 1E to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOneE(queryParameters ...IndexQueryParameters) (responseJSON *IndexOneEResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9212,6 +9484,7 @@ type IndexOpamResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexOpam -  opam (OCaml) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexOpam(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpamResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9250,6 +9523,7 @@ type IndexOpenCvdbResponse struct {
 	Data      []client.AdvisoryOpenCVDB `json:"data"`
 }
 
+// GetIndexOpenCvdb -  The Open Cloud Vulnerability & Security Issue Database are official notifications released to address security vulnerabilities and updates in all publicly known cloud vulnerabilities and CSP security issues. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOpenCvdb(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenCvdbResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9288,6 +9562,7 @@ type IndexOpenbsdResponse struct {
 	Data      []client.AdvisoryOpenBSD `json:"data"`
 }
 
+// GetIndexOpenbsd -  OpenBSD security advisories are official notifications released by the OpenBSD security team to address security vulnerabilities and updates in the open source OpenBSD operating system. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenbsdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9326,6 +9601,7 @@ type IndexOpensshResponse struct {
 	Data      []client.AdvisoryOpenSSH `json:"data"`
 }
 
+// GetIndexOpenssh -  OpenSSH security advisories are official notifications released by the OpenSSH security team to address security vulnerabilities and updates in the open source OpenSSH project. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOpenssh(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpensshResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9364,6 +9640,7 @@ type IndexOpensslSecadvResponse struct {
 	Data      []client.AdvisoryOpenSSLSecAdv `json:"data"`
 }
 
+// GetIndexOpensslSecadv -  OpenSSL Security Advisories are official communications issued by the OpenSSL project, an open-source software library that provides cryptographic functions to protect communications over computer networks. These advisories are designed to provide information and guidance on potential security vulnerabilities and threats affecting OpenSSL software. OpenSSL Security Advisories typically include technical details about the vulnerability or issue, as well as recommended remediation and risk mitigation steps. They may also include severity ratings and CVSS scores to help organizations prioritize their response to potential security incidents. The OpenSSL security team works closely with the community to identify and address security concerns, and is committed to providing timely and effective security advisories to help protect user data and sensitive information. OpenSSL Security Advisories cover a wide range of topics, including vulnerabilities related to key management, cryptographic weaknesses, and protocol issues. By providing regular updates and guidance on potential security threats, OpenSSL helps to ensure the ongoing security and reliability of its software for its users. Additionally, OpenSSL encourages open and transparent collaboration with the community to help identify and address potential security concerns, making it an important component of secure communications infrastructure.
 func (c *Client) GetIndexOpensslSecadv(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpensslSecadvResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9402,6 +9679,7 @@ type IndexOpenstackResponse struct {
 	Data      []client.AdvisoryOpenStack `json:"data"`
 }
 
+// GetIndexOpenstack -  OpenStack security advisories are official notifications released by the open source OpenStack project to address security vulnerabilities and updates in the open source OpenStack project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOpenstack(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenstackResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9440,6 +9718,7 @@ type IndexOpenwrtResponse struct {
 	Data      []client.AdvisoryWRT `json:"data"`
 }
 
+// GetIndexOpenwrt -  OpenWRT security advisories are official notifications released by the OpenWRT team to address security vulnerabilities and updates in the open source OpenWRT operating system. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOpenwrt(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpenwrtResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9478,6 +9757,7 @@ type IndexOracleResponse struct {
 	Data      []client.AdvisoryMetaData `json:"data"`
 }
 
+// GetIndexOracle -  Oracle security advisories are official notifications released by Oracle to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOracle(queryParameters ...IndexQueryParameters) (responseJSON *IndexOracleResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9516,6 +9796,7 @@ type IndexOracleCpuResponse struct {
 	Data      []client.AdvisoryOracleCPU `json:"data"`
 }
 
+// GetIndexOracleCpu -  Oracle Critical Patch Updates provide security patches for supported Oracle on-premises products.
 func (c *Client) GetIndexOracleCpu(queryParameters ...IndexQueryParameters) (responseJSON *IndexOracleCpuResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9554,6 +9835,7 @@ type IndexOracleCpuCsafResponse struct {
 	Data      []client.AdvisoryOracleCPUCSAF `json:"data"`
 }
 
+// GetIndexOracleCpuCsaf -  Oracle Critical Patch Updates provide security patches for supported Oracle on-premises products. These CPUs are released as CSAF on a quarterly basis.
 func (c *Client) GetIndexOracleCpuCsaf(queryParameters ...IndexQueryParameters) (responseJSON *IndexOracleCpuCsafResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9592,6 +9874,7 @@ type IndexOsvResponse struct {
 	Data      []client.AdvisoryOSV `json:"data"`
 }
 
+// GetIndexOsv -  The Open Source Vulnerabilities Database is n open, precise, and distributed approach to producing and consuming vulnerability information for open source.
 func (c *Client) GetIndexOsv(queryParameters ...IndexQueryParameters) (responseJSON *IndexOsvResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9630,6 +9913,7 @@ type IndexOtrsResponse struct {
 	Data      []client.AdvisoryOTRS `json:"data"`
 }
 
+// GetIndexOtrs -  OTRS security advisories are official notifications released by OTRS to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOtrs(queryParameters ...IndexQueryParameters) (responseJSON *IndexOtrsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9668,6 +9952,7 @@ type IndexOwncloudResponse struct {
 	Data      []client.AdvisoryOwnCloud `json:"data"`
 }
 
+// GetIndexOwncloud -  OwnCloud security advisories are official notifications released by OwnCloud to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexOwncloud(queryParameters ...IndexQueryParameters) (responseJSON *IndexOwncloudResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9706,6 +9991,7 @@ type IndexPalantirResponse struct {
 	Data      []client.AdvisoryPalantir `json:"data"`
 }
 
+// GetIndexPalantir -  Palantir security bulletins are official notifications released by Palantir to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPalantir(queryParameters ...IndexQueryParameters) (responseJSON *IndexPalantirResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9744,6 +10030,7 @@ type IndexPaloAltoResponse struct {
 	Data      []client.AdvisoryPaloAltoAdvisory `json:"data"`
 }
 
+// GetIndexPaloAlto -  Palo Alto Networks Security Advisories are official notifications released by the Palo Alto Networks Product Security Incident Response Team (PSIRT)  to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPaloAlto(queryParameters ...IndexQueryParameters) (responseJSON *IndexPaloAltoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9782,6 +10069,7 @@ type IndexPanasonicResponse struct {
 	Data      []client.AdvisoryPanasonic `json:"data"`
 }
 
+// GetIndexPanasonic -  The Panasonic vulnerability advisory list are official notifications released by the Panasonic Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPanasonic(queryParameters ...IndexQueryParameters) (responseJSON *IndexPanasonicResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9820,6 +10108,7 @@ type IndexPapercutResponse struct {
 	Data      []client.AdvisoryPaperCut `json:"data"`
 }
 
+// GetIndexPapercut -  PaperCut security vulnerabilities are official notifications released by PaperCut to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPapercut(queryParameters ...IndexQueryParameters) (responseJSON *IndexPapercutResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9858,6 +10147,7 @@ type IndexPegaResponse struct {
 	Data      []client.AdvisoryPega `json:"data"`
 }
 
+// GetIndexPega -  Pega security bulletins are official notifications released by Pega to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPega(queryParameters ...IndexQueryParameters) (responseJSON *IndexPegaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9896,6 +10186,7 @@ type IndexPhilipsResponse struct {
 	Data      []client.AdvisoryPhilipsAdvisory `json:"data"`
 }
 
+// GetIndexPhilips -  Philips security advisories are official notifications released by Philips to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPhilips(queryParameters ...IndexQueryParameters) (responseJSON *IndexPhilipsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9934,6 +10225,7 @@ type IndexPhoenixContactResponse struct {
 	Data      []client.AdvisoryPhoenixContactAdvisory `json:"data"`
 }
 
+// GetIndexPhoenixContact -  Phoenix Contact security advisories are official notifications released by the Phoenix Contact Product Security Incident Response Team to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPhoenixContact(queryParameters ...IndexQueryParameters) (responseJSON *IndexPhoenixContactResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -9972,6 +10264,7 @@ type IndexPostgressqlResponse struct {
 	Data      []client.AdvisoryPostgresSQL `json:"data"`
 }
 
+// GetIndexPostgressql -  PostgresSQL security vulnerabilities are official notifications released by the open source PostgresSQL project to address security vulnerabilities and updates in the open source PostgresSQL project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPostgressql(queryParameters ...IndexQueryParameters) (responseJSON *IndexPostgressqlResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10010,6 +10303,7 @@ type IndexProgressResponse struct {
 	Data      []client.AdvisoryProgress `json:"data"`
 }
 
+// GetIndexProgress -  Progress product alert bulletins are official notifications released by Progress to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexProgress(queryParameters ...IndexQueryParameters) (responseJSON *IndexProgressResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10048,6 +10342,7 @@ type IndexProofpointResponse struct {
 	Data      []client.AdvisoryProofpoint `json:"data"`
 }
 
+// GetIndexProofpoint -  Proofpoint security advisories are official notifications released by Proofpoint to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexProofpoint(queryParameters ...IndexQueryParameters) (responseJSON *IndexProofpointResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10086,6 +10381,7 @@ type IndexPubResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexPub -  Pub is a package manager for Dart and Flutter apps
 func (c *Client) GetIndexPub(queryParameters ...IndexQueryParameters) (responseJSON *IndexPubResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10124,6 +10420,7 @@ type IndexPureStorageResponse struct {
 	Data      []client.AdvisoryPureStorage `json:"data"`
 }
 
+// GetIndexPureStorage -  Pure Storage security bulletins are official notifications released by Pure Storage to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexPureStorage(queryParameters ...IndexQueryParameters) (responseJSON *IndexPureStorageResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10162,6 +10459,7 @@ type IndexPypaAdvisoriesResponse struct {
 	Data      []client.AdvisoryPyPAAdvisory `json:"data"`
 }
 
+// GetIndexPypaAdvisories -  The Python Package Advisories index holds community maintained collection of security advisories for PyPI packages.
 func (c *Client) GetIndexPypaAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexPypaAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10200,6 +10498,7 @@ type IndexPypiResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexPypi -  PyPI (Python) packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexPypi(queryParameters ...IndexQueryParameters) (responseJSON *IndexPypiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10238,6 +10537,7 @@ type IndexQnapResponse struct {
 	Data      []client.AdvisoryQNAPAdvisory `json:"data"`
 }
 
+// GetIndexQnap -  QNAP security advisories are official notifications released by QNAP to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexQnap(queryParameters ...IndexQueryParameters) (responseJSON *IndexQnapResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10276,6 +10576,7 @@ type IndexQualcommResponse struct {
 	Data      []client.AdvisoryQualcomm `json:"data"`
 }
 
+// GetIndexQualcomm -  Qualcomm security bulletins are official notifications released by Qualcomm Technologies to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexQualcomm(queryParameters ...IndexQueryParameters) (responseJSON *IndexQualcommResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10314,6 +10615,7 @@ type IndexQualysResponse struct {
 	Data      []client.AdvisoryQualys `json:"data"`
 }
 
+// GetIndexQualys -  Qualys security advisories are official notifications released by Qualys to address software security flaws found by Qualys and can include proof of concept exploit code.
 func (c *Client) GetIndexQualys(queryParameters ...IndexQueryParameters) (responseJSON *IndexQualysResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10352,6 +10654,7 @@ type IndexRansomwareResponse struct {
 	Data      []client.AdvisoryRansomwareExploit `json:"data"`
 }
 
+// GetIndexRansomware -  The VulnCheck Ransomware index contains data related to various ransomware. The index contains listings of ransomware groups and citations for the CVE they have been known to use.
 func (c *Client) GetIndexRansomware(queryParameters ...IndexQueryParameters) (responseJSON *IndexRansomwareResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10390,6 +10693,7 @@ type IndexRedhatResponse struct {
 	Data      []client.AdvisoryRedhatCVE `json:"data"`
 }
 
+// GetIndexRedhat -  Red Hat Security Advisories, commonly referred to as RHSA, are official notifications and updates provided by Red Hat, Inc., a leading provider of open-source solutions and enterprise Linux distributions. These advisories are a critical part of Red Hat's commitment to ensuring the security of their products and services.
 func (c *Client) GetIndexRedhat(queryParameters ...IndexQueryParameters) (responseJSON *IndexRedhatResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10428,6 +10732,7 @@ type IndexRenesasResponse struct {
 	Data      []client.AdvisoryRenesas `json:"data"`
 }
 
+// GetIndexRenesas -  Renesas security advisories are official notifications released by the Renesas Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexRenesas(queryParameters ...IndexQueryParameters) (responseJSON *IndexRenesasResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10466,6 +10771,7 @@ type IndexReviveResponse struct {
 	Data      []client.AdvisoryRevive `json:"data"`
 }
 
+// GetIndexRevive -  Revive security advisories sare official notifications released by Revive to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexRevive(queryParameters ...IndexQueryParameters) (responseJSON *IndexReviveResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10504,6 +10810,7 @@ type IndexRockwellResponse struct {
 	Data      []client.AdvisoryRockwell `json:"data"`
 }
 
+// GetIndexRockwell -  Rockwell Automation security advisories are official notifications released by Rockwell Automation to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexRockwell(queryParameters ...IndexQueryParameters) (responseJSON *IndexRockwellResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10542,6 +10849,7 @@ type IndexRockyResponse struct {
 	Data      []client.ApiUpdate `json:"data"`
 }
 
+// GetIndexRocky -  The Rocky Linux community and development team work diligently to identify and address vulnerabilities by providing regular security updates and advisories, helping to maintain a more secure environment for Rocky Linux users.
 func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (responseJSON *IndexRockyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10580,6 +10888,7 @@ type IndexRuckusResponse struct {
 	Data      []client.AdvisoryRuckus `json:"data"`
 }
 
+// GetIndexRuckus -  Ruckus security bulletins are official notifications released by Ruckus to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexRuckus(queryParameters ...IndexQueryParameters) (responseJSON *IndexRuckusResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10618,6 +10927,7 @@ type IndexRustsecAdvisoriesResponse struct {
 	Data      []client.AdvisoryRustsecAdvisory `json:"data"`
 }
 
+// GetIndexRustsecAdvisories -  RustSec Advisories are security advisories filed against crates published via crates.io and are maintained by the Rust Secure Code Working Group.
 func (c *Client) GetIndexRustsecAdvisories(queryParameters ...IndexQueryParameters) (responseJSON *IndexRustsecAdvisoriesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10656,6 +10966,7 @@ type IndexSacertResponse struct {
 	Data      []client.AdvisorySAAdvisory `json:"data"`
 }
 
+// GetIndexSacert -  Saudi CERT security alerts are official notifications released by the Saudi CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexSacert(queryParameters ...IndexQueryParameters) (responseJSON *IndexSacertResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10694,6 +11005,7 @@ type IndexSaintResponse struct {
 	Data      []client.AdvisorySaintExploit `json:"data"`
 }
 
+// GetIndexSaint -  SAINT Exploits exploits list are advisories and contain vulnerability details that are curated by the SAINT Corporation.
 func (c *Client) GetIndexSaint(queryParameters ...IndexQueryParameters) (responseJSON *IndexSaintResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10732,6 +11044,7 @@ type IndexSalesforceResponse struct {
 	Data      []client.AdvisorySalesForce `json:"data"`
 }
 
+// GetIndexSalesforce -  SalesForce security advisories are official notifications released by SalesForce to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSalesforce(queryParameters ...IndexQueryParameters) (responseJSON *IndexSalesforceResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10770,6 +11083,7 @@ type IndexSambaResponse struct {
 	Data      []client.AdvisorySamba `json:"data"`
 }
 
+// GetIndexSamba -  Samba security releases are official notifications released by the Samba open source project to address security vulnerabilities and updates in the open source Samba project. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSamba(queryParameters ...IndexQueryParameters) (responseJSON *IndexSambaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10808,6 +11122,7 @@ type IndexSapResponse struct {
 	Data      []client.AdvisorySAP `json:"data"`
 }
 
+// GetIndexSap -  SAP Security Patch Days are official notifications released by the SAP Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSap(queryParameters ...IndexQueryParameters) (responseJSON *IndexSapResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10846,6 +11161,7 @@ type IndexSchneiderElectricResponse struct {
 	Data      []client.AdvisorySchneiderElectricAdvisory `json:"data"`
 }
 
+// GetIndexSchneiderElectric -  Schneider Electric security notifications are official notifications released by Schneider Electric to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSchneiderElectric(queryParameters ...IndexQueryParameters) (responseJSON *IndexSchneiderElectricResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10884,6 +11200,7 @@ type IndexSecConsultResponse struct {
 	Data      []client.AdvisorySECConsult `json:"data"`
 }
 
+// GetIndexSecConsult -  SEC Consult security advisories are official notifications released by SEC Consult to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSecConsult(queryParameters ...IndexQueryParameters) (responseJSON *IndexSecConsultResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10922,6 +11239,7 @@ type IndexSelResponse struct {
 	Data      []client.AdvisorySel `json:"data"`
 }
 
+// GetIndexSel -  Schweitzer Engineering Laboratories (SEL) security notifications are official notifications released by SEL to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSel(queryParameters ...IndexQueryParameters) (responseJSON *IndexSelResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10960,6 +11278,7 @@ type IndexSentineloneResponse struct {
 	Data      []client.AdvisorySentinelOne `json:"data"`
 }
 
+// GetIndexSentinelone -  SentinelOne vulnerabilities are official notifications released by Sentinel Labs to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSentinelone(queryParameters ...IndexQueryParameters) (responseJSON *IndexSentineloneResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -10998,6 +11317,7 @@ type IndexServicenowResponse struct {
 	Data      []client.AdvisoryServiceNow `json:"data"`
 }
 
+// GetIndexServicenow -  ServiceNow CVE security advisories are official notifications released by ServiceNow to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexServicenow(queryParameters ...IndexQueryParameters) (responseJSON *IndexServicenowResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11036,6 +11356,7 @@ type IndexShadowserverExploitedResponse struct {
 	Data      []client.AdvisoryShadowServerExploitedVulnerability `json:"data"`
 }
 
+// GetIndexShadowserverExploited -  Shadowserver foundation vulnerabilities contain attack statistics. Vulnerabilities are ranked according to the frequency with which exploitation attempts are made against honeypots.
 func (c *Client) GetIndexShadowserverExploited(queryParameters ...IndexQueryParameters) (responseJSON *IndexShadowserverExploitedResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11074,6 +11395,7 @@ type IndexSickResponse struct {
 	Data      []client.AdvisorySick `json:"data"`
 }
 
+// GetIndexSick -  SICK security advisories are official notifications released by the SICK Product Security Incident Response Team (SICK PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSick(queryParameters ...IndexQueryParameters) (responseJSON *IndexSickResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11112,6 +11434,7 @@ type IndexSiemensResponse struct {
 	Data      []client.AdvisorySiemensAdvisory `json:"data"`
 }
 
+// GetIndexSiemens -  Siemens security advisories are official notifications released by the Siemens ProductCERT to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSiemens(queryParameters ...IndexQueryParameters) (responseJSON *IndexSiemensResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11150,6 +11473,7 @@ type IndexSierraWirelessResponse struct {
 	Data      []client.AdvisorySierraWireless `json:"data"`
 }
 
+// GetIndexSierraWireless -  Sierra Wireless security bulletins notices are official notifications released by Sierra Wireless to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSierraWireless(queryParameters ...IndexQueryParameters) (responseJSON *IndexSierraWirelessResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11188,6 +11512,7 @@ type IndexSingcertResponse struct {
 	Data      []client.AdvisorySingCert `json:"data"`
 }
 
+// GetIndexSingcert -  CSA (Cyber Security Agency of Singapore) alerts and advisories are official notifications released by the CSA to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexSingcert(queryParameters ...IndexQueryParameters) (responseJSON *IndexSingcertResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11226,6 +11551,7 @@ type IndexSlackwareResponse struct {
 	Data      []client.AdvisorySlackware `json:"data"`
 }
 
+// GetIndexSlackware -  Slackware security advisories are official notifications released by the open source Slackware project to address security vulnerabilities and updates in the open source Slackware project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSlackware(queryParameters ...IndexQueryParameters) (responseJSON *IndexSlackwareResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11264,6 +11590,7 @@ type IndexSolarwindsResponse struct {
 	Data      []client.AdvisorySolarWindsAdvisory `json:"data"`
 }
 
+// GetIndexSolarwinds -  SolarWinds security vulnerabilities are official notifications released by SolarWinds to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSolarwinds(queryParameters ...IndexQueryParameters) (responseJSON *IndexSolarwindsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11302,6 +11629,7 @@ type IndexSolrResponse struct {
 	Data      []client.AdvisorySolr `json:"data"`
 }
 
+// GetIndexSolr -  Solr cve reports are official notifications released by the open source Solr project to address vulnerabilities and updates in the open source Solr project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSolr(queryParameters ...IndexQueryParameters) (responseJSON *IndexSolrResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11340,6 +11668,7 @@ type IndexSonicwallResponse struct {
 	Data      []client.AdvisorySonicWallAdvisory `json:"data"`
 }
 
+// GetIndexSonicwall -  SonicWall security advisories are official notifications released by the SonicWall Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSonicwall(queryParameters ...IndexQueryParameters) (responseJSON *IndexSonicwallResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11378,6 +11707,7 @@ type IndexSpacelabsHealthcareResponse struct {
 	Data      []client.AdvisorySpacelabsHealthcareAdvisory `json:"data"`
 }
 
+// GetIndexSpacelabsHealthcare -  Spacelabs security advisories are official notifications released by Spacelabs to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSpacelabsHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *IndexSpacelabsHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11416,6 +11746,7 @@ type IndexSpringResponse struct {
 	Data      []client.AdvisorySpring `json:"data"`
 }
 
+// GetIndexSpring -  Spring security advisories are official notifications released by the VMWare Security Response team to address security vulnerabilities and updates in the open source Spring framework. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSpring(queryParameters ...IndexQueryParameters) (responseJSON *IndexSpringResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11454,6 +11785,7 @@ type IndexSsdResponse struct {
 	Data      []client.AdvisorySSDAdvisory `json:"data"`
 }
 
+// GetIndexSsd -  SSD Secure Disclosure Advisories are official advisories released by SSD Secure Disclosure. Many advisories contain not only vulnerability details but also proof of concept code.
 func (c *Client) GetIndexSsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexSsdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11492,6 +11824,7 @@ type IndexStormshieldResponse struct {
 	Data      []client.AdvisoryStormshield `json:"data"`
 }
 
+// GetIndexStormshield -  Stormshield advisories are official notifications released by Stormshield to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexStormshield(queryParameters ...IndexQueryParameters) (responseJSON *IndexStormshieldResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11530,6 +11863,7 @@ type IndexStrykerResponse struct {
 	Data      []client.AdvisoryStrykerAdvisory `json:"data"`
 }
 
+// GetIndexStryker -  Stryker security advisories are official notifications released by Stryker to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexStryker(queryParameters ...IndexQueryParameters) (responseJSON *IndexStrykerResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11568,6 +11902,7 @@ type IndexSudoResponse struct {
 	Data      []client.AdvisorySudo `json:"data"`
 }
 
+// GetIndexSudo -  Sudo security advisories are official notifications released by the open source sudo project to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSudo(queryParameters ...IndexQueryParameters) (responseJSON *IndexSudoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11606,6 +11941,7 @@ type IndexSuseResponse struct {
 	Data      []client.AdvisoryCvrf `json:"data"`
 }
 
+// GetIndexSuse -  SUSE Security Advisories are official notifications from SUSE, a prominent open-source software company, that inform users about security vulnerabilities and provide guidance on mitigating risks in their Linux-based products and solutions. These advisories play a crucial role in helping SUSE users maintain the security and integrity of their systems.
 func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (responseJSON *IndexSuseResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11644,6 +11980,7 @@ type IndexSwiftResponse struct {
 	Data      []client.ApiOSSPackage `json:"data"`
 }
 
+// GetIndexSwift -  Swift packages with package versions, associated licenses, and relevant CVEs
 func (c *Client) GetIndexSwift(queryParameters ...IndexQueryParameters) (responseJSON *IndexSwiftResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11682,6 +12019,7 @@ type IndexSwisslogHealthcareResponse struct {
 	Data      []client.AdvisorySwisslogHealthcareAdvisory `json:"data"`
 }
 
+// GetIndexSwisslogHealthcare -  Swisslog Healthcare CVE Disclosures are official notifications released by Swisslog Healthcare to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSwisslogHealthcare(queryParameters ...IndexQueryParameters) (responseJSON *IndexSwisslogHealthcareResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11720,6 +12058,7 @@ type IndexSymfonyResponse struct {
 	Data      []client.AdvisorySymfony `json:"data"`
 }
 
+// GetIndexSymfony -  Symfony security advisories are official notifications released by the open source Symfony project to address security vulnerabilities and updates in the open source Symfony project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSymfony(queryParameters ...IndexQueryParameters) (responseJSON *IndexSymfonyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11758,6 +12097,7 @@ type IndexSyncrosoftResponse struct {
 	Data      []client.AdvisorySyncroSoft `json:"data"`
 }
 
+// GetIndexSyncrosoft -  SyncroSoft security advisories are official notifications released by SyncroSoft to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSyncrosoft(queryParameters ...IndexQueryParameters) (responseJSON *IndexSyncrosoftResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11796,6 +12136,7 @@ type IndexSynologyResponse struct {
 	Data      []client.AdvisorySynology `json:"data"`
 }
 
+// GetIndexSynology -  Synology product security advisories are official notifications released by Synology to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexSynology(queryParameters ...IndexQueryParameters) (responseJSON *IndexSynologyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11834,6 +12175,7 @@ type IndexTeamviewerResponse struct {
 	Data      []client.AdvisoryTeamViewer `json:"data"`
 }
 
+// GetIndexTeamviewer -  TeamViewer security bulletins are official notifications released by TeamViewer to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTeamviewer(queryParameters ...IndexQueryParameters) (responseJSON *IndexTeamviewerResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11872,6 +12214,7 @@ type IndexTencentResponse struct {
 	Data      []client.AdvisoryTencent `json:"data"`
 }
 
+// GetIndexTencent -  Tencent vulnerability risk notices are official notifications released by Tencent to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTencent(queryParameters ...IndexQueryParameters) (responseJSON *IndexTencentResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11910,6 +12253,7 @@ type IndexThalesResponse struct {
 	Data      []client.AdvisoryThales `json:"data"`
 }
 
+// GetIndexThales -  Thales security updates are official notifications released by Thales to address security vulnerabilities and updates in their software products. These updates provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexThales(queryParameters ...IndexQueryParameters) (responseJSON *IndexThalesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11948,6 +12292,7 @@ type IndexThemissinglinkResponse struct {
 	Data      []client.AdvisoryTheMissingLink `json:"data"`
 }
 
+// GetIndexThemissinglink -  the missing link security advisories are official notifications released by the missing link to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexThemissinglink(queryParameters ...IndexQueryParameters) (responseJSON *IndexThemissinglinkResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -11986,6 +12331,7 @@ type IndexThreatActorsResponse struct {
 	Data      []client.AdvisoryThreatActorWithExternalObjects `json:"data"`
 }
 
+// GetIndexThreatActors -  The VulnCheck Threat Actors index contains data related to various threat actors.
 func (c *Client) GetIndexThreatActors(queryParameters ...IndexQueryParameters) (responseJSON *IndexThreatActorsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12024,6 +12370,7 @@ type IndexTiResponse struct {
 	Data      []client.AdvisoryTI `json:"data"`
 }
 
+// GetIndexTi -  Texas Instrument product security bulletins are official notifications released by the Texas Instruments Product Security Incident Response Team (PSIRT) to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTi(queryParameters ...IndexQueryParameters) (responseJSON *IndexTiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12062,6 +12409,7 @@ type IndexTibcoResponse struct {
 	Data      []client.AdvisoryTibco `json:"data"`
 }
 
+// GetIndexTibco -  TIBCO security advisories are official notifications released by TIBCO to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTibco(queryParameters ...IndexQueryParameters) (responseJSON *IndexTibcoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12100,6 +12448,7 @@ type IndexTpLinkResponse struct {
 	Data      []client.AdvisoryTPLink `json:"data"`
 }
 
+// GetIndexTpLink -  TP-Link security advisories are official notifications released by TP-Link to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTpLink(queryParameters ...IndexQueryParameters) (responseJSON *IndexTpLinkResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12138,6 +12487,7 @@ type IndexTraneTechnologyResponse struct {
 	Data      []client.AdvisoryTraneTechnology `json:"data"`
 }
 
+// GetIndexTraneTechnology -  Trane Technology product security advisories are official notifications released by Trane Technology to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTraneTechnology(queryParameters ...IndexQueryParameters) (responseJSON *IndexTraneTechnologyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12176,6 +12526,7 @@ type IndexTrendmicroResponse struct {
 	Data      []client.AdvisoryTrendMicro `json:"data"`
 }
 
+// GetIndexTrendmicro -  Trend Micro security bulletins are official notifications released by Trend Micro to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTrendmicro(queryParameters ...IndexQueryParameters) (responseJSON *IndexTrendmicroResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12214,6 +12565,7 @@ type IndexTrustwaveResponse struct {
 	Data      []client.AdvisoryTrustwave `json:"data"`
 }
 
+// GetIndexTrustwave -  Trustwave security advisories are official notifications released by SpiderLabs to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexTrustwave(queryParameters ...IndexQueryParameters) (responseJSON *IndexTrustwaveResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12252,6 +12604,7 @@ type IndexTwcertResponse struct {
 	Data      []client.AdvisoryTWCertAdvisory `json:"data"`
 }
 
+// GetIndexTwcert -  Taiwan CERT vulnerability notes are official notifications released by the Taiwan CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
 func (c *Client) GetIndexTwcert(queryParameters ...IndexQueryParameters) (responseJSON *IndexTwcertResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12290,6 +12643,7 @@ type IndexUbiquitiResponse struct {
 	Data      []client.AdvisoryUbiquiti `json:"data"`
 }
 
+// GetIndexUbiquiti -  Ubiquiti security advisorie bulletins are official notifications released by Dell to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexUbiquiti(queryParameters ...IndexQueryParameters) (responseJSON *IndexUbiquitiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12328,6 +12682,7 @@ type IndexUbuntuResponse struct {
 	Data      []client.AdvisoryUbuntuCVE `json:"data"`
 }
 
+// GetIndexUbuntu -  Ubuntu security advisories are official notifications released by Ubuntu to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexUbuntu(queryParameters ...IndexQueryParameters) (responseJSON *IndexUbuntuResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12366,6 +12721,7 @@ type IndexUnifyResponse struct {
 	Data      []client.AdvisoryUnify `json:"data"`
 }
 
+// GetIndexUnify -  Unify product security advisories and security notes are official notifications released by Unify to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexUnify(queryParameters ...IndexQueryParameters) (responseJSON *IndexUnifyResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12404,6 +12760,7 @@ type IndexUnisocResponse struct {
 	Data      []client.AdvisoryUnisoc `json:"data"`
 }
 
+// GetIndexUnisoc -  UNISOC security bulletins are official notifications released by UNISOC to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexUnisoc(queryParameters ...IndexQueryParameters) (responseJSON *IndexUnisocResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12442,6 +12799,7 @@ type IndexUsdResponse struct {
 	Data      []client.AdvisoryUSD `json:"data"`
 }
 
+// GetIndexUsd -  usd advisories are official notifications released by the usd HeroLab to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexUsd(queryParameters ...IndexQueryParameters) (responseJSON *IndexUsdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12480,6 +12838,7 @@ type IndexUsomResponse struct {
 	Data      []client.AdvisoryUSOMAdvisory `json:"data"`
 }
 
+// GetIndexUsom -  USOM security notices are official notifications released by the Turkey USOM TR-CERT to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexUsom(queryParameters ...IndexQueryParameters) (responseJSON *IndexUsomResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12518,6 +12877,7 @@ type IndexVandykeResponse struct {
 	Data      []client.AdvisoryVanDyke `json:"data"`
 }
 
+// GetIndexVandyke -  VanDyke security advisories are official notifications released by VanDyke to address security vulnerabilities and updates in VanDyke. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexVandyke(queryParameters ...IndexQueryParameters) (responseJSON *IndexVandykeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12556,6 +12916,7 @@ type IndexVapidlabsResponse struct {
 	Data      []client.AdvisoryVapidLabsAdvisory `json:"data"`
 }
 
+// GetIndexVapidlabs -  VapidLabs Vulnerabilities are advisories and contain vulnerability details along with exploits that are curated by Larry Cashdollar.
 func (c *Client) GetIndexVapidlabs(queryParameters ...IndexQueryParameters) (responseJSON *IndexVapidlabsResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12594,6 +12955,7 @@ type IndexVdeResponse struct {
 	Data      []client.AdvisoryVDEAdvisory `json:"data"`
 }
 
+// GetIndexVde -  VDE CERT Advisories are official notifications released by VDE CERT to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexVde(queryParameters ...IndexQueryParameters) (responseJSON *IndexVdeResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12632,6 +12994,7 @@ type IndexVeeamResponse struct {
 	Data      []client.AdvisoryVeeam `json:"data"`
 }
 
+// GetIndexVeeam -  Veeam security advisories are official notifications released by Veeam to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (responseJSON *IndexVeeamResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12670,6 +13033,7 @@ type IndexVoidsecResponse struct {
 	Data      []client.AdvisoryVoidSec `json:"data"`
 }
 
+// GetIndexVoidsec -  VoidSec advisories are official notifications released by VoidSec to address security vulnerabilities and updates in third party products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexVoidsec(queryParameters ...IndexQueryParameters) (responseJSON *IndexVoidsecResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12708,6 +13072,7 @@ type IndexVulncheckConfigResponse struct {
 	Data      []client.AdvisoryVulnCheckConfig `json:"data"`
 }
 
+// GetIndexVulncheckConfig -  VulnCheck configurations contain curated/generated cpe criteria matches for a given cve based off of the Mitre CVE dataset and NVD dictionary and VulnCheck CPE dictionary.
 func (c *Client) GetIndexVulncheckConfig(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckConfigResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12746,6 +13111,7 @@ type IndexVulncheckKevResponse struct {
 	Data      []client.AdvisoryVulnCheckKEV `json:"data"`
 }
 
+// GetIndexVulncheckKev -  The VulnCheck Known Exploit Vulnerabilities catalog contains a list of exploited vulnerabilities known to VulnCheck
 func (c *Client) GetIndexVulncheckKev(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckKevResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12784,6 +13150,7 @@ type IndexVulncheckNvdResponse struct {
 	Data      []client.ApiCveItemsExtended `json:"data"`
 }
 
+// GetIndexVulncheckNvd -  NVD 2.0 CVE data formatted according to the NVD 1.0 CVE schema augmented with VulnCheck data.
 func (c *Client) GetIndexVulncheckNvd(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckNvdResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12822,6 +13189,7 @@ type IndexVulncheckNvd2Response struct {
 	Data      []client.ApiNVD20CVEExtended `json:"data"`
 }
 
+// GetIndexVulncheckNvd2 -  NIST NVD CVE 2.0 API data supplemented with VulnCheck Data
 func (c *Client) GetIndexVulncheckNvd2(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulncheckNvd2Response, err error) {
 
 	httpClient := &http.Client{}
@@ -12860,6 +13228,7 @@ type IndexVulnerabilityAliasesResponse struct {
 	Data      []client.ApiVulnerabilityAlias `json:"data"`
 }
 
+// GetIndexVulnerabilityAliases -  The Vulnerability Aliases index contains the names or aliases associated with a particular vulnerability. Examples: Log4Shell, LogJam, HeatBleed, etc.
 func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulnerabilityAliasesResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12898,6 +13267,7 @@ type IndexVyaireResponse struct {
 	Data      []client.AdvisoryVYAIREAdvisory `json:"data"`
 }
 
+// GetIndexVyaire -  Vyaire security bulletins are official notifications released by Vyaire to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexVyaire(queryParameters ...IndexQueryParameters) (responseJSON *IndexVyaireResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12936,6 +13306,7 @@ type IndexWatchguardResponse struct {
 	Data      []client.AdvisoryWatchGuard `json:"data"`
 }
 
+// GetIndexWatchguard -  WatchGuard security advisories are official notifications released by WatchGuard to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexWatchguard(queryParameters ...IndexQueryParameters) (responseJSON *IndexWatchguardResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -12974,6 +13345,7 @@ type IndexWhatsappResponse struct {
 	Data      []client.AdvisoryWhatsApp `json:"data"`
 }
 
+// GetIndexWhatsapp -  WhatsApp security advisories are official notifications released by WhatsApp to address security vulnerabilities and updates in WhatsApp. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexWhatsapp(queryParameters ...IndexQueryParameters) (responseJSON *IndexWhatsappResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13012,6 +13384,7 @@ type IndexWibuResponse struct {
 	Data      []client.AdvisoryWibu `json:"data"`
 }
 
+// GetIndexWibu -  Wibu Systems security advisories are official notifications released by Wibu Systems to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexWibu(queryParameters ...IndexQueryParameters) (responseJSON *IndexWibuResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13050,6 +13423,7 @@ type IndexWiresharkResponse struct {
 	Data      []client.AdvisoryWireshark `json:"data"`
 }
 
+// GetIndexWireshark -  Wireshark security advisories are official notifications released by the open source Wireshark project to address security vulnerabilities and updates in the open source Wireshark project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexWireshark(queryParameters ...IndexQueryParameters) (responseJSON *IndexWiresharkResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13088,6 +13462,7 @@ type IndexWithSecureResponse struct {
 	Data      []client.AdvisoryWithSecure `json:"data"`
 }
 
+// GetIndexWithSecure -  With Secure security advisories are official notifications released by With Secure to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexWithSecure(queryParameters ...IndexQueryParameters) (responseJSON *IndexWithSecureResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13126,6 +13501,7 @@ type IndexWolfiResponse struct {
 	Data      []client.AdvisoryWolfi `json:"data"`
 }
 
+// GetIndexWolfi -  Wolfi is a new community Linux undistribution that combines the best aspects of existing container base images with default security measures that will include software signatures powered by Sigstore, provenance, and software bills of material (SBOM).
 func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (responseJSON *IndexWolfiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13164,6 +13540,7 @@ type IndexWolfsslResponse struct {
 	Data      []client.AdvisoryWolfSSL `json:"data"`
 }
 
+// GetIndexWolfssl -  WolfSSL security vulnerabilities are official notifications released by WolfSSL to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexWolfssl(queryParameters ...IndexQueryParameters) (responseJSON *IndexWolfsslResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13202,6 +13579,7 @@ type IndexWordfenceResponse struct {
 	Data      []client.AdvisoryWordfence `json:"data"`
 }
 
+// GetIndexWordfence -  Wordfence vulnerabilities are official notifications released by Wordfence to address security vulnerabilities and updates in open source WordPress plugins. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexWordfence(queryParameters ...IndexQueryParameters) (responseJSON *IndexWordfenceResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13240,6 +13618,7 @@ type IndexXenResponse struct {
 	Data      []client.AdvisoryXen `json:"data"`
 }
 
+// GetIndexXen -  Xen advisories are official notifications released by the open source Xen project to address vulnerabilities and updates in the open source Apache ZooKeeper project. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexXen(queryParameters ...IndexQueryParameters) (responseJSON *IndexXenResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13278,6 +13657,7 @@ type IndexXeroxResponse struct {
 	Data      []client.AdvisoryXerox `json:"data"`
 }
 
+// GetIndexXerox -  Xerox security bulletins are official notifications released by Xerox to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexXerox(queryParameters ...IndexQueryParameters) (responseJSON *IndexXeroxResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13316,6 +13696,7 @@ type IndexXiaomiResponse struct {
 	Data      []client.AdvisoryXiaomi `json:"data"`
 }
 
+// GetIndexXiaomi -  Xiaomi security bulletins are official notifications released by Xiaomi to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexXiaomi(queryParameters ...IndexQueryParameters) (responseJSON *IndexXiaomiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13354,6 +13735,7 @@ type IndexXylemResponse struct {
 	Data      []client.AdvisoryXylem `json:"data"`
 }
 
+// GetIndexXylem -  Xylem security advisories are official notifications released by Xylem to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexXylem(queryParameters ...IndexQueryParameters) (responseJSON *IndexXylemResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13392,6 +13774,7 @@ type IndexYokogawaResponse struct {
 	Data      []client.AdvisoryYokogawaAdvisory `json:"data"`
 }
 
+// GetIndexYokogawa -  Yokogawa security advisories are official notifications released by Yokogawa to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexYokogawa(queryParameters ...IndexQueryParameters) (responseJSON *IndexYokogawaResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13430,6 +13813,7 @@ type IndexYubicoResponse struct {
 	Data      []client.AdvisoryYubico `json:"data"`
 }
 
+// GetIndexYubico -  Yubico security advisories are official notifications released by Yubico to address security vulnerabilities and updates in their software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexYubico(queryParameters ...IndexQueryParameters) (responseJSON *IndexYubicoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13468,6 +13852,7 @@ type IndexZdiResponse struct {
 	Data      []client.AdvisoryZeroDayAdvisory `json:"data"`
 }
 
+// GetIndexZdi -  Zero Day Initiative advisories are official advisories released by Trend Micro to promote responsible disclosure of vulnerabilities.
 func (c *Client) GetIndexZdi(queryParameters ...IndexQueryParameters) (responseJSON *IndexZdiResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13506,6 +13891,7 @@ type IndexZeroscienceResponse struct {
 	Data      []client.AdvisoryZeroScienceAdvisory `json:"data"`
 }
 
+// GetIndexZeroscience -  ZeroScience Vulnerabilities are vulnerability notices released by the ZeroScience Lab. Many vulnerabilities contain not only vulnerability details but also proof of concept code.
 func (c *Client) GetIndexZeroscience(queryParameters ...IndexQueryParameters) (responseJSON *IndexZeroscienceResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13544,6 +13930,7 @@ type IndexZimbraResponse struct {
 	Data      []client.AdvisoryZimbra `json:"data"`
 }
 
+// GetIndexZimbra -  Zimbra security advisories are official notifications released by Zimbra to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexZimbra(queryParameters ...IndexQueryParameters) (responseJSON *IndexZimbraResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13582,6 +13969,7 @@ type IndexZoomResponse struct {
 	Data      []client.AdvisoryZoom `json:"data"`
 }
 
+// GetIndexZoom -  Zoom security bulletins are official notifications released by Zoom to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexZoom(queryParameters ...IndexQueryParameters) (responseJSON *IndexZoomResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13620,6 +14008,7 @@ type IndexZscalerResponse struct {
 	Data      []client.AdvisoryZscaler `json:"data"`
 }
 
+// GetIndexZscaler -  Zscaler security advisories are official notifications released by Zscaler to address security vulnerabilities and updates in third party software products. These security advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexZscaler(queryParameters ...IndexQueryParameters) (responseJSON *IndexZscalerResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13658,6 +14047,7 @@ type IndexZusoResponse struct {
 	Data      []client.AdvisoryZuso `json:"data"`
 }
 
+// GetIndexZuso -  Zuso vulnerability notifications are official notifications released by Zuso Generation to address security vulnerabilities found in external software.
 func (c *Client) GetIndexZuso(queryParameters ...IndexQueryParameters) (responseJSON *IndexZusoResponse, err error) {
 
 	httpClient := &http.Client{}
@@ -13696,6 +14086,7 @@ type IndexZyxelResponse struct {
 	Data      []client.AdvisoryZyxel `json:"data"`
 }
 
+// GetIndexZyxel -  Zyxel security advisories are official notifications released by Zyxel to address security vulnerabilities and updates in their software products. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure the security of their systems.
 func (c *Client) GetIndexZyxel(queryParameters ...IndexQueryParameters) (responseJSON *IndexZyxelResponse, err error) {
 
 	httpClient := &http.Client{}
