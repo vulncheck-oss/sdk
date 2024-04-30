@@ -96,6 +96,22 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
+### INDEX (specific index looking up a CVE)
+```go
+response, err := client.GetIndexVulncheckNvd2(
+    sdk.IndexQueryParameters{
+        Cve: "CVE-2019-19781",
+    }
+)
+
+if err != nil {
+    return err
+}
+
+description := (*response.Data[0].Descriptions)[0].Value
+cvssBaseScore := (*response.Data[0].Metrics.CvssMetricV31)[0].CvssData.BaseScore
+```
+
 ## Changelog
 
 Please see CHANGELOG for more information on what has changed recently.
