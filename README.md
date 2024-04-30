@@ -112,6 +112,19 @@ description := (*response.Data[0].Descriptions)[0].Value
 cvssBaseScore := (*response.Data[0].Metrics.CvssMetricV31)[0].CvssData.BaseScore
 ```
 
+### Cursor INDEX
+```go
+queryParams := sdk.IndexQueryParameters{}
+
+response, err := client.GetCursorIndex("vulncheck-nvd2", "cursor_string", queryParams)
+
+if err != nil {
+    panic(err)
+}
+
+fmt.Println(response.GetData())
+```
+
 ## Changelog
 
 Please see CHANGELOG for more information on what has changed recently.
