@@ -38,7 +38,7 @@ func (c *Client) GetCursorIndex(index string, cursor string, queryParameters ...
 	c.SetAuthHeader(req)
 
 	query := req.URL.Query()
-	SetIndexQueryParameters(query, queryParameters...)
+	setIndexQueryParameters(query, queryParameters...)
 
 	if cursor != "" {
 		query.Add("cursor", cursor)

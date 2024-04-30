@@ -49,7 +49,7 @@ type IndexResponse struct {
 }
 
 // add method to set query parameters
-func SetIndexQueryParameters(query url.Values, queryParameters ...IndexQueryParameters) {
+func setIndexQueryParameters(query url.Values, queryParameters ...IndexQueryParameters) {
 	for _, queryParameter := range queryParameters {
 		if queryParameter.Cve != "" {
 			query.Add("cve", queryParameter.Cve)
@@ -102,7 +102,7 @@ func (c *Client) GetIndex(index string, queryParameters ...IndexQueryParameters)
 	c.SetAuthHeader(req)
 
 	query := req.URL.Query()
-	SetIndexQueryParameters(query, queryParameters...)
+	setIndexQueryParameters(query, queryParameters...)
 	req.URL.RawQuery = query.Encode()
 
 	resp, err := client.Do(req)
