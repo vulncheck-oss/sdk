@@ -4,6 +4,5 @@ test:
 format:
 	go fmt ./...
 
-
 ray:
 	@go get github.com/octoper/go-ray
