@@ -4,10 +4,5 @@ test:
 format:
 	go fmt ./...
 
-client:
-	cp ../../api/pkg/client/vulncheck.go pkg/client/client.go
-	@go run script/gen_funcs.go
-	@go fmt ./...
-
 ray:
 	@go get github.com/octoper/go-ray
