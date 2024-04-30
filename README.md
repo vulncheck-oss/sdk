@@ -96,7 +96,7 @@ if err != nil {
 fmt.Println(response.GetData())
 ```
 
-### INDEX (specific index looking up a CVE)
+### INDEX (looking up a CVE in the vulncheck-nvd2 index)
 ```go
 response, err := client.GetIndexVulncheckNvd2(
     sdk.IndexQueryParameters{
