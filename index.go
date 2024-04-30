@@ -48,7 +48,7 @@ type IndexResponse struct {
 	Data      []interface{} `json:"data"`
 }
 
-// add mehtod to set query parameters
+// add method to set query parameters
 func SetIndexQueryParameters(query url.Values, queryParameters ...IndexQueryParameters) {
 	for _, queryParameter := range queryParameters {
 		if queryParameter.Cve != "" {
