@@ -17,15 +17,17 @@ Bring the VulnCheck API to your Go applications with the VulnCheck SDK.
 <br />
 <br />
 
-## Usage
 
-### Install the VulnCheck SDK Client
+## Installation
 
 ```bash
 go get github.com/vulncheck-oss/sdk
 ```
 
-### Connecting Client
+
+## Examples
+
+### Connecting to the API
 
 ```go
 package main
@@ -41,9 +43,7 @@ func main() {
 }
 ```
 
-
 ### Available Methods
-
 
 ### PURL
 ```go
