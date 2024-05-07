@@ -1,25 +1,33 @@
-# VulnCheck SDK
+<p align="center">
+    <img src="/logo-sdk.png" align="center" alt="VulnCheck Logo" width="150" />
+</p>
 
-SDK to interact with VulnCheck API.
+# The VulnCheck SDK
+Bring the VulnCheck API to your Go applications with the VulnCheck SDK.
 
-<img src="https://vulncheck.com/logo.png" align="right" alt="VulnCheck Logo" width="200" />
-
-
-Current repository health
-
+[![Release](https://img.shields.io/github/v/release/vulncheck-oss/sdk)](https://github.com/vulncheck-oss/sdk/releases)
+[![Go Report Card](https://goreportcard.com/badge/github.com/vulncheck-oss/sdk)](https://goreportcard.com/report/github.com/vulncheck-oss/sdk)
+[![Go Reference](https://pkg.go.dev/badge/github.com/vulncheck-oss/sdk.svg)](https://pkg.go.dev/github.com/vulncheck-oss/sdk)
 [![Lint](https://github.com/vulncheck-oss/sdk/actions/workflows/lint.yml/badge.svg)](https://github.com/vulncheck-oss/sdk/actions/workflows/lint.yml)
 [![Tests](https://github.com/vulncheck-oss/sdk/actions/workflows/test.yml/badge.svg)](https://github.com/vulncheck-oss/sdk/actions/workflows/test.yml)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/vulncheck-oss/sdk/pulls)
 
 
-## Usage
+<br />
+<br />
+<br />
 
-### Init the VulnCheck SDK Client
+
+## Installation
 
 ```bash
 go get github.com/vulncheck-oss/sdk
 ```
 
-### Connecting Client
+
+## Examples
+
+### Connecting to the API
 
 ```go
 package main
@@ -35,9 +43,7 @@ func main() {
 }
 ```
 
-
 ### Available Methods
-
 
 ### PURL
 ```go
