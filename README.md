@@ -2,8 +2,9 @@
 
 
 # The VulnCheck SDK
-> SDK to interact with VulnCheck API.
+Bring the VulnCheck API to your Go applications with the VulnCheck SDK.
 
+[![License](https://img.shields.io/github/license/vulncheck-oss/sdk)](https://github.com/vulnheck-oss/sdk/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/vulncheck-oss/sdk)](https://github.com/vulncheck-oss/sdk/releases)
 [![Go Report Card](https://goreportcard.com/badge/github.com/vulncheck-oss/sdk)](https://goreportcard.com/report/github.com/vulncheck-oss/sdk)
 [![Go Reference](https://pkg.go.dev/badge/github.com/vulncheck-oss/sdk.svg)](https://pkg.go.dev/github.com/vulncheck-oss/sdk)
