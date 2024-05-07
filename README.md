@@ -1,4 +1,7 @@
-<img src="/logo-sdk.png" align="right" alt="VulnCheck Logo" width="100" />
+<img src="/logo-sdk.png" align="right" alt="VulnCheck Logo" width="150" />
+<br />
+<br />
+<br />
 
 # VulnCheck SDK
 
