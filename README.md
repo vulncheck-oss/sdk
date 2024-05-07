@@ -1,8 +1,9 @@
+<img src="/logo-sdk.png" align="right" alt="VulnCheck Logo" width="200" />
+
 # VulnCheck SDK
 
 SDK to interact with VulnCheck API.
 
-<img src="/logo-sdk.png" align="right" alt="VulnCheck Logo" width="200" />
 
 
 Current repository health
