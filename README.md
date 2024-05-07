@@ -1,4 +1,4 @@
-<img src="/logo-sdk.png" align="right" alt="VulnCheck Logo" width="150" />
+<img src="/logo-sdk.png" align="center" alt="VulnCheck Logo" width="150" />
 
 # The VulnCheck SDK
 Bring the VulnCheck API to your Go applications with the VulnCheck SDK.
