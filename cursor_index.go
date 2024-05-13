@@ -21,9 +21,9 @@ type IndexMetaCursor struct {
 }
 
 type IndexCursorResponse struct {
-	Benchmark float64       `json:"_benchmark"`
-	Meta      IndexMeta     `json:"_meta"`
-	Data      []interface{} `json:"data"`
+	Benchmark float64         `json:"_benchmark"`
+	Meta      IndexMetaCursor `json:"_meta"`
+	Data      []interface{}   `json:"data"`
 }
 
 // https://docs.vulncheck.com/api/cursor
