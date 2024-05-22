@@ -361,6 +361,45 @@ func (c *Client) GetIndexAlpine(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
+type IndexAlpinePurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexAlpinePurls -  Alpine purls is a collection of Alpine package purls with their associated versions and cves.
+func (c *Client) GetIndexAlpinePurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexAlpinePurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("alpine-purls"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
 type IndexAmazonResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
@@ -372,6 +411,45 @@ func (c *Client) GetIndexAmazon(queryParameters ...IndexQueryParameters) (respon
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("amazon"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexAmazonPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexAmazonPurls -  Amazon purls is a collection of Amazon package purls with their associated versions and cves.
+func (c *Client) GetIndexAmazonPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexAmazonPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("amazon-purls"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -1659,6 +1737,45 @@ func (c *Client) GetIndexArch(queryParameters ...IndexQueryParameters) (response
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("arch"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexArchPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexArchPurls -  Arch purls is a collection of Amazon package purls with their associated versions and cves.
+func (c *Client) GetIndexArchPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexArchPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("arch-purls"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3169,6 +3286,45 @@ func (c *Client) GetIndexCentos(queryParameters ...IndexQueryParameters) (respon
 	return responseJSON, nil
 }
 
+type IndexCentosPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexCentosPurls -  CentOS purls is a collection of CentOS package purls with their associated versions and cves.
+func (c *Client) GetIndexCentosPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexCentosPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("centos-purls"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
 type IndexCertBeResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
@@ -3180,6 +3336,84 @@ func (c *Client) GetIndexCertBe(queryParameters ...IndexQueryParameters) (respon
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cert-be"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexCertInResponse struct {
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryCertIN `json:"data"`
+}
+
+// GetIndexCertIn -  CERT IN security advisories are official notifications released by India's national CERT (Computer Emergency Response Team) to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
+func (c *Client) GetIndexCertIn(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertInResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cert-in"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexCertSeResponse struct {
+	Benchmark float64                 `json:"_benchmark"`
+	Meta      IndexMeta               `json:"_meta"`
+	Data      []client.AdvisoryCertSE `json:"data"`
+}
+
+// GetIndexCertSe -  CERT SE security advisories are official notifications released by Sweden's national CSIRT (Computer Security Incident Response Team) to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
+func (c *Client) GetIndexCertSe(queryParameters ...IndexQueryParameters) (responseJSON *IndexCertSeResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("cert-se"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -3336,6 +3570,45 @@ func (c *Client) GetIndexChainguard(queryParameters ...IndexQueryParameters) (re
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("chainguard"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexChainguardPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexChainguardPurls -  ChainGuard purls is a collection of ChainGuard package purls with their associated versions and cves.
+func (c *Client) GetIndexChainguardPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexChainguardPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("chainguard-purls"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -4311,6 +4584,45 @@ func (c *Client) GetIndexDebianDsa(queryParameters ...IndexQueryParameters) (res
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("debian-dsa"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexDebianPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexDebianPurls -  Debian Purls is a collection of debian package purls with their associated versions and cves.
+func (c *Client) GetIndexDebianPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexDebianPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("debian-purls"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -9595,6 +9907,45 @@ func (c *Client) GetIndexOpenbsd(queryParameters ...IndexQueryParameters) (respo
 	return responseJSON, nil
 }
 
+type IndexOpeneulerPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexOpeneulerPurls -  OpenEuler purls is a collection of open euler package purls with their associated versions and cves.
+func (c *Client) GetIndexOpeneulerPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexOpeneulerPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("openeuler-purls"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
 type IndexOpensshResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
@@ -10882,6 +11233,84 @@ func (c *Client) GetIndexRocky(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
+type IndexRockyErrataResponse struct {
+	Benchmark float64                      `json:"_benchmark"`
+	Meta      IndexMeta                    `json:"_meta"`
+	Data      []client.AdvisoryRockyErrata `json:"data"`
+}
+
+// GetIndexRockyErrata -  Rocky Errata is a collection of official notifications released by Rocky Linux to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
+func (c *Client) GetIndexRockyErrata(queryParameters ...IndexQueryParameters) (responseJSON *IndexRockyErrataResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rocky-errata"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexRockyPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexRockyPurls -  Rocky purls is a collection of rocky package purls with their associated versions and cves.
+func (c *Client) GetIndexRockyPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexRockyPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("rocky-purls"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
 type IndexRuckusResponse struct {
 	Benchmark float64                 `json:"_benchmark"`
 	Meta      IndexMeta               `json:"_meta"`
@@ -11974,6 +12403,45 @@ func (c *Client) GetIndexSuse(queryParameters ...IndexQueryParameters) (response
 	return responseJSON, nil
 }
 
+type IndexSusePurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexSusePurls -  Suse Purls is a collection of debian package purls with their associated versions and cves.
+func (c *Client) GetIndexSusePurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexSusePurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("suse-purls"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
 type IndexSwiftResponse struct {
 	Benchmark float64                `json:"_benchmark"`
 	Meta      IndexMeta              `json:"_meta"`
@@ -13027,6 +13495,45 @@ func (c *Client) GetIndexVeeam(queryParameters ...IndexQueryParameters) (respons
 	return responseJSON, nil
 }
 
+type IndexVmwareResponse struct {
+	Benchmark float64                         `json:"_benchmark"`
+	Meta      IndexMeta                       `json:"_meta"`
+	Data      []client.AdvisoryVMWareAdvisory `json:"data"`
+}
+
+// GetIndexVmware -  VMWare security advisories are official notifications released by Broadcom to address security vulnerabilities and updates. These advisories provide important information about the vulnerabilities, their potential impact, and recommendations for users to apply necessary patches or updates to ensure security.
+func (c *Client) GetIndexVmware(queryParameters ...IndexQueryParameters) (responseJSON *IndexVmwareResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vmware"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
 type IndexVoidsecResponse struct {
 	Benchmark float64                  `json:"_benchmark"`
 	Meta      IndexMeta                `json:"_meta"`
@@ -13233,6 +13740,45 @@ func (c *Client) GetIndexVulnerabilityAliases(queryParameters ...IndexQueryParam
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulnerability-aliases"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexVulnrichmentResponse struct {
+	Benchmark float64                       `json:"_benchmark"`
+	Meta      IndexMeta                     `json:"_meta"`
+	Data      []client.AdvisoryVulnrichment `json:"data"`
+}
+
+// GetIndexVulnrichment -  The CISA Vulnrichment project is the public repository of CISA's enrichment of public CVE records through CISA's ADP (Authorized Data Publisher) container. In this phase of the project, CISA is assessing new and recent CVEs and adding key SSVC decision points. Once scored, some higher-risk CVEs will also receive enrichment of CWE, CVSS, and CPE data points, where possible.
+func (c *Client) GetIndexVulnrichment(queryParameters ...IndexQueryParameters) (responseJSON *IndexVulnrichmentResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("vulnrichment"), nil)
 	if err != nil {
 		panic(err)
 	}
@@ -13506,6 +14052,45 @@ func (c *Client) GetIndexWolfi(queryParameters ...IndexQueryParameters) (respons
 
 	httpClient := &http.Client{}
 	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wolfi"), nil)
+	if err != nil {
+		panic(err)
+	}
+
+	c.SetAuthHeader(req)
+
+	query := req.URL.Query()
+	setIndexQueryParameters(query, queryParameters...)
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		var metaError MetaError
+		_ = json.NewDecoder(resp.Body).Decode(&metaError)
+
+		return nil, fmt.Errorf("error: %v", metaError.Errors)
+	}
+
+	_ = json.NewDecoder(resp.Body).Decode(&responseJSON)
+
+	return responseJSON, nil
+}
+
+type IndexWolfiPurlsResponse struct {
+	Benchmark float64                    `json:"_benchmark"`
+	Meta      IndexMeta                  `json:"_meta"`
+	Data      []client.PurlsPurlResponse `json:"data"`
+}
+
+// GetIndexWolfiPurls -  Wolfi Purls is a collection of wolfi package purls with their associated versions and cves.
+func (c *Client) GetIndexWolfiPurls(queryParameters ...IndexQueryParameters) (responseJSON *IndexWolfiPurlsResponse, err error) {
+
+	httpClient := &http.Client{}
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/index/"+url.QueryEscape("wolfi-purls"), nil)
 	if err != nil {
 		panic(err)
 	}
