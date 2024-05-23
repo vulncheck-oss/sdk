@@ -20,6 +20,13 @@ type IndexQueryParameters struct {
 	MispId           string `json:"misp_id"`
 	Ransomware       string `json:"ransomware"`
 	Botnet           string `json:"botnet"`
+	Limit            int    `json:"limit"`
+	Sort             string `json:"sort"`
+	Order            string `json:"order"`
+	Page             int    `json:"page"`
+	Cursor           string `json:"cursor"`
+	NextCursor       string `json:"next_cursor"`
+	PrevCursor       string `json:"prev_cursor"` // this may not exist
 }
 
 type IndexMeta struct {
@@ -87,8 +94,28 @@ func setIndexQueryParameters(query url.Values, queryParameters ...IndexQueryPara
 		if queryParameter.Botnet != "" {
 			query.Add("botnet", queryParameter.Botnet)
 		}
+		if queryParameter.Limit != 0 {
+			query.Add("limit", fmt.Sprintf("%d", queryParameter.Limit))
+		}
+		if queryParameter.Sort != "" {
+			query.Add("sort", queryParameter.Sort)
+		}
+		if queryParameter.Order != "" {
+			query.Add("order", queryParameter.Order)
+		}
+		if queryParameter.Page != 0 {
+			query.Add("page", fmt.Sprintf("%d", queryParameter.Page))
+		}
+		if queryParameter.Cursor != "" {
+			query.Add("cursor", queryParameter.Cursor)
+		}
+		if queryParameter.NextCursor != "" {
+			query.Add("next_cursor", queryParameter.NextCursor)
+		}
+		if queryParameter.PrevCursor != "" {
+			query.Add("prev_cursor", queryParameter.PrevCursor)
+		}
 	}
-
 }
 
 // https://docs.vulncheck.com/api/indice
