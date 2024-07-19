@@ -8,6 +8,7 @@ import (
 )
 
 type IndexQueryParameters struct {
+	// INDEX RELATED
 	Cve              string `json:"cve"`
 	Alias            string `json:"alias"`
 	Iava             string `json:"iava"`
@@ -20,13 +21,20 @@ type IndexQueryParameters struct {
 	MispId           string `json:"misp_id"`
 	Ransomware       string `json:"ransomware"`
 	Botnet           string `json:"botnet"`
-	Limit            int    `json:"limit"`
-	Sort             string `json:"sort"`
-	Order            string `json:"order"`
-	Page             int    `json:"page"`
-	Cursor           string `json:"cursor"`
-	NextCursor       string `json:"next_cursor"`
-	PrevCursor       string `json:"prev_cursor"` // this may not exist
+	Hostname         string `json:"hostname"`
+	ID               string `json:"id"`
+	Country          string `json:"country"`
+	CountryCode      string `json:"country_code"`
+	Asn              string `json:"asn"`
+
+	// PAGINATION RELATED
+	Limit      int    `json:"limit"`
+	Sort       string `json:"sort"`
+	Order      string `json:"order"`
+	Page       int    `json:"page"`
+	Cursor     string `json:"cursor"`
+	NextCursor string `json:"next_cursor"`
+	PrevCursor string `json:"prev_cursor"` // this may not exist
 }
 
 type IndexMeta struct {
@@ -58,6 +66,7 @@ type IndexResponse struct {
 // add method to set query parameters
 func setIndexQueryParameters(query url.Values, queryParameters ...IndexQueryParameters) {
 	for _, queryParameter := range queryParameters {
+		// INDEX RELATED
 		if queryParameter.Cve != "" {
 			query.Add("cve", queryParameter.Cve)
 		}
@@ -94,6 +103,19 @@ func setIndexQueryParameters(query url.Values, queryParameters ...IndexQueryPara
 		if queryParameter.Botnet != "" {
 			query.Add("botnet", queryParameter.Botnet)
 		}
+		if queryParameter.Hostname != "" {
+			query.Add("hostname", queryParameter.Hostname)
+		}
+		if queryParameter.ID != "" {
+			query.Add("id", queryParameter.ID)
+		}
+		if queryParameter.Country != "" {
+			query.Add("country", queryParameter.Country)
+		}
+		if queryParameter.CountryCode != "" {
+			query.Add("country_code", queryParameter.CountryCode)
+		}
+		// PAGINATION RELATED
 		if queryParameter.Limit != 0 {
 			query.Add("limit", fmt.Sprintf("%d", queryParameter.Limit))
 		}
