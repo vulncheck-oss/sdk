@@ -1,10 +1,10 @@
 package sdk
 
 // LIVE TESTS - these tests require a valid token to run
-// func TestGetTag(t *testing.T) {
-// 	t.Run("tag is retrieved", func(t *testing.T) {
+// func TestGetPdns(t *testing.T) {
+// 	t.Run("pdns is retrieved", func(t *testing.T) {
 // 		client := Connect("URL", "")
-// 		data, err := client.GetTag("vulncheck-c2")
+// 		data, err := client.GetPdns()
 // 		if err != nil {
 // 			t.Errorf("Error: %v", err)
 // 		}
