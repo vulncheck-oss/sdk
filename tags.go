@@ -3,13 +3,12 @@ package sdk
 import (
 	"io"
 	"net/http"
-	"net/url"
 )
 
 // https://docs.vulncheck.com/api/tags
-func (c *Client) GetTag(tag string) (string, error) {
+func (c *Client) GetTag() (string, error) {
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/tags/"+url.QueryEscape(tag), nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/tags/vulncheck-c2", nil)
 	if err != nil {
 		panic(err)
 	}
