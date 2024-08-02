@@ -3,12 +3,13 @@ package sdk
 import (
 	"io"
 	"net/http"
+	"net/url"
 )
 
 // https://docs.vulncheck.com/api/pdns
-func (c *Client) GetPdns() (string, error) {
+func (c *Client) GetPdns(list string) (string, error) {
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/pdns/vulncheck-c2", nil)
+	req, err := http.NewRequest("GET", c.GetUrl()+"/v3/pdns/"+url.QueryEscape(list), nil)
 	if err != nil {
 		panic(err)
 	}
