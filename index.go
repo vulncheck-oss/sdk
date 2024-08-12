@@ -68,7 +68,7 @@ func setIndexQueryParameters(query url.Values, queryParameters ...IndexQueryPara
 	for _, queryParameter := range queryParameters {
 		// INDEX RELATED
 		if queryParameter.Cve != "" {
-			query.Add("cve", queryParameter.Cve)
+			query.Add("cve", FormatCVE(queryParameter.Cve))
 		}
 		if queryParameter.Alias != "" {
 			query.Add("alias", queryParameter.Alias)
