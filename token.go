@@ -1,6 +1,10 @@
 package sdk
 
-import "encoding/json"
+import (
+	"encoding/json"
+	"github.com/dustin/go-humanize"
+	"time"
+)
 
 type TokenLocation struct {
 	City        string
@@ -85,4 +89,21 @@ func (c *Client) DeleteToken(ID string) (responseJSON *TokenResponse, err error)
 // GetData - Returns the data from the response
 func (r TokenResult) GetData() []TokenData {
 	return r.Data
+}
+
+// GetHumanUpdatedAt - convert 2024-09-03T23:09:14.574Z to "8 hours ago"
+func (t TokenData) GetHumanUpdatedAt() string {
+	updatedAt, err := time.Parse(time.RFC3339, t.UpdatedAt)
+	if err != nil {
+		return "Unknown"
+	}
+	return humanize.Time(updatedAt)
+}
+
+// GetLocationString - Return either Unknown or Austin, TX US
+func (t TokenData) GetLocationString() string {
+	if t.Location.City == "" {
+		return "Unknown"
+	}
+	return t.Location.City + ", " + t.Location.Region + " " + t.Location.Country
 }
