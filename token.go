@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/dustin/go-humanize"
 	"time"
 )
@@ -106,4 +107,11 @@ func (t TokenData) GetLocationString() string {
 		return "Unknown"
 	}
 	return t.Location.City + ", " + t.Location.Region + " " + t.Location.Country
+}
+
+func (t TokenData) GetSourceLabel() string {
+	if t.Label != "" {
+		return fmt.Sprintf("%s (%s)", t.Source, t.Label)
+	}
+	return t.Source
 }
