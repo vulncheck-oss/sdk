@@ -23,6 +23,7 @@ type IndexQueryParameters struct {
 	Botnet           string `json:"botnet"`
 	Hostname         string `json:"hostname"`
 	ID               string `json:"id"`
+	Kind             string `json:"kind"`
 	Country          string `json:"country"`
 	CountryCode      string `json:"country_code"`
 	Asn              string `json:"asn"`
@@ -108,6 +109,9 @@ func setIndexQueryParameters(query url.Values, queryParameters ...IndexQueryPara
 		}
 		if queryParameter.ID != "" {
 			query.Add("id", queryParameter.ID)
+		}
+		if queryParameter.Kind != "" {
+			query.Add("kind", queryParameter.Kind)
 		}
 		if queryParameter.Country != "" {
 			query.Add("country", queryParameter.Country)
