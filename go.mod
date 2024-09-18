@@ -3,6 +3,7 @@ module github.com/vulncheck-oss/sdk
 go 1.21
 
 require (
+	github.com/dustin/go-humanize v1.0.1
 	github.com/getkin/kin-openapi v0.124.0
 	github.com/oapi-codegen/runtime v1.1.1
 	github.com/stretchr/testify v1.9.0
