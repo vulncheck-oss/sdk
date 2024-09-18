@@ -56,7 +56,7 @@ type TokenResponse struct {
 }
 
 func (c *Client) GetTokens() (responseJSON *TokenResult, err error) {
-	resp, err := c.Request("GET", "/token")
+	resp, err := c.Request("GET", "/token?limit=100")
 	if err != nil {
 		return nil, err
 	}
